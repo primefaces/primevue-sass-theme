@@ -1,2 +1,3 @@
-# primevue-sass-theme
-PrimeVue Theming with SASS
+# PrimeVue Theming with SASS
+
+Visit the [official documentation](https://primevue.org/theming/#customtheme) for more information.
