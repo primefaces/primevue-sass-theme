@@ -897,5 +897,7 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --surface-hover:#edf0fA;
     --focus-ring: #{$focusShadow};
     --maskbg: #{$maskBg};
+    --highlight-bg: #{$highlightBg};
+    --highlight-text-color: #{$highlightTextColor};
     color-scheme: light;
 }
