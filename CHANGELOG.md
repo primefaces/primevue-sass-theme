@@ -2,7 +2,7 @@
 
 ## [3.27.0](https://github.com/primefaces/primevue-sass-theme/tree/3.27.0) (2023-04-19)
 
-[Full Changelog](https://github.com/primefaces/primevue/compare/3.26.1...3.27.0)
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.26.1...3.27.0)
 
 **Implemented New Features and Enhancements:**
 
@@ -11,7 +11,7 @@
 
 ## [3.26.1](https://github.com/primefaces/primevue-sass-theme/tree/3.26.1) (2023-03-27)
 
-[Full Changelog](https://github.com/primefaces/primevue/compare/3.26.0...3.26.1)
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.26.0...3.26.1)
 
 **Fixed bugs:**
 
