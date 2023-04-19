@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.27.0](https://github.com/primefaces/primevue-sass-theme/tree/3.27.0) (2023-04-19)
+
+**Fixed bugs:**
+
+- SVG: icon width & height fixes [\#7](https://github.com/primefaces/primevue-sass-theme/issues/7)
+- Panel: content and footer border defects [\#5](https://github.com/primefaces/primevue-sass-theme/issues/5)
+
 ## [3.26.1](https://github.com/primefaces/primevue-sass-theme/tree/3.26.1) (2023-03-27)
 
 **Fixed bugs:**
