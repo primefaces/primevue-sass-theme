@@ -22,6 +22,12 @@
             color: $inputIconColor;
         }
 
+        .p-icon {
+            path {
+                fill: $inputIconColor;
+            }
+        }
+
         &:enabled:hover {
             background: rgba($overlayColor, .04);
         }
