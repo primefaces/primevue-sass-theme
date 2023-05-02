@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.28.0](https://github.com/primefaces/primevue-sass-theme/tree/3.28.0) (2023-05-02)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.27.0...3.28.0)
+
+**Fixed bugs:**
+
+- Calendar: Material theme icon color defect  [\#10](https://github.com/primefaces/primevue-sass-theme/issues/10)
+- Message: wrong close icon size [\#9](https://github.com/primefaces/primevue-sass-theme/issues/9)
+
 ## [3.27.0](https://github.com/primefaces/primevue-sass-theme/tree/3.27.0) (2023-04-19)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.26.1...3.27.0)
