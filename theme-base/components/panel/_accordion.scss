@@ -1,13 +1,20 @@
 .p-accordion {
     .p-accordion-header {
         .p-accordion-header-link {
-            padding: $accordionHeaderPadding;
-            border: $accordionHeaderBorder;
-            color: $accordionHeaderTextColor;
-            background: $accordionHeaderBg;
+            font-size: $accordionHeaderFontSize;
             font-weight: $accordionHeaderFontWeight;
+            color: $accordionHeaderColor;
+            background: $accordionHeaderBackground;
+            padding-top: $accordionHeaderPaddingTop;
+            padding-right: $accordionHeaderPaddingRight;
+            padding-bottom: $accordionHeaderPaddingBottom;
+            padding-left: $accordionHeaderPaddingLeft;
+            border-width: $accordionHeaderBorderWidth;
+            border-style: $accordionHeaderBorderStyle;
+            border-color: $accordionHeaderBorderColor;
             border-radius: $borderRadius;
-            transition: $listItemTransition;
+            transition-duration: $transitionDuration;
+            transition-property: $transitionProperty;
 
             .p-accordion-toggle-icon {
                 margin-right: $inlineSpacing;
@@ -17,43 +24,58 @@
         &:not(.p-disabled) {
             .p-accordion-header-link {
                 &:focus {
-                    @include focused-inset();
+                    outline-color: $accordionHeaderFocusOutlineColor;
+                    outline-style: $accordionHeaderFocusOutlineStyle;
+                    outline-width: $accordionHeaderFocusOutlineWidth;
+                    outline-offset: $accordionHeaderFocusOutlineOffset;
+                    box-shadow: $accordionHeaderFocusBoxShadow;
                 }
             }
         }
 
         &:not(.p-highlight):not(.p-disabled):hover {
             .p-accordion-header-link {
-                background: $accordionHeaderHoverBg;
+                color: $accordionHeaderHoverColor;
+                background: $accordionHeaderHoverBackground;
+                border-width: $accordionHeaderHoverBorderWidth;
+                border-style: $accordionHeaderHoverBorderStyle;
                 border-color: $accordionHeaderHoverBorderColor;
-                color: $accordionHeaderTextHoverColor;
             }
         }
 
         &:not(.p-disabled).p-highlight {
             .p-accordion-header-link {
-                background: $accordionHeaderActiveBg;
+                color: $accordionHeaderActiveColor;
+                background: $accordionHeaderActiveBackground;
+                border-width: $accordionHeaderActiveBorderWidth;
+                border-style: $accordionHeaderActiveBorderStyle;
                 border-color: $accordionHeaderActiveBorderColor;
-                color: $accordionHeaderTextActiveColor;
                 border-bottom-right-radius: 0;
                 border-bottom-left-radius: 0;
             }
 
             &:hover {
                 .p-accordion-header-link {
+                    color: $accordionHeaderActiveHoverColor;
+                    background: $accordionHeaderActiveHoverBackground;
+                    border-width: $accordionHeaderActiveHoverBorderWidth;
+                    border-style: $accordionHeaderActiveHoverBorderStyle;
                     border-color: $accordionHeaderActiveHoverBorderColor;
-                    background: $accordionHeaderActiveHoverBg;
-                    color: $accordionHeaderTextActiveHoverColor;
                 }
             }
         }
     }
 
     .p-accordion-content {
-        padding: $accordionContentPadding;
-        border: $accordionContentBorder;
-        background: $accordionContentBg;
-        color: $accordionContentTextColor;
+        color: $accordionContentColor;
+        background: $accordionContentBackground;
+        padding-top: $accordionContentPaddingTop;
+        padding-right: $accordionContentPaddingRight;
+        padding-bottom: $accordionContentPaddingBottom;
+        padding-left: $accordionContentPaddingLeft;
+        border-width: $accordionContentBorderWidth;
+        border-style: $accordionContentBorderStyle;
+        border-color: $accordionContentBorderColor;
         border-top: 0;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
@@ -107,12 +129,12 @@
                         border-bottom-left-radius: $borderRadius;
                     }
                 }
-                
+
                 .p-accordion-content {
                     border-bottom-right-radius: $borderRadius;
                     border-bottom-left-radius: $borderRadius;
                 }
             }
-        } 
+        }
     }
 }

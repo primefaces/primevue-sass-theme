@@ -1,7 +1,12 @@
 .p-toolbar {
-    background: $panelHeaderBg;
-    border: $panelHeaderBorder;
-    padding: $panelHeaderPadding;
+    background: $toolbarBackground;
+    padding-top: $toolbarPaddingTop;
+    padding-right: $toolbarPaddingRight;
+    padding-bottom: $toolbarPaddingBottom;
+    padding-left: $toolbarPaddingLeft;
+    border-width: $toolbarBorderWidth;
+    border-style: $toolbarBorderStyle;
+    border-color: $toolbarBorderColor;
     border-radius: $borderRadius;
     gap: $inlineSpacing;
 

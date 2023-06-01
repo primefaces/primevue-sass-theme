@@ -1,11 +1,14 @@
 .p-card {
-    background: $panelContentBg;
-    color: $panelContentTextColor;
-    box-shadow: $cardShadow;
+    color: $cardColor;
+    background: $cardBackground;
+    box-shadow: $cardBoxShadow;
     border-radius: $borderRadius;
 
     .p-card-body {
-        padding: $cardBodyPadding;
+        padding-top: $cardBodyPaddingTop;
+        padding-right: $cardBodyPaddingRight;
+        padding-bottom: $cardBodyPaddingBottom;
+        padding-left: $cardBodyPaddingLeft;
     }
 
     .p-card-title {
@@ -15,16 +18,23 @@
     }
 
     .p-card-subtitle {
-        font-weight: $cardSubTitleFontWeight;
+        font-size: $cardSubtitleFontSize;
+        font-weight: $cardSubtitleFontWeight;
+        color: $cardSubtitleColor;
         margin-bottom: $inlineSpacing;
-        color: $cardSubTitleColor;
     }
 
     .p-card-content {
-        padding: $cardContentPadding;
+        padding-top: $cardContentPaddingTop;
+        padding-right: $cardContentPaddingRight;
+        padding-bottom: $cardContentPaddingBottom;
+        padding-left: $cardContentPaddingLeft;
     }
 
     .p-card-footer {
-        padding: $cardFooterPadding;
+        padding-top: $cardFooterPaddingTop;
+        padding-right: $cardFooterPaddingRight;
+        padding-bottom: $cardFooterPaddingBottom;
+        padding-left: $cardFooterPaddingLeft;
     }
 }

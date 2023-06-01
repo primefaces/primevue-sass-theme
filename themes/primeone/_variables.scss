@@ -1,0 +1,417 @@
+$colors: (
+    "blue": #3b82f6,
+    "green": #22c55e,
+    "yellow": #eab308,
+    "cyan": #06b6d4,
+    "pink": #ec4899,
+    "indigo": #6366f1,
+    "teal": #14b8a6,
+    "orange": #f97316,
+    "bluegray": #64748b,
+    "purple": #a855f7,
+    "red": #ff3d32,
+    "primary": $primaryColor,
+);
+
+//@todo
+$highlightBg: #eff6ff !default;
+$highlightTextColor: $primaryDarkerColor !default;
+$highlightFocusBg: rgba($primaryColor, 0.24) !default;
+
+//global
+$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$fontSize: 1rem !default;
+$fontWeight: normal !default;
+$borderRadius: 6px !default;
+$inlineSpacing: 0.5rem !default;
+$transitionDuration: 0.2s !default;
+$transitionProperty: background-color, color, border-color, box-shadow !default;
+
+/*** Overlay Components ***/
+$confirmPopupColor: #495057 !default;
+$confirmPopupBackground: #ffffff !default;
+$confirmPopupBorderWidth: 1px !default;
+$confirmPopupBorderStyle: solid !default;
+$confirmPopupBorderColor: #dee2e6 !default;
+$confirmPopupBoxShadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
+
+$confirmPopupContentPaddingTop: 1.25rem !default;
+$confirmPopupContentPaddingRight: 1.25rem !default;
+$confirmPopupContentPaddingBottom: 1.25rem !default;
+$confirmPopupContentPaddingLeft: 1.25rem !default;
+
+$confirmPopupTipBorderWidth: initial !default;
+$confirmPopupTipBorderStyle: solid !default;
+$confirmPopupTipBorderColor: #dee2e6 !default;
+
+$confirmPopupFooterPaddingTop: 0 !default;
+$confirmPopupFooterPaddingRight: 1.25rem !default;
+$confirmPopupFooterPaddingBottom: 1.25rem !default;
+$confirmPopupFooterPaddingLeft: 1.25rem !default;
+
+// dialog
+$dialogBorderWidth: 0 !default;
+$dialogBorderStyle: none !default;
+$dialogBorderColor: initial !default;
+$dialogBoxShadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
+
+$dialogHeaderColor: #343a40 !default;
+$dialogHeaderBackground: #ffffff !default;
+$dialogHeaderPaddingTop: 1.5rem !default;
+$dialogHeaderPaddingRight: 1.5rem !default;
+$dialogHeaderPaddingBottom: 1.5rem !default;
+$dialogHeaderPaddingLeft: 1.5rem !default;
+$dialogHeaderBorderWidth: 0 !default;
+$dialogHeaderBorderStyle: none !default;
+$dialogHeaderBorderColor: initial !default;
+$dialogHeaderFontWeight: 700 !default;
+$dialogHeaderFontSize: 1.25rem !default;
+
+$dialogHeaderIconWidth: 2rem !default;
+$dialogHeaderIconHeight: 2rem !default;
+$dialogHeaderIconColor: #6c757d !default;
+$dialogHeaderIconBackground: transparent !default;
+$dialogHeaderIconBorderWidth: 0 !default;
+$dialogHeaderIconBorderStyle: none !default;
+$dialogHeaderIconBorderColor: initial !default;
+$dialogHeaderIconBorderRadius: 50% !default;
+
+$dialogHeaderIconHoverColor: #343a40 !default;
+$dialogHeaderIconHoverBackground: #e9ecef !default;
+$dialogHeaderIconHoverBorderColor: transparent !default;
+
+$dialogHeaderIconFocusOutlineColor: $primaryLightColor !default;
+$dialogHeaderIconFocusOutlineStyle: none !default;
+$dialogHeaderIconFocusOutlineWidth: 0 !default;
+$dialogHeaderIconFocusOutlineOffset: 0 !default;
+$dialogHeaderIconFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
+
+$dialogContentColor: #495057 !default;
+$dialogContentBackground: #ffffff !default;
+$dialogContentBorderWidth: 1px !default;
+$dialogContentBorderStyle: solid !default;
+$dialogContentBorderColor: #dee2e6 !default;
+$dialogContentPaddingTop: 0 !default;
+$dialogContentPaddingRight: 1.5rem !default;
+$dialogContentPaddingBottom: 2rem !default;
+$dialogContentPaddingLeft: 1.5rem !default;
+
+$dialogFooterColor: #495057 !default;
+$dialogFooterBackground: #ffffff !default;
+$dialogFooterPaddingTop: 0 !default;
+$dialogFooterPaddingRight: 1.5rem !default;
+$dialogFooterPaddingBottom: 1.5rem !default;
+$dialogFooterPaddingLeft: 1.5rem !default;
+$dialogFooterBorderWidth: 1px 0 0 0 !default;
+$dialogFooterBorderStyle: solid !default;
+$dialogFooterBorderColor: #dee2e6 !default;
+
+/*** Panel Components ***/
+// accordion
+// @todo maybe $accordionTabGap ?
+$accordionSpacing: 4px !default;
+
+$accordionHeaderFontSize: initial !default;
+$accordionHeaderFontWeight: 700 !default;
+$accordionHeaderColor: #6c757d !default;
+$accordionHeaderBackground: #f8f9fa !default;
+$accordionHeaderPaddingTop: 1.25rem !default;
+$accordionHeaderPaddingRight: 1.25rem !default;
+$accordionHeaderPaddingBottom: 1.25rem !default;
+$accordionHeaderPaddingLeft: 1.25rem !default;
+$accordionHeaderBorderWidth: 1px !default;
+$accordionHeaderBorderStyle: solid !default;
+$accordionHeaderBorderColor: #dee2e6 !default;
+
+$accordionHeaderHoverColor: #343a40 !default;
+$accordionHeaderHoverBackground: #e9ecef !default;
+$accordionHeaderHoverBorderWidth: inherit !default;
+$accordionHeaderHoverBorderStyle: inherit !default;
+$accordionHeaderHoverBorderColor: #dee2e6 !default;
+
+$accordionHeaderFocusOutlineColor: $primaryLightColor !default;
+$accordionHeaderFocusOutlineStyle: none !default;
+$accordionHeaderFocusOutlineWidth: 0 !default;
+$accordionHeaderFocusOutlineOffset: 0 !default;
+$accordionHeaderFocusBoxShadow: inset 0 0 0 0.2rem $primaryLightColor !default;
+
+$accordionHeaderActiveColor: #343a40 !default;
+$accordionHeaderActiveBackground: #f8f9fa !default;
+$accordionHeaderActiveBorderWidth: inherit !default;
+$accordionHeaderActiveBorderStyle: inherit !default;
+$accordionHeaderActiveBorderColor: #dee2e6 !default;
+
+$accordionHeaderActiveHoverColor: #343a40 !default;
+$accordionHeaderActiveHoverBackground: #e9ecef !default;
+$accordionHeaderActiveHoverBorderWidth: inherit !default;
+$accordionHeaderActiveHoverBorderStyle: inherit !default;
+$accordionHeaderActiveHoverBorderColor: #dee2e6 !default;
+
+$accordionContentColor: #495057 !default;
+$accordionContentBackground: #ffffff !default;
+$accordionContentPaddingTop: 1.25rem !default;
+$accordionContentPaddingRight: 1.25rem !default;
+$accordionContentPaddingBottom: 1.25rem !default;
+$accordionContentPaddingLeft: 1.25rem !default;
+$accordionContentBorderWidth: inherit !default;
+$accordionContentBorderStyle: inherit !default;
+$accordionContentBorderColor: #dee2e6 !default;
+
+// card
+$cardColor: #495057 !default;
+$cardBackground: #ffffff !default;
+$cardBoxShadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !default;
+
+$cardBodyPaddingTop: 1.25rem !default;
+$cardBodyPaddingRight: 1.25rem !default;
+$cardBodyPaddingBottom: 1.25rem !default;
+$cardBodyPaddingLeft: 1.25rem !default;
+
+$cardTitleFontSize: 1.5rem !default;
+$cardTitleFontWeight: 700 !default;
+
+$cardSubtitleFontSize: inherit !default;
+$cardSubtitleFontWeight: 400 !default;
+$cardSubtitleColor: #6c757d !default;
+
+$cardContentPaddingTop: 1.25rem !default;
+$cardContentPaddingRight: 0 !default;
+$cardContentPaddingBottom: 1.25rem !default;
+$cardContentPaddingLeft: 0 !default;
+
+$cardFooterPaddingTop: 1.25rem !default;
+$cardFooterPaddingRight: 0 !default;
+$cardFooterPaddingBottom: 0 !default;
+$cardFooterPaddingLeft: 0 !default;
+
+// divider
+// @todo ?
+$dividerSize: 1px !default;
+$dividerColor: #dee2e6 !default;
+
+$dividerHorizontalPaddingTop: 0 !default;
+$dividerHorizontalPaddingRight: 1.25rem !default;
+$dividerHorizontalPaddingBottom: 0 !default;
+$dividerHorizontalPaddingLeft: 1.25rem !default;
+$dividerHorizontalMarginTop: 1.25rem !default;
+$dividerHorizontalMarginRight: 0 !default;
+$dividerHorizontalMarginBottom: 1.25rem !default;
+$dividerHorizontalMarginLeft: 0 !default;
+
+$dividerVerticalPaddingTop: 1.25rem !default;
+$dividerVerticalPaddingRight: 0 !default;
+$defaultVerticalPaddingBottom: 1.25rem !default;
+$defaultVerticalPaddingLeft: 0 !default;
+$dividerVerticalMarginTop: 0 !default;
+$dividerVerticalMarginRight: 1.25rem !default;
+$defaultVerticalMarginBottom: 0 !default;
+$defaultVerticalMarginLeft: 1.25rem !default;
+
+$dividerContentBackground: #ffffff !default;
+
+// fieldset
+$fieldsetColor: #495057 !default;
+$fieldsetBackground: #ffffff !default;
+$fieldsetBorderWidth: 1px !default;
+$fieldsetBorderStyle: solid !default;
+$fieldsetBorderColor: #dee2e6 !default;
+
+$fieldsetLegendFontSize: inherit !default;
+$fieldsetLegendFontWeight: 700 !default;
+$fieldsetLegendColor: #343a40 !default;
+$fieldsetLegendBackground: #f8f9fa !default;
+$fieldsetLegendBorderWidth: 1px !default;
+$fieldsetLegendBorderStyle: solid !default;
+$fieldsetLegendBorderColor: #dee2e6 !default;
+$fieldsetLegendPaddingTop: 1.25rem !default;
+$fieldsetLegendPaddingRight: 1.25rem !default;
+$fieldsetLegendPaddingBottom: 1.25rem !default;
+$fieldsetLegendPaddingLeft: 1.25rem !default;
+
+$fieldsetToggleableLegendHoverColor: #343a40 !default;
+$fieldsetToggleableLegendHoverBackground: #e9ecef !default;
+$fieldsetToggleableLegendHoverBorderWidth: inherit !default;
+$fieldsetToggleableLegendHoverBorderStyle: inherit !default;
+$fieldsetToggleableLegendHoverBorderColor: #343a40 !default;
+
+$fieldsetToggleableLegendFocusOutlineColor: $primaryLightColor !default;
+$fieldsetToggleableLegendFocusOutlineStyle: none !default;
+$fieldsetToggleableLegendFocusOutlineWidth: 0 !default;
+$fieldsetToggleableLegendFocusOutlineOffset: 0 !default;
+$fieldsetToggleableLegendFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
+
+$fieldsetContentPaddingTop: 1.25rem !default;
+$fieldsetContentPaddingRight: 1.25rem !default;
+$fieldsetContentPaddingBottom: 1.25rem !default;
+$fieldsetContentPaddingLeft: 1.25rem !default;
+
+// panel
+$panelHeaderFontSize: inherit !default;
+$panelHeaderFontWeight: 700 !default;
+$panelHeaderColor: #343a40 !default;
+$panelHeaderBackground: #f8f9fa !default;
+$panelHeaderBorderWidth: 1px !default;
+$panelHeaderBorderStyle: solid !default;
+$panelHeaderBorderColor: #dee2e6 !default;
+$panelHeaderPaddingTop: 1.25rem !default;
+$panelHeaderPaddingRight: 1.25rem !default;
+$panelHeaderPaddingBottom: 1.25rem !default;
+$panelHeaderPaddingLeft: 1.25rem !default;
+
+$panelHeaderHoverColor: #343a40 !default;
+$panelHeaderHoverBackground: #e9ecef !default;
+$panelHeaderIconHoverBorderWidth: inherit !default;
+$panelHeaderIconHoverBorderStyle: inherit !default;
+$panelHeaderIconHoverBorderColor: #dee2e6 !default;
+
+// @todo maybe, calc(#{$panelHeaderPaddingTop} - .5rem) !default;
+$panelToggleableHeaderPaddingTop: 0.75rem !default;
+$panelToggleableHeaderPaddingRight: 1.25rem !default;
+$panelToggleableHeaderPaddingBottom: 0.75rem !default;
+$panelToggleableHeaderPaddingLeft: 1.25rem !default;
+
+// @todo maybe, calc(#{$panelHeaderPaddingRight} + calc(#{$panelHeaderPaddingLeft} - .5rem)) !default;
+$panelHeaderIconWidth: 2rem !default;
+$panelHeaderIconHeight: 2rem !default;
+$panelHeaderIconColor: #6c757d !default;
+$panelHeaderIconBackground: transparent !default;
+$panelHeaderIconBorderWidth: 0 !default;
+$panelHeaderIconBorderStyle: none !default;
+$panelHeaderIconBorderColor: initial !default;
+$panelHeaderIconBorderRadius: 50% !default;
+
+$panelHeaderIconHoverColor: #343a40 !default;
+$panelHeaderIconHoverBackground: #e9ecef !default;
+$panelHeaderIconHoverBorderColor: transparent !default;
+
+$panelHeaderIconFocusOutlineColor: $primaryLightColor !default;
+$panelHeaderIconFocusOutlineStyle: none !default;
+$panelHeaderIconFocusOutlineWidth: 0 !default;
+$panelHeaderIconFocusOutlineOffset: 0 !default;
+$panelHeaderIconFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
+
+$panelContentColor: #495057 !default;
+$panelContentBackground: #ffffff !default;
+$panelContentBorderWidth: 1px !default;
+$panelContentBorderStyle: solid !default;
+$panelContentBorderColor: #dee2e6 !default;
+$panelContentPaddingTop: 1.25rem !default;
+$panelContentPaddingRight: 1.25rem !default;
+$panelContentPaddingBottom: 1.25rem !default;
+$panelContentPaddingLeft: 1.25rem !default;
+// @todo unused?
+$panelContentEvenRowBackground: scale-color(#ffffff, $lightness: -1%) !default;
+
+$panelFooterColor: #495057 !default;
+$panelFooterBackground: #ffffff !default;
+$panelFooterBorderWidth: 1px !default;
+$panelFooterBorderStyle: solid !default;
+$panelFooterBorderColor: #dee2e6 !default;
+$panelFooterPaddingTop: 0.75rem !default;
+$panelFooterPaddingRight: 1.25rem !default;
+$panelFooterPaddingBottom: 0.75rem !default;
+$panelFooterPaddingLeft: 1.25rem !default;
+
+//scrollpanel
+$scrollPanelThumbBackground: #f8f9fa !default;
+$scrollPanelThumbBorderWidth: 0 !default;
+$scrollPanelThumbBorderStyle: none !default;
+$scrollPanelThumbBorderColor: initial !default;
+
+$scrollPanelThumbFocusOutlineColor: $primaryLightColor !default;
+$scrollPanelThumbFocusOutlineStyle: none !default;
+$scrollPanelThumbFocusOutlineWidth: 0 !default;
+$scrollPanelThumbFocusOutlineOffset: 0 !default;
+$scrollPanelThumbFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
+
+//splitter
+$splitterColor: #495057 !default;
+$splitterBackground: #ffffff !default;
+$splitterBorderWidth: 1px !default;
+$splitterBorderStyle: solid !default;
+$splitterBorderColor: #dee2e6 !default;
+
+$splitterGutterBackground: #f8f9fa !default;
+$splitterGutterHandleBackground: #dee2e6 !default;
+
+$splitterGutterHandleFocusOutlineColor: $primaryLightColor !default;
+$splitterGutterHandleFocusOutlineStyle: none !default;
+$splitterGutterHandleFocusOutlineWidth: 0 !default;
+$splitterGutterHandleFocusOutlineOffset: 0 !default;
+$splitterGutterHandleFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
+
+//tabview
+$tabviewNavBackground: #ffffff !default;
+$tabviewNavBorderWidth: 0 0 2px 0 !default;
+$tabviewNavBorderStyle: solid !default;
+$tabviewNavBorderColor: #dee2e6 !default;
+
+$tabviewNavButtonColor: $primaryColor !default;
+$tabviewNavButtonBackground: #ffffff !default;
+$tabviewNavButtonBoxShadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
+$tabviewNavButtonWidth: 3rem !default;
+
+$tabviewNavButtonFocusOutlineColor: $primaryLightColor !default;
+$tabviewNavButtonFocusOutlineStyle: none !default;
+$tabviewNavButtonFocusOutlineWidth: 0 !default;
+$tabviewNavButtonFocusOutlineOffset: 0 !default;
+$tabviewNavButtonFocusBoxShadow: inset 0 0 0 0.2rem $primaryLightColor !default;
+
+//@todo maybe, tabviewHeaderGap?
+$tabviewHeaderSpacing: 0 !default;
+
+$tabviewHeaderColor: #6c757d !default;
+$tabviewHeaderBackground: #ffffff !default;
+$tabviewHeaderFontSize: inherit !default;
+$tabviewHeaderFontWeight: 700 !default;
+$tabviewHeaderBorderWidth: 0 0 2px 0 !default;
+$tabviewHeaderBorderStyle: solid !default;
+$tabviewHeaderBorderColor: transparent transparent #dee2e6 transparent !default;
+$tabviewHeaderPaddingTop: 1.25rem !default;
+$tabviewHeaderPaddingRight: 1.25rem !default;
+$tabviewHeaderPaddingBottom: 1.25rem !default;
+$tabviewHeaderPaddingLeft: 1.25rem !default;
+$tabviewHeaderMarginTop: 0 !default;
+$tabviewHeaderMarginRight: 0 !default;
+$tabviewHeaderMarginBottom: -2px !default;
+$tabviewHeaderMarginRight: 0 !default;
+
+$tabviewHeaderHoverColor: #6c757d !default;
+$tabviewHeaderHoverBackground: #ffffff !default;
+$tabviewHeaderHoverBorderWidth: inherit !default;
+$tabviewHeaderHoverBorderStyle: inherit !default;
+$tabviewHeaderHoverBorderColor: #adb5bd !default;
+
+$tabviewHeaderFocusOutlineColor: $primaryLightColor !default;
+$tabviewHeaderFocusOutlineStyle: none !default;
+$tabviewHeaderFocusOutlineWidth: 0 !default;
+$tabviewHeaderFocusOutlineOffset: 0 !default;
+$tabviewHeaderFocusBoxShadow: inset 0 0 0 0.2rem $primaryLightColor !default;
+
+$tabviewHeaderActiveColor: $primaryColor !default;
+$tabviewHeaderActiveBackground: #ffffff !default;
+$tabviewHeaderActiveBorderWidth: inherit !default;
+$tabviewHeaderActiveBorderStyle: inherit !default;
+$tabviewHeaderActiveBorderColor: $primaryColor !default;
+
+$tabviewContentTextColor: #495057 !default;
+$tabviewContentBackground: #ffffff !default;
+$tabviewContentPaddingTop: 1.25rem !default;
+$tabviewContentPaddingRight: 1.25rem !default;
+$tabviewContentPaddingBottom: 1.25rem !default;
+$tabviewContentPaddingLeft: 1.25rem !default;
+$tabviewContentBorderWidth: 0 !default;
+$tabviewContentBorderStyle: none !default;
+$tabviewContentBorderColor: initial !default;
+
+//toolbar
+$toolbarBackground: #f8f9fa !default;
+$toolbarBorderWidth: 1px !default;
+$toolbarBorderStyle: solid !default;
+$toolbarBorderColor: #dee2e6 !default;
+$toolbarPaddingTop: 1.25rem !default;
+$toolbarPaddingRight: 1.25rem !default;
+$toolbarPaddingBottom: 1.25rem !default;
+$toolbarPaddingLeft: 1.25rem !default;

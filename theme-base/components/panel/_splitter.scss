@@ -1,24 +1,32 @@
 .p-splitter {
-    border: $panelContentBorder;
-    background: $panelContentBg;
+    color: $splitterColor;
+    background: $splitterBackground;
+    border-width: $splitterBorderWidth;
+    border-style: $splitterBorderStyle;
+    border-color: $splitterBorderColor;
     border-radius: $borderRadius;
-    color: $panelContentTextColor;
 
     .p-splitter-gutter {
-        transition: $actionIconTransition;
-        background: $splitterGutterBg;
-        
+        background: $splitterGutterBackground;
+        transition-duration: $transitionDuration;
+        transition-property: $transitionProperty;
+
         .p-splitter-gutter-handle {
-            background: $splitterGutterHandleBg;
-            transition: $formElementTransition;
-            
+            background: $splitterGutterHandleBackground;
+            transition-duration: $transitionDuration;
+            transition-property: $transitionProperty;
+
             &:focus {
-                @include focused();
+                outline-color: $splitterGutterHandleFocusOutlineColor;
+                outline-style: $splitterGutterHandleFocusOutlineStyle;
+                outline-width: $splitterGutterHandleFocusOutlineWidth;
+                outline-offset: $splitterGutterHandleFocusOutlineOffset;
+                box-shadow: $splitterGutterHandleFocusBoxShadow;
             }
         }
     }
 
     .p-splitter-gutter-resizing {
-        background: $splitterGutterHandleBg;
+        background: $splitterGutterHandleBackground;
     }
 }

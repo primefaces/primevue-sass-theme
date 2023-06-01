@@ -1,17 +1,25 @@
 .p-confirm-popup {
-    background: $overlayContentBg;
-    color: $panelContentTextColor;
-    border: $overlayContentBorder;
+    color: $confirmPopupColor;
+    background: $confirmPopupBackground;
+    border-width: $confirmPopupBorderWidth;
+    border-style: $confirmPopupBorderStyle;
+    border-color: $confirmPopupBorderColor;
     border-radius: $borderRadius;
-    box-shadow: $overlayContainerShadow;
+    box-shadow: $confirmPopupBoxShadow;
 
     .p-confirm-popup-content {
-        padding: $confirmPopupContentPadding;
+        padding-top: $confirmPopupContentPaddingTop;
+        padding-right: $confirmPopupContentPaddingRight;
+        padding-bottom: $confirmPopupContentPaddingBottom;
+        padding-left: $confirmPopupContentPaddingLeft;
     }
 
     .p-confirm-popup-footer {
+        padding-top: $confirmPopupFooterPaddingTop;
+        padding-right: $confirmPopupFooterPaddingRight;
+        padding-bottom: $confirmPopupFooterPaddingBottom;
+        padding-left: $confirmPopupFooterPaddingLeft;
         text-align: right;
-        padding: $confirmPopupFooterPadding;
 
         button {
             margin: 0 $inlineSpacing 0 0;
@@ -24,45 +32,36 @@
     }
 
     &:after {
-        border: solid transparent;
-        border-color: rgba($overlayContentBg, 0);
-        border-bottom-color: $overlayContentBg;
+        border-width: $confirmPopupTipBorderWidth;
+        border-style: $confirmPopupTipBorderStyle;
+        border-color: transparent;
+        border-bottom-color: $confirmPopupBackground;
     }
 
     &:before {
-        border: solid transparent;
-
-        @if (nth($overlayContentBorder, 2) == 'none') {
-            border-color: rgba($overlayContentBg, 0);
-            border-bottom-color: $overlayContentBg;
-        }
-        @else {
-            border-color: rgba(nth($overlayContentBorder, 3), 0);
-            border-bottom-color: nth($overlayContentBorder, 3);
-        }
+        border-width: $confirmPopupTipBorderWidth;
+        border-style: $confirmPopupTipBorderStyle;
+        border-color: transparent;
+        border-bottom-color: $confirmPopupTipBorderColor;
     }
 
     &.p-confirm-popup-flipped {
         &:after {
-            border-top-color: $overlayContentBg;
+            border-top-color: $confirmPopupBackground;
         }
 
         &:before {
-            @if (nth($overlayContentBorder, 2) == 'none') {
-                border-top-color: $overlayContentBg;
-            }
-            @else {
-                border-top-color: nth($overlayContentBorder, 3);
-            }
+            border-top-color: $confirmPopupTipBorderColor;
         }
     }
 
     .p-confirm-popup-icon {
-        font-size: $primeIconFontSize * 1.5;
+        // @todo font-size: $primeIconFontSize * 1.5;
+        font-size: $fontSize * 1.5;
 
         &.p-icon {
-            width: $primeIconFontSize * 1.5;
-            height: $primeIconFontSize * 1.5;
+            width: $fontSize * 1.5;
+            height: $fontSize * 1.5;
         }
     }
 

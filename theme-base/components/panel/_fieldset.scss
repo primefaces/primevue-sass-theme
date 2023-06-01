@@ -1,51 +1,72 @@
 .p-fieldset {
-    border: $panelContentBorder;
-    background: $panelContentBg;
-    color: $panelContentTextColor;
+    color: $fieldsetColor;
+    background: $fieldsetBackground;
+    border-width: $fieldsetBorderWidth;
+    border-style: $fieldsetBorderStyle;
+    border-color: $fieldsetBorderColor;
     border-radius: $borderRadius;
 
     .p-fieldset-legend {
-        padding: $panelHeaderPadding;
-        border: $panelHeaderBorder;
-        color: $panelHeaderTextColor;
-        background: $panelHeaderBg;
-        font-weight: $panelHeaderFontWeight;
+        font-size: $fieldsetLegendFontSize;
+        font-weight: $fieldsetLegendFontWeight;
+        color: $fieldsetLegendColor;
+        background: $fieldsetLegendBackground;
+        padding-top: $fieldsetLegendPaddingTop;
+        padding-right: $fieldsetLegendPaddingRight;
+        padding-bottom: $fieldsetLegendPaddingBottom;
+        padding-left: $fieldsetLegendPaddingLeft;
+        border-width: $fieldsetLegendBorderWidth;
+        border-style: $fieldsetLegendBorderStyle;
+        border-color: $fieldsetLegendBorderColor;
         border-radius: $borderRadius;
     }
 
     &.p-fieldset-toggleable {
         .p-fieldset-legend {
             padding: 0;
-            transition: $actionIconTransition;
+            transition-duration: $transitionDuration;
+            transition-property: $transitionProperty;
 
             a {
-                padding: $panelHeaderPadding;
-                color: $panelHeaderTextColor;
-                border-radius: $borderRadius;
-                transition: $listItemTransition;
+                color: $fieldsetLegendColor;
+                padding-top: $fieldsetLegendPaddingTop;
+                padding-right: $fieldsetLegendPaddingRight;
+                padding-bottom: $fieldsetLegendPaddingBottom;
+                padding-left: $fieldsetLegendPaddingLeft;
+                transition-duration: $transitionDuration;
+                transition-property: $transitionProperty;
 
                 .p-fieldset-toggler {
                     margin-right: $inlineSpacing;
                 }
 
                 &:focus {
-                    @include focused();
+                    outline-color: $fieldsetToggleableLegendFocusOutlineColor;
+                    outline-style: $fieldsetToggleableLegendFocusOutlineStyle;
+                    outline-width: $fieldsetToggleableLegendFocusOutlineWidth;
+                    outline-offset: $fieldsetToggleableLegendFocusOutlineOffset;
+                    box-shadow: $fieldsetToggleableLegendFocusBoxShadow;
                 }
 
                 &:hover {
-                    color: $panelHeaderTextHoverColor;
+                    color: $fieldsetToggleableLegendHoverColor;
                 }
             }
 
             &:hover {
-                background: $panelHeaderHoverBg;
-                border-color: $panelHeaderHoverBorderColor;
-                color: $panelHeaderTextHoverColor;
+                color: $fieldsetToggleableLegendHoverColor;
+                background: $fieldsetToggleableLegendHoverBackground;
+                border-width: $fieldsetToggleableLegendHoverBorderWidth;
+                border-style: $fieldsetToggleableLegendHoverBorderStyle;
+                border-color: $fieldsetToggleableLegendHoverBorderColor;
             }
         }
     }
 
     .p-fieldset-content {
-        padding: $panelContentPadding;
+        padding-top: $fieldsetContentPaddingTop;
+        padding-right: $fieldsetContentPaddingRight;
+        padding-bottom: $fieldsetContentPaddingBottom;
+        padding-left: $fieldsetContentPaddingLeft;
     }
 }

@@ -1,11 +1,17 @@
 .p-divider {
     .p-divider-content {
-        background-color: $panelContentBg;
+        background: $dividerContentBackground;
     }
 
     &.p-divider-horizontal {
-        margin: $dividerHorizontalMargin;
-        padding: $dividerHorizontalPadding;
+        padding-top: $dividerHorizontalPaddingTop;
+        padding-right: $dividerHorizontalPaddingRight;
+        padding-bottom: $dividerHorizontalPaddingBottom;
+        padding-left: $dividerHorizontalPaddingLeft;
+        margin-top: $dividerHorizontalMarginTop;
+        margin-right: $dividerHorizontalMarginRight;
+        margin-bottom: $dividerHorizontalMarginBottom;
+        margin-left: $dividerHorizontalMarginLeft;
 
         &:before {
             border-top: $dividerSize $dividerColor;
@@ -17,8 +23,14 @@
     }
 
     &.p-divider-vertical {
-        margin: $dividerVerticalMargin;
-        padding: $dividerVerticalPadding;
+        padding-top: $dividerVerticalPaddingTop;
+        padding-right: $dividerVerticalPaddingRight;
+        padding-bottom: $dividerVerticalPaddingBottom;
+        padding-left: $dividerVerticalPaddingLeft;
+        margin-top: $dividerVerticalMarginTop;
+        margin-right: $dividerVerticalMarginRight;
+        margin-bottom: $dividerVerticalMarginBottom;
+        margin-left: $dividerVerticalMarginLeft;
 
         &:before {
             border-left: $dividerSize $dividerColor;

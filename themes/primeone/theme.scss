@@ -1,0 +1,12 @@
+$primaryColor: #3b82f6 !default;
+$primaryLightColor: #bfdbfe !default;
+$primaryDarkColor: #2563eb !default;
+$primaryDarkerColor: #1d4ed8 !default;
+$primaryTextColor: #ffffff !default;
+
+$textColor: #495057 !default;
+$textSecondaryColor: #6c757d !default;
+
+@import "./_variables";
+@import "../../theme-base/_components";
+@import "./_extensions";

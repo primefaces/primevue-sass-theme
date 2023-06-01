@@ -1,11 +1,18 @@
 .p-scrollpanel {
     .p-scrollpanel-bar {
-        background: $scrollPanelTrackBg;
-        border: $scrollPanelTrackBorder;
-        transition: $formElementTransition;
+        background: $scrollPanelThumbBackground;
+        border-width: $scrollPanelThumbBorderWidth;
+        border-style: $scrollPanelThumbBorderStyle;
+        border-color: $scrollPanelThumbBorderColor;
+        transition-duration: $transitionDuration;
+        transition-property: $transitionProperty;
 
         &:focus {
-            @include focused();
+            outline-color: $scrollPanelThumbFocusOutlineColor;
+            outline-style: $scrollPanelThumbFocusOutlineStyle;
+            outline-width: $scrollPanelThumbFocusOutlineWidth;
+            outline-offset: $scrollPanelThumbFocusOutlineOffset;
+            box-shadow: $scrollPanelThumbFocusBoxShadow;
         }
     }
 }

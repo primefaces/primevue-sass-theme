@@ -17,34 +17,70 @@
         }
 
         .p-dialog-header-icon {
-            @include action-icon();
+            width: $dialogHeaderIconWidth;
+            height: $dialogHeaderIconHeight;
+            color: $dialogHeaderIconColor;
+            background: $dialogHeaderIconBackground;
+            border-width: $dialogHeaderIconBorderWidth;
+            border-style: $dialogHeaderIconBorderStyle;
+            border-color: $dialogHeaderIconBorderColor;
+            border-radius: $dialogHeaderIconBorderRadius;
+            transition-duration: $transitionDuration;
+            transition-property: $transitionProperty;
             margin-right: $inlineSpacing;
-            
+
+            &:enabled:hover {
+                color: $dialogHeaderIconHoverColor;
+                background: $dialogHeaderIconHoverBackground;
+                border-width: $dialogHeaderIconHoverBorderWidth;
+                border-style: $dialogHeaderIconHoverBorderStyle;
+                border-color: $dialogHeaderIconHoverBorderColor;
+            }
+
+            &:focus {
+                outline-color: $dialogHeaderIconFocusOutlineColor;
+                outline-style: $dialogHeaderIconFocusOutlineStyle;
+                outline-width: $dialogHeaderIconFocusOutlineWidth;
+                outline-offset: $dialogHeaderIconFocusOutlineOffset;
+                box-shadow: $dialogHeaderIconFocusBoxShadow;
+            }
+
             &:last-child {
                 margin-right: 0;
-            }            
+            }
         }
     }
 
     .p-dialog-content {
-        background: $overlayContentBg;
-        color: $panelContentTextColor;
-        padding: $dialogContentPadding;
+        color: $dialogContentColor;
+        background: $dialogContentBackground;
+        padding-top: $dialogContentPaddingTop;
+        padding-right: $dialogContentPaddingRight;
+        padding-bottom: $dialogContentPaddingBottom;
+        padding-left: $dialogContentPaddingLeft;
+        border-width: $dialogContentBorderWidth;
+        border-style: $dialogContentBorderStyle;
+        border-color: $dialogContentBorderColor;
 
-        &:last-of-type {
+        &:last-child {
             border-bottom-right-radius: $borderRadius;
             border-bottom-left-radius: $borderRadius;
         }
     }
 
     .p-dialog-footer {
-        border-top:  $dialogFooterBorder;
-        background: $overlayContentBg;
-        color: $panelFooterTextColor;
-        padding: $dialogFooterPadding;
-        text-align: right;
+        color: $dialogFooterColor;
+        background: $dialogFooterBackground;
+        padding-top: $dialogFooterPaddingTop;
+        padding-right: $dialogFooterPaddingRight;
+        padding-bottom: $dialogFooterPaddingBottom;
+        padding-left: $dialogFooterPaddingLeft;
+        border-width: $dialogFooterBorderWidth;
+        border-style: $dialogFooterBorderStyle;
+        border-color: $dialogFooterBorderColor;
         border-bottom-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
+        text-align: right;
 
         button {
             margin: 0 $inlineSpacing 0 0;
@@ -54,7 +90,8 @@
 
     &.p-confirm-dialog {
         .p-confirm-dialog-icon {
-            font-size: $primeIconFontSize * 2;
+            // @todo $primeIconFontSize
+            font-size: $fontSize * 2;
         }
 
         .p-confirm-dialog-message:not(:first-child) {
