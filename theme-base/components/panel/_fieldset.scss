@@ -1,72 +1,72 @@
 .p-fieldset {
-    color: $fieldsetColor;
-    background: $fieldsetBackground;
-    border-width: $fieldsetBorderWidth;
-    border-style: $fieldsetBorderStyle;
-    border-color: $fieldsetBorderColor;
-    border-radius: $borderRadius;
+    color: var(--p-fieldset-color);
+    background: var(--p-fieldset-background);
+    border-width: var(--p-fieldset-border-width);
+    border-style: var(--p-fieldset-border-style);
+    border-color: var(--p-fieldset-border-color);
+    border-radius: var(--p-border-radius);
 
     .p-fieldset-legend {
-        font-size: $fieldsetLegendFontSize;
-        font-weight: $fieldsetLegendFontWeight;
-        color: $fieldsetLegendColor;
-        background: $fieldsetLegendBackground;
-        padding-top: $fieldsetLegendPaddingTop;
-        padding-right: $fieldsetLegendPaddingRight;
-        padding-bottom: $fieldsetLegendPaddingBottom;
-        padding-left: $fieldsetLegendPaddingLeft;
-        border-width: $fieldsetLegendBorderWidth;
-        border-style: $fieldsetLegendBorderStyle;
-        border-color: $fieldsetLegendBorderColor;
-        border-radius: $borderRadius;
+        font-size: var(--p-fieldset-legend-font-size);
+        font-weight: var(--p-fieldset-legend-font-weight);
+        color: var(--p-fieldset-legend-color);
+        background: var(--p-fieldset-legend-background);
+        padding-top: var(--p-fieldset-legend-padding-top);
+        padding-right: var(--p-fieldset-legend-padding-right);
+        padding-bottom: var(--p-fieldset-legend-padding-bottom);
+        padding-left: var(--p-fieldset-legend-padding-left);
+        border-width: var(--p-fieldset-legend-border-width);
+        border-style: var(--p-fieldset-legend-border-style);
+        border-color: var(--p-fieldset-legend-border-color);
+        border-radius: var(--p-border-radius);
     }
 
     &.p-fieldset-toggleable {
         .p-fieldset-legend {
             padding: 0;
-            transition-duration: $transitionDuration;
-            transition-property: $transitionProperty;
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             a {
-                color: $fieldsetLegendColor;
-                padding-top: $fieldsetLegendPaddingTop;
-                padding-right: $fieldsetLegendPaddingRight;
-                padding-bottom: $fieldsetLegendPaddingBottom;
-                padding-left: $fieldsetLegendPaddingLeft;
-                transition-duration: $transitionDuration;
-                transition-property: $transitionProperty;
+                color: var(--p-fieldset-legend-color);
+                padding-top: var(--p-fieldset-legend-padding-top);
+                padding-right: var(--p-fieldset-legend-padding-right);
+                padding-bottom: var(--p-fieldset-legend-padding-bottom);
+                padding-left: var(--p-fieldset-legend-padding-left);
+                transition-duration: var(--p-transition-duration);
+                transition-property: var(--p-transition-property);
 
                 .p-fieldset-toggler {
-                    margin-right: $inlineSpacing;
+                    margin-right: var(--p-inline-spacing);
                 }
 
                 &:focus {
-                    outline-color: $fieldsetToggleableLegendFocusOutlineColor;
-                    outline-style: $fieldsetToggleableLegendFocusOutlineStyle;
-                    outline-width: $fieldsetToggleableLegendFocusOutlineWidth;
-                    outline-offset: $fieldsetToggleableLegendFocusOutlineOffset;
-                    box-shadow: $fieldsetToggleableLegendFocusBoxShadow;
+                    outline-color: var(--p-fieldset-toggleable-legend-focus-outline-color);
+                    outline-style: var(--p-fieldset-toggleable-legend-focus-outline-style);
+                    outline-width: var(--p-fieldset-toggleable-legend-focus-outline-width);
+                    outline-offset: var(--p-fieldset-toggleable-legend-focus-outline-offset);
+                    box-shadow: var(--p-fieldset-toggleable-legend-focus-box-shadow);
                 }
 
                 &:hover {
-                    color: $fieldsetToggleableLegendHoverColor;
+                    color: var(--p-fieldset-toggleable-legend-hover-color);
                 }
             }
 
             &:hover {
-                color: $fieldsetToggleableLegendHoverColor;
-                background: $fieldsetToggleableLegendHoverBackground;
-                border-width: $fieldsetToggleableLegendHoverBorderWidth;
-                border-style: $fieldsetToggleableLegendHoverBorderStyle;
-                border-color: $fieldsetToggleableLegendHoverBorderColor;
+                color: var(--p-fieldset-toggleable-legend-hover-color);
+                background: var(--p-fieldset-toggleable-legend-hover-background);
+                border-width: var(--p-fieldset-toggleable-legend-hover-border-width);
+                border-style: var(--p-fieldset-toggleable-legend-hover-border-style);
+                border-color: var(--p-fieldset-toggleable-legend-hover-border-color);
             }
         }
     }
 
     .p-fieldset-content {
-        padding-top: $fieldsetContentPaddingTop;
-        padding-right: $fieldsetContentPaddingRight;
-        padding-bottom: $fieldsetContentPaddingBottom;
-        padding-left: $fieldsetContentPaddingLeft;
+        padding-top: var(--p-fieldset-content-padding-top);
+        padding-right: var(--p-fieldset-content-padding-right);
+        padding-bottom: var(--p-fieldset-content-padding-bottom);
+        padding-left: var(--p-fieldset-content-padding-left);
     }
 }

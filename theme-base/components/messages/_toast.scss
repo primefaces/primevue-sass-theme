@@ -1,100 +1,126 @@
 .p-toast {
-    opacity: $toastOpacity;
+    opacity: var(--p-toast-opacity);
 
     .p-toast-message {
-        margin: $toastMargin;
-        box-shadow: $toastShadow;
-        border-radius: $borderRadius;
+        margin-top: var(--p-toast-message-margin-top);
+        margin-right: var(--p-toast-message-margin-right);
+        margin-bottom: var(--p-toast-message-margin-bottom);
+        margin-left: var(--p-toast-message-margin-left);
+        box-shadow: var(--p-toast-message-box-shadow);
+        border-radius: var(--p-border-radius);
 
         .p-toast-message-content {
-            padding: $toastPadding;
-            border-width: $toastBorderWidth;
+            padding-top: var(--p-toast-message-content-padding-top);
+            padding-right: var(--p-toast-message-content-padding-right);
+            padding-bottom: var(--p-toast-message-content-padding-bottom);
+            padding-left: var(--p-toast-message-content-padding-left);
+            border-width: var(--p-toast-message-content-border-width);
+            border-style: var(--p-toast-message-content-border-style);
+            border-color: var(--p-toast-message-content-border-color);
 
             .p-toast-message-text {
-                margin: $toastMessageTextMargin;
+                margin-top: var(--p-toast-message-text-margin-top);
+                margin-right: var(--p-toast-message-text-margin-right);
+                margin-bottom: var(--p-toast-message-text-margin-bottom);
+                margin-left: var(--p-toast-message-text-margin-left);
             }
 
             .p-toast-message-icon {
-                font-size: $toastIconFontSize;
-                
+                font-size: calc(var(--p-font-size) * 2rem);
+
                 &.p-icon {
-                    width: $toastIconFontSize;
-                    height: $toastIconFontSize;
+                    width: calc(var(--p-font-size) * 2rem);
+                    height: calc(var(--p-font-size) * 2rem);
                 }
             }
 
             .p-toast-summary {
-                font-weight: $toastTitleFontWeight;
+                font-size: var(--p-toast-message-summary-font-size);
+                font-weight: var(--p-toast-message-summary-font-weight);
             }
 
             .p-toast-detail {
-                margin: $toastDetailMargin;
+                margin-top: var(--p-toast-message-detail-margin-top);
+                margin-right: var(--p-toast-message-detail-margin-right);
+                margin-bottom: var(--p-toast-message-detail-margin-bottom);
+                margin-left: var(--p-toast-message-detail-margin-left);
             }
         }
 
         .p-toast-icon-close {
-            width: $toastIconFontSize;
-            height: $toastIconFontSize;
-            border-radius: $actionIconBorderRadius;
-            background: transparent;
-            transition: $actionIconTransition;
+            width: var(--p-toast-message-close-icon-width);
+            height: var(--p-toast-message-close-icon-height);
+            background: var(--p-toast-message-close-icon-background);
+            border-width: var(--p-toast-message-close-icon-border-width);
+            border-style: var(--p-toast-message-close-icon-border-style);
+            border-color: var(--p-toast-message-close-icon-border-color);
+            border-radius: var(--p-toast-message-close-icon-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             &:hover {
-                background: rgba(255,255,255,.3);
+                background: var(--p-toast-message-close-icon-hover-background);
             }
 
             &:focus {
-                @include focused();
+                outline-color: var(--p-toast-message-close-icon-focus-outline-color);
+                outline-style: var(--p-toast-message-close-icon-focus-outline-style);
+                outline-width: var(--p-toast-message-close-icon-focus-outline-width);
+                outline-offset: var(--p-toast-message-close-icon-focus-outline-offset);
+                box-shadow: var(--p-toast-message-close-icon-focus-box-shadow);
             }
         }
 
         &.p-toast-message-info {
-            background: $infoMessageBg;
-            border: $infoMessageBorder;
-            border-width: $messageBorderWidth;
-            color: $infoMessageTextColor;
+            color: var(--p-toast-message-info-color);
+            background: var(--p-toast-message-info-background);
+            border-width: var(--p-toast-message-info-border-width);
+            border-style: var(--p-toast-message-info-border-style);
+            border-color: var(--p-toast-message-info-border-color);
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: $infoMessageIconColor;
+                color: var(--p-toast-message-info-icon-color);
             }
         }
 
         &.p-toast-message-success {
-            background: $successMessageBg;
-            border: $successMessageBorder;
-            border-width: $messageBorderWidth;
-            color: $successMessageTextColor;
+            color: var(--p-toast-message-success-color);
+            background: var(--p-toast-message-success-background);
+            border-width: var(--p-toast-message-success-border-width);
+            border-style: var(--p-toast-message-success-border-style);
+            border-color: var(--p-toast-message-success-border-color);
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: $successMessageIconColor;
+                color: var(--p-toast-message-success-icon-color);
             }
         }
 
         &.p-toast-message-warn {
-            background: $warningMessageBg;
-            border: $warningMessageBorder;
-            border-width: $messageBorderWidth;
-            color: $warningMessageTextColor;
+            color: var(--p-toast-message-warn-color);
+            background: var(--p-toast-message-warn-background);
+            border-width: var(--p-toast-message-warn-border-width);
+            border-style: var(--p-toast-message-warn-border-style);
+            border-color: var(--p-toast-message-warn-border-color);
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: $warningMessageIconColor;
+                color: var(--p-toast-message-warn-icon-color);
             }
         }
 
         &.p-toast-message-error {
-            background: $errorMessageBg;
-            border: $errorMessageBorder;
-            border-width: $messageBorderWidth;
-            color: $errorMessageTextColor;
+            color: var(--p-toast-message-error-color);
+            background: var(--p-toast-message-error-background);
+            border-width: var(--p-toast-message-error-border-width);
+            border-style: var(--p-toast-message-error-border-style);
+            border-color: var(--p-toast-message-error-border-color);
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: $errorMessageIconColor;
+                color: var(--p-toast-message-error-icon-color);
             }
         }
-
     }
 }

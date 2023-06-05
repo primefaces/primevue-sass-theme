@@ -1,91 +1,91 @@
 .p-panel {
     .p-panel-header {
-        color: $panelHeaderColor;
-        background: $panelHeaderBackground;
-        padding-top: $panelHeaderPaddingTop;
-        padding-right: $panelHeaderPaddingRight;
-        padding-bottom: $panelHeaderPaddingBottom;
-        padding-left: $panelHeaderPaddingLeft;
-        border-width: $panelHeaderBorderWidth;
-        border-style: $panelHeaderBorderStyle;
-        border-color: $panelHeaderBorderColor;
-        border-top-right-radius: $panelBorderRadius;
-        border-top-left-radius: $panelBorderRadius;
+        color: var(--p-panel-header-color);
+        background: var(--p-panel-header-background);
+        padding-top: var(--p-panel-Header-Padding-Top);
+        padding-right: var(--p-panel-header-padding-right);
+        padding-bottom: var(--p-panel-header-padding-bottom);
+        padding-left: var(--p-panel-header-padding-left);
+        border-width: var(--p-panel-header-border-width);
+        border-style: var(--p-panel-header-border-style);
+        border-color: var(--p-panel-header-border-color);
+        border-top-right-radius: var(--p-border-radius);
+        border-top-left-radius: var(--p-border-radius);
 
         .p-panel-title {
-            font-size: $panelHeaderFontSize;
-            font-weight: $panelHeaderFontWeight;
+            font-size: var(--p-panel-header-font-size);
+            font-weight: var(--p-panel-header-font-weight);
         }
 
         .p-panel-header-icon {
-            width: $panelHeaderIconWidth;
-            height: $panelHeaderIconHeight;
-            color: $panelHeaderIconColor;
-            background: $panelHeaderIconBackground;
-            border-width: $panelHeaderIconBorderWidth;
-            border-style: $panelHeaderIconBorderStyle;
-            border-color: $panelHeaderIconBorderColor;
-            border-radius: $panelHeaderIconBorderRadius;
-            transition-duration: $transitionDuration;
-            transition-property: $transitionProperty;
+            width: var(--p-panel-header-icon-width);
+            height: var(--p-panel-header-icon-height);
+            color: var(--p-panel-header-icon-color);
+            background: var(--p-panel-header-icon-background);
+            border-width: var(--p-panel-header-icon-border-width);
+            border-style: var(--p-panel-header-icon-border-style);
+            border-color: var(--p-panel-header-icon-border-color);
+            border-radius: var(--p-panel-header-icon-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             &:enabled:hover {
-                color: $panelHeaderIconHoverColor;
-                background: $panelHeaderIconHoverBackground;
-                border-width: $panelHeaderIconHoverBorderWidth;
-                border-style: $panelHeaderIconHoverBorderStyle;
-                border-color: $panelHeaderIconHoverBorderColor;
+                color: var(--p-panel-header-icon-hover-color);
+                background: var(--p-panel-header-icon-hover-background);
+                border-width: var(--p-panel-header-icon-hover-border-width);
+                border-style: var(--p-panel-header-icon-hover-border-style);
+                border-color: var(--p-panel-header-icon-hover-border-color);
             }
 
             &:focus {
-                outline-color: $panelHeaderIconFocusOutlineColor;
-                outline-style: $panelHeaderIconFocusOutlineStyle;
-                outline-width: $panelHeaderIconFocusOutlineWidth;
-                outline-offset: $panelHeaderIconFocusOutlineOffset;
-                box-shadow: $panelHeaderIconFocusBoxShadow;
+                outline-color: var(--p-panel-header-icon-focus-outline-color);
+                outline-style: var(--p-panel-header-icon-focus-outline-style);
+                outline-width: var(--p-panel-header-icon-focus-outline-width);
+                outline-offset: var(--p-panel-header-icon-focus-outline-offset);
+                box-shadow: var(--p-panel-header-icon-focus-box-shadow);
             }
         }
     }
 
     &.p-panel-toggleable {
         .p-panel-header {
-            padding-top: $panelToggleableHeaderPaddingTop;
-            padding-right: $panelToggleableHeaderPaddingRight;
-            padding-bottom: $panelToggleableHeaderPaddingBottom;
-            padding-left: $panelToggleableHeaderPaddingLeft;
+            padding-top: var(--p-panel-toggleable-header-padding-top);
+            padding-right: var(--p-panel-toggleable-header-padding-right);
+            padding-bottom: var(--p-panel-toggleable-header-padding-bottom);
+            padding-left: var(--p-panel-toggleable-header-padding-left);
         }
     }
 
     .p-panel-content {
-        color: $panelContentColor;
-        background: $panelContentBackground;
-        padding-top: $panelContentPaddingTop;
-        padding-right: $panelContentPaddingRight;
-        padding-bottom: $panelContentPaddingBottom;
-        padding-left: $panelContentPaddingLeft;
-        border-width: $panelContentBorderWidth;
-        border-style: $panelContentBorderStyle;
-        border-color: $panelContentBorderColor;
+        color: var(--p-panel-content-color);
+        background: var(--p-panel-content-background);
+        padding-top: var(--p-panel-content-padding-top);
+        padding-right: var(--p-panel-content-padding-right);
+        padding-bottom: var(--p-panel-content-padding-bottom);
+        padding-left: var(--p-panel-content-padding-left);
+        border-width: var(--p-panel-content-border-width);
+        border-style: var(--p-panel-content-border-style);
+        border-color: var(--p-panel-content-border-color);
         border-top: 0 none;
 
         &:last-child {
-            border-bottom-right-radius: $borderRadius;
-            border-bottom-left-radius: $borderRadius;
+            border-bottom-right-radius: var(--p-border-radius);
+            border-bottom-left-radius: var(--p-border-radius);
         }
     }
 
     .p-panel-footer {
-        color: $panelFooterColor;
-        background: $panelFooterBackground;
-        padding-top: $panelFooterPaddingTop;
-        padding-right: $panelFooterPaddingRight;
-        padding-bottom: $panelFooterPaddingBottom;
-        padding-left: $panelFooterPaddingLeft;
-        border-width: $panelFooterBorderWidth;
-        border-style: $panelFooterBorderStyle;
-        border-color: $panelFooterBorderColor;
-        border-bottom-right-radius: $borderRadius;
-        border-bottom-left-radius: $borderRadius;
+        color: var(--p-panel-footer-color);
+        background: var(--p-panel-footer-background);
+        padding-top: var(--p-panel-footer-padding-top);
+        padding-right: var(--p-panel-footer-padding-right);
+        padding-bottom: var(--p-panel-footer-padding-bottom);
+        padding-left: var(--p-panel-footer-padding-left);
+        border-width: var(--p-panel-footer-border-width);
+        border-style: var(--p-panel-footer-border-style);
+        border-color: var(--p-panel-footer-border-color);
+        border-bottom-right-radius: var(--p-border-radius);
+        border-bottom-left-radius: var(--p-border-radius);
         border-top: 0 none;
     }
 }

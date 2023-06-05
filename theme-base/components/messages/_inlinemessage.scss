@@ -1,59 +1,69 @@
 .p-inline-message {
-    padding: $inlineMessagePadding;
-    margin: $inlineMessageMargin;
-    border-radius: $borderRadius;
+    padding-top: var(--p-inline-message-padding-top);
+    padding-right: var(--p-inline-message-padding-right);
+    padding-bottom: var(--p-inline-message-padding-bottom);
+    padding-left: var(--p-inline-message-padding-left);
+    margin-top: var(--p-inline-message-margin-top);
+    margin-right: var(--p-inline-message-margin-right);
+    margin-bottom: var(--p-inline-message-margin-bottom);
+    margin-left: var(--p-inline-message-margin-left);
+    border-radius: var(--p-border-radius);
 
     &.p-inline-message-info {
-        background: $infoMessageBg;
-        border: $infoMessageBorder;
-        border-width: $inlineMessageBorderWidth;
-        color: $infoMessageTextColor;
+        color: var(--p-inline-message-info-color);
+        background: var(--p-inline-message-info-background);
+        border-width: var(--p-inline-message-info-border-width);
+        border-style: var(--p-inline-message-info-border-style);
+        border-color: var(--p-inline-message-info-border-color);
 
         .p-inline-message-icon {
-            color: $infoMessageIconColor;
+            color: var(--p-inline-message-info-icon-color);
         }
     }
 
     &.p-inline-message-success {
-        background: $successMessageBg;
-        border: $successMessageBorder;
-        border-width: $inlineMessageBorderWidth;
-        color: $successMessageTextColor;
+        color: var(--p-inline-message-success-color);
+        background: var(--p-inline-message-success-background);
+        border-width: var(--p-inline-message-success-border-width);
+        border-style: var(--p-inline-message-success-border-style);
+        border-color: var(--p-inline-message-success-border-color);
 
         .p-inline-message-icon {
-            color: $successMessageIconColor;
+            color: var(--p-inline-message-success-icon-color);
         }
     }
 
     &.p-inline-message-warn {
-        background: $warningMessageBg;
-        border: $warningMessageBorder;
-        border-width: $inlineMessageBorderWidth;
-        color: $warningMessageTextColor;
+        color: var(--p-inline-message-warn-color);
+        background: var(--p-inline-message-warn-background);
+        border-width: var(--p-inline-message-warn-border-width);
+        border-style: var(--p-inline-message-warn-border-style);
+        border-color: var(--p-inline-message-warn-border-color);
 
         .p-inline-message-icon {
-            color: $warningMessageIconColor;
+            color: var(--p-inline-message-warn-icon-color);
         }
     }
 
     &.p-inline-message-error {
-        background: $errorMessageBg;
-        border: $errorMessageBorder;
-        border-width: $inlineMessageBorderWidth;
-        color: $errorMessageTextColor;
+        color: var(--p-inline-message-error-color);
+        background: var(--p-inline-message-error-background);
+        border-width: var(--p-inline-message-error-border-width);
+        border-style: var(--p-inline-message-error-border-style);
+        border-color: var(--p-inline-message-error-border-color);
 
         .p-inline-message-icon {
-            color: $errorMessageIconColor;
+            color: var(--p-inline-message-error-icon-color);
         }
     }
 
     .p-inline-message-icon {
-        font-size: $inlineMessageIconFontSize;
-        margin-right: $inlineSpacing;
+        font-size: var(--p-font-size);
+        margin-right: var(--p-inline-spacing);
     }
 
     .p-inline-message-text {
-        font-size: $inlineMessageTextFontSize;
+        font-size: var(--p-font-size);
     }
 
     &.p-inline-message-icon-only {

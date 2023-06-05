@@ -1,92 +1,93 @@
 .p-accordion {
     .p-accordion-header {
         .p-accordion-header-link {
-            font-size: $accordionHeaderFontSize;
-            font-weight: $accordionHeaderFontWeight;
-            color: $accordionHeaderColor;
-            background: $accordionHeaderBackground;
-            padding-top: $accordionHeaderPaddingTop;
-            padding-right: $accordionHeaderPaddingRight;
-            padding-bottom: $accordionHeaderPaddingBottom;
-            padding-left: $accordionHeaderPaddingLeft;
-            border-width: $accordionHeaderBorderWidth;
-            border-style: $accordionHeaderBorderStyle;
-            border-color: $accordionHeaderBorderColor;
-            border-radius: $borderRadius;
-            transition-duration: $transitionDuration;
-            transition-property: $transitionProperty;
+            font-size: var(--p-accordion-header-font-size);
+            font-weight: var(--p-accordion-header-font-weight);
+            color: var(--p-accordion-header-color);
+            background: var(--p-accordion-header-background);
+            padding-top: var(--p-accordion-header-padding-top);
+            padding-right: var(--p-accordion-header-padding-right);
+            padding-bottom: var(--p-accordion-header-padding-bottom);
+            padding-left: var(--p-accordion-header-padding-left);
+            border-width: var(--p-accordion-header-border-width);
+            border-style: var(--p-accordion-header-border-style);
+            border-color: var(--p-accordion-header-border-color);
+            border-radius: var(--p-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             .p-accordion-toggle-icon {
-                margin-right: $inlineSpacing;
+                margin-right: var(--p-inline-spacing);
             }
         }
 
         &:not(.p-disabled) {
             .p-accordion-header-link {
                 &:focus {
-                    outline-color: $accordionHeaderFocusOutlineColor;
-                    outline-style: $accordionHeaderFocusOutlineStyle;
-                    outline-width: $accordionHeaderFocusOutlineWidth;
-                    outline-offset: $accordionHeaderFocusOutlineOffset;
-                    box-shadow: $accordionHeaderFocusBoxShadow;
+                    outline-color: var(--p-accordion-header-focus-outline-color);
+                    outline-style: var(--p-accordion-header-focus-outline-style);
+                    outline-width: var(--p-accordion-header-focus-outline-width);
+                    outline-offset: var(--p-accordion-header-focus-outline-offset);
+                    box-shadow: var(--p-accordion-header-focus-box-shadow);
                 }
             }
         }
 
         &:not(.p-highlight):not(.p-disabled):hover {
             .p-accordion-header-link {
-                color: $accordionHeaderHoverColor;
-                background: $accordionHeaderHoverBackground;
-                border-width: $accordionHeaderHoverBorderWidth;
-                border-style: $accordionHeaderHoverBorderStyle;
-                border-color: $accordionHeaderHoverBorderColor;
+                color: var(--p-accordion-header-hover-color);
+                background: var(--p-accordion-header-hover-background);
+                border-width: var(--p-accordion-header-hover-border-width);
+                border-style: var(--p-accordion-header-hover-border-style);
+                border-color: var(--p-accordion-header-hover-border-color);
             }
         }
 
         &:not(.p-disabled).p-highlight {
             .p-accordion-header-link {
-                color: $accordionHeaderActiveColor;
-                background: $accordionHeaderActiveBackground;
-                border-width: $accordionHeaderActiveBorderWidth;
-                border-style: $accordionHeaderActiveBorderStyle;
-                border-color: $accordionHeaderActiveBorderColor;
+                color: var(--p-accordion-header-active-color);
+                background: var(--p-accordion-header-active-background);
+                border-width: var(--p-accordion-header-active-border-width);
+                border-style: var(--p-accordion-header-active-border-style);
+                border-color: var(--p-accordion-header-active-border-color);
                 border-bottom-right-radius: 0;
                 border-bottom-left-radius: 0;
             }
 
             &:hover {
                 .p-accordion-header-link {
-                    color: $accordionHeaderActiveHoverColor;
-                    background: $accordionHeaderActiveHoverBackground;
-                    border-width: $accordionHeaderActiveHoverBorderWidth;
-                    border-style: $accordionHeaderActiveHoverBorderStyle;
-                    border-color: $accordionHeaderActiveHoverBorderColor;
+                    color: var(--p-accordion-header-active-hover-color);
+                    background: var(--p-accordion-header-active-hover-background);
+                    border-width: var(--p-accordion-header-active-hover-border-width);
+                    border-style: var(--p-accordion-header-active-hover-border-style);
+                    border-color: var(--p-accordion-header-active-hover-border-color);
                 }
             }
         }
     }
 
     .p-accordion-content {
-        color: $accordionContentColor;
-        background: $accordionContentBackground;
-        padding-top: $accordionContentPaddingTop;
-        padding-right: $accordionContentPaddingRight;
-        padding-bottom: $accordionContentPaddingBottom;
-        padding-left: $accordionContentPaddingLeft;
-        border-width: $accordionContentBorderWidth;
-        border-style: $accordionContentBorderStyle;
-        border-color: $accordionContentBorderColor;
+        color: var(--p-accordion-content-color);
+        background: var(--p-accordion-content-background);
+        padding-top: var(--p-accordion-content-padding-top);
+        padding-right: var(--p-accordion-content-padding-right);
+        padding-bottom: var(--p-accordion-content-padding-bottom);
+        padding-left: var(--p-accordion-content-padding-left);
+        border-width: var(--p-accordion-content-border-width);
+        border-style: var(--p-accordion-content-border-style);
+        border-color: var(--p-accordion-content-border-color);
         border-top: 0;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-        border-bottom-right-radius: $borderRadius;
-        border-bottom-left-radius: $borderRadius;
+        border-bottom-right-radius: var(--p-border-radius);
+        border-bottom-left-radius: var(--p-border-radius);
     }
 
     .p-accordion-tab {
-        margin-bottom: $accordionSpacing;
+        margin-bottom: var(--p-accordion-spacing);
 
-        @if $accordionSpacing == 0 {
+        // @todo
+        @if #{var(--p-accordion-spacing)} == 0 {
             .p-accordion-header {
                 .p-accordion-header-link {
                     border-radius: 0;
@@ -116,8 +117,8 @@
             &:first-child {
                 .p-accordion-header {
                     .p-accordion-header-link {
-                        border-top-right-radius: $borderRadius;
-                        border-top-left-radius: $borderRadius;
+                        border-top-right-radius: var(--p-border-radius);
+                        border-top-left-radius: var(--p-border-radius);
                     }
                 }
             }
@@ -125,14 +126,14 @@
             &:last-child {
                 .p-accordion-header:not(.p-highlight) {
                     .p-accordion-header-link {
-                        border-bottom-right-radius: $borderRadius;
-                        border-bottom-left-radius: $borderRadius;
+                        border-bottom-right-radius: var(--p-border-radius);
+                        border-bottom-left-radius: var(--p-border-radius);
                     }
                 }
 
                 .p-accordion-content {
-                    border-bottom-right-radius: $borderRadius;
-                    border-bottom-left-radius: $borderRadius;
+                    border-bottom-right-radius: var(--p-border-radius);
+                    border-bottom-left-radius: var(--p-border-radius);
                 }
             }
         }

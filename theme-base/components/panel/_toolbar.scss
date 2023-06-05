@@ -1,16 +1,16 @@
 .p-toolbar {
-    background: $toolbarBackground;
-    padding-top: $toolbarPaddingTop;
-    padding-right: $toolbarPaddingRight;
-    padding-bottom: $toolbarPaddingBottom;
-    padding-left: $toolbarPaddingLeft;
-    border-width: $toolbarBorderWidth;
-    border-style: $toolbarBorderStyle;
-    border-color: $toolbarBorderColor;
-    border-radius: $borderRadius;
-    gap: $inlineSpacing;
+    background: var(--p-toolbar-background);
+    padding-top: var(--p-toolbar-padding-top);
+    padding-right: var(--p-toolbar-padding-right);
+    padding-bottom: var(--p-toolbar-padding-bottom);
+    padding-left: var(--p-toolbar-padding-left);
+    border-width: var(--p-toolbar-border-width);
+    border-style: var(--p-toolbar-border-style);
+    border-color: var(--p-toolbar-border-color);
+    border-radius: var(--p-border-radius);
+    gap: var(--p-inline-spacing);
 
     .p-toolbar-separator {
-        margin: 0 $inlineSpacing;
+        margin: 0 var(--p-inline-spacing);
     }
 }

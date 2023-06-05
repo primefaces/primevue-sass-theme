@@ -1,99 +1,117 @@
 .p-message {
-    margin: $messageMargin;
-    border-radius: $borderRadius;
+    margin-top: var(--p-message-margin-top);
+    margin-right: var(--p-message-margin-right);
+    margin-bottom: var(--p-message-margin-bottom);
+    margin-left: var(--p-message-margin-left);
+    border-radius: var(--p-border-radius);
 
     .p-message-wrapper {
-        padding: $messagePadding;
+        padding-top: var(--p-message-padding-top);
+        padding-right: var(--p-message-padding-right);
+        padding-bottom: var(--p-message-padding-bottom);
+        padding-left: var(--p-message-padding-left);
     }
 
     .p-message-close {
-        width: $actionIconWidth;
-        height: $actionIconHeight;
-        border-radius: $actionIconBorderRadius;
-        background: transparent;
-        transition: $actionIconTransition;
+        width: var(--p-message-close-icon-width);
+        height: var(--p-message-close-icon-height);
+        background: var(--p-message-close-icon-background);
+        border-width: var(--p-message-close-icon-border-width);
+        border-style: var(--p-message-close-icon-border-style);
+        border-color: var(--p-message-close-icon-border-color);
+        border-radius: var(--p-message-close-icon-border-radius);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
 
         &:hover {
-            background: rgba(255,255,255,.3);
+            background: var(--p-message-close-icon-hover-background);
         }
 
         &:focus {
-            @include focused();
+            outline-color: var(--p-message-close-icon-focus-outline-color);
+            outline-style: var(--p-message-close-icon-focus-outline-style);
+            outline-width: var(--p-message-close-icon-focus-outline-width);
+            outline-offset: var(--p-message-close-icon-focus-outline-offset);
+            box-shadow: var(--p-message-close-icon-focus-box-shadow);
         }
     }
 
     &.p-message-info {
-        background: $infoMessageBg;
-        border: $infoMessageBorder;
-        border-width: $messageBorderWidth;
-        color: $infoMessageTextColor;
+        color: var(--p-message-info-color);
+        background: var(--p-message-info-background);
+        border-width: var(--p-message-info-border-width);
+        border-style: var(--p-message-info-border-style);
+        border-color: var(--p-message-info-border-color);
 
         .p-message-icon {
-            color: $infoMessageIconColor;
+            color: var(--p-message-info-icon-color);
         }
 
         .p-message-close {
-            color: $infoMessageIconColor;
+            color: var(--p-message-info-icon-color);
         }
     }
 
     &.p-message-success {
-        background: $successMessageBg;
-        border: $successMessageBorder;
-        border-width: $messageBorderWidth;
-        color: $successMessageTextColor;
+        color: var(--p-message-success-color);
+        background: var(--p-message-success-background);
+        border-width: var(--p-message-success-border-width);
+        border-style: var(--p-message-success-border-style);
+        border-color: var(--p-message-success-border-color);
 
         .p-message-icon {
-            color: $successMessageIconColor;
+            color: var(--p-message-success-icon-color);
         }
 
         .p-message-close {
-            color: $successMessageIconColor;
+            color: var(--p-message-success-icon-color);
         }
     }
 
     &.p-message-warn {
-        background: $warningMessageBg;
-        border: $warningMessageBorder;
-        border-width: $messageBorderWidth;
-        color: $warningMessageTextColor;
+        color: var(--p-message-warn-color);
+        background: var(--p-message-warn-background);
+        border-width: var(--p-message-warn-border-width);
+        border-style: var(--p-message-warn-border-style);
+        border-color: var(--p-message-warn-border-color);
 
         .p-message-icon {
-            color: $warningMessageIconColor;
+            color: var(--p-message-warn-icon-color);
         }
 
         .p-message-close {
-            color: $warningMessageIconColor;
+            color: var(--p-message-warn-icon-color);
         }
     }
 
     &.p-message-error {
-        background: $errorMessageBg;
-        border: $errorMessageBorder;
-        border-width: $messageBorderWidth;
-        color: $errorMessageTextColor;
+        color: var(--p-message-error-color);
+        background: var(--p-message-error-background);
+        border-width: var(--p-message-error-border-width);
+        border-style: var(--p-message-error-border-style);
+        border-color: var(--p-message-error-border-color);
 
         .p-message-icon {
-            color: $errorMessageIconColor;
+            color: var(--p-message-error-icon-color);
         }
 
         .p-message-close {
-            color: $errorMessageIconColor;
+            color: var(--p-message-error-icon-color);
         }
     }
 
     .p-message-text {
-        font-size: $messageTextFontSize;
-        font-weight: $messageTextFontWeight;
+        font-size: var(--p-message-text-font-size);
+        font-weight: var(--p-message-text-font-weight);
     }
 
     .p-message-icon {
-        font-size: $messageIconFontSize;
-        margin-right: $inlineSpacing;
+        font-size: calc(var(--p-font-size) * 1.5rem);
+        margin-right: var(--p-inline-spacing);
     }
 
     .p-icon:not(.p-message-close-icon) {
-        width: $messageIconFontSize;
-        height: $messageIconFontSize;
+        width: calc(var(--p-font-size) * 1.5rem);
+        height: calc(var(--p-font-size) * 1.5rem);
     }
 }

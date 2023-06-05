@@ -1,64 +1,61 @@
-@use 'sass:math';
-
 .p-overlaypanel {
-    background: $overlayContentBg;
-    color: $panelContentTextColor;
-    border: $overlayContentBorder;
-    border-radius: $borderRadius;
-    box-shadow: $overlayContainerShadow;
+    color: var(--p-overlaypanel-color);
+    background: var(--p-overlaypanel-background);
+    border-width: var(--p-overlaypanel-border-width);
+    border-style: var(--p-overlaypanel-border-style);
+    border-color: var(--p-overlaypanel-border-color);
+    border-radius: var(--p-border-radius);
+    box-shadow: var(--p-overlaypanel-box-shadow);
 
     .p-overlaypanel-content {
-        padding: $panelContentPadding;
+        padding-top: var(--p-overlaypanel-content-padding-top);
+        padding-right: var(--p-overlaypanel-content-padding-right);
+        padding-bottom: var(--p-overlaypanel-content-padding-bottom);
+        padding-left: var(--p-overlaypanel-content-padding-left);
     }
 
     .p-overlaypanel-close {
-        background: $buttonBg;
-        color: $buttonTextColor;
-        width: $actionIconWidth;
-        height: $actionIconHeight;
-        transition: $actionIconTransition;
-        border-radius: $actionIconBorderRadius;
+        width: var(--p-overlaypanel-close-width);
+        height: var(--p-overlaypanel-close-height);
+        color: var(--p-overlaypanel-close-color);
+        background: var(--p-overlaypanel-close-background);
+        border-width: var(--p-overlaypanel-close-border-width);
+        border-style: var(--p-overlaypanel-close-border-style);
+        border-color: var(--p-overlaypanel-close-border-color);
+        border-radius: var(--p-overlaypanel-close-border-radius);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
         position: absolute;
-        top: math.div(-1 * $actionIconWidth, 2);
-        right: math.div(-1 * $actionIconWidth, 2);
+        top: calc(calc(-1 * var(--p-overlaypanel-close-height)) / 2);
+        right: calc(calc(-1 * var(--p-overlaypanel-close-width)) / 2);
 
         &:enabled:hover {
-            background: $buttonHoverBg;
-            color: $buttonTextHoverColor;
+            color: var(--p-overlaypanel-close-hover-color);
+            background: var(--p-overlaypanel-close-hover-background);
         }
     }
 
     &:after {
-        border: solid transparent;
-        border-color: rgba($overlayContentBg, 0);
-        border-bottom-color: $overlayContentBg;
+        border-width: var(--p-overlaypanel-tip-border-width);
+        border-style: var(--p-overlaypanel-tip-border-style);
+        border-color: transparent;
+        border-bottom-color: var(--p-overlaypanel-background);
     }
 
     &:before {
-        border: solid transparent;
-
-        @if (nth($overlayContentBorder, 2) == 'none') {
-            border-color: rgba($overlayContentBg, 0);
-            border-bottom-color: scale-color($overlayContentBg, $lightness: -5%);
-        }
-        @else {
-            border-color: rgba(nth($overlayContentBorder, 3), 0);
-            border-bottom-color: scale-color(nth($overlayContentBorder, 3), $lightness: -5%);
-        }
+        border-width: var(--p-overlaypanel-tip-border-width);
+        border-style: var(--p-overlaypanel-tip-border-style);
+        border-color: transparent;
+        border-bottom-color: var(--p-overlaypanel-tip-border-color);
     }
 
     &.p-overlaypanel-flipped {
         &:after {
-            border-top-color: $overlayContentBg;
+            border-top-color: var(--p-confirm-popup-background);
         }
 
         &:before {
-            @if (nth($overlayContentBorder, 2) == 'none') {
-                border-top-color: $overlayContentBg;
-            }
-            @else {
-                border-top-color: nth($overlayContentBorder, 3);
-            }
+            border-top-color: var(--p-confirm-popup-tip-border-color);
         }
     }
 }

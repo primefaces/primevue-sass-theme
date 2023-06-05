@@ -1,54 +1,63 @@
 .p-image-mask {
-    --maskbg: #{$imageMaskBg};
+    /*--maskbg: #{$imageMaskBg};*/
+    --p-mask-background: var(--p-image-mask-background);
 }
 
 .p-image-preview-indicator {
-    background-color: transparent;
-    color: $imagePreviewIndicatorColor;
-    transition: $actionIconTransition;
+    color: var(--p-image-preview-indicator-color);
+    background: var(--p-image-preview-indicator-background);
+    transition-duration: var(--p-transition-duration);
+    transition-property: var(--p-transition-property);
 
     .p-icon {
-        width: $imagePreviewActionIconFontSize;
-        height: $imagePreviewActionIconFontSize;
+        width: calc(var(--p-font-size) * 1.5rem);
+        height: calc(var(--p-font-size) * 1.5rem);
     }
 }
 
 .p-image-preview-container {
     &:hover {
         > .p-image-preview-indicator {
-            background-color: $imagePreviewIndicatorBg;
+            background: var(--p-image-preview-indicator-hover-background);
         }
     }
 }
 
 .p-image-toolbar {
-    padding: $imagePreviewToolbarPadding;
+    padding-top: var(--p-image-preview-toolbar-padding-top);
+    padding-right: var(--p-image-preview-toolbar-padding-right);
+    padding-bottom: var(--p-image-preview-toolbar-padding-bottom);
+    padding-left: var(--p-image-preview-toolbar-padding-left);
 }
 
 .p-image-action.p-link {
-    color: $imagePreviewActionIconColor;
-    background-color: $imagePreviewActionIconBg;
-    width: $imagePreviewActionIconWidth;
-    height: $imagePreviewActionIconHeight;
-    border-radius: $imagePreviewActionIconBorderRadius;
-    transition: $actionIconTransition;
-    margin-right: $inlineSpacing;
+    width: var(--p-image-preview-action-icon-width);
+    height: var(--p-image-preview-action-icon-height);
+    color: var(--p-image-preview-action-icon-color);
+    background: var(--p-image-preview-action-icon-background);
+    border-width: var(--p-image-preview-action-icon-border-width);
+    border-style: var(--p-image-preview-action-icon-border-style);
+    border-color: var(--p-image-preview-action-icon-border-color);
+    border-radius: var(--p-image-preview-action-icon-border-radius);
+    transition-duration: var(--p-transition-duration);
+    transition-property: var(--p-transition-property);
+    margin-right: var(--p-inline-spacing);
 
     &:last-child {
         margin-right: 0;
     }
 
     &:hover {
-        color: $imagePreviewActionIconHoverColor;
-        background-color: $imagePreviewActionIconHoverBg;
+        color: var(--p-image-preview-action-icon-hover-color);
+        background: var(--p-image-preview-action-icon-hover-background);
     }
 
     i {
-        font-size: $imagePreviewActionIconFontSize;
+        font-size: calc(var(--p-font-size) * 1.5rem);
     }
 
     .p-icon {
-        width: $imagePreviewActionIconFontSize;
-        height: $imagePreviewActionIconFontSize;
+        width: calc(var(--p-font-size) * 1.5rem);
+        height: calc(var(--p-font-size) * 1.5rem);
     }
 }

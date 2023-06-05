@@ -18,400 +18,766 @@ $highlightBg: #eff6ff !default;
 $highlightTextColor: $primaryDarkerColor !default;
 $highlightFocusBg: rgba($primaryColor, 0.24) !default;
 
-//global
-$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$fontSize: 1rem !default;
-$fontWeight: normal !default;
-$borderRadius: 6px !default;
-$inlineSpacing: 0.5rem !default;
-$transitionDuration: 0.2s !default;
-$transitionProperty: background-color, color, border-color, box-shadow !default;
+:root {
+    /** GENERAL **/
+    --p-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --p-font-size: 1rem;
+    --p-font-weight: normal;
+    --p-color: #495057;
+    --p-border-radius: 6px;
+    --p-inline-spacing: 0.5rem;
+    --p-transition-duration: 0.2s;
+    --p-transition-property: background-color, color, border-color, box-shadow;
 
-/*** Overlay Components ***/
-$confirmPopupColor: #495057 !default;
-$confirmPopupBackground: #ffffff !default;
-$confirmPopupBorderWidth: 1px !default;
-$confirmPopupBorderStyle: solid !default;
-$confirmPopupBorderColor: #dee2e6 !default;
-$confirmPopupBoxShadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
+    /** MESSAGE **/
+    /* inlinemessage */
+    --p-inline-message-padding-top: 0.75rem;
+    --p-inline-message-padding-right: 0.75rem;
+    --p-inline-message-padding-bottom: 0.75rem;
+    --p-inline-message-padding-left: 0.75rem;
+    --p-inline-message-margin-top: 0;
+    --p-inline-message-margin-right: 0;
+    --p-inline-message-margin-bottom: 0;
+    --p-inline-message-margin-left: 0;
+    --p-inline-message-info-color: #696cff;
+    --p-inline-message-info-background: #e9e9ff;
+    --p-inline-message-info-border-width: initial;
+    --p-inline-message-info-border-style: solid;
+    --p-inline-message-info-border-color: #696cff;
+    --p-inline-message-info-icon-color: #696cff;
+    --p-inline-message-success-color: #1ea97c;
+    --p-inline-message-success-background: #e4f8f0;
+    --p-inline-message-success-border-width: initial;
+    --p-inline-message-success-border-style: solid;
+    --p-inline-message-success-border-color: #1ea97c;
+    --p-inline-message-success-icon-color: #1ea97c;
+    --p-inline-message-warn-color: #cc8925;
+    --p-inline-message-warn-background: #fff2e2;
+    --p-inline-message-warn-border-width: initial;
+    --p-inline-message-warn-border-style: solid;
+    --p-inline-message-warn-border-color: #cc8925;
+    --p-inline-message-warn-icon-color: #cc8925;
+    --p-inline-message-error-color: #ff5757;
+    --p-inline-message-error-background: #ffe7e6;
+    --p-inline-message-error-border-width: initial;
+    --p-inline-message-error-border-style: solid;
+    --p-inline-message-error-border-color: #ff5757;
+    --p-inline-message-error-icon-color: #ff5757;
+    /* message */
+    --p-message-margin-top: 1rem;
+    --p-message-margin-right: 0;
+    --p-message-margin-bottom: 1rem;
+    --p-message-margin-left: 0;
+    --p-message-padding-top: 1.25rem;
+    --p-message-padding-right: 1.75rem;
+    --p-message-padding-bottom: 1.25rem;
+    --p-message-padding-left: 1.75rem;
+    --p-message-close-icon-width: 2rem;
+    --p-message-close-icon-height: 2rem;
+    --p-message-close-icon-background: transparent;
+    --p-message-close-icon-border-width: 0;
+    --p-message-close-icon-border-style: none;
+    --p-message-close-icon-border-color: initial;
+    --p-message-close-icon-border-radius: 50%;
+    --p-message-close-icon-hover-background: rgba(255, 255, 255, 0.3);
+    --p-message-close-icon-focus-outline-color: var(--p-primary-light-color);
+    --p-message-close-icon-focus-outline-style: none;
+    --p-message-close-icon-focus-outline-width: 0;
+    --p-message-close-icon-focus-outline-offset: 0;
+    --p-message-close-icon-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-message-info-color: #696cff;
+    --p-message-info-background: #e9e9ff;
+    --p-message-info-border-width: 0 0 0 6px;
+    --p-message-info-border-style: solid;
+    --p-message-info-border-color: #696cff;
+    --p-message-info-icon-color: #696cff;
+    --p-message-success-color: #1ea97c;
+    --p-message-success-background: #e4f8f0;
+    --p-message-success-border-width: 0 0 0 6px;
+    --p-message-success-border-style: solid;
+    --p-message-success-border-color: #1ea97c;
+    --p-message-success-icon-color: #1ea97c;
+    --p-message-warn-color: #cc8925;
+    --p-message-warn-background: #fff2e2;
+    --p-message-warn-border-width: 0 0 0 6px;
+    --p-message-warn-border-style: solid;
+    --p-message-warn-border-color: #cc8925;
+    --p-message-warn-icon-color: #cc8925;
+    --p-message-error-color: #ff5757;
+    --p-message-error-background: #ffe7e6;
+    --p-message-error-border-width: 0 0 0 6px;
+    --p-message-error-border-style: solid;
+    --p-message-error-border-color: #ff5757;
+    --p-message-error-icon-color: #ff5757;
+    --p-message-text-font-size: 1rem;
+    --p-message-text-font-weight: 400;
+    /* toast */
+    --p-toast-opacity: 0.9;
+    --p-toast-message-margin-top: 0;
+    --p-toast-message-margin-right: 0;
+    --p-toast-message-margin-bottom: 1rem;
+    --p-toast-message-margin-left: 0;
+    --p-toast-message-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    --p-toast-message-content-padding-top: 1rem;
+    --p-toast-message-content-padding-right: 1rem;
+    --p-toast-message-content-padding-bottom: 1rem;
+    --p-toast-message-content-padding-left: 1rem;
+    --p-toast-message-content-border-width: 0 0 0 6px;
+    --p-toast-message-content-border-style: initial;
+    --p-toast-message-content-border-color: initial;
+    --p-toast-message-text-margin-top: 0;
+    --p-toast-message-text-margin-right: 0;
+    --p-toast-message-text-margin-bottom: 0;
+    --p-toast-message-text-margin-left: 1rem;
+    --p-toast-message-summary-font-size: 1rem;
+    --p-toast-message-summary-font-weight: 700;
+    --p-toast-message-detail-margin-top: var(--p-inline-spacing);
+    --p-toast-message-detail-margin-right: 0;
+    --p-toast-message-detail-margin-bottom: 0;
+    --p-toast-message-detail-margin-left: 0;
+    --p-toast-message-close-icon-width: 2rem;
+    --p-toast-message-close-icon-height: 2rem;
+    --p-toast-message-close-icon-background: transparent;
+    --p-toast-message-close-icon-border-width: initial;
+    --p-toast-message-close-icon-border-style: initial;
+    --p-toast-message-close-icon-border-color: initial;
+    --p-toast-message-close-icon-border-radius: 50%;
+    --p-toast-message-close-icon-hover-background: rgba(255, 255, 255, 0.3);
+    --p-toast-message-close-icon-focus-outline-color: var(--p-primary-light-color);
+    --p-toast-message-close-icon-focus-outline-style: none;
+    --p-toast-message-close-icon-focus-outline-width: 0;
+    --p-toast-message-close-icon-focus-outline-offset: 0;
+    --p-toast-message-close-icon-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-toast-message-info-color: #696cff;
+    --p-toast-message-info-background: #e9e9ff;
+    --p-toast-message-info-border-width: 0 0 0 6px;
+    --p-toast-message-info-border-style: solid;
+    --p-toast-message-info-border-color: #696cff;
+    --p-toast-message-info-icon-color: #696cff;
+    --p-toast-message-success-color: #1ea97c;
+    --p-toast-message-success-background: #e4f8f0;
+    --p-toast-message-success-border-width: 0 0 0 6px;
+    --p-toast-message-success-border-style: solid;
+    --p-toast-message-success-border-color: #1ea97c;
+    --p-toast-message-success-icon-color: #1ea97c;
+    --p-toast-message-warn-color: #cc8925;
+    --p-toast-message-warn-background: #fff2e2;
+    --p-toast-message-warn-border-width: 0 0 0 6px;
+    --p-toast-message-warn-border-style: solid;
+    --p-toast-message-warn-border-color: #cc8925;
+    --p-toast-message-warn-icon-color: #cc8925;
+    --p-toast-message-error-color: #ff5757;
+    --p-toast-message-error-background: #ffe7e6;
+    --p-toast-message-error-border-width: 0 0 0 6px;
+    --p-toast-message-error-border-style: solid;
+    --p-toast-message-error-border-color: #ff5757;
+    --p-toast-message-error-icon-color: #ff5757;
 
-$confirmPopupContentPaddingTop: 1.25rem !default;
-$confirmPopupContentPaddingRight: 1.25rem !default;
-$confirmPopupContentPaddingBottom: 1.25rem !default;
-$confirmPopupContentPaddingLeft: 1.25rem !default;
+    /** MISC **/
+    /* avatar */
+    --p-avatar-background: #dee2e6;
+    --p-avatar-color: #495057;
+    --p-avatar-in-group-border-width: 2px;
+    --p-avatar-in-group-border-style: solid;
+    --p-avatar-in-group-border-color: #ffffff;
+    /* badge */
+    --p-badge-font-size: 0.75rem;
+    --p-badge-font-weight: 700;
+    --p-badge-min-width: 1.5rem;
+    --p-badge-height: 1.5rem;
+    --p-badge-line-height: 1.5rem;
+    --p-badge-color: var(--p-primary-text-color);
+    --p-badge-background: var(--p-primary-color);
+    --p-badge-secondary-color: #ffffff;
+    --p-badge-secondary-background: #64748b;
+    --p-badge-success-color: #ffffff;
+    --p-badge-success-background: #22c55e;
+    --p-badge-info-color: #ffffff;
+    --p-badge-info-background: #3b82f6;
+    --p-badge-warning-color: #ffffff;
+    --p-badge-warning-background: #f59e0b;
+    --p-badge-danger-color: #ffffff;
+    --p-badge-danger-background: #ef4444;
+    /* chip */
+    --p-chip-color: #495057;
+    --p-chip-background: #dee2e6;
+    --p-chip-border-width: initial;
+    --p-chip-border-style: initial;
+    --p-chip-border-color: initial;
+    --p-chip-border-radius: 16px;
+    --p-chip-padding-top: 0;
+    --p-chip-padding-right: 0.75rem;
+    --p-chip-padding-bottom: 0;
+    --p-chip-padding-left: 0.75rem;
+    --p-chip-remove-icon-focus-outline-color: var(--p-primary-light-color);
+    --p-chip-remove-icon-focus-outline-style: none;
+    --p-chip-remove-icon-focus-outline-width: 0;
+    --p-chip-remove-icon-focus-outline-offset: 0;
+    --p-chip-remove-icon-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    /* inplace */
+    --p-inplace-padding-top: 0.75rem;
+    --p-inplace-padding-right: 0.75rem;
+    --p-inplace-padding-bottom: 0.75rem;
+    --p-inplace-padding-left: 0.75rem;
+    --p-inplace-hover-color: #495057;
+    --p-inplace-hover-background: #e9ecef;
+    --p-inplace-focus-outline-color: var(--p-primary-light-color);
+    --p-inplace-focus-outline-style: none;
+    --p-inplace-focus-outline-width: 0;
+    --p-inplace-focus-outline-offset: 0;
+    --p-inplace-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    /* progressbar */
+    --p-progressbar-height: 1.5rem;
+    --p-progressbar-background: #dee2e6;
+    --p-progressbar-border-width: 0;
+    --p-progressbar-border-style: none;
+    --p-progressbar-border-color: initial;
+    --p-progressbar-value-background: var(--p-primary-color);
+    --p-progressbar-label-color: var(--p-primary-text-color);
+    /* progressspinner */
+    --p-progress-spinner-stroke-color: #ff5757;
+    --p-progress-spinner-state-0-color: #ff5757;
+    --p-progress-spinner-state-40-color: #696cff;
+    --p-progress-spinner-state-66-color: #1ea97c;
+    --p-progress-spinner-state-80-color: #cc8925;
+    /* scrolltop */
+    --p-scrolltop-width: 3rem;
+    --p-scrolltop-height: 3rem;
+    --p-scrolltop-color: #f8f9fa;
+    --p-scrolltop-background: rgba(0, 0, 0, 0.7);
+    --p-scrolltop-border-width: initial;
+    --p-scrolltop-border-style: initial;
+    --p-scrolltop-border-color: initial;
+    --p-scrolltop-border-radius: 50%;
+    --p-scrolltop-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    --p-scrolltop-hover-background: rgba(0, 0, 0, 0.8);
+    /* skeleton */
+    --p-skeleton-background: #dee2e6;
+    --p-skeleton-animation-background: rgba(255, 255, 255, 0.4);
+    /* tag */
+    --p-tag-font-size: 0.75rem;
+    --p-tag-font-weight: 700;
+    --p-tag-color: var(--p-primary-text-color);
+    --p-tag-background: var(--p-primary-color);
+    --p-tag-padding-top: 0.25rem;
+    --p-tag-padding-right: 0.4rem;
+    --p-tag-padding-bottom: 0.25rem;
+    --p-tag-padding-left: 0.4rem;
+    --p-tag-success-color: #ffffff;
+    --p-tag-success-background: #22c55e;
+    --p-tag-info-color: #ffffff;
+    --p-tag-info-background: #3b82f6;
+    --p-tag-warning-color: #ffffff;
+    --p-tag-warning-background: #f59e0b;
+    --p-tag-danger-color: #ffffff;
+    --p-tag-danger-background: #ef4444;
+    /* terminal */
+    --p-terminal-color: #495057;
+    --p-terminal-background: #ffffff;
+    --p-terminal-padding-top: 1.25rem;
+    --p-terminal-padding-right: 1.25rem;
+    --p-terminal-padding-bottom: 1.25rem;
+    --p-terminal-padding-left: 1.25rem;
+    --p-terminal-border-width: 1px;
+    --p-terminal-border-style: solid;
+    --p-terminal-border-color: #dee2e6;
 
-$confirmPopupTipBorderWidth: initial !default;
-$confirmPopupTipBorderStyle: solid !default;
-$confirmPopupTipBorderColor: #dee2e6 !default;
+    /** MULTIMEDIA **/
+    /* galleria */
+    // @todo Remove all width and height
+    --p-galleria-close-icon-width: 4rem;
+    --p-galleria-close-icon-height: 4rem;
+    --p-galleria-close-icon-color: #f8f9fa;
+    --p-galleria-close-icon-background: transparent;
+    --p-galleria-close-icon-margin-top: 0.5rem;
+    --p-galleria-close-icon-margin-right: 0.5rem;
+    --p-galleria-close-icon-margin-bottom: 0.5rem;
+    --p-galleria-close-icon-margin-left: 0.5rem;
+    --p-galleria-close-icon-border-width: initial;
+    --p-galleria-close-icon-border-style: initial;
+    --p-galleria-close-icon-border-color: initial;
+    --p-galleria-close-icon-border-radius: 50%;
+    --p-galleria-close-icon-hover-color: #f8f9fa;
+    --p-galleria-close-icon-hover-background: rgba(255, 255, 255, 0.1);
+    --p-galleria-item-navigator-background: transparent;
+    --p-galleria-item-navigator-color: #f8f9fa;
+    --p-galleria-item-navigator-width: 4rem;
+    --p-galleria-item-navigator-height: 4rem;
+    --p-galleria-item-navigator-margin-top: 0;
+    --p-galleria-item-navigator-margin-right: 0.5rem;
+    --p-galleria-item-navigator-margin-bottom: 0;
+    --p-galleria-item-navigator-margin-left: 0.5rem;
+    --p-galleria-item-navigator-hover-color: #f8f9fa;
+    --p-galleria-item-navigator-hover-background: rgba(255, 255, 255, 0.1);
+    --p-galleria-caption-color: #f8f9fa;
+    --p-galleria-caption-background: rgba(0, 0, 0, 0.5);
+    --p-galleria-caption-padding-top: 1rem;
+    --p-galleria-caption-padding-right: 1rem;
+    --p-galleria-caption-padding-bottom: 1rem;
+    --p-galleria-caption-padding-left: 1rem;
+    --p-galleria-indicators-padding-top: 1rem;
+    --p-galleria-indicators-padding-right: 1rem;
+    --p-galleria-indicators-padding-bottom: 1rem;
+    --p-galleria-indicators-padding-left: 1rem;
+    --p-galleria-indicator-width: 1rem;
+    --p-galleria-indicator-height: 1rem;
+    --p-galleria-indicator-background: #ced4da;
+    --p-galleria-indicator-border-width: initial;
+    --p-galleria-indicator-border-style: initial;
+    --p-galleria-indicator-border-color: initial;
+    --p-galleria-indicator-border-radius: 50%;
+    --p-galleria-indicator-hover-background: #adb5bd;
+    --p-galleria-indicator-active-color: var(--p-primary-darker-color);
+    --p-galleria-indicator-active-background: #eff6ff;
+    --p-galleria-indicators-on-item-background: rgba(0, 0, 0, 0.5);
+    --p-galleria-indicator-on-item-background: rgba(255, 255, 255, 0.4);
+    --p-galleria-indicator-on-item-hover-background: rgba(255, 255, 255, 0.6);
+    --p-galleria-indicator-on-item-active-color: var(--p-primary-darker-color);
+    --p-galleria-indicator-on-item-active-background: #eff6ff;
+    --p-galleria-thumbnail-container-background: rgba(0, 0, 0, 0.9);
+    --p-galleria-thumbnail-container-padding-top: 1rem;
+    --p-galleria-thumbnail-container-padding-right: 0.25rem;
+    --p-galleria-thumbnail-container-padding-bottom: 1rem;
+    --p-galleria-thumbnail-container-padding-left: 0.25rem;
+    --p-galleria-thumbnail-navigator-color: #f8f9fa;
+    --p-galleria-thumbnail-navigator-background: transparent;
+    --p-galleria-thumbnail-navigator-width: 2rem;
+    --p-galleria-thumbnail-navigator-height: 2rem;
+    --p-galleria-thumbnail-navigator-border-width: initial;
+    --p-galleria-thumbnail-navigator-border-style: initial;
+    --p-galleria-thumbnail-navigator-border-color: initial;
+    --p-galleria-thumbnail-navigator-border-radius: 50%;
+    --p-galleria-thumbnail-navigator-hover-color: #f8f9fa;
+    --p-galleria-thumbnail-navigator-hover-background: rgba(255, 255, 255, 0.1);
+    --p-galleria-thumbnail-item-content-focus-outline-color: var(--p-primary-light-color);
+    --p-galleria-thumbnail-item-content-focus-outline-style: none;
+    --p-galleria-thumbnail-item-content-focus-outline-width: 0;
+    --p-galleria-thumbnail-item-content-focus-outline-offset: 0;
+    --p-galleria-thumbnail-item-content-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-galleria-mask-background: rgba(0, 0, 0, 0.9);
+    /* image */
+    --p-image-mask-background: rgba(0, 0, 0, 0.9);
+    --p-image-preview-indicator-color: #f8f9fa;
+    --p-image-preview-indicator-background: transparent;
+    --p-image-preview-indicator-hover-background: rgba(0, 0, 0, 0.5);
+    --p-image-preview-toolbar-padding-top: 1rem;
+    --p-image-preview-toolbar-padding-right: 1rem;
+    --p-image-preview-toolbar-padding-bottom: 1rem;
+    --p-image-preview-toolbar-padding-left: 1rem;
+    --p-image-preview-action-icon-width: 3rem;
+    --p-image-preview-action-icon-height: 3rem;
+    --p-image-preview-action-icon-color: #f8f9fa;
+    --p-image-preview-action-icon-background: transparent;
+    --p-image-preview-action-icon-border-width: initial;
+    --p-image-preview-action-icon-border-style: initial;
+    --p-image-preview-action-icon-border-color: initial;
+    --p-image-preview-action-icon-border-radius: 50%;
+    --p-image-preview-action-icon-hover-color: #f8f9fa;
+    --p-image-preview-action-icon-hover-background: rgba(255, 255, 255, 0.1);
 
-$confirmPopupFooterPaddingTop: 0 !default;
-$confirmPopupFooterPaddingRight: 1.25rem !default;
-$confirmPopupFooterPaddingBottom: 1.25rem !default;
-$confirmPopupFooterPaddingLeft: 1.25rem !default;
+    /** OVERLAY **/
+    /* confirmpopup */
+    --p-confirm-popup-color: #495057;
+    --p-confirm-popup-background: #ffffff;
+    --p-confirm-popup-border-width: 1px;
+    --p-confirm-popup-border-style: solid;
+    --p-confirm-popup-border-color: #dee2e6;
+    --p-confirm-popup-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --p-confirm-popup-content-padding-top: 1.25rem;
+    --p-confirm-popup-content-padding-right: 1.25rem;
+    --p-confirm-popup-content-padding-bottom: 1.25rem;
+    --p-confirm-popup-content-padding-left: 1.25rem;
+    --p-confirm-popup-tip-border-width: initial;
+    --p-confirm-popup-tip-border-style: solid;
+    --p-confirm-popup-tip-border-color: #dee2e6;
+    --p-confirm-popup-footer-padding-top: 0;
+    --p-confirm-popup-footer-padding-right: 1.25rem;
+    --p-confirm-popup-footer-padding-bottom: 1.25rem;
+    --p-confirm-popup-footer-padding-left: 1.25rem;
+    /* dialog */
+    --p-dialog-border-width: 0;
+    --p-dialog-border-style: none;
+    --p-dialog-border-color: initial;
+    --p-dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --p-dialog-header-font-size: 1.25rem;
+    --p-dialog-header-font-weight: 700;
+    --p-dialog-header-color: #343a40;
+    --p-dialog-header-background: #ffffff;
+    --p-dialog-header-padding-top: 1.5rem;
+    --p-dialog-header-padding-right: 1.5rem;
+    --p-dialog-header-padding-bottom: 1.5rem;
+    --p-dialog-header-padding-left: 1.5rem;
+    --p-dialog-header-border-width: 0;
+    --p-dialog-header-border-style: none;
+    --p-dialog-header-border-color: initial;
+    --p-dialog-header-icon-width: 2rem;
+    --p-dialog-header-icon-height: 2rem;
+    --p-dialog-header-icon-color: #6c757d;
+    --p-dialog-header-icon-background: transparent;
+    --p-dialog-header-icon-border-width: 0;
+    --p-dialog-header-icon-border-style: none;
+    --p-dialog-header-icon-border-color: initial;
+    --p-dialog-header-icon-border-radius: 50%;
+    --p-dialog-header-icon-hover-color: #343a40;
+    --p-dialog-header-icon-hover-background: #e9ecef;
+    --p-dialog-header-icon-hover-border-width: inherit;
+    --p-dialog-header-icon-hover-border-style: inherit;
+    --p-dialog-header-icon-hover-border-color: transparent;
+    --p-dialog-header-icon-focus-outline-color: var(--p-primary-light-color);
+    --p-dialog-header-icon-focus-outline-style: none;
+    --p-dialog-header-icon-focus-outline-width: 0;
+    --p-dialog-header-icon-focus-outline-offset: 0;
+    --p-dialog-header-icon-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-dialog-content-color: #495057;
+    --p-dialog-content-background: #ffffff;
+    --p-dialog-content-border-width: 1px;
+    --p-dialog-content-border-style: solid;
+    --p-dialog-content-border-color: #dee2e6;
+    --p-dialog-content-padding-top: 0;
+    --p-dialog-content-padding-right: 1.5rem;
+    --p-dialog-content-padding-bottom: 2rem;
+    --p-dialog-content-padding-left: 1.5rem;
+    --p-dialog-footer-color: #495057;
+    --p-dialog-footer-background: #ffffff;
+    --p-dialog-footer-padding-top: 0;
+    --p-dialog-footer-padding-right: 1.5rem;
+    --p-dialog-footer-padding-bottom: 1.5rem;
+    --p-dialog-footer-padding-left: 1.5rem;
+    --p-dialog-footer-border-width: 1px 0 0 0;
+    --p-dialog-footer-border-style: solid;
+    --p-dialog-footer-border-color: #dee2e6;
+    /* overlaypanel */
+    --p-overlaypanel-color: #495057;
+    --p-overlaypanel-background: #ffffff;
+    --p-overlaypanel-border-width: 0;
+    --p-overlaypanel-border-style: none;
+    --p-overlaypanel-border-color: initial;
+    --p-overlaypanel-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --p-overlaypanel-content-padding-top: 1.25rem;
+    --p-overlaypanel-content-padding-right: 1.25rem;
+    --p-overlaypanel-content-padding-bottom: 1.25rem;
+    --p-overlaypanel-content-padding-left: 1.25rem;
+    --p-overlaypanel-close-color: var(--p-primary-text-color);
+    --p-overlaypanel-close-background: var(--p-primary-color);
+    --p-overlaypanel-close-width: 2rem;
+    --p-overlaypanel-close-height: 2rem;
+    --p-overlaypanel-close-border-width: initial;
+    --p-overlaypanel-close-border-style: initial;
+    --p-overlaypanel-close-border-color: initial;
+    --p-overlaypanel-close-border-radius: 50%;
+    --p-overlaypanel-close-hover-color: var(--p-primary-text-color);
+    --p-overlaypanel-close-hover-background: var(--p-primary-dark-color);
+    --p-overlaypanel-tip-border-width: initial;
+    --p-overlaypanel-tip-border-style: solid;
+    --p-overlaypanel-tip-border-color: scale-color($overlayContentBg, $lightness: -5%);
+    /* sidebar */
+    --p-sidebar-color: #495057;
+    --p-sidebar-background: #ffffff;
+    --p-sidebar-border-width: 0;
+    --p-sidebar-border-style: none;
+    --p-sidebar-border-color: initial;
+    --p-sidebar-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --p-sidebar-header-padding-top: 1.25rem;
+    --p-sidebar-header-padding-right: 1.25rem;
+    --p-sidebar-header-padding-bottom: 1.25rem;
+    --p-sidebar-header-padding-left: 1.25rem;
+    --p-sidebar-content-padding-top: 1.25rem;
+    --p-sidebar-content-padding-right: 1.25rem;
+    --p-sidebar-content-padding-bottom: 1.25rem;
+    --p-sidebar-content-padding-left: 1.25rem;
+    --p-sidebar-icon-width: 2rem;
+    --p-sidebar-icon-height: 2rem;
+    --p-sidebar-icon-color: #6c757d;
+    --p-sidebar-icon-background: transparent;
+    --p-sidebar-icon-border-width: 0;
+    --p-sidebar-icon-border-style: none;
+    --p-sidebar-icon-border-color: initial;
+    --p-sidebar-icon-border-radius: 50%;
+    --p-sidebar-icon-hover-color: #343a40;
+    --p-sidebar-icon-hover-background: #e9ecef;
+    --p-sidebar-icon-hover-border-width: inherit;
+    --p-sidebar-icon-hover-border-style: inherit;
+    --p-sidebar-icon-hover-border-color: transparent;
+    --p-sidebar-icon-focus-outline-color: var(--p-primary-light-color);
+    --p-sidebar-icon-focus-outline-style: none;
+    --p-sidebar-icon-focus-outline-width: 0;
+    --p-sidebar-icon-focus-outline-offset: 0;
+    --p-sidebar-icon-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    /* tooltip */
+    --p-tooltip-color: #ffffff;
+    --p-tooltip-background: #495057;
+    --p-tooltip-padding-top: 0.75rem;
+    --p-tooltip-padding-right: 0.75rem;
+    --p-tooltip-padding-bottom: 0.75rem;
+    --p-tooltip-padding-left: 0.75rem;
+    --p-tooltip-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 
-// dialog
-$dialogBorderWidth: 0 !default;
-$dialogBorderStyle: none !default;
-$dialogBorderColor: initial !default;
-$dialogBoxShadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
-
-$dialogHeaderColor: #343a40 !default;
-$dialogHeaderBackground: #ffffff !default;
-$dialogHeaderPaddingTop: 1.5rem !default;
-$dialogHeaderPaddingRight: 1.5rem !default;
-$dialogHeaderPaddingBottom: 1.5rem !default;
-$dialogHeaderPaddingLeft: 1.5rem !default;
-$dialogHeaderBorderWidth: 0 !default;
-$dialogHeaderBorderStyle: none !default;
-$dialogHeaderBorderColor: initial !default;
-$dialogHeaderFontWeight: 700 !default;
-$dialogHeaderFontSize: 1.25rem !default;
-
-$dialogHeaderIconWidth: 2rem !default;
-$dialogHeaderIconHeight: 2rem !default;
-$dialogHeaderIconColor: #6c757d !default;
-$dialogHeaderIconBackground: transparent !default;
-$dialogHeaderIconBorderWidth: 0 !default;
-$dialogHeaderIconBorderStyle: none !default;
-$dialogHeaderIconBorderColor: initial !default;
-$dialogHeaderIconBorderRadius: 50% !default;
-
-$dialogHeaderIconHoverColor: #343a40 !default;
-$dialogHeaderIconHoverBackground: #e9ecef !default;
-$dialogHeaderIconHoverBorderColor: transparent !default;
-
-$dialogHeaderIconFocusOutlineColor: $primaryLightColor !default;
-$dialogHeaderIconFocusOutlineStyle: none !default;
-$dialogHeaderIconFocusOutlineWidth: 0 !default;
-$dialogHeaderIconFocusOutlineOffset: 0 !default;
-$dialogHeaderIconFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
-
-$dialogContentColor: #495057 !default;
-$dialogContentBackground: #ffffff !default;
-$dialogContentBorderWidth: 1px !default;
-$dialogContentBorderStyle: solid !default;
-$dialogContentBorderColor: #dee2e6 !default;
-$dialogContentPaddingTop: 0 !default;
-$dialogContentPaddingRight: 1.5rem !default;
-$dialogContentPaddingBottom: 2rem !default;
-$dialogContentPaddingLeft: 1.5rem !default;
-
-$dialogFooterColor: #495057 !default;
-$dialogFooterBackground: #ffffff !default;
-$dialogFooterPaddingTop: 0 !default;
-$dialogFooterPaddingRight: 1.5rem !default;
-$dialogFooterPaddingBottom: 1.5rem !default;
-$dialogFooterPaddingLeft: 1.5rem !default;
-$dialogFooterBorderWidth: 1px 0 0 0 !default;
-$dialogFooterBorderStyle: solid !default;
-$dialogFooterBorderColor: #dee2e6 !default;
-
-/*** Panel Components ***/
-// accordion
-// @todo maybe $accordionTabGap ?
-$accordionSpacing: 4px !default;
-
-$accordionHeaderFontSize: initial !default;
-$accordionHeaderFontWeight: 700 !default;
-$accordionHeaderColor: #6c757d !default;
-$accordionHeaderBackground: #f8f9fa !default;
-$accordionHeaderPaddingTop: 1.25rem !default;
-$accordionHeaderPaddingRight: 1.25rem !default;
-$accordionHeaderPaddingBottom: 1.25rem !default;
-$accordionHeaderPaddingLeft: 1.25rem !default;
-$accordionHeaderBorderWidth: 1px !default;
-$accordionHeaderBorderStyle: solid !default;
-$accordionHeaderBorderColor: #dee2e6 !default;
-
-$accordionHeaderHoverColor: #343a40 !default;
-$accordionHeaderHoverBackground: #e9ecef !default;
-$accordionHeaderHoverBorderWidth: inherit !default;
-$accordionHeaderHoverBorderStyle: inherit !default;
-$accordionHeaderHoverBorderColor: #dee2e6 !default;
-
-$accordionHeaderFocusOutlineColor: $primaryLightColor !default;
-$accordionHeaderFocusOutlineStyle: none !default;
-$accordionHeaderFocusOutlineWidth: 0 !default;
-$accordionHeaderFocusOutlineOffset: 0 !default;
-$accordionHeaderFocusBoxShadow: inset 0 0 0 0.2rem $primaryLightColor !default;
-
-$accordionHeaderActiveColor: #343a40 !default;
-$accordionHeaderActiveBackground: #f8f9fa !default;
-$accordionHeaderActiveBorderWidth: inherit !default;
-$accordionHeaderActiveBorderStyle: inherit !default;
-$accordionHeaderActiveBorderColor: #dee2e6 !default;
-
-$accordionHeaderActiveHoverColor: #343a40 !default;
-$accordionHeaderActiveHoverBackground: #e9ecef !default;
-$accordionHeaderActiveHoverBorderWidth: inherit !default;
-$accordionHeaderActiveHoverBorderStyle: inherit !default;
-$accordionHeaderActiveHoverBorderColor: #dee2e6 !default;
-
-$accordionContentColor: #495057 !default;
-$accordionContentBackground: #ffffff !default;
-$accordionContentPaddingTop: 1.25rem !default;
-$accordionContentPaddingRight: 1.25rem !default;
-$accordionContentPaddingBottom: 1.25rem !default;
-$accordionContentPaddingLeft: 1.25rem !default;
-$accordionContentBorderWidth: inherit !default;
-$accordionContentBorderStyle: inherit !default;
-$accordionContentBorderColor: #dee2e6 !default;
-
-// card
-$cardColor: #495057 !default;
-$cardBackground: #ffffff !default;
-$cardBoxShadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !default;
-
-$cardBodyPaddingTop: 1.25rem !default;
-$cardBodyPaddingRight: 1.25rem !default;
-$cardBodyPaddingBottom: 1.25rem !default;
-$cardBodyPaddingLeft: 1.25rem !default;
-
-$cardTitleFontSize: 1.5rem !default;
-$cardTitleFontWeight: 700 !default;
-
-$cardSubtitleFontSize: inherit !default;
-$cardSubtitleFontWeight: 400 !default;
-$cardSubtitleColor: #6c757d !default;
-
-$cardContentPaddingTop: 1.25rem !default;
-$cardContentPaddingRight: 0 !default;
-$cardContentPaddingBottom: 1.25rem !default;
-$cardContentPaddingLeft: 0 !default;
-
-$cardFooterPaddingTop: 1.25rem !default;
-$cardFooterPaddingRight: 0 !default;
-$cardFooterPaddingBottom: 0 !default;
-$cardFooterPaddingLeft: 0 !default;
-
-// divider
-// @todo ?
-$dividerSize: 1px !default;
-$dividerColor: #dee2e6 !default;
-
-$dividerHorizontalPaddingTop: 0 !default;
-$dividerHorizontalPaddingRight: 1.25rem !default;
-$dividerHorizontalPaddingBottom: 0 !default;
-$dividerHorizontalPaddingLeft: 1.25rem !default;
-$dividerHorizontalMarginTop: 1.25rem !default;
-$dividerHorizontalMarginRight: 0 !default;
-$dividerHorizontalMarginBottom: 1.25rem !default;
-$dividerHorizontalMarginLeft: 0 !default;
-
-$dividerVerticalPaddingTop: 1.25rem !default;
-$dividerVerticalPaddingRight: 0 !default;
-$defaultVerticalPaddingBottom: 1.25rem !default;
-$defaultVerticalPaddingLeft: 0 !default;
-$dividerVerticalMarginTop: 0 !default;
-$dividerVerticalMarginRight: 1.25rem !default;
-$defaultVerticalMarginBottom: 0 !default;
-$defaultVerticalMarginLeft: 1.25rem !default;
-
-$dividerContentBackground: #ffffff !default;
-
-// fieldset
-$fieldsetColor: #495057 !default;
-$fieldsetBackground: #ffffff !default;
-$fieldsetBorderWidth: 1px !default;
-$fieldsetBorderStyle: solid !default;
-$fieldsetBorderColor: #dee2e6 !default;
-
-$fieldsetLegendFontSize: inherit !default;
-$fieldsetLegendFontWeight: 700 !default;
-$fieldsetLegendColor: #343a40 !default;
-$fieldsetLegendBackground: #f8f9fa !default;
-$fieldsetLegendBorderWidth: 1px !default;
-$fieldsetLegendBorderStyle: solid !default;
-$fieldsetLegendBorderColor: #dee2e6 !default;
-$fieldsetLegendPaddingTop: 1.25rem !default;
-$fieldsetLegendPaddingRight: 1.25rem !default;
-$fieldsetLegendPaddingBottom: 1.25rem !default;
-$fieldsetLegendPaddingLeft: 1.25rem !default;
-
-$fieldsetToggleableLegendHoverColor: #343a40 !default;
-$fieldsetToggleableLegendHoverBackground: #e9ecef !default;
-$fieldsetToggleableLegendHoverBorderWidth: inherit !default;
-$fieldsetToggleableLegendHoverBorderStyle: inherit !default;
-$fieldsetToggleableLegendHoverBorderColor: #343a40 !default;
-
-$fieldsetToggleableLegendFocusOutlineColor: $primaryLightColor !default;
-$fieldsetToggleableLegendFocusOutlineStyle: none !default;
-$fieldsetToggleableLegendFocusOutlineWidth: 0 !default;
-$fieldsetToggleableLegendFocusOutlineOffset: 0 !default;
-$fieldsetToggleableLegendFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
-
-$fieldsetContentPaddingTop: 1.25rem !default;
-$fieldsetContentPaddingRight: 1.25rem !default;
-$fieldsetContentPaddingBottom: 1.25rem !default;
-$fieldsetContentPaddingLeft: 1.25rem !default;
-
-// panel
-$panelHeaderFontSize: inherit !default;
-$panelHeaderFontWeight: 700 !default;
-$panelHeaderColor: #343a40 !default;
-$panelHeaderBackground: #f8f9fa !default;
-$panelHeaderBorderWidth: 1px !default;
-$panelHeaderBorderStyle: solid !default;
-$panelHeaderBorderColor: #dee2e6 !default;
-$panelHeaderPaddingTop: 1.25rem !default;
-$panelHeaderPaddingRight: 1.25rem !default;
-$panelHeaderPaddingBottom: 1.25rem !default;
-$panelHeaderPaddingLeft: 1.25rem !default;
-
-$panelHeaderHoverColor: #343a40 !default;
-$panelHeaderHoverBackground: #e9ecef !default;
-$panelHeaderIconHoverBorderWidth: inherit !default;
-$panelHeaderIconHoverBorderStyle: inherit !default;
-$panelHeaderIconHoverBorderColor: #dee2e6 !default;
-
-// @todo maybe, calc(#{$panelHeaderPaddingTop} - .5rem) !default;
-$panelToggleableHeaderPaddingTop: 0.75rem !default;
-$panelToggleableHeaderPaddingRight: 1.25rem !default;
-$panelToggleableHeaderPaddingBottom: 0.75rem !default;
-$panelToggleableHeaderPaddingLeft: 1.25rem !default;
-
-// @todo maybe, calc(#{$panelHeaderPaddingRight} + calc(#{$panelHeaderPaddingLeft} - .5rem)) !default;
-$panelHeaderIconWidth: 2rem !default;
-$panelHeaderIconHeight: 2rem !default;
-$panelHeaderIconColor: #6c757d !default;
-$panelHeaderIconBackground: transparent !default;
-$panelHeaderIconBorderWidth: 0 !default;
-$panelHeaderIconBorderStyle: none !default;
-$panelHeaderIconBorderColor: initial !default;
-$panelHeaderIconBorderRadius: 50% !default;
-
-$panelHeaderIconHoverColor: #343a40 !default;
-$panelHeaderIconHoverBackground: #e9ecef !default;
-$panelHeaderIconHoverBorderColor: transparent !default;
-
-$panelHeaderIconFocusOutlineColor: $primaryLightColor !default;
-$panelHeaderIconFocusOutlineStyle: none !default;
-$panelHeaderIconFocusOutlineWidth: 0 !default;
-$panelHeaderIconFocusOutlineOffset: 0 !default;
-$panelHeaderIconFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
-
-$panelContentColor: #495057 !default;
-$panelContentBackground: #ffffff !default;
-$panelContentBorderWidth: 1px !default;
-$panelContentBorderStyle: solid !default;
-$panelContentBorderColor: #dee2e6 !default;
-$panelContentPaddingTop: 1.25rem !default;
-$panelContentPaddingRight: 1.25rem !default;
-$panelContentPaddingBottom: 1.25rem !default;
-$panelContentPaddingLeft: 1.25rem !default;
-// @todo unused?
-$panelContentEvenRowBackground: scale-color(#ffffff, $lightness: -1%) !default;
-
-$panelFooterColor: #495057 !default;
-$panelFooterBackground: #ffffff !default;
-$panelFooterBorderWidth: 1px !default;
-$panelFooterBorderStyle: solid !default;
-$panelFooterBorderColor: #dee2e6 !default;
-$panelFooterPaddingTop: 0.75rem !default;
-$panelFooterPaddingRight: 1.25rem !default;
-$panelFooterPaddingBottom: 0.75rem !default;
-$panelFooterPaddingLeft: 1.25rem !default;
-
-//scrollpanel
-$scrollPanelThumbBackground: #f8f9fa !default;
-$scrollPanelThumbBorderWidth: 0 !default;
-$scrollPanelThumbBorderStyle: none !default;
-$scrollPanelThumbBorderColor: initial !default;
-
-$scrollPanelThumbFocusOutlineColor: $primaryLightColor !default;
-$scrollPanelThumbFocusOutlineStyle: none !default;
-$scrollPanelThumbFocusOutlineWidth: 0 !default;
-$scrollPanelThumbFocusOutlineOffset: 0 !default;
-$scrollPanelThumbFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
-
-//splitter
-$splitterColor: #495057 !default;
-$splitterBackground: #ffffff !default;
-$splitterBorderWidth: 1px !default;
-$splitterBorderStyle: solid !default;
-$splitterBorderColor: #dee2e6 !default;
-
-$splitterGutterBackground: #f8f9fa !default;
-$splitterGutterHandleBackground: #dee2e6 !default;
-
-$splitterGutterHandleFocusOutlineColor: $primaryLightColor !default;
-$splitterGutterHandleFocusOutlineStyle: none !default;
-$splitterGutterHandleFocusOutlineWidth: 0 !default;
-$splitterGutterHandleFocusOutlineOffset: 0 !default;
-$splitterGutterHandleFocusBoxShadow: 0 0 0 0.2rem $primaryLightColor !default;
-
-//tabview
-$tabviewNavBackground: #ffffff !default;
-$tabviewNavBorderWidth: 0 0 2px 0 !default;
-$tabviewNavBorderStyle: solid !default;
-$tabviewNavBorderColor: #dee2e6 !default;
-
-$tabviewNavButtonColor: $primaryColor !default;
-$tabviewNavButtonBackground: #ffffff !default;
-$tabviewNavButtonBoxShadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
-$tabviewNavButtonWidth: 3rem !default;
-
-$tabviewNavButtonFocusOutlineColor: $primaryLightColor !default;
-$tabviewNavButtonFocusOutlineStyle: none !default;
-$tabviewNavButtonFocusOutlineWidth: 0 !default;
-$tabviewNavButtonFocusOutlineOffset: 0 !default;
-$tabviewNavButtonFocusBoxShadow: inset 0 0 0 0.2rem $primaryLightColor !default;
-
-//@todo maybe, tabviewHeaderGap?
-$tabviewHeaderSpacing: 0 !default;
-
-$tabviewHeaderColor: #6c757d !default;
-$tabviewHeaderBackground: #ffffff !default;
-$tabviewHeaderFontSize: inherit !default;
-$tabviewHeaderFontWeight: 700 !default;
-$tabviewHeaderBorderWidth: 0 0 2px 0 !default;
-$tabviewHeaderBorderStyle: solid !default;
-$tabviewHeaderBorderColor: transparent transparent #dee2e6 transparent !default;
-$tabviewHeaderPaddingTop: 1.25rem !default;
-$tabviewHeaderPaddingRight: 1.25rem !default;
-$tabviewHeaderPaddingBottom: 1.25rem !default;
-$tabviewHeaderPaddingLeft: 1.25rem !default;
-$tabviewHeaderMarginTop: 0 !default;
-$tabviewHeaderMarginRight: 0 !default;
-$tabviewHeaderMarginBottom: -2px !default;
-$tabviewHeaderMarginRight: 0 !default;
-
-$tabviewHeaderHoverColor: #6c757d !default;
-$tabviewHeaderHoverBackground: #ffffff !default;
-$tabviewHeaderHoverBorderWidth: inherit !default;
-$tabviewHeaderHoverBorderStyle: inherit !default;
-$tabviewHeaderHoverBorderColor: #adb5bd !default;
-
-$tabviewHeaderFocusOutlineColor: $primaryLightColor !default;
-$tabviewHeaderFocusOutlineStyle: none !default;
-$tabviewHeaderFocusOutlineWidth: 0 !default;
-$tabviewHeaderFocusOutlineOffset: 0 !default;
-$tabviewHeaderFocusBoxShadow: inset 0 0 0 0.2rem $primaryLightColor !default;
-
-$tabviewHeaderActiveColor: $primaryColor !default;
-$tabviewHeaderActiveBackground: #ffffff !default;
-$tabviewHeaderActiveBorderWidth: inherit !default;
-$tabviewHeaderActiveBorderStyle: inherit !default;
-$tabviewHeaderActiveBorderColor: $primaryColor !default;
-
-$tabviewContentTextColor: #495057 !default;
-$tabviewContentBackground: #ffffff !default;
-$tabviewContentPaddingTop: 1.25rem !default;
-$tabviewContentPaddingRight: 1.25rem !default;
-$tabviewContentPaddingBottom: 1.25rem !default;
-$tabviewContentPaddingLeft: 1.25rem !default;
-$tabviewContentBorderWidth: 0 !default;
-$tabviewContentBorderStyle: none !default;
-$tabviewContentBorderColor: initial !default;
-
-//toolbar
-$toolbarBackground: #f8f9fa !default;
-$toolbarBorderWidth: 1px !default;
-$toolbarBorderStyle: solid !default;
-$toolbarBorderColor: #dee2e6 !default;
-$toolbarPaddingTop: 1.25rem !default;
-$toolbarPaddingRight: 1.25rem !default;
-$toolbarPaddingBottom: 1.25rem !default;
-$toolbarPaddingLeft: 1.25rem !default;
+    /** PANEL **/
+    /* accordion */
+    // @todo maybe $accordionTabGap ?
+    --p-accordion-spacing: 4px;
+    --p-accordion-header-font-size: initial;
+    --p-accordion-header-font-weight: 700;
+    --p-accordion-header-color: #6c757d;
+    --p-accordion-header-background: #f8f9fa;
+    --p-accordion-header-padding-top: 1.25rem;
+    --p-accordion-header-padding-right: 1.25rem;
+    --p-accordion-header-padding-bottom: 1.25rem;
+    --p-accordion-header-padding-left: 1.25rem;
+    --p-accordion-header-border-width: 1px;
+    --p-accordion-header-border-style: solid;
+    --p-accordion-header-border-color: #dee2e6;
+    --p-accordion-header-hover-color: #343a40;
+    --p-accordion-header-hover-background: #e9ecef;
+    --p-accordion-header-hover-border-width: inherit;
+    --p-accordion-header-hover-border-style: inherit;
+    --p-accordion-header-hover-border-color: #dee2e6;
+    --p-accordion-header-focus-outline-color: var(--p-primary-light-color);
+    --p-accordion-header-focus-outline-style: none;
+    --p-accordion-header-focus-outline-width: 0;
+    --p-accordion-header-focus-outline-offset: 0;
+    --p-accordion-header-focus-box-shadow: inset 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-accordion-header-active-color: #343a40;
+    --p-accordion-header-active-background: #f8f9fa;
+    --p-accordion-header-active-border-width: inherit;
+    --p-accordion-header-active-border-style: inherit;
+    --p-accordion-header-active-border-color: #dee2e6;
+    --p-accordion-header-active-hover-color: #343a40;
+    --p-accordion-header-active-hover-background: #e9ecef;
+    --p-accordion-header-active-hover-border-width: inherit;
+    --p-accordion-header-active-hover-border-style: inherit;
+    --p-accordion-header-active-hover-border-color: #dee2e6;
+    --p-accordion-content-color: #495057;
+    --p-accordion-content-background: #ffffff;
+    --p-accordion-content-padding-top: 1.25rem;
+    --p-accordion-content-padding-right: 1.25rem;
+    --p-accordion-content-padding-bottom: 1.25rem;
+    --p-accordion-content-padding-left: 1.25rem;
+    --p-accordion-content-border-width: inherit;
+    --p-accordion-content-border-style: inherit;
+    --p-accordion-content-border-color: #dee2e6;
+    /* card */
+    --p-card-color: #495057;
+    --p-card-background: #ffffff;
+    --p-card-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    --p-card-body-padding-top: 1.25rem;
+    --p-card-body-padding-right: 1.25rem;
+    --p-card-body-padding-bottom: 1.25rem;
+    --p-card-body-padding-left: 1.25rem;
+    --p-card-title-font-size: 1.5rem;
+    --p-card-title-font-weight: 700;
+    --p-card-subtitle-font-size: inherit;
+    --p-card-subtitle-font-weight: 400;
+    --p-card-subtitle-color: #6c757d;
+    --p-card-content-padding-top: 1.25rem;
+    --p-card-content-padding-right: 0;
+    --p-card-content-padding-bottom: 1.25rem;
+    --p-card-content-padding-left: 0;
+    --p-card-footer-padding-top: 1.25rem;
+    --p-card-footer-padding-right: 0;
+    --p-card-footer-padding-bottom: 0;
+    --p-card-footer-padding-left: 0;
+    /* divider */
+    // @todo ?
+    --p-divider-size: 1px;
+    --p-divider-color: #dee2e6;
+    --p-divider-horizontal-padding-top: 0;
+    --p-divider-horizontal-padding-right: 1.25rem;
+    --p-divider-horizontal-padding-bottom: 0;
+    --p-divider-horizontal-padding-left: 1.25rem;
+    --p-divider-horizontal-margin-top: 1.25rem;
+    --p-divider-horizontal-margin-right: 0;
+    --p-divider-horizontal-margin-bottom: 1.25rem;
+    --p-divider-horizontal-margin-left: 0;
+    --p-divider-vertical-padding-top: 1.25rem;
+    --p-divider-vertical-padding-right: 0;
+    --p-divider-vertical-padding-bottom: 1.25rem;
+    --p-divider-vertical-padding-left: 0;
+    --p-divider-vertical-margin-top: 0;
+    --p-divider-vertical-margin-right: 1.25rem;
+    --p-divider-vertical-margin-bottom: 0;
+    --p-divider-vertical-margin-left: 1.25rem;
+    --p-divider-content-background: #ffffff;
+    /* fieldset */
+    --p-fieldset-color: #495057;
+    --p-fieldset-background: #ffffff;
+    --p-fieldset-border-width: 1px;
+    --p-fieldset-border-style: solid;
+    --p-fieldset-border-color: #dee2e6;
+    --p-fieldset-legend-font-size: inherit;
+    --p-fieldset-legend-font-weight: 700;
+    --p-fieldset-legend-color: #343a40;
+    --p-fieldset-legend-background: #f8f9fa;
+    --p-fieldset-legend-border-width: 1px;
+    --p-fieldset-legend-border-style: solid;
+    --p-fieldset-legend-border-color: #dee2e6;
+    --p-fieldset-legend-padding-top: 1.25rem;
+    --p-fieldset-legend-padding-right: 1.25rem;
+    --p-fieldset-legend-padding-bottom: 1.25rem;
+    --p-fieldset-legend-padding-left: 1.25rem;
+    --p-fieldset-toggleable-legend-hover-color: #343a40;
+    --p-fieldset-toggleable-legend-hover-background: #e9ecef;
+    --p-fieldset-toggleable-legend-hover-border-width: inherit;
+    --p-fieldset-toggleable-legend-hover-border-style: inherit;
+    --p-fieldset-toggleable-legend-hover-border-color: #343a40;
+    --p-fieldset-toggleable-legend-focus-outline-color: var(--p-primary-light-color);
+    --p-fieldset-toggleable-legend-focus-outline-style: none;
+    --p-filedset-toggleable-legend-focus-outline-width: 0;
+    --p-fieldset-toggleable-legend-focus-outline-offset: 0;
+    --p-fieldset-toggleable-legend-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-fieldset-content-padding-top: 1.25rem;
+    --p-fieldset-content-padding-right: 1.25rem;
+    --p-fieldset-content-padding-bottom: 1.25rem;
+    --p-fieldset-content-padding-left: 1.25rem;
+    /* panel */
+    --p-panel-header-font-size: inherit;
+    --p-panel-header-font-weight: 700;
+    --p-panel-header-color: #343a40;
+    --p-panel-header-background: #f8f9fa;
+    --p-panel-header-border-width: 1px;
+    --p-panel-header-border-style: solid;
+    --p-panel-header-border-color: #dee2e6;
+    --p-panel-header-padding-top: 1.25rem;
+    --p-panel-header-padding-right: 1.25rem;
+    --p-panel-header-padding-bottom: 1.25rem;
+    --p-panel-header-padding-left: 1.25rem;
+    --p-panel-header-hover-color: #343a40;
+    --p-panel-header-hover-background: #e9ecef;
+    --p-panel-header-icon-hover-border-width: inherit;
+    --p-panel-header-icon-hover-border-style: inherit;
+    --p-panel-header-icon-hover-border-color: #dee2e6;
+    // @todo maybe, calc(#{$panelHeaderPaddingTop} - .5rem) !default;
+    --p-panel-toggleable-header-padding-top: 0.75rem;
+    --p-panel-toggleable-header-padding-right: 1.25rem;
+    --p-panel-toggleable-header-padding-bottom: 0.75rem;
+    --p-panel-toggleable-header-padding-left: 1.25rem;
+    // @todo maybe, calc(#{$panelHeaderPaddingRight} + calc(#{$panelHeaderPaddingLeft} - .5rem)) !default;
+    --p-panel-header-icon-width: 2rem;
+    --p-panel-header-icon-height: 2rem;
+    --p-panel-header-icon-color: #6c757d;
+    --p-panel-header-icon-background: transparent;
+    --p-panel-header-icon-border-width: 0;
+    --p-panel-header-icon-border-style: none;
+    --p-panel-header-icon-border-color: initial;
+    --p-panel-header-icon-border-radius: 50%;
+    --p-panel-header-icon-hover-color: #343a40;
+    --p-panel-header-icon-hover-background: #e9ecef;
+    --p-panel-header-icon-hover-border-width: inherit;
+    --p-panel-header-icon-hover-border-style: inherit;
+    --p-panel-header-icon-hover-border-color: transparent;
+    --p-panel-header-icon-focus-outline-color: var(--p-primary-light-color);
+    --p-panel-header-icon-focus-outline-style: none;
+    --p-panel-header-icon-focus-outline-width: 0;
+    --p-panel-header-icon-focus-outline-offset: 0;
+    --p-panel-header-icon-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-panel-content-color: #495057;
+    --p-panel-content-background: #ffffff;
+    --p-panel-content-border-width: 1px;
+    --p-panel-content-border-style: solid;
+    --p-panel-content-border-color: #dee2e6;
+    --p-panel-content-padding-top: 1.25rem;
+    --p-panel-content-padding-right: 1.25rem;
+    --p-panel-content-padding-bottom: 1.25rem;
+    --p-panel-content-padding-left: 1.25rem;
+    // @todo unused?
+    --p-panel-content-even-row-background: scale-color(#ffffff, $lightness: -1%);
+    --p-panel-footer-color: #495057;
+    --p-panel-footer-background: #ffffff;
+    --p-panel-footer-border-width: 1px;
+    --p-panel-footer-border-style: solid;
+    --p-panel-footer-border-color: #dee2e6;
+    --p-panel-footer-padding-top: 0.75rem;
+    --p-panel-footer-padding-right: 1.25rem;
+    --p-panel-footer-padding-bottom: 0.75rem;
+    --p-panel-footer-padding-left: 1.25rem;
+    /* scrollpanel */
+    --p-scroll-panel-thumb-background: #f8f9fa;
+    --p-scroll-panel-thumb-border-width: 0;
+    --p-scroll-panel-thumb-border-style: none;
+    --p-scroll-panel-thumb-border-color: initial;
+    --p-scroll-panel-thumb-focus-outline-color: var(--p-primary-light-color);
+    --p-scroll-panel-thumb-focus-outline-style: none;
+    --p-scroll-panel-thumb-focus-outline-width: 0;
+    --p-scroll-panel-thumb-focus-outline-offset: 0;
+    --p-scroll-panel-thumb-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    /* splitter */
+    --p-splitter-color: #495057;
+    --p-splitter-background: #ffffff;
+    --p-splitter-border-width: 1px;
+    --p-splitter-border-style: solid;
+    --p-splitter-border-color: #dee2e6;
+    --p-splitter-gutter-background: #f8f9fa;
+    --p-splitter-gutter-handle-background: #dee2e6;
+    --p-splitter-gutter-handle-focus-outline-color: var(--p-primary-light-color);
+    --p-splitter-gutter-handle-focus-outline-style: none;
+    --p-splitter-gutter-handle-focus-outline-width: 0;
+    --p-splitter-gutter-handle-focus-outline-offset: 0;
+    --p-splitter-gutter-handle-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    /* tabview */
+    --p-tabview-nav-background: #ffffff;
+    --p-tabview-nav-border-width: 0 0 2px 0;
+    --p-tabview-nav-border-style: solid;
+    --p-tabview-nav-border-color: #dee2e6;
+    --p-tabview-nav-button-color: var(--p-primary-color);
+    --p-tabview-nav-button-background: #ffffff;
+    --p-tabview-nav-button-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    --p-tabview-nav-button-width: 3rem;
+    --p-tabview-nav-button-focus-outline-color: var(--p-primary-light-color);
+    --p-tabview-nav-button-focus-outline-style: none;
+    --p-tabview-nav-button-focus-outline-width: 0;
+    --p-tabview-nav-button-focus-outline-offset: 0;
+    --p-tabview-nav-button-focus-box-shadow: inset 0 0 0 0.2rem var(--p-primary-light-color);
+    //@todo maybe, tabviewHeaderGap?
+    --p-tabview-header-spacing: 0;
+    --p-tabview-header-color: #6c757d;
+    --p-tabview-header-background: #ffffff;
+    --p-tabview-header-font-size: inherit;
+    --p-tabview-header-font-weight: 700;
+    --p-tabview-header-border-width: 0 0 2px 0;
+    --p-tabview-header-border-style: solid;
+    --p-tabview-header-border-color: transparent transparent #dee2e6 transparent;
+    --p-tabview-header-padding-top: 1.25rem;
+    --p-tabview-header-padding-right: 1.25rem;
+    --p-tabview-header-padding-bottom: 1.25rem;
+    --p-tabview-header-padding-left: 1.25rem;
+    --p-tabview-header-margin-top: 0;
+    --p-tabview-header-margin-right: 0;
+    --p-tabview-header-margin-bottom: -2px;
+    --p-tabview-header-margin-left: 0;
+    --p-tabview-header-hover-color: #6c757d;
+    --p-tabview-header-hover-background: #ffffff;
+    --p-tabview-header-hover-border-width: inherit;
+    --p-tabview-header-hover-border-style: inherit;
+    --p-tabview-header-hover-border-color: #adb5bd;
+    --p-tabview-header-focus-outline-color: var(--p-primary-light-color);
+    --p-tabview-header-focus-outline-style: none;
+    --p-tabview-header-focus-outline-width: 0;
+    --p-tabview-header-focus-outline-offset: 0;
+    --p-tabview-header-focus-box-shadow: inset 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-tabview-header-active-color: var(--p-primary-color);
+    --p-tabview-header-active-background: #ffffff;
+    --p-tabview-header-active-border-width: inherit;
+    --p-tabview-header-active-border-style: inherit;
+    --p-tabview-header-active-border-color: var(--p-primary-color);
+    --p-tabview-content-color: #495057;
+    --p-tabview-content-background: #ffffff;
+    --p-tabview-content-padding-top: 1.25rem;
+    --p-tabview-content-padding-right: 1.25rem;
+    --p-tabview-content-padding-bottom: 1.25rem;
+    --p-tabview-content-padding-left: 1.25rem;
+    --p-tabview-content-border-width: 0;
+    --p-tabview-content-border-style: none;
+    --p-tabview-content-border-color: initial;
+    /* toolbar */
+    --p-toolbar-background: #f8f9fa;
+    --p-toolbar-border-width: 1px;
+    --p-toolbar-border-style: solid;
+    --p-toolbar-border-color: #dee2e6;
+    --p-toolbar-padding-top: 1.25rem;
+    --p-toolbar-padding-right: 1.25rem;
+    --p-toolbar-padding-bottom: 1.25rem;
+    --p-toolbar-padding-left: 1.25rem;
+}

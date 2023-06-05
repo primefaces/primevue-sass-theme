@@ -1,33 +1,35 @@
 .p-tooltip {
     .p-tooltip-text {
-        background: $tooltipBg;
-        color: $tooltipTextColor;
-        padding: $tooltipPadding;
-        box-shadow: $inputOverlayShadow;
-        border-radius: $borderRadius;
+        color: var(--p-tooltip-color);
+        background: var(--p-tooltip-background);
+        padding-top: var(--p-tooltip-padding-top);
+        padding-right: var(--p-tooltip-padding-right);
+        padding-bottom: var(--p-tooltip-padding-bottom);
+        border-radius: var(--p-border-radius);
+        box-shadow: var(--p-tooltip-box-shadow);
     }
 
     &.p-tooltip-right {
         .p-tooltip-arrow {
-            border-right-color: $tooltipBg;
+            border-right-color: var(--p-tooltip-background);
         }
     }
 
     &.p-tooltip-left {
         .p-tooltip-arrow {
-            border-left-color: $tooltipBg;
+            border-left-color: var(--p-tooltip-background);
         }
     }
 
     &.p-tooltip-top {
         .p-tooltip-arrow {
-            border-top-color: $tooltipBg;
+            border-top-color: var(--p-tooltip-background);
         }
     }
 
     &.p-tooltip-bottom {
         .p-tooltip-arrow {
-            border-bottom-color: $tooltipBg;
+            border-bottom-color: var(--p-tooltip-background);
         }
     }
 }

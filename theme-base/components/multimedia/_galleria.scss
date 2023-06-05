@@ -1,81 +1,99 @@
 .p-galleria {
     .p-galleria-close {
-        margin: $galleriaCloseIconMargin;
-        background: $galleriaCloseIconBg;
-        color: $galleriaCloseIconColor;
-        width: $galleriaCloseIconWidth;
-        height: $galleriaCloseIconHeight;
-        transition: $actionIconTransition;
-        border-radius: $galleriaCloseIconBorderRadius;
+        width: var(--p-galleria-close-icon-width);
+        height: var(--p-galleria-close-icon-height);
+        color: var(--p-galleria-close-icon-color);
+        background: var(--p-galleria-close-icon-background);
+        margin-top: var(--p-galleria-close-icon-margin-top);
+        margin-right: var(--p-galleria-close-icon-margin-right);
+        margin-bottom: var(--p-galleria-close-icon-margin-bottom);
+        margin-left: var(--p-galleria-close-icon-margin-left);
+        border-width: var(--p-galleria-close-icon-border-width);
+        border-style: var(--p-galleria-close-icon-border-style);
+        border-color: var(--p-galleria-close-icon-border-color);
+        border-radius: var(--p-galleria-close-icon-border-radius);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
 
         .p-galleria-close-icon {
-            font-size: $galleriaCloseIconFontSize;
+            font-size: calc(var(--p-font-size) * 2);
         }
 
         .p-icon {
-            width: $galleriaCloseIconFontSize;
-            height: $galleriaCloseIconFontSize;
+            width: calc(var(--p-font-size) * 2);
+            height: calc(var(--p-font-size) * 2);
         }
 
         &:hover {
-            background: $galleriaCloseIconHoverBg;
-            color: $galleriaCloseIconHoverColor;
+            color: var(--p-galleria-close-icon-hover-color);
+            background: var(--p-galleria-close-icon-hover-background);
         }
     }
 
     .p-galleria-item-nav {
-        background: $galleriaItemNavigatorBg;
-        color: $galleriaItemNavigatorColor;
-        width: $galleriaItemNavigatorWidth;
-        height: $galleriaItemNavigatorHeight;
-        transition: $actionIconTransition;
-        border-radius: $galleriaItemNavigatorBorderRadius;
-        margin: $galleriaItemNavigatorMargin;
+        width: var(--p-galleria-item-navigator-width);
+        height: var(--p-galleria-item-navigator-height);
+        color: var(--p-galleria-item-navigator-color);
+        background: var(--p-galleria-item-navigator-background);
+        margin-top: var(--p-galleria-item-navigator-margin-top);
+        margin-right: var(--p-galleria-item-navigator-margin-right);
+        margin-bottom: var(--p-galleria-item-navigator-margin-bottom);
+        margin-left: var(--p-galleria-item-navigator-margin-left);
+        border-radius: var(--p-border-radius);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
 
         .p-galleria-item-prev-icon,
         .p-galleria-item-next-icon {
-            font-size: $galleriaItemNavigatorFontSize;
+            font-size: calc(var(--p-font-size) * 2);
         }
 
         .p-icon {
-            width: $galleriaCloseIconFontSize;
-            height: $galleriaCloseIconFontSize;
+            width: calc(var(--p-font-size) * 2);
+            height: calc(var(--p-font-size) * 2);
         }
 
         &:not(.p-disabled) {
             &:hover {
-                background: $galleriaItemNavigatorHoverBg;
-                color: $galleriaItemNavigatorHoverColor;
+                color: var(--p-galleria-item-navigator-hover-color);
+                background: var(--p-galleria-item-navigator-hover-background);
             }
         }
     }
 
     .p-galleria-caption {
-        background: $galleriaCaptionBg;
-        color: $galleriaCaptionTextColor;
-        padding: $galleriaCaptionPadding;
+        color: var(--p-galleria-caption-color);
+        background: var(--p-galleria-caption-background);
+        padding-top: var(--p-galleria-caption-padding-top);
+        padding-right: var(--p-galleria-caption-padding-right);
+        padding-bottom: var(--p-galleria-caption-padding-bottom);
+        padding-left: var(--p-galleria-caption-padding-left);
     }
 
     .p-galleria-indicators {
-        padding: $galleriaIndicatorsPadding;
+        padding-top: var(--p-galleria-indicators-padding-top);
+        padding-right: var(--p-galleria-indicators-padding-right);
+        padding-bottom: var(--p-galleria-indicators-padding-bottom);
+        padding-left: var(--p-galleria-indicators-padding-left);
 
         .p-galleria-indicator {
             button {
-                background-color: $galleriaIndicatorBg;
-                width: $galleriaIndicatorWidth;
-                height: $galleriaIndicatorHeight;
-                transition: $actionIconTransition;
-                border-radius: $galleriaIndicatorBorderRadius;
+                width: var(--p-galleria-indicator-width);
+                height: var(--p-galleria-indicator-height);
+                background: var(--p-galleria-indicator-background);
+                border-radius: var(--p-border-radius);
+                transition-duration: var(--p-transition-duration);
+                transition-property: var(--p-transition-property);
 
                 &:hover {
-                    background: $galleriaIndicatorHoverBg;
+                    background: var(--p-galleria-indicator-hover-background);
                 }
             }
 
             &.p-highlight {
                 button {
-                    background: $highlightBg;
-                    color: $highlightTextColor;
+                    color: var(--p-galleria-indicator-active-color);
+                    background: var(--p-galleria-indicator-active-background);
                 }
             }
         }
@@ -84,34 +102,34 @@
     &.p-galleria-indicators-bottom,
     &.p-galleria-indicators-top {
         .p-galleria-indicator {
-            margin-right: $inlineSpacing;
+            margin-right: var(--p-inline-spacing);
         }
     }
 
     &.p-galleria-indicators-left,
     &.p-galleria-indicators-right {
         .p-galleria-indicator {
-            margin-bottom: $inlineSpacing;
+            margin-bottom: var(--p-inline-spacing);
         }
     }
 
     &.p-galleria-indicator-onitem {
         .p-galleria-indicators {
-            background: $galleriaIndicatorsBgOnItem;
+            background: var(--p-galleria-indicators-on-item-background);
 
             .p-galleria-indicator {
                 button {
-                    background: $galleriaIndicatorBgOnItem;
+                    background: var(--p-galleria-indicator-on-item-background);
 
                     &:hover {
-                        background: $galleriaIndicatorHoverBgOnItem;
+                        background: var(--p-galleria-indicator-on-item-hover-background);
                     }
                 }
 
                 &.p-highlight {
                     button {
-                        background: $highlightBg;
-                        color: $highlightTextColor;
+                        color: var(--p-galleria-indicator-on-item-active-color);
+                        background: var(--p-galleria-indicator-on-item-active-background);
                     }
                 }
             }
@@ -119,33 +137,45 @@
     }
 
     .p-galleria-thumbnail-container {
-        background: $galleriaThumbnailContainerBg;
-        padding: $galleriaThumbnailContainerPadding;
+        background: var(--p-galleria-thumbnail-container-background);
+        padding-top: var(--p-galleria-thumbnail-container-padding-top);
+        padding-right: var(--p-galleria-thumbnail-container-padding-right);
+        padding-bottom: var(--p-galleria-thumbnail-container-padding-bottom);
+        padding-left: var(--p-galleria-thumbnail-container-padding-left);
 
         .p-galleria-thumbnail-prev,
         .p-galleria-thumbnail-next {
-            margin: $inlineSpacing;
-            background-color: $galleriaThumbnailNavigatorBg;
-            color: $galleriaThumbnailNavigatorColor;
-            width: $galleriaThumbnailNavigatorWidth;
-            height: $galleriaThumbnailNavigatorHeight;
-            transition: $actionIconTransition;
-            border-radius: $galleriaThumbnailNavigatorBorderRadius;
+            width: var(--p-galleria-thumbnail-navigator-width);
+            height: var(--p-galleria-thumbnail-navigator-height);
+            color: var(--p-galleria-thumbnail-navigator-color);
+            background: var(--p-galleria-thumbnail-navigator-background);
+            margin: var(--p-inline-spacing);
+            border-width: var(--p-galleria-thumbnail-navigator-border-width);
+            border-style: var(--p-galleria-thumbnail-navigator-border-style);
+            border-color: var(--p-galleria-thumbnail-navigator-border-color);
+            border-radius: var(--p-galleria-thumbnail-navigator-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             &:hover {
-                background: $galleriaThumbnailNavigatorHoverBg;
-                color: $galleriaThumbnailNavigatorHoverColor;
+                color: var(--p-galleria-thumbnail-navigator-hover-color);
+                background: var(--p-galleria-thumbnail-navigator-hover-background);
             }
         }
 
         .p-galleria-thumbnail-item-content {
             &:focus {
-                @include focused();
+                outline-color: var(--p-galleria-thumbnail-item-content-focus-outline-color);
+                outline-style: var(--p-galleria-thumbnail-item-content-focus-outline-style);
+                outline-width: var(--p-galleria-thumbnail-item-content-focus-outline-width);
+                outline-offset: var(--p-galleria-thumbnail-item-content-focus-outline-offset);
+                box-shadow: var(--p-galleria-thumbnail-item-content-focus-box-shadow);
             }
         }
     }
 }
 
 .p-galleria-mask {
-    --maskbg: #{$galleriaMaskBg};
+    /* @todo --maskbg: #{$galleriaMaskBg}; */
+    --p-mask-background: var(--p-galleria-mask-background);
 }

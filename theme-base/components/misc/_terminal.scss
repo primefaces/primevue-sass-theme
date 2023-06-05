@@ -1,11 +1,16 @@
 .p-terminal {
-	background: $panelContentBg;
-	color: $panelContentTextColor;
-	border: $panelContentBorder;
-	padding: $panelContentPadding;
+    color: var(--p-terminal-color);
+    background: var(--p-terminal-background);
+    padding-top: var(--p-terminal-padding-top);
+    padding-right: var(--p-terminal-padding-right);
+    padding-bottom: var(--p-terminal-padding-bottom);
+    padding-left: var(--p-terminal-padding-left);
+    border-width: var(--p-terminal-border-width);
+    border-style: var(--p-terminal-border-style);
+    border-color: var(--p-terminal-border-color);
 
-	.p-terminal-input {
-		font-size: $fontSize;
-		font-family: $fontFamily;
-	}
+    .p-terminal-input {
+        font-size: var(--p-font-size);
+        font-family: var(--p-font-family);
+    }
 }

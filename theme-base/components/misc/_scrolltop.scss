@@ -1,25 +1,29 @@
 .p-scrolltop {
-    width: $scrollTopWidth;
-    height: $scrollTopHeight;
-    border-radius: $scrollTopBorderRadius;
-    box-shadow: $inputOverlayShadow;
-    transition: $actionIconTransition;
+    width: var(--p-scrolltop-width);
+    height: var(--p-scrolltop-height);
+    border-width: var(--p-scrolltop-border-width);
+    border-style: var(--p-scrolltop-border-style);
+    border-color: var(--p-scrolltop-border-color);
+    border-radius: var(--p-scrolltop-border-radius);
+    box-shadow: var(--p-scrolltop-box-shadow);
+    transition-duration: var(--p-transition-duration);
+    transition-property: var(--p-transition-property);
 
     &.p-link {
-        background: $scrollTopBg;
+        background: var(--p-scrolltop-background);
 
         &:hover {
-            background: $scrollTopHoverBg;
+            background: var(--p-scrolltop-hover-background);
         }
     }
 
     .p-scrolltop-icon {
-        font-size: $scrollTopFontSize;
-        color: $scrollTopTextColor;
+        font-size: calc(var(--p-font-size) * 1.5rem);
+        color: var(--p-scrolltop-color);
 
         &.p-icon {
-            width: $scrollTopFontSize;
-            height: $scrollTopFontSize;
+            width: calc(var(--p-font-size) * 1.5rem);
+            height: calc(var(--p-font-size) * 1.5rem);
         }
     }
 }

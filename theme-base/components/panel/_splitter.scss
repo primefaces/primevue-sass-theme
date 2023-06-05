@@ -1,32 +1,32 @@
 .p-splitter {
-    color: $splitterColor;
-    background: $splitterBackground;
-    border-width: $splitterBorderWidth;
-    border-style: $splitterBorderStyle;
-    border-color: $splitterBorderColor;
-    border-radius: $borderRadius;
+    color: var(--p-splitter-color);
+    background: var(--p-splitter-background);
+    border-width: var(--p-splitter-border-width);
+    border-style: var(--p-splitter-border-style);
+    border-color: var(--p-splitter-border-color);
+    border-radius: var(--p-border-radius);
 
     .p-splitter-gutter {
-        background: $splitterGutterBackground;
-        transition-duration: $transitionDuration;
-        transition-property: $transitionProperty;
+        background: var(--p-splitter-gutter-background);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
 
         .p-splitter-gutter-handle {
-            background: $splitterGutterHandleBackground;
-            transition-duration: $transitionDuration;
-            transition-property: $transitionProperty;
+            background: var(--p-splitter-gutter-handle-background);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             &:focus {
-                outline-color: $splitterGutterHandleFocusOutlineColor;
-                outline-style: $splitterGutterHandleFocusOutlineStyle;
-                outline-width: $splitterGutterHandleFocusOutlineWidth;
-                outline-offset: $splitterGutterHandleFocusOutlineOffset;
-                box-shadow: $splitterGutterHandleFocusBoxShadow;
+                outline-color: var(--p-splitter-gutter-handle-focus-outline-color);
+                outline-style: var(--p-splitter-gutter-handle-focus-outline-style);
+                outline-width: var(--p-splitter-gutter-handle-focus-outline-width);
+                outline-offset: var(--p-splitter-gutter-handle-focus-outline-offset);
+                box-shadow: var(--p-splitter-gutter-handle-focus-box-shadow);
             }
         }
     }
 
     .p-splitter-gutter-resizing {
-        background: $splitterGutterHandleBackground;
+        background: var(--p-splitter-gutter-handle-background);
     }
 }

@@ -1,48 +1,48 @@
 .p-badge {
-    background: $badgeBg;
-    color: $badgeTextColor;
-    font-size: $badgeFontSize;
-    font-weight: $badgeFontWeight;
-    min-width: $badgeMinWidth;
-    height: $badgeHeight;
-    line-height: $badgeHeight;
+    font-size: var(--p-badge-font-size);
+    font-weight: var(--p-badge-font-weight);
+    min-width: var(--p-badge-min-width);
+    height: var(--p-badge-height);
+    line-height: var(--p-badge-line-height);
+    color: var(--p-badge-color);
+    background: var(--p-badge-background);
 
     &.p-badge-secondary {
-        background-color: $secondaryButtonBg;
-        color: $secondaryButtonTextColor;
+        color: var(--p-badge-secondary-color);
+        background: var(--p-badge-secondary-background);
     }
 
     &.p-badge-success {
-        background-color: $successButtonBg;
-        color: $successButtonTextColor;
+        color: var(--p-badge-success-color);
+        background: var(--p-badge-success-background);
     }
 
     &.p-badge-info {
-        background-color: $infoButtonBg;
-        color: $infoButtonTextColor;
+        color: var(--p-badge-info-color);
+        background: var(--p-badge-info-background);
     }
 
     &.p-badge-warning {
-        background-color: $warningButtonBg;
-        color: $warningButtonTextColor;
+        color: var(--p-badge-warning-color);
+        background: var(--p-badge-warning-background);
     }
 
     &.p-badge-danger {
-        background-color: $dangerButtonBg;
-        color: $dangerButtonTextColor;
+        color: var(--p-badge-danger-color);
+        background: var(--p-badge-danger-background);
     }
 
     &.p-badge-lg {
-        font-size: 1.5 * $badgeFontSize;
-        min-width: 1.5 * $badgeMinWidth;
-        height: 1.5 * $badgeHeight;
-        line-height: 1.5 * $badgeHeight;
+        font-size: calc(1.5 * var(--p-badge-font-size));
+        min-width: calc(1.5 * var(--p-badge-min-width));
+        height: calc(1.5 * var(--p-badge-height));
+        line-height: calc(1.5 * var(--p-badge-line-height));
     }
 
     &.p-badge-xl {
-        font-size: 2 * $badgeFontSize;
-        min-width: 2 * $badgeMinWidth;
-        height: 2 * $badgeHeight;
-        line-height: 2 * $badgeHeight;
+        font-size: calc(2 * var(--p-badge-font-size));
+        min-width: calc(2 * var(--p-badge-min-width));
+        height: calc(2 * var(--p-badge-height));
+        line-height: calc(2 * var(--p-badge-line-height));
     }
 }

@@ -1,6 +1,7 @@
 .p-avatar {
-    background-color: $avatarBg;
-    border-radius: $borderRadius;
+    color: var(--p-avatar-color);
+    background: var(--p-avatar-background);
+    border-radius: var(--p-border-radius);
 
     &.p-avatar-lg {
         width: 3rem;
@@ -25,6 +26,8 @@
 
 .p-avatar-group {
     .p-avatar {
-        border: 2px solid $panelContentBg;
+        border-width: var(--p-avatar-in-group-border-width);
+        border-style: var(--p-avatar-in-group-border-style);
+        border-color: var(--p-avatar-in-group-border-color);
     }
 }

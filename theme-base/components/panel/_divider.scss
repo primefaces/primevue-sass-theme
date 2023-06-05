@@ -1,43 +1,43 @@
 .p-divider {
     .p-divider-content {
-        background: $dividerContentBackground;
+        background: var(--p-divider-content-background);
     }
 
     &.p-divider-horizontal {
-        padding-top: $dividerHorizontalPaddingTop;
-        padding-right: $dividerHorizontalPaddingRight;
-        padding-bottom: $dividerHorizontalPaddingBottom;
-        padding-left: $dividerHorizontalPaddingLeft;
-        margin-top: $dividerHorizontalMarginTop;
-        margin-right: $dividerHorizontalMarginRight;
-        margin-bottom: $dividerHorizontalMarginBottom;
-        margin-left: $dividerHorizontalMarginLeft;
+        padding-top: var(--p-divider-horizontal-padding-top);
+        padding-right: var(--p-divider-horizontal-padding-right);
+        padding-bottom: var(--p-divider-horizontal-padding-bottom);
+        padding-left: var(--p-divider-horizontal-padding-left);
+        margin-top: var(--p-divider-horizontal-margin-top);
+        margin-right: var(--p-divider-horizontal-margin-right);
+        margin-bottom: var(--p-divider-horizontal-margin-bottom);
+        margin-left: var(--p-divider-horizontal-margin-left);
 
         &:before {
-            border-top: $dividerSize $dividerColor;
+            border-top: var(--p-divider-size) var(--p-divider-color);
         }
 
         .p-divider-content {
-            padding: 0 $inlineSpacing;
+            padding: 0 var(--p-inline-spacing);
         }
     }
 
     &.p-divider-vertical {
-        padding-top: $dividerVerticalPaddingTop;
-        padding-right: $dividerVerticalPaddingRight;
-        padding-bottom: $dividerVerticalPaddingBottom;
-        padding-left: $dividerVerticalPaddingLeft;
-        margin-top: $dividerVerticalMarginTop;
-        margin-right: $dividerVerticalMarginRight;
-        margin-bottom: $dividerVerticalMarginBottom;
-        margin-left: $dividerVerticalMarginLeft;
+        padding-top: var(--p-divider-vertical-padding-top);
+        padding-right: var(--p-divider-vertical-padding-right);
+        padding-bottom: var(--p-divider-vertical-padding-bottom);
+        padding-left: var(--p-divider-vertical-padding-left);
+        margin-top: var(--p-divider-vertical-margin-top);
+        margin-right: var(--p-divider-vertical-margin-right);
+        margin-bottom: var(--p-divider-vertical-margin-bottom);
+        margin-left: var(--p-divider-vertical-margin-left);
 
         &:before {
-            border-left: $dividerSize $dividerColor;
+            border-left: var(--p-divider-size) var(--p-divider-color);
         }
 
         .p-divider-content {
-            padding: $inlineSpacing 0;
+            padding: var(--p-inline-spacing) 0;
         }
     }
 }

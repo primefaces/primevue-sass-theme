@@ -1,40 +1,40 @@
 .p-card {
-    color: $cardColor;
-    background: $cardBackground;
-    box-shadow: $cardBoxShadow;
-    border-radius: $borderRadius;
+    color: var(--p-card-color);
+    background: var(--p-card-background);
+    box-shadow: var(--p-card-box-shadow);
+    border-radius: var(--p-border-radius);
 
     .p-card-body {
-        padding-top: $cardBodyPaddingTop;
-        padding-right: $cardBodyPaddingRight;
-        padding-bottom: $cardBodyPaddingBottom;
-        padding-left: $cardBodyPaddingLeft;
+        padding-top: var(--p-card-body-padding-top);
+        padding-right: var(--p-card-body-padding-right);
+        padding-bottom: var(--p-card-body-padding-bottom);
+        padding-left: var(--p-card-body-padding-left);
     }
 
     .p-card-title {
-        font-size: $cardTitleFontSize;
-        font-weight: $cardTitleFontWeight;
-        margin-bottom: $inlineSpacing;
+        font-size: var(--p-card-title-font-size);
+        font-weight: var(--p-card-title-font-weight);
+        margin-bottom: var(--p-inline-spacing);
     }
 
     .p-card-subtitle {
-        font-size: $cardSubtitleFontSize;
-        font-weight: $cardSubtitleFontWeight;
-        color: $cardSubtitleColor;
-        margin-bottom: $inlineSpacing;
+        font-size: var(--p-card-subtitle-font-size);
+        font-weight: var(--p-card-subtitle-font-weight);
+        color: var(--p-card-subtitle-color);
+        margin-bottom: var(--p-inline-spacing);
     }
 
     .p-card-content {
-        padding-top: $cardContentPaddingTop;
-        padding-right: $cardContentPaddingRight;
-        padding-bottom: $cardContentPaddingBottom;
-        padding-left: $cardContentPaddingLeft;
+        padding-top: var(--p-card-content-padding-top);
+        padding-right: var(--p-card-content-padding-right);
+        padding-bottom: var(--p-card-content-padding-bottom);
+        padding-left: var(--p-card-content-padding-left);
     }
 
     .p-card-footer {
-        padding-top: $cardFooterPaddingTop;
-        padding-right: $cardFooterPaddingRight;
-        padding-bottom: $cardFooterPaddingBottom;
-        padding-left: $cardFooterPaddingLeft;
+        padding-top: var(--p-card-footer-padding-top);
+        padding-right: var(--p-card-footer-padding-right);
+        padding-bottom: var(--p-card-footer-padding-bottom);
+        padding-left: var(--p-card-footer-padding-left);
     }
 }

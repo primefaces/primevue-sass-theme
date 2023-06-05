@@ -1,48 +1,55 @@
 .p-dialog {
-    border-radius: $borderRadius;
-    box-shadow: $overlayContainerShadow;
-    border: $overlayContentBorder;
+    border-width: var(--p-dialog-border-width);
+    border-style: var(--p-dialog-border-style);
+    border-color: var(--p-dialog-border-color);
+    border-radius: var(--p-border-radius);
+    box-shadow: var(--p-dialog-box-shadow);
 
     .p-dialog-header {
-        border-bottom: $dialogHeaderBorder;
-        background: $dialogHeaderBg;
-        color: $dialogHeaderTextColor;
-        padding: $dialogHeaderPadding;
-        border-top-right-radius: $borderRadius;
-        border-top-left-radius: $borderRadius;
+        color: var(--p-dialog-header-color);
+        background: var(--p-dialog-header-background);
+        padding-top: var(--p-dialog-header-padding-top);
+        padding-right: var(--p-dialog-header-padding-right);
+        padding-bottom: var(--p-dialog-header-padding-bottom);
+        padding-left: var(--p-dialog-header-padding-left);
+        border-bottom-width: var(--p-dialog-header-border-width);
+        border-bottom-style: var(--p-dialog-header-border-style);
+        border-bottom-color: var(--p-dialog-header-border-color);
+        border-top-right-radius: var(--p-borderRadius);
+        border-top-left-radius: var(--p-borderRadius);
 
         .p-dialog-title {
-            font-weight: $dialogHeaderFontWeight;
-            font-size: $dialogHeaderFontSize;
+            font-weight: var(--p-dialog-header-font-weight);
+            font-size: var(--p-dialog-header-font-size);
         }
 
         .p-dialog-header-icon {
-            width: $dialogHeaderIconWidth;
-            height: $dialogHeaderIconHeight;
-            color: $dialogHeaderIconColor;
-            background: $dialogHeaderIconBackground;
-            border-width: $dialogHeaderIconBorderWidth;
-            border-style: $dialogHeaderIconBorderStyle;
-            border-color: $dialogHeaderIconBorderColor;
-            border-radius: $dialogHeaderIconBorderRadius;
-            transition-duration: $transitionDuration;
-            transition-property: $transitionProperty;
-            margin-right: $inlineSpacing;
+            width: var(--p-dialog-header-icon-width);
+            height: var(--p-dialog-header-icon-height);
+            color: var(--p-dialog-header-icon-color);
+            background: var(--p-dialog-header-icon-background);
+            border-width: var(--p-dialog-header-icon-border-width);
+            border-style: var(--p-dialog-header-icon-border-style);
+            border-color: var(--p-dialog-header-icon-border-color);
+            border-radius: var(--p-dialog-header-icon-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
+            margin-right: var(--p-inline-spacing);
 
             &:enabled:hover {
-                color: $dialogHeaderIconHoverColor;
-                background: $dialogHeaderIconHoverBackground;
-                border-width: $dialogHeaderIconHoverBorderWidth;
-                border-style: $dialogHeaderIconHoverBorderStyle;
-                border-color: $dialogHeaderIconHoverBorderColor;
+                color: var(--p-dialog-header-icon-hover-color);
+                background: var(--p-dialog-header-icon-hover-background);
+                border-width: var(--p-dialog-header-icon-hover-border-width);
+                border-style: var(--p-dialog-header-icon-hover-border-style);
+                border-color: var(--p-dialog-header-icon-hover-border-color);
             }
 
             &:focus {
-                outline-color: $dialogHeaderIconFocusOutlineColor;
-                outline-style: $dialogHeaderIconFocusOutlineStyle;
-                outline-width: $dialogHeaderIconFocusOutlineWidth;
-                outline-offset: $dialogHeaderIconFocusOutlineOffset;
-                box-shadow: $dialogHeaderIconFocusBoxShadow;
+                outline-color: var(--p-dialog-header-icon-focus-outline-color);
+                outline-style: var(--p-dialog-header-icon-focus-outline-style);
+                outline-width: var(--p-dialog-header-icon-focus-outline-width);
+                outline-offset: var(--p-dialog-header-icon-focus-outline-offset);
+                box-shadow: var(--p-dialog-header-icon-focus-box-shadow);
             }
 
             &:last-child {
@@ -52,50 +59,50 @@
     }
 
     .p-dialog-content {
-        color: $dialogContentColor;
-        background: $dialogContentBackground;
-        padding-top: $dialogContentPaddingTop;
-        padding-right: $dialogContentPaddingRight;
-        padding-bottom: $dialogContentPaddingBottom;
-        padding-left: $dialogContentPaddingLeft;
-        border-width: $dialogContentBorderWidth;
-        border-style: $dialogContentBorderStyle;
-        border-color: $dialogContentBorderColor;
+        color: var(--p-dialog-content-color);
+        background: var(--p-dialog-content-background);
+        padding-top: var(--p-dialog-content-padding-top);
+        padding-right: var(--p-dialog-content-padding-right);
+        padding-bottom: var(--p-dialog-content-padding-bottom);
+        padding-left: var(--p-dialog-content-padding-left);
+        border-width: var(--p-dialog-content-border-width);
+        border-style: var(--p-dialog-content-border-style);
+        border-color: var(--p-dialog-content-border-color);
 
         &:last-child {
-            border-bottom-right-radius: $borderRadius;
-            border-bottom-left-radius: $borderRadius;
+            border-bottom-right-radius: var(--p-border-radius);
+            border-bottom-left-radius: var(--p-border-radius);
         }
     }
 
     .p-dialog-footer {
-        color: $dialogFooterColor;
-        background: $dialogFooterBackground;
-        padding-top: $dialogFooterPaddingTop;
-        padding-right: $dialogFooterPaddingRight;
-        padding-bottom: $dialogFooterPaddingBottom;
-        padding-left: $dialogFooterPaddingLeft;
-        border-width: $dialogFooterBorderWidth;
-        border-style: $dialogFooterBorderStyle;
-        border-color: $dialogFooterBorderColor;
-        border-bottom-right-radius: $borderRadius;
-        border-bottom-left-radius: $borderRadius;
+        color: var(--p-dialog-footer-color);
+        background: var(--p-dialog-footer-background);
+        padding-top: var(--p-dialog-footer-padding-top);
+        padding-right: var(--p-dialog-footer-padding-right);
+        padding-bottom: var(--p-dialog-footer-padding-bottom);
+        padding-left: var(--p-dialog-footer-padding-left);
+        border-width: var(--p-dialog-footer-border-width);
+        border-style: var(--p-dialog-footer-border-style);
+        border-color: var(--p-dialog-footer-border-color);
+        border-bottom-right-radius: var(--p-border-radius);
+        border-bottom-left-radius: var(--p-border-radius);
         text-align: right;
 
         button {
-            margin: 0 $inlineSpacing 0 0;
+            margin: 0 var(--p-inline-spacing 0 0);
             width: auto;
         }
     }
 
     &.p-confirm-dialog {
         .p-confirm-dialog-icon {
-            // @todo $primeIconFontSize
-            font-size: $fontSize * 2;
+            // @todo var(--p-primeIconFontSize * 2)
+            font-size: calc(var(--p-font-size) * 2);
         }
 
         .p-confirm-dialog-message:not(:first-child) {
-            margin-left: $inlineSpacing * 2;
+            margin-left: calc(var(--p-inline-spacing) * 2);
         }
     }
 }

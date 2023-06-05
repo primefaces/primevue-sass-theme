@@ -1,28 +1,28 @@
 .p-confirm-popup {
-    color: $confirmPopupColor;
-    background: $confirmPopupBackground;
-    border-width: $confirmPopupBorderWidth;
-    border-style: $confirmPopupBorderStyle;
-    border-color: $confirmPopupBorderColor;
-    border-radius: $borderRadius;
-    box-shadow: $confirmPopupBoxShadow;
+    color: var(--p-confirm-popup-color);
+    background: var(--p-confirm-popup-background);
+    border-width: var(--p-confirm-popup-border-width);
+    border-style: var(--p-confirm-popup-border-style);
+    border-color: var(--p-confirm-popup-border-color);
+    border-radius: var(--p-border-radius);
+    box-shadow: var(--p-confirm-popup-box-shadow);
 
     .p-confirm-popup-content {
-        padding-top: $confirmPopupContentPaddingTop;
-        padding-right: $confirmPopupContentPaddingRight;
-        padding-bottom: $confirmPopupContentPaddingBottom;
-        padding-left: $confirmPopupContentPaddingLeft;
+        padding-top: var(--p-confirm-popup-content-padding-top);
+        padding-right: var(--p-confirm-popup-content-padding-right);
+        padding-bottom: var(--p-confirm-popup-content-padding-bottom);
+        padding-left: var(--p-confirm-popup-content-padding-left);
     }
 
     .p-confirm-popup-footer {
-        padding-top: $confirmPopupFooterPaddingTop;
-        padding-right: $confirmPopupFooterPaddingRight;
-        padding-bottom: $confirmPopupFooterPaddingBottom;
-        padding-left: $confirmPopupFooterPaddingLeft;
+        padding-top: var(--p-confirm-popup-footer-padding-top);
+        padding-right: var(--p-confirm-popup-footer-padding-right);
+        padding-bottom: var(--p-confirm-popup-footer-padding-bottom);
+        padding-left: var(--p-confirm-popup-footer-padding-left);
         text-align: right;
 
         button {
-            margin: 0 $inlineSpacing 0 0;
+            margin: 0 var(--p-inline-spacing) 0 0;
             width: auto;
 
             &:last-child {
@@ -32,40 +32,40 @@
     }
 
     &:after {
-        border-width: $confirmPopupTipBorderWidth;
-        border-style: $confirmPopupTipBorderStyle;
+        border-width: var(--p-confirm-popup-tip-border-width);
+        border-style: var(--p-confirm-popup-tip-border-style);
         border-color: transparent;
-        border-bottom-color: $confirmPopupBackground;
+        border-bottom-color: var(--p-confirm-popup-background);
     }
 
     &:before {
-        border-width: $confirmPopupTipBorderWidth;
-        border-style: $confirmPopupTipBorderStyle;
+        border-width: var(--p-confirm-popup-tip-border-width);
+        border-style: var(--p-confirm-popup-tip-border-style);
         border-color: transparent;
-        border-bottom-color: $confirmPopupTipBorderColor;
+        border-bottom-color: var(--p-confirm-popup-tip-border-color);
     }
 
     &.p-confirm-popup-flipped {
         &:after {
-            border-top-color: $confirmPopupBackground;
+            border-top-color: var(--p-confirm-popup-background);
         }
 
         &:before {
-            border-top-color: $confirmPopupTipBorderColor;
+            border-top-color: var(--p-confirm-popup-tip-border-color);
         }
     }
 
     .p-confirm-popup-icon {
-        // @todo font-size: $primeIconFontSize * 1.5;
-        font-size: $fontSize * 1.5;
+        // @todo font-size: var(--p-primeIconFontSize * 1.5);
+        font-size: calc(var(--p-font-size) * 1.5);
 
         &.p-icon {
-            width: $fontSize * 1.5;
-            height: $fontSize * 1.5;
+            width: calc(var(--p-font-size) * 1.5);
+            height: calc(var(--p-font-size) * 1.5);
         }
     }
 
     .p-confirm-popup-message {
-        margin-left: $inlineSpacing * 2;
+        margin-left: calc(var(--p-inline-spacing) * 2);
     }
 }

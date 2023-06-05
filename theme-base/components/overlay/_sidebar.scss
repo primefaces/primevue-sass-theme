@@ -1,15 +1,46 @@
 .p-sidebar {
-    background: $overlayContentBg;
-    color: $panelContentTextColor;
-    border: $overlayContentBorder;
-    box-shadow: $overlayContainerShadow;
+    color: var(--p-sidebar-color);
+    background: var(--p-sidebar-background);
+    border-width: var(--p-sidebar-border-width);
+    border-style: var(--p-sidebar-border-style);
+    border-color: var(--p-sidebar-border-color);
+    box-shadow: var(--p-sidebar-box-shadow);
 
     .p-sidebar-header {
-        padding: $panelHeaderPadding;
+        padding-top: var(--p-sidebar-header-padding-top);
+        padding-right: var(--p-sidebar-header-padding-right);
+        padding-bottom: var(--p-sidebar-header-padding-bottom);
+        padding-left: var(--p-sidebar-header-padding-left);
 
         .p-sidebar-close,
         .p-sidebar-icon {
-            @include action-icon();
+            width: var(--p-sidebar-icon-width);
+            height: var(--p-sidebar-icon-height);
+            color: var(--p-sidebar-icon-color);
+            background: var(--p-sidebar-icon-background);
+            border-width: var(--p-sidebar-icon-border-width);
+            border-style: var(--p-sidebar-icon-border-style);
+            border-color: var(--p-sidebar-icon-border-color);
+            border-radius: var(--p-sidebar-icon-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
+            margin-right: var(--p-inline-spacing);
+
+            &:enabled:hover {
+                color: var(--p-sidebar-icon-hover-color);
+                background: var(--p-sidebar-icon-hover-background);
+                border-width: var(--p-sidebar-icon-hover-border-width);
+                border-style: var(--p-sidebar-icon-hover-border-style);
+                border-color: var(--p-sidebar-icon-hover-border-color);
+            }
+
+            &:focus {
+                outline-color: var(--p-sidebar-icon-focus-outline-color);
+                outline-style: var(--p-sidebar-icon-focus-outline-style);
+                outline-width: var(--p-sidebar-icon-focus-outline-width);
+                outline-offset: var(--p-sidebar-icon-focus-outline-offset);
+                box-shadow: var(--p-sidebar-icon-focus-box-shadow);
+            }
         }
 
         & + .p-sidebar-content {
@@ -18,6 +49,9 @@
     }
 
     .p-sidebar-content {
-        padding: $panelContentPadding;
+        padding-top: var(--p-sidebar-content-padding-top);
+        padding-right: var(--p-sidebar-content-padding-right);
+        padding-bottom: var(--p-sidebar-content-padding-bottom);
+        padding-left: var(--p-sidebar-content-padding-left);
     }
 }

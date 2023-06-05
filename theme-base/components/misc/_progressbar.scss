@@ -1,17 +1,19 @@
 .p-progressbar {
-    border: $progressBarBorder;
-    height: $progressBarHeight;
-    background: $progressBarBg;
-    border-radius: $borderRadius;
+    height: var(--p-progressbar-height);
+    background: var(--p-progressbar-background);
+    border-width: var(--p-progressbar-border-width);
+    border-style: var(--p-progressbar-border-style);
+    border-color: var(--p-progressbar-border-color);
+    border-radius: var(--p-border-radius);
 
     .p-progressbar-value {
+        background: var(--p-progressbar-value-background);
         border: 0 none;
         margin: 0;
-        background: $progressBarValueBg;
     }
 
     .p-progressbar-label {
-        color: $progressBarValueTextColor;
-        line-height: $progressBarHeight;
+        color: var(--p-progressbar-label-color);
+        line-height: var(--p-progressbar-height);
     }
 }
