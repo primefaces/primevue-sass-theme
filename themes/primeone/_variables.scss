@@ -19,6 +19,11 @@ $highlightTextColor: $primaryDarkerColor !default;
 $highlightFocusBg: rgba($primaryColor, 0.24) !default;
 
 :root {
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    color: var(--p-color);
+
     /** GENERAL **/
     --p-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -29,6 +34,105 @@ $highlightFocusBg: rgba($primaryColor, 0.24) !default;
     --p-inline-spacing: 0.5rem;
     --p-transition-duration: 0.2s;
     --p-transition-property: background-color, color, border-color, box-shadow;
+
+    /** FILE **/
+    --p-fileupload-buttonbar-color: #343a40;
+    --p-fileupload-buttonbar-background: #f8f9fa;
+    --p-fileupload-buttonbar-padding-top: 1.25rem;
+    --p-fileupload-buttonbar-padding-right: 1.25rem;
+    --p-fileupload-buttonbar-padding-bottom: 1.25rem;
+    --p-fileupload-buttonbar-padding-left: 1.25rem;
+    --p-fileupload-buttonbar-border-width: 1px;
+    --p-fileupload-buttonbar-border-style: solid;
+    --p-fileupload-buttonbar-border-color: #dee2e6;
+    --p-fileupload-choose-button-focus-outline-color: var(--p-primary-light-color);
+    --p-fileupload-choose-button-focus-outline-style: none;
+    --p-fileupload-choose-button-focus-outline-width: 0;
+    --p-fileupload-choose-button-focus-outline-offset: 0;
+    --p-fileupload-choose-button-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+    --p-fileupload-content-color: #495057;
+    --p-fileupload-content-background: #ffffff;
+    --p-fileupload-content-padding-top: 1.25rem;
+    --p-fileupload-content-padding-right: 1.25rem;
+    --p-fileupload-content-padding-bottom: 1.25rem;
+    --p-fileupload-content-padding-left: 1.25rem;
+    --p-fileupload-content-border-width: 1px;
+    --p-fileupload-content-border-style: solid;
+    --p-fileupload-content-border-color: #dee2e6;
+    --p-fileupload-file-padding-top: 1rem;
+    --p-fileupload-file-padding-right: 1rem;
+    --p-fileupload-file-padding-bottom: 1rem;
+    --p-fileupload-file-padding-left: 1rem;
+    --p-fileupload-file-border-width: 1px;
+    --p-fileupload-file-border-style: solid;
+    --p-fileupload-file-border-color: #dee2e6;
+    --p-fileupload-progressbar-height: 0.25rem;
+    --p-fileupload-row-padding-top: 1rem;
+    --p-fileupload-row-padding-right: 1rem;
+    --p-fileupload-row-padding-bottom: 1rem;
+    --p-fileupload-row-padding-left: 1rem;
+    --p-fileupload-choose-hover-color: var(--p-primary-text-color);
+    --p-fileupload-choose-hover-background: var(--p-primary-dark-color);
+    --p-fileupload-choose-hover-border-width: initial;
+    --p-fileupload-choose-hover-border-style: initial;
+    --p-fileupload-choose-hover-border-color: var(--p-primary-dark-color);
+    --p-fileupload-choose-active-color: var(--p-primary-text-color);
+    --p-fileupload-choose-active-background: var(--p-primary-darker-color);
+    --p-fileupload-choose-active-border-width: initial;
+    --p-fileupload-choose-active-border-style: initial;
+    --p-fileupload-choose-active-border-color: var(--p-primary-darker-color);
+
+    /** MENU **/
+    --p-tieredmenu-width:
+    --p-tieredmenu-color:
+    --p-tieredmenu-background:
+    --p-tieredmenu-padding-top:
+    --p-tieredmenu-padding-right:
+    --p-tieredmenu-padding-bottom:
+    --p-tieredmenu-padding-left:
+    --p-tieredmenu-border-width:
+    --p-tieredmenu-border-style:
+    --p-tieredmenu-border-color:
+    --p-tieredmenu-overlay-background:
+    --p-tieredmenu-overlay-border-width:
+    --p-tieredmenu-overlay-border-style:
+    --p-tieredmenu-overlay-border-color:
+    --p-tieredmenu-overlay-box-shadow:
+    --p-tieredmenu-list-padding-top:
+    --p-tieredmenu-list-padding-right:
+    --p-tieredmenu-list-padding-bottom:
+    --p-tieredmenu-list-padding-left:
+    --p-tieredmenu-list-background:
+    --p-tieredmenu-list-border-width:
+    --p-tieredmenu-list-border-style:
+    --p-tieredmenu-list-border-color:
+    --p-tieredmenu-list-box-shadow:
+    --p-tieredmenu-separator-border-width:
+    --p-tieredmenu-separator-border-style:
+    --p-tieredmenu-separator-border-color:
+    --p-tieredmenu-separator-margin-top:
+    --p-tieredmenu-separator-margin-right:
+    --p-tieredmenu-separator-margin-bottom:
+    --p-tieredmenu-separator-margin-left:
+    --p-tieredmenu-menuitem-content-color:
+    --p-tieredmenu-menuitem-content-border-width:
+    --p-tieredmenu-menuitem-content-border-style:
+    --p-tieredmenu-menuitem-content-border-color:
+    --p-tieredmenu-menuitem-content-border-radius:
+    --p-tieredmenu-menuitem-link-color:
+    --p-tieredmenu-menuitem-link-padding-top:
+    --p-tieredmenu-menuitem-link-padding-right:
+    --p-tieredmenu-menuitem-link-padding-bottom:
+    --p-tieredmenu-menuitem-link-padding-left:
+    --p-tieredmenu-menuitem-text-color:
+    --p-tieredmenu-menuitem-icon-color:
+    --p-tieredmenu-menuitem-content-active-color:
+    --p-tieredmenu-menuitem-content-active-background:
+    --p-tieredmenu-menuitem-text-active-color:
+    --p-tieredmenu-menuitem-icon-active-color:
+    --p-tieredmenu-menuitem-content-active-focus-background:
+
+
 
     /** MESSAGE **/
     /* inlinemessage */
