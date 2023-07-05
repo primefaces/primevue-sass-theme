@@ -35,6 +35,88 @@ $highlightFocusBg: rgba($primaryColor, 0.24) !default;
     --p-transition-duration: 0.2s;
     --p-transition-property: background-color, color, border-color, box-shadow;
 
+    /** INPUT **/
+    --p-input-padding-top: 0.75rem;
+    --p-input-padding-right: 0.75rem;
+    --p-input-padding-bottom: 0.75rem;
+    --p-input-padding-left: 0.75rem;
+    --p-input-font-size: 1rem;
+    --p-input-font-weight: normal;
+    --p-input-background: #ffffff;
+    --p-input-color:#495057;
+    --p-input-icon-color:#6c757d;
+    --p-input-border-width: 1px;
+    --p-input-border-style: solid;
+    --p-input-border-color: #ced4da;
+    --p-input-hover-border-width: inherit;
+    --p-input-hover-border-style: inherit;
+    --p-input-hover-border-color: var(--p-primary-color);
+    --p-input-focus-border-width: inherit;
+    --p-input-focus-border-style: inherit;
+    --p-input-focus-border-color: var(--p-primary-color);
+    --p-input-error-border-width: inherit;
+    --p-input-error-border-style: inherit;
+    --p-input-error-border-color: #e24c4c;
+    --p-input-placeholder-color: #6c757d;
+    --p-input-filled-background: #e9ecef;
+    --p-input-filled-hover-background: #e9ecef;
+    --p-input-filled-focus-background:#ffffff;
+
+    --p-input-group-color:
+    --p-input-group-background:
+    --p-input-group-addon-min-width:
+
+    --p-input-list-background:
+    --p-input-list-color:
+    --p-input-list-border-width:
+    --p-input-list-border-style:
+    --p-input-list-border-color:
+    --p-input-list-padding-top:
+    --p-input-list-padding-right:
+    --p-input-list-padding-bottom:
+    --p-input-list-padding-left:
+    --p-input-list-item-padding-top:
+    --p-input-list-item-padding-right:
+    --p-input-list-item-padding-bottom:
+    --p-input-list-item-padding-left:
+    --p-input-list-item-background:
+    --p-input-list-item-color:
+    --p-input-list-item-hover-background:
+    --p-input-list-item-hover-color:
+    --p-input-list-item-color:
+    --p-input-list-item-focus-background:
+    --p-input-list-item-focus-color:
+    --p-input-list-item-border-width:
+    --p-input-list-item-border-style:
+    --p-input-list-item-border-color:
+    --p-input-list-item-border-radius:
+    --p-input-list-item-margin-top:
+    --p-input-list-item-margin-right:
+    --p-input-list-item-margin-bottom:
+    --p-input-list-item-margin-left:
+    --p-input-list-item-focus-box-shadow: inset 0 0 0 0.15rem focusOutlineColor;
+    --p-input-list-header-padding-top:
+    --p-input-list-header-padding-right:
+    --p-input-list-header-padding-bottom:
+    --p-input-list-header-padding-left:
+    --p-input-list-header-margin-top:
+    --p-input-list-header-margin-right:
+    --p-input-list-header-margin-bottom:
+    --p-input-list-header-margin-left:
+    --p-input-list-header-background:
+    --p-input-list-header-color:
+    --p-input-list-header-border-width:
+    --p-input-list-header-border-style:
+    --p-input-list-header-border-color:
+
+    --p-input-overlay-background:#ffffff;
+    --p-input-overlay-header-background: #f8f9fa;
+    --p-input-overlay-border-width: 0;
+    --p-input-overlay-border-style: none;
+    --p-input-overlay-border-color: initial;
+    --p-input-overlay-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+
     /** FILE **/
     --p-fileupload-buttonbar-color: #343a40;
     --p-fileupload-buttonbar-background: #f8f9fa;
