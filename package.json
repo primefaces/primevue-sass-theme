@@ -3,6 +3,14 @@
   "version": "3.30.0-SNAPSHOT",
   "description": "PrimeVue Sass Theme",
   "homepage": "https://primevue.org/",
+  "type": "module",
+  "scripts": {
+    "start": "node generate-primeone-variables.js"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "chokidar": "3.5.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/primefaces/primevue-sass-theme.git"
