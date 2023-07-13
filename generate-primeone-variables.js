@@ -1,8 +1,9 @@
 import chokidar from 'chokidar';
 import fs from 'fs';
 
-const inputDir = './themes/primeone/tokens/';
-const outputDir = './themes/primeone/variables/';
+const root = './themes/primeone/';
+const inputDir = root + 'tokens/';
+const outputDir = root + 'variables/';
 
 const PrimeOneUtils = {
     isEmpty(value) {
@@ -84,11 +85,11 @@ function generateVariables(filePath) {
     import(filePath).then((module) => {
         if (module && module.default) {
             const outputFile = filePath.replace(inputDir, outputDir).replace('js', 'css');
-            const outputFileDir = outputDir + filePath.replace(outputFile, '').split('/')[0];
+            const outputFileDir = outputDir + outputFile.replace(outputDir, '').split('/')[0];
 
             const css = PrimeOneUtils.toCSSVariables(module.default).css;
 
-            !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir);
+            !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
             fs.writeFileSync(outputFile, css);
         }
     });
