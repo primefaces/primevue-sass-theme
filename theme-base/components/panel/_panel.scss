@@ -13,46 +13,46 @@
         border-top-left-radius: var(--p-border-radius);
 
         .p-panel-title {
-            font-size: var(--p-panel-header-font-size);
-            font-weight: var(--p-panel-header-font-weight);
+            font-size: var(--p-panel-title-font-size);
+            font-weight: var(--p-panel-title-font-weight);
         }
 
         .p-panel-header-icon {
-            width: var(--p-panel-header-icon-width);
-            height: var(--p-panel-header-icon-height);
-            color: var(--p-panel-header-icon-color);
-            background: var(--p-panel-header-icon-background);
-            border-width: var(--p-panel-header-icon-border-width);
-            border-style: var(--p-panel-header-icon-border-style);
-            border-color: var(--p-panel-header-icon-border-color);
-            border-radius: var(--p-panel-header-icon-border-radius);
+            width: var(--p-panel-toggler-width);
+            height: var(--p-panel-toggler-height);
+            color: var(--p-panel-toggler-color);
+            background: var(--p-panel-toggler-background);
+            border-width: var(--p-panel-toggler-border-width);
+            border-style: var(--p-panel-toggler-border-style);
+            border-color: var(--p-panel-toggler-border-color);
+            border-radius: var(--p-panel-toggler-border-radius);
             transition-duration: var(--p-transition-duration);
             transition-property: var(--p-transition-property);
 
             &:enabled:hover {
-                color: var(--p-panel-header-icon-hover-color);
-                background: var(--p-panel-header-icon-hover-background);
-                border-width: var(--p-panel-header-icon-hover-border-width);
-                border-style: var(--p-panel-header-icon-hover-border-style);
-                border-color: var(--p-panel-header-icon-hover-border-color);
+                color: var(--p-panel-toggler_hover_color);
+                background: var(--p-panel-toggler_hover_background);
+                border-width: var(--p-panel-toggler_hover_border-width);
+                border-style: var(--p-panel-toggler_hover_border-style);
+                border-color: var(--p-panel-toggler_hover_border-color);
             }
 
             &:focus {
-                outline-color: var(--p-panel-header-icon-focus-outline-color);
-                outline-style: var(--p-panel-header-icon-focus-outline-style);
-                outline-width: var(--p-panel-header-icon-focus-outline-width);
-                outline-offset: var(--p-panel-header-icon-focus-outline-offset);
-                box-shadow: var(--p-panel-header-icon-focus-box-shadow);
+                outline-color: var(--p-panel-toggler_focus_outline-color);
+                outline-style: var(--p-panel-toggler_focus_outline-style);
+                outline-width: var(--p-panel-toggler_focus_outline-width);
+                outline-offset: var(--p-panel-toggler_focus_outline-offset);
+                box-shadow: var(--p-panel-toggler_focus_box-shadow);
             }
         }
     }
 
     &.p-panel-toggleable {
         .p-panel-header {
-            padding-top: var(--p-panel-toggleable-header-padding-top);
-            padding-right: var(--p-panel-toggleable-header-padding-right);
-            padding-bottom: var(--p-panel-toggleable-header-padding-bottom);
-            padding-left: var(--p-panel-toggleable-header-padding-left);
+            padding-top: var(--p-panel--toggleable--header-padding-top);
+            padding-right: var(--p-panel--toggleable--header-padding-right);
+            padding-bottom: var(--p-panel--toggleable--header-padding-bottom);
+            padding-left: var(--p-panel--toggleable--header-padding-left);
         }
     }
 

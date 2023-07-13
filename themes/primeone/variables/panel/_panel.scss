@@ -1,0 +1,61 @@
+/* Panel */
+:root {
+    --p-panel-header-color: #343a40;
+    --p-panel-header-background: #f8f9fa;
+    --p-panel-header-padding-top: 1.25rem;
+    --p-panel-header-padding-right: 1.25rem;
+    --p-panel-header-padding-bottom: 1.25rem;
+    --p-panel-header-padding-left: 1.25rem;
+    --p-panel-header-border-width: 1px;
+    --p-panel-header-border-style: solid;
+    --p-panel-header-border-color: #dee2e6;
+
+    --p-panel-title-font-size: inherit;
+    --p-panel-title-font-weight: 700;
+
+    --p-panel-toggler-width: 2rem;
+    --p-panel-toggler-height: 2rem;
+    --p-panel-toggler-color: #6c757d;
+    --p-panel-toggler-background: transparent;
+    --p-panel-toggler-border-width: 0;
+    --p-panel-toggler-border-style: none;
+    --p-panel-toggler-border-color: initial;
+    --p-panel-toggler-border-radius: 50%;
+    --p-panel-toggler_hover_color: #343a40;
+    --p-panel-toggler_hover_background: #e9ecef;
+    --p-panel-toggler_hover_border-width: inherit;
+    --p-panel-toggler_hover_border-style: inherit;
+    --p-panel-toggler_hover_border-color: #dee2e6;
+    --p-panel-toggler-focus-outline-color: var(--p-primary-light-color);
+    --p-panel-toggler_focus_outline-style: none;
+    --p-panel-toggler-focus-outline-width: 0;
+    --p-panel-toggler_focus_outline-offset: 0;
+    --p-panel-toggler_focus_box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+
+    // @todo maybe, calc(#{$panelHeaderPaddingTop} - .5rem) !default;
+    --p-panel-toggleable-header-padding-top: 0.75rem;
+    --p-panel-toggleable-header-padding-right: 1.25rem;
+    --p-panel-toggleable-header-padding-bottom: 0.75rem;
+    --p-panel-toggleable-header-padding-left: 1.25rem;
+    // @todo maybe, calc(#{$panelHeaderPaddingRight} + calc(#{$panelHeaderPaddingLeft} - .5rem)) !default;
+
+    --p-panel-content-color: #495057;
+    --p-panel-content-background: #ffffff;
+    --p-panel-content-padding-top: 1.25rem;
+    --p-panel-content-padding-right: 1.25rem;
+    --p-panel-content-padding-bottom: 1.25rem;
+    --p-panel-content-padding-left: 1.25rem;
+    --p-panel-content-border-width: 1px;
+    --p-panel-content-border-style: solid;
+    --p-panel-content-border-color: #dee2e6;
+
+    --p-panel-footer-color: #495057;
+    --p-panel-footer-background: #ffffff;
+    --p-panel-footer-padding-top: 0.75rem;
+    --p-panel-footer-padding-right: 1.25rem;
+    --p-panel-footer-padding-bottom: 0.75rem;
+    --p-panel-footer-padding-left: 1.25rem;
+    --p-panel-footer-border-width: 1px;
+    --p-panel-footer-border-style: solid;
+    --p-panel-footer-border-color: #dee2e6;
+}
