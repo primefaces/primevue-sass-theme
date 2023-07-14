@@ -44,7 +44,7 @@ const PrimeOneUtils = {
         return fKey ? (this.isObject(options) ? this.getOptionValue(this.getItemValue(options[Object.keys(options).find((k) => this.toFlatCase(k) === fKey) || ''], params), fKeys.join('.'), params) : undefined) : this.getItemValue(options, params);
     },
     toCSSVariables(variables = {}, prefix = 'p-') {
-        const excludedKeyRegex = /^(variants|states)$/gi;
+        const excludedKeyRegex = /^(variants|states|root)$/gi;
 
         const getValue = (value) => {
             // @todo: check from parent variables and create css variable
