@@ -1,9 +1,9 @@
 import chokidar from 'chokidar';
 import fs from 'fs';
 
-const root = './themes/primeone/';
-const inputDir = root + 'tokens/';
-const outputDir = root + 'variables/';
+const root = './themes/primeone';
+const inputDir = root + '/tokens';
+const outputDir = root + '/variables';
 
 const PrimeOneUtils = {
     isEmpty(value) {
@@ -16,18 +16,18 @@ const PrimeOneUtils = {
         return !!(value && value.constructor && value.call && value.apply);
     },
     isObject(value) {
-        return value !== null && value instanceof Object && value.constructor === Object;
+        return value instanceof Object && value.constructor === Object;
     },
     isString(value) {
-        return value !== null && typeof value === 'string';
+        return typeof value === 'string';
     },
     toFlatCase(str) {
         // convert snake, kebab, camel and pascal cases to flat case
-        return this.isNotEmpty(str) && this.isString(str) ? str.replace(/(-|_)/g, '').toLowerCase() : str;
+        return this.isString(str) ? str.replace(/(-|_)/g, '').toLowerCase() : str;
     },
     toKebabCase(str) {
         // convert snake, camel and pascal cases to kebab case
-        return this.isNotEmpty(str) && this.isString(str)
+        return this.isString(str)
             ? str
                   .replace(/(_)/g, '-')
                   .replace(/[A-Z]/g, (c, i) => (i === 0 ? c : '-' + c.toLowerCase()))
@@ -44,34 +44,37 @@ const PrimeOneUtils = {
         return fKey ? (this.isObject(options) ? this.getOptionValue(this.getItemValue(options[Object.keys(options).find((k) => this.toFlatCase(k) === fKey) || ''], params), fKeys.join('.'), params) : undefined) : this.getItemValue(options, params);
     },
     toCSSVariables(variables = {}, prefix = 'p-') {
+        const excludedKeyRegex = /^(variants|states)$/gi;
+
         const getValue = (value) => {
-            // @todo: check from parent variables
+            // @todo: check from parent variables and create css variable
             const regex = /{([^}]+)}/g;
 
             return regex.test(value) ? `calc(${value.replace(regex, (v) => this.getOptionValue(variables, v.replace(/{|}/g, '')))})` : value;
-
-            //return value.match(regex).map((v) => ObjectUtils.resolveFieldData(variables, v.replace(/{|}/g, '')));
         };
 
-        const value = Object.entries(variables).reduce((acc, [k, v]) => {
-            const px = prefix + this.toKebabCase(k);
+        const getVariables = (_vs = {}, _p = '') => {
+            return Object.entries(_vs).reduce((acc, [k, v]) => {
+                const px = _p + this.toKebabCase(k);
 
-            if (typeof v === 'object') {
-                if (v.hasOwnProperty('value')) {
-                    acc[`--${px}`] = getValue(v.value);
+                if (this.isObject(v)) {
+                    if (v.hasOwnProperty('value')) {
+                        acc[`--${px}`] = getValue(v.value);
+                    } else {
+                        acc = {
+                            ...acc,
+                            ...getVariables(v, excludedKeyRegex.test(k) ? _p : `${px}-`)
+                        };
+                    }
                 } else {
-                    acc = {
-                        ...acc,
-                        ...this.toCSSVariables(v, `${px}-`)
-                    };
+                    acc[`--${px}`] = getValue(v);
                 }
-            } else {
-                acc[`--${px}`] = getValue(v);
-            }
 
-            return acc;
-        }, {});
+                return acc;
+            }, {});
+        };
 
+        const value = getVariables(variables, prefix);
         const css = `:root {${Object.entries(value).reduce((acc, [k, v]) => (acc += `\n\t${k}: ${v};`), '')}\n}`;
 
         return {
@@ -81,13 +84,18 @@ const PrimeOneUtils = {
     }
 };
 
-function generateVariables(filePath) {
-    import(filePath).then((module) => {
+function generate(filePath) {
+    import(`./${filePath}?version=${Number(new Date())}`).then((module) => {
         if (module && module.default) {
-            const outputFile = filePath.replace(inputDir, outputDir).replace('js', 'css');
-            const outputFileDir = outputDir + outputFile.replace(outputDir, '').split('/')[0];
+            const paths = filePath.split('/');
+            const dir = paths[paths.length - 2];
+            const file = paths[paths.length - 1].toLowerCase();
+            const name = file.replace('.js', '').toLowerCase();
 
-            const css = PrimeOneUtils.toCSSVariables(module.default).css;
+            const outputFileDir = `${outputDir}/${dir}`;
+            const outputFile = `${outputFileDir}/${file.replace('js', 'css')}`;
+
+            const css = PrimeOneUtils.toCSSVariables(module.default, `p-${name}-`).css;
 
             !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
             fs.writeFileSync(outputFile, css);
@@ -101,12 +109,12 @@ watcher
     .on('add', function (path) {
         console.log('File', path, 'has been added');
 
-        generateVariables(`./${path}`);
+        generate(path);
     })
     .on('change', function (path) {
         console.log('File', path, 'has been changed');
 
-        generateVariables(`./${path}`);
+        generate(path);
     })
     .on('unlink', function (path) {
         console.log('File', path, 'has been removed');
