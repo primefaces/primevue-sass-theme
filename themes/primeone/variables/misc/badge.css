@@ -1,0 +1,19 @@
+:root {
+	--p-badge-font-size: 0.75rem;
+	--p-badge-font-weight: 700;
+	--p-badge-min-width: 1.5rem;
+	--p-badge-height: 1.5rem;
+	--p-badge-line-height: 1.5rem;
+	--p-badge-color: var(--p-primary-text-color);
+	--p-badge-background: var(--p-primary-color);
+	--p-badge-secondary-color: #ffffff;
+	--p-badge-secondary-background: #64748b;
+	--p-badge-success-color: #ffffff;
+	--p-badge-success-background: #22c55e;
+	--p-badge-info-color: #ffffff;
+	--p-badge-info-background: #3b82f6;
+	--p-badge-warning-color: #ffffff;
+	--p-badge-warning-background: #f59e0b;
+	--p-badge-danger-color: #ffffff;
+	--p-badge-danger-background: #ef4444;
+}

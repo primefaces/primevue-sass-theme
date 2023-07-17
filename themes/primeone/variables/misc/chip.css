@@ -1,0 +1,17 @@
+:root {
+	--p-chip-color: #495057;
+	--p-chip-background: #dee2e6;
+	--p-chip-border-width: initial;
+	--p-chip-border-style: initial;
+	--p-chip-border-color: initial;
+	--p-chip-border-radius: 16px;
+	--p-chip-padding-top: 0;
+	--p-chip-padding-right: 0.75rem;
+	--p-chip-padding-bottom: 0;
+	--p-chip-padding-left: 0.75rem;
+	--p-chip-remove-icon-outline-color: var(--p-primary-light-color);
+	--p-chip-remove-icon-outline-style: none;
+	--p-chip-remove-icon-outline-width: 0;
+	--p-chip-remove-icon-outline-offset: 0;
+	--p-chip-remove-icon-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+}
