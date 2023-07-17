@@ -1,9 +1,11 @@
 import chokidar from 'chokidar';
 import fs from 'fs';
 
-const root = './themes/primeone';
-const inputDir = root + '/tokens';
-const outputDir = root + '/variables';
+const VARIABLE_PREFIX = 'p-';
+
+const ROOT = './themes/primeone';
+const INPUT_DIR = ROOT + '/tokens';
+const OUTPUT_DIR = ROOT + '/variables';
 
 const PrimeOneUtils = {
     isEmpty(value) {
@@ -43,7 +45,7 @@ const PrimeOneUtils = {
 
         return fKey ? (this.isObject(options) ? this.getOptionValue(this.getItemValue(options[Object.keys(options).find((k) => this.toFlatCase(k) === fKey) || ''], params), fKeys.join('.'), params) : undefined) : this.getItemValue(options, params);
     },
-    toCSSVariables(variables = {}, prefix = 'p-') {
+    toCSSVariables(variables = {}, prefix = VARIABLE_PREFIX || 'p-') {
         const excludedKeyRegex = /^(variants|states|root|parents)$/gi;
 
         const getValue = (value) => {
@@ -65,6 +67,8 @@ const PrimeOneUtils = {
                             ...acc,
                             ...getVariables(v, excludedKeyRegex.test(k) ? _p : `${px}-`)
                         };
+
+                        excludedKeyRegex.lastIndex = 0;
                     }
                 } else {
                     acc[`--${px}`] = getValue(v);
@@ -93,7 +97,7 @@ function generate(filePath) {
                 const file = paths[paths.length - 1].toLowerCase();
                 const name = file.replace('.js', '').toLowerCase();
 
-                const outputFileDir = `${outputDir}/${dir}`;
+                const outputFileDir = `${OUTPUT_DIR}/${dir}`;
                 const outputFile = `${outputFileDir}/${file.replace('js', 'css')}`;
 
                 const css = PrimeOneUtils.toCSSVariables(module.default, `p-${name}-`).css;
@@ -108,7 +112,7 @@ function generate(filePath) {
         });
 }
 
-const watcher = chokidar.watch(inputDir, { ignored: /^\./, persistent: true });
+const watcher = chokidar.watch(INPUT_DIR, { ignored: /^\./, persistent: true });
 
 watcher
     .on('add', function (path) {
