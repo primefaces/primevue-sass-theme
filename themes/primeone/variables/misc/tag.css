@@ -1,0 +1,18 @@
+:root {
+	--p-tag-font-size: 0.75rem;
+	--p-tag-font-weight: 700;
+	--p-tag-color: var(--p-primary-text-color);
+	--p-tag-background: var(--p-primary-color);
+	--p-tag-padding-top: 0.25rem;
+	--p-tag-padding-right: 0.4rem;
+	--p-tag-padding-bottom: 0.25rem;
+	--p-tag-padding-left: 0.4rem;
+	--p-tag-success-color: #ffffff;
+	--p-tag-success-background: #22c55e;
+	--p-tag-info-color: #ffffff;
+	--p-tag-info-background: #3b82f6;
+	--p-tag-warning-color: #ffffff;
+	--p-tag-warning-background: #f59e0b;
+	--p-tag-danger-color: #ffffff;
+	--p-tag-danger-background: #ef4444;
+}

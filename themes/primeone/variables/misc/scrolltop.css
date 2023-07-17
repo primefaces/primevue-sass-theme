@@ -1,0 +1,12 @@
+:root {
+	--p-scrolltop-width: 3rem;
+	--p-scrolltop-height: 3rem;
+	--p-scrolltop-color: #f8f9fa;
+	--p-scrolltop-background: rgba(0, 0, 0, 0.7);
+	--p-scrolltop-border-width: initial;
+	--p-scrolltop-border-style: initial;
+	--p-scrolltop-border-color: initial;
+	--p-scrolltop-border-radius: 50%;
+	--p-scrolltop-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+	--p-scrolltop-hover-background: rgba(0, 0, 0, 0.8);
+}

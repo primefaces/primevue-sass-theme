@@ -1,0 +1,11 @@
+:root {
+	--p-terminal-color: #495057;
+	--p-terminal-background: #ffffff;
+	--p-terminal-padding-top: 1.25rem;
+	--p-terminal-padding-right: 1.25rem;
+	--p-terminal-padding-bottom: 1.25rem;
+	--p-terminal-padding-left: 1.25rem;
+	--p-terminal-border-width: 1px;
+	--p-terminal-border-style: solid;
+	--p-terminal-border-color: #dee2e6;
+}
