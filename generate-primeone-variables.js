@@ -44,7 +44,7 @@ const PrimeOneUtils = {
         return fKey ? (this.isObject(options) ? this.getOptionValue(this.getItemValue(options[Object.keys(options).find((k) => this.toFlatCase(k) === fKey) || ''], params), fKeys.join('.'), params) : undefined) : this.getItemValue(options, params);
     },
     toCSSVariables(variables = {}, prefix = 'p-') {
-        const excludedKeyRegex = /^(variants|states|root)$/gi;
+        const excludedKeyRegex = /^(variants|states|root|parents)$/gi;
 
         const getValue = (value) => {
             // @todo: check from parent variables and create css variable
@@ -85,40 +85,44 @@ const PrimeOneUtils = {
 };
 
 function generate(filePath) {
-    import(`./${filePath}?version=${Number(new Date())}`).then((module) => {
-        if (module && module.default) {
-            const paths = filePath.split('/');
-            const dir = paths[paths.length - 2];
-            const file = paths[paths.length - 1].toLowerCase();
-            const name = file.replace('.js', '').toLowerCase();
+    import(`./${filePath}?version=${Number(new Date())}`)
+        .then((module) => {
+            if (module && module.default) {
+                const paths = filePath.split('/');
+                const dir = paths[paths.length - 2];
+                const file = paths[paths.length - 1].toLowerCase();
+                const name = file.replace('.js', '').toLowerCase();
 
-            const outputFileDir = `${outputDir}/${dir}`;
-            const outputFile = `${outputFileDir}/${file.replace('js', 'css')}`;
+                const outputFileDir = `${outputDir}/${dir}`;
+                const outputFile = `${outputFileDir}/${file.replace('js', 'css')}`;
 
-            const css = PrimeOneUtils.toCSSVariables(module.default, `p-${name}-`).css;
+                const css = PrimeOneUtils.toCSSVariables(module.default, `p-${name}-`).css;
 
-            !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
-            fs.writeFileSync(outputFile, css);
-        }
-    });
+                !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
+                fs.writeFileSync(outputFile, css);
+            }
+        })
+        .catch((error) => {
+            console.error(`\x1b[31m🛑${error} in ${filePath}`, '\x1b[0m');
+        });
 }
 
 const watcher = chokidar.watch(inputDir, { ignored: /^\./, persistent: true });
 
 watcher
     .on('add', function (path) {
-        console.log('File', path, 'has been added');
+        console.info('✅File\x1b[32m', path, '\x1b[0mhas been added');
 
         generate(path);
     })
     .on('change', function (path) {
-        console.log('File', path, 'has been changed');
+        console.info('🔄File\x1b[34m', path, '\x1b[0mhas been changed');
 
         generate(path);
     })
     .on('unlink', function (path) {
-        console.log('File', path, 'has been removed');
+        console.warn('🈁File\x1b[90m', path, '\x1b[0mhas been removed');
     })
     .on('error', function (error) {
-        console.error('Error happened', error);
+        console.error('⛔Error happened', error);
     });
