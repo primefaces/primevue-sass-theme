@@ -1,24 +1,24 @@
 .p-inplace {
     .p-inplace-display {
-        padding-top: var(--p-inplace-padding-top);
-        padding-right: var(--p-inplace-padding-right);
-        padding-bottom: var(--p-inplace-padding-bottom);
-        padding-left: var(--p-inplace-padding-left);
+        padding-top: var(--p-inplace-display-padding-top);
+        padding-right: var(--p-inplace-display-padding-right);
+        padding-bottom: var(--p-inplace-display-padding-bottom);
+        padding-left: var(--p-inplace-display-padding-left);
         border-radius: var(--p-border-radius);
         transition-duration: var(--p-transition-duration);
         transition-property: var(--p-transition-property);
 
         &:not(.p-disabled):hover {
-            color: var(--p-inplace-hover-color);
-            background: var(--p-inplace-hover-background);
+            color: var(--p-inplace-display-hover-color);
+            background: var(--p-inplace-display-hover-background);
         }
 
         &:focus {
-            outline-color: var(--p-inplace-focus-outline-color);
-            outline-style: var(--p-inplace-focus-outline-style);
-            outline-width: var(--p-inplace-focus-outline-width);
-            outline-offset: var(--p-inplace-focus-outline-offset);
-            box-shadow: var(--p-inplace-focus-box-shadow);
+            outline-color: var(--p-inplace-display-focus-outline-color);
+            outline-style: var(--p-inplace-display-focus-outline-style);
+            outline-width: var(--p-inplace-display-focus-outline-width);
+            outline-offset: var(--p-inplace-display-focus-outline-offset);
+            box-shadow: var(--p-inplace-display-focus-box-shadow);
         }
     }
 }

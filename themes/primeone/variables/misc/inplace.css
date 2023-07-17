@@ -1,0 +1,13 @@
+:root {
+	--p-inplace-display-padding-top: 0.75rem;
+	--p-inplace-display-padding-right: 0.75rem;
+	--p-inplace-display-padding-bottom: 0.75rem;
+	--p-inplace-display-padding-left: 0.75rem;
+	--p-inplace-display-hover-color: #495057;
+	--p-inplace-display-hover-background: #e9ecef;
+	--p-inplace-display-focus-outline-color: var(--p-primary-light-color);
+	--p-inplace-display-focus-outline-style: none;
+	--p-inplace-display-focus-outline-width: 0;
+	--p-inplace-display-focus-outline-offset: 0;
+	--p-inplace-display-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+}

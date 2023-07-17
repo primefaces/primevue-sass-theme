@@ -1,0 +1,9 @@
+:root {
+	--p-progressbar-height: 1.5rem;
+	--p-progressbar-background: #dee2e6;
+	--p-progressbar-border-width: 0;
+	--p-progressbar-border-style: none;
+	--p-progressbar-border-color: initial;
+	--p-progressbar-value-background: var(--p-primary-color);
+	--p-progressbar-label-color: var(--p-primary-text-color);
+}

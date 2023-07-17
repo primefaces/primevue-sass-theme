@@ -1,7 +1,7 @@
 :root {
 	--p-avatar-color: #495057;
 	--p-avatar-background: #dee2e6;
-	--p-avatar-parents-in-group-border-width: 2px;
-	--p-avatar-parents-in-group-border-style: solid;
-	--p-avatar-parents-in-group-border-color: #ffffff;
+	--p-avatar-in-group-border-width: 2px;
+	--p-avatar-in-group-border-style: solid;
+	--p-avatar-in-group-border-color: #ffffff;
 }
