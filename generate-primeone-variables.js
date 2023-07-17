@@ -99,6 +99,7 @@ function generate(filePath) {
                 const css = PrimeOneUtils.toCSSVariables(module.default, `p-${name}-`).css;
 
                 !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
+                !fs.existsSync(outputFile) && console.info('🎉File\x1b[33m', outputFile, '\x1b[0mhas been created');
                 fs.writeFileSync(outputFile, css);
             }
         })
