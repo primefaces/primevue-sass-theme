@@ -1,0 +1,10 @@
+:root {
+	--p-toolbar-background: #f8f9fa;
+	--p-toolbar-border-width: 1px;
+	--p-toolbar-border-style: solid;
+	--p-toolbar-border-color: #dee2e6;
+	--p-toolbar-padding-top: 1.25rem;
+	--p-toolbar-padding-right: 1.25rem;
+	--p-toolbar-padding-bottom: 1.25rem;
+	--p-toolbar-padding-left: 1.25rem;
+}

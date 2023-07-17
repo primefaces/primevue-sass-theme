@@ -1,13 +1,12 @@
 .p-tabview {
     .p-tabview-nav {
         background: var(--p-tabview-nav-background);
-        border-width: var(--p-tabview--nav-border-width);
+        border-width: var(--p-tabview-nav-border-width);
         border-style: var(--p-tabview-nav-border-style);
-        border-color: var(--p-tabview--nav-border-color);
+        border-color: var(--p-tabview-nav-border-color);
+        gap: var(--p-tabview-gap);
 
         li {
-            margin-right: var(--p-tabview-header-spacing);
-
             .p-tabview-nav-link {
                 font-size: var(--p-tabview-header-font-size);
                 font-weight: var(--p-tabview-header-font-weight);
@@ -61,18 +60,18 @@
     }
 
     .p-tabview-nav-btn.p-link {
-        color: var(--p-tabview--nav-button-color);
+        color: var(--p-tabview-nav-button-color);
         background: var(--p-tabview-nav-button-background);
         box-shadow: var(--p-tabview-nav-button-box-shadow);
         width: var(--p-tabview-nav-button-width);
         border-radius: 0;
 
         &:focus {
-            outline-color: var(--p-tabview-header-focus-outline-color);
-            outline-style: var(--p-tabview-header-focus-outline-style);
-            outline-width: var(--p-tabview-header-focus-outline-width);
-            outline-offset: var(--p-tabview-header-focus-outline-offset);
-            box-shadow: var(--p-tabview-header-focus-box-shadow);
+            outline-color: var(--p-tabview-nav-button-focus-outline-color);
+            outline-style: var(--p-tabview-nav-button-focus-outline-style);
+            outline-width: var(--p-tabview-nav-button-focus-outline-width);
+            outline-offset: var(--p-tabview-nav-button-focus-outline-offset);
+            box-shadow: var(--p-tabview-nav-button-focus-box-shadow);
         }
     }
 

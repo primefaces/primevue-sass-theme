@@ -84,10 +84,14 @@
     }
 
     .p-accordion-tab {
-        margin-bottom: var(--p-accordion-spacing);
+        margin-bottom: var(--p-accordion-gap);
+
+        /*@container style(--p-accordion-gap: 0) {
+            @todo
+        }*/
 
         // @todo
-        @if #{var(--p-accordion-spacing)} == 0 {
+        @if #{var(--p-accordion-gap)} == 0 {
             .p-accordion-header {
                 .p-accordion-header-link {
                     border-radius: 0;

@@ -1,0 +1,21 @@
+:root {
+	--p-divider-size: 1px;
+	--p-divider-color: #dee2e6;
+	--p-divider-content-background: #ffffff;
+	--p-divider-horizontal-padding-top: 0;
+	--p-divider-horizontal-padding-right: 1.25rem;
+	--p-divider-horizontal-padding-bottom: 0;
+	--p-divider-horizontal-padding-left: 1.25rem;
+	--p-divider-horizontal-margin-top: 1.25rem;
+	--p-divider-horizontal-margin-right: 0;
+	--p-divider-horizontal-margin-bottom: 1.25rem;
+	--p-divider-horizontal-margin-left: 0;
+	--p-divider-vertical-padding-top: 1.25rem;
+	--p-divider-vertical-padding-right: 0;
+	--p-divider-vertical-padding-bottom: 1.25rem;
+	--p-divider-vertical-padding-left: 0;
+	--p-divider-vertical-margin-top: 0;
+	--p-divider-vertical-margin-right: 1.25rem;
+	--p-divider-vertical-margin-bottom: 0;
+	--p-divider-vertical-margin-left: 1.25rem;
+}

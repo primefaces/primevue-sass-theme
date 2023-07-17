@@ -1,0 +1,14 @@
+:root {
+	--p-splitter-color: #495057;
+	--p-splitter-background: #ffffff;
+	--p-splitter-border-width: 1px;
+	--p-splitter-border-style: solid;
+	--p-splitter-border-color: #dee2e6;
+	--p-splitter-gutter-background: #f8f9fa;
+	--p-splitter-gutter-handle-background: #dee2e6;
+	--p-splitter-gutter-handle-focus-outline-color: var(--p-primary-light-color);
+	--p-splitter-gutter-handle-focus-outline-style: none;
+	--p-splitter-gutter-handle-focus-outline-width: 0;
+	--p-splitter-gutter-handle-focus-outline-offset: 0;
+	--p-splitter-gutter-handle-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+}

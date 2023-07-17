@@ -1,18 +1,18 @@
 .p-scrollpanel {
     .p-scrollpanel-bar {
-        background: var(--p-scroll-panel-thumb-background);
-        border-width: var(--p-scroll-panel-thumb-border-width);
-        border-style: var(--p-scroll-panel-thumb-border-style);
-        border-color: var(--p-scroll-panel-thumb-border-color);
+        background: var(--p-scrollpanel-bar-background);
+        border-width: var(--p-scrollpanel-bar-border-width);
+        border-style: var(--p-scrollpanel-bar-border-style);
+        border-color: var(--p-scrollpanel-bar-border-color);
         transition-duration: var(--p-transition-duration);
         transition-property: var(--p-transition-property);
 
         &:focus {
-            outline-color: var(--p-scroll-panel-thumb-focus-outline-color);
-            outline-style: var(--p-scroll-panel-thumb-focus-outline-style);
-            outline-width: var(--p-scroll-panel-thumb-focus-outline-width);
-            outline-offset: var(--p-scroll-panel-thumb-focus-outline-offset);
-            box-shadow: var(--p-scroll-panel-thumb-focus-box-shadow);
+            outline-color: var(--p-scrollpanel-bar-focus-outline-color);
+            outline-style: var(--p-scrollpanel-bar-focus-outline-style);
+            outline-width: var(--p-scrollpanel-bar-focus-outline-width);
+            outline-offset: var(--p-scrollpanel-bar-focus-outline-offset);
+            box-shadow: var(--p-scrollpanel-bar-focus-box-shadow);
         }
     }
 }

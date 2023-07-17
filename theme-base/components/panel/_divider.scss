@@ -14,7 +14,9 @@
         margin-left: var(--p-divider-horizontal-margin-left);
 
         &:before {
-            border-top: var(--p-divider-size) var(--p-divider-color);
+            border-top-width: var(--p-divider-size);
+            border-top-style: initial;
+            border-top-color: var(--p-divider-color);
         }
 
         .p-divider-content {
@@ -33,7 +35,9 @@
         margin-left: var(--p-divider-vertical-margin-left);
 
         &:before {
-            border-left: var(--p-divider-size) var(--p-divider-color);
+            border-left-width: var(--p-divider-size);
+            border-left-style: initial;
+            border-left-color: var(--p-divider-color);
         }
 
         .p-divider-content {

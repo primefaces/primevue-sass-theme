@@ -1,0 +1,11 @@
+:root {
+	--p-scollpanel-bar-background: #f8f9fa;
+	--p-scollpanel-bar-border-width: 1px;
+	--p-scollpanel-bar-border-style: none;
+	--p-scollpanel-bar-border-color: initial;
+	--p-scollpanel-bar-focus-outline-color: var(--p-primary-light-color);
+	--p-scollpanel-bar-focus-outline-style: none;
+	--p-scollpanel-bar-focus-outline-width: 0;
+	--p-scollpanel-bar-focus-outline-offset: 0;
+	--p-scollpanel-bar-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+}
