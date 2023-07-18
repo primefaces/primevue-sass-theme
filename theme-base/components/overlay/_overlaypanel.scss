@@ -15,23 +15,23 @@
     }
 
     .p-overlaypanel-close {
-        width: var(--p-overlaypanel-close-width);
-        height: var(--p-overlaypanel-close-height);
-        color: var(--p-overlaypanel-close-color);
-        background: var(--p-overlaypanel-close-background);
-        border-width: var(--p-overlaypanel-close-border-width);
-        border-style: var(--p-overlaypanel-close-border-style);
-        border-color: var(--p-overlaypanel-close-border-color);
-        border-radius: var(--p-overlaypanel-close-border-radius);
+        width: var(--p-overlaypanel-close-button-width);
+        height: var(--p-overlaypanel-close-button-height);
+        color: var(--p-overlaypanel-close-button-color);
+        background: var(--p-overlaypanel-close-button-background);
+        border-width: var(--p-overlaypanel-close-button-border-width);
+        border-style: var(--p-overlaypanel-close-button-border-style);
+        border-color: var(--p-overlaypanel-close-button-border-color);
+        border-radius: var(--p-overlaypanel-close-button-border-radius);
         transition-duration: var(--p-transition-duration);
         transition-property: var(--p-transition-property);
         position: absolute;
-        top: calc(calc(-1 * var(--p-overlaypanel-close-height)) / 2);
-        right: calc(calc(-1 * var(--p-overlaypanel-close-width)) / 2);
+        top: calc(calc(-1 * var(--p-overlaypanel-close-button-height)) / 2);
+        right: calc(calc(-1 * var(--p-overlaypanel-close-button-width)) / 2);
 
         &:enabled:hover {
-            color: var(--p-overlaypanel-close-hover-color);
-            background: var(--p-overlaypanel-close-hover-background);
+            color: var(--p-overlaypanel-close-button-hover-color);
+            background: var(--p-overlaypanel-close-button-hover-background);
         }
     }
 

@@ -1,0 +1,9 @@
+:root {
+	--p-tooltip-color: #ffffff;
+	--p-tooltip-background: #495057;
+	--p-tooltip-padding-top: 0.75rem;
+	--p-tooltip-padding-right: 0.75rem;
+	--p-tooltip-padding-bottom: 0.75rem;
+	--p-tooltip-padding-left: 0.75rem;
+	--p-tooltip-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}

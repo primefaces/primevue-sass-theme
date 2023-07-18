@@ -1,0 +1,25 @@
+:root {
+	--p-overlaypanel-color: #495057;
+	--p-overlaypanel-background: #ffffff;
+	--p-overlaypanel-border-width: 0;
+	--p-overlaypanel-border-style: none;
+	--p-overlaypanel-border-color: initial;
+	--p-overlaypanel-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	--p-overlaypanel-content-padding-top: 1.25rem;
+	--p-overlaypanel-content-padding-right: 1.25rem;
+	--p-overlaypanel-content-padding-bottom: 1.25rem;
+	--p-overlaypanel-content-padding-left: 1.25rem;
+	--p-overlaypanel-close-button-color: var(--p-primary-text-color);
+	--p-overlaypanel-close-button-background: var(--p-primary-color);
+	--p-overlaypanel-close-button-width: 2rem;
+	--p-overlaypanel-close-button-height: 2rem;
+	--p-overlaypanel-close-button-border-width: initial;
+	--p-overlaypanel-close-button-border-style: initial;
+	--p-overlaypanel-close-button-border-color: initial;
+	--p-overlaypanel-close-button-border-radius: 50%;
+	--p-overlaypanel-close-button-hover-color: var(--p-primary-text-color);
+	--p-overlaypanel-close-button-hover-background: var(--p-primary-dark-color);
+	--p-overlaypanel-tip-border-width: initial;
+	--p-overlaypanel-tip-border-style: solid;
+	--p-overlaypanel-tip-border-color: scale-color($overlayContentBg, $lightness: -5%);
+}

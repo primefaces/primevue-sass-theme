@@ -94,13 +94,13 @@ function generate(filePath) {
             if (module && module.default) {
                 const paths = filePath.split('/');
                 const dir = paths[paths.length - 2];
-                const file = paths[paths.length - 1].toLowerCase();
-                const name = file.replace('.js', '').toLowerCase();
+                const file = paths[paths.length - 1];
+                const name = file.replace('.js', '');
 
                 const outputFileDir = `${OUTPUT_DIR}/${dir}`;
                 const outputFile = `${outputFileDir}/${file.replace('js', 'css')}`;
 
-                const css = PrimeOneUtils.toCSSVariables(module.default, `p-${name}-`).css;
+                const css = PrimeOneUtils.toCSSVariables(module.default, `p-${PrimeOneUtils.toKebabCase(name)}-`).css;
 
                 !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
                 !fs.existsSync(outputFile) && console.info('🎉File\x1b[33m', outputFile, '\x1b[0mhas been created');
