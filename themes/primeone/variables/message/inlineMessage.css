@@ -1,0 +1,34 @@
+:root {
+	--p-inline-message-padding-top: 0.75rem;
+	--p-inline-message-padding-right: 0.75rem;
+	--p-inline-message-padding-bottom: 0.75rem;
+	--p-inline-message-padding-left: 0.75rem;
+	--p-inline-message-margin-top: 0;
+	--p-inline-message-margin-right: 0;
+	--p-inline-message-margin-bottom: 0;
+	--p-inline-message-margin-left: 0;
+	--p-inline-message-info-color: #696cff;
+	--p-inline-message-info-background: #e9e9ff;
+	--p-inline-message-info-border-width: initial;
+	--p-inline-message-info-border-style: solid;
+	--p-inline-message-info-border-color: #696cff;
+	--p-inline-message-info-icon-color: #696cff;
+	--p-inline-message-success-color: #1ea97c;
+	--p-inline-message-success-background: #e4f8f0;
+	--p-inline-message-success-border-width: initial;
+	--p-inline-message-success-border-style: solid;
+	--p-inline-message-success-border-color: #1ea97c;
+	--p-inline-message-success-icon-color: #1ea97c;
+	--p-inline-message-warn-color: #cc8925;
+	--p-inline-message-warn-background: #fff2e2;
+	--p-inline-message-warn-border-width: initial;
+	--p-inline-message-warn-border-style: solid;
+	--p-inline-message-warn-border-color: #cc8925;
+	--p-inline-message-warn-icon-color: #cc8925;
+	--p-inline-message-error-color: #ff5757;
+	--p-inline-message-error-background: #ffe7e6;
+	--p-inline-message-error-border-width: initial;
+	--p-inline-message-error-border-style: solid;
+	--p-inline-message-error-border-color: #ff5757;
+	--p-inline-message-error-icon-color: #ff5757;
+}

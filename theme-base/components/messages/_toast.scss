@@ -10,19 +10,19 @@
         border-radius: var(--p-border-radius);
 
         .p-toast-message-content {
-            padding-top: var(--p-toast-message-content-padding-top);
-            padding-right: var(--p-toast-message-content-padding-right);
-            padding-bottom: var(--p-toast-message-content-padding-bottom);
-            padding-left: var(--p-toast-message-content-padding-left);
-            border-width: var(--p-toast-message-content-border-width);
-            border-style: var(--p-toast-message-content-border-style);
-            border-color: var(--p-toast-message-content-border-color);
+            padding-top: var(--p-toast-content-padding-top);
+            padding-right: var(--p-toast-content-padding-right);
+            padding-bottom: var(--p-toast-content-padding-bottom);
+            padding-left: var(--p-toast-content-padding-left);
+            border-width: var(--p-toast-content-border-width);
+            border-style: var(--p-toast-content-border-style);
+            border-color: var(--p-toast-content-border-color);
 
             .p-toast-message-text {
-                margin-top: var(--p-toast-message-text-margin-top);
-                margin-right: var(--p-toast-message-text-margin-right);
-                margin-bottom: var(--p-toast-message-text-margin-bottom);
-                margin-left: var(--p-toast-message-text-margin-left);
+                margin-top: var(--p-toast-text-margin-top);
+                margin-right: var(--p-toast-text-margin-right);
+                margin-bottom: var(--p-toast-text-margin-bottom);
+                margin-left: var(--p-toast-text-margin-left);
             }
 
             .p-toast-message-icon {
@@ -35,39 +35,39 @@
             }
 
             .p-toast-summary {
-                font-size: var(--p-toast-message-summary-font-size);
-                font-weight: var(--p-toast-message-summary-font-weight);
+                font-size: var(--p-toast-summary-font-size);
+                font-weight: var(--p-toast-summary-font-weight);
             }
 
             .p-toast-detail {
-                margin-top: var(--p-toast-message-detail-margin-top);
-                margin-right: var(--p-toast-message-detail-margin-right);
-                margin-bottom: var(--p-toast-message-detail-margin-bottom);
-                margin-left: var(--p-toast-message-detail-margin-left);
+                margin-top: var(--p-toast-detail-margin-top);
+                margin-right: var(--p-toast-detail-margin-right);
+                margin-bottom: var(--p-toast-detail-margin-bottom);
+                margin-left: var(--p-toast-detail-margin-left);
             }
         }
 
         .p-toast-icon-close {
-            width: var(--p-toast-message-close-icon-width);
-            height: var(--p-toast-message-close-icon-height);
-            background: var(--p-toast-message-close-icon-background);
-            border-width: var(--p-toast-message-close-icon-border-width);
-            border-style: var(--p-toast-message-close-icon-border-style);
-            border-color: var(--p-toast-message-close-icon-border-color);
-            border-radius: var(--p-toast-message-close-icon-border-radius);
+            width: var(--p-toast-close-icon-width);
+            height: var(--p-toast-close-icon-height);
+            background: var(--p-toast-close-icon-background);
+            border-width: var(--p-toast-close-icon-border-width);
+            border-style: var(--p-toast-close-icon-border-style);
+            border-color: var(--p-toast-close-icon-border-color);
+            border-radius: var(--p-toast-close-icon-border-radius);
             transition-duration: var(--p-transition-duration);
             transition-property: var(--p-transition-property);
 
             &:hover {
-                background: var(--p-toast-message-close-icon-hover-background);
+                background: var(--p-toast-close-icon-hover-background);
             }
 
             &:focus {
-                outline-color: var(--p-toast-message-close-icon-focus-outline-color);
-                outline-style: var(--p-toast-message-close-icon-focus-outline-style);
-                outline-width: var(--p-toast-message-close-icon-focus-outline-width);
-                outline-offset: var(--p-toast-message-close-icon-focus-outline-offset);
-                box-shadow: var(--p-toast-message-close-icon-focus-box-shadow);
+                outline-color: var(--p-toast-close-icon-focus-outline-color);
+                outline-style: var(--p-toast-close-icon-focus-outline-style);
+                outline-width: var(--p-toast-close-icon-focus-outline-width);
+                outline-offset: var(--p-toast-close-icon-focus-outline-offset);
+                box-shadow: var(--p-toast-close-icon-focus-box-shadow);
             }
         }
 
@@ -80,7 +80,7 @@
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: var(--p-toast-message-info-icon-color);
+                color: var(--p-toast-info-icon-color);
             }
         }
 
@@ -93,7 +93,7 @@
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: var(--p-toast-message-success-icon-color);
+                color: var(--p-toast-success-icon-color);
             }
         }
 
@@ -106,7 +106,7 @@
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: var(--p-toast-message-warn-icon-color);
+                color: var(--p-toast-warn-icon-color);
             }
         }
 
@@ -119,7 +119,7 @@
 
             .p-toast-message-icon,
             .p-toast-icon-close {
-                color: var(--p-toast-message-error-icon-color);
+                color: var(--p-toast-error-icon-color);
             }
         }
     }

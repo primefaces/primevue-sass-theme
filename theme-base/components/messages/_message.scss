@@ -6,10 +6,10 @@
     border-radius: var(--p-border-radius);
 
     .p-message-wrapper {
-        padding-top: var(--p-message-padding-top);
-        padding-right: var(--p-message-padding-right);
-        padding-bottom: var(--p-message-padding-bottom);
-        padding-left: var(--p-message-padding-left);
+        padding-top: var(--p-message-wrapper-padding-top);
+        padding-right: var(--p-message-wrapper-padding-right);
+        padding-bottom: var(--p-message-wrapper-padding-bottom);
+        padding-left: var(--p-message-wrapper-padding-left);
     }
 
     .p-message-close {
