@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.31.0](https://github.com/primefaces/primevue-sass-theme/tree/3.31.0) (2023-07-25)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.30.2...3.31.0)
+
+**Fixed bugs:**
+
+- Bootstrap: remove unused Breadcrumb extensions [\#16](https://github.com/primefaces/primevue-sass-theme/issues/16)
+
 ## [3.30.2](https://github.com/primefaces/primevue-sass-theme/tree/3.30.2) (2023-07-20)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.30.2
