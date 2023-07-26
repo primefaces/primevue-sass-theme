@@ -30,29 +30,29 @@
             transition-property: var(--p-transition-property);
 
             &:enabled:hover {
-                color: var(--p-panel-toggler_hover_color);
-                background: var(--p-panel-toggler_hover_background);
-                border-width: var(--p-panel-toggler_hover_border-width);
-                border-style: var(--p-panel-toggler_hover_border-style);
-                border-color: var(--p-panel-toggler_hover_border-color);
+                color: var(--p-panel-toggler-hover-color);
+                background: var(--p-panel-toggler-hover-background);
+                border-width: var(--p-panel-toggler-hover-border-width);
+                border-style: var(--p-panel-toggler-hover-border-style);
+                border-color: var(--p-panel-toggler-hover-border-color);
             }
 
             &:focus {
-                outline-color: var(--p-panel-toggler_focus_outline-color);
-                outline-style: var(--p-panel-toggler_focus_outline-style);
-                outline-width: var(--p-panel-toggler_focus_outline-width);
-                outline-offset: var(--p-panel-toggler_focus_outline-offset);
-                box-shadow: var(--p-panel-toggler_focus_box-shadow);
+                outline-color: var(--p-panel-toggler-focus-outline-color);
+                outline-style: var(--p-panel-toggler-focus-outline-style);
+                outline-width: var(--p-panel-toggler-focus-outline-width);
+                outline-offset: var(--p-panel-toggler-focus-outline-offset);
+                box-shadow: var(--p-panel-toggler-focus-box-shadow);
             }
         }
     }
 
     &.p-panel-toggleable {
         .p-panel-header {
-            padding-top: var(--p-panel--toggleable--header-padding-top);
-            padding-right: var(--p-panel--toggleable--header-padding-right);
-            padding-bottom: var(--p-panel--toggleable--header-padding-bottom);
-            padding-left: var(--p-panel--toggleable--header-padding-left);
+            padding-top: var(--p-panel-toggleable-header-padding-top);
+            padding-right: var(--p-panel-toggleable-header-padding-right);
+            padding-bottom: var(--p-panel-toggleable-header-padding-bottom);
+            padding-left: var(--p-panel-toggleable-header-padding-left);
         }
     }
 
