@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.32.0](https://github.com/primefaces/primevue-sass-theme/tree/3.32.0) (2023-08-11)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.31.0...3.32.0)
+
+**Fixed bugs:**
+
+- SplitButton: menu icon not visible in large size [#12](https://github.com/primefaces/primevue-sass-theme/issues/12)
+
 ## [3.31.0](https://github.com/primefaces/primevue-sass-theme/tree/3.31.0) (2023-07-25)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.30.2...3.31.0)
@@ -38,7 +46,7 @@
 
 **Fixed bugs:**
 
-- Calendar: Material theme icon color defect  [\#10](https://github.com/primefaces/primevue-sass-theme/issues/10)
+- Calendar: Material theme icon color defect [\#10](https://github.com/primefaces/primevue-sass-theme/issues/10)
 - Message: wrong close icon size [\#9](https://github.com/primefaces/primevue-sass-theme/issues/9)
 
 ## [3.27.0](https://github.com/primefaces/primevue-sass-theme/tree/3.27.0) (2023-04-19)
