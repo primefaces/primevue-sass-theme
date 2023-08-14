@@ -1,3 +1,20 @@
 :root {
 	--p-image-mask-background: rgba(0, 0, 0, 0.9);
+	--p-image-button-color: #f8f9fa;
+	--p-image-button-background: transparent;
+	--p-image-button-hover-background: rgba(0, 0, 0, 0.5);
+	--p-image-toolbar-padding-top: 1rem;
+	--p-image-toolbar-padding-right: 1rem;
+	--p-image-toolbar-padding-bottom: 1rem;
+	--p-image-toolbar-padding-left: 1rem;
+	--p-image-action-icon-width: 3rem;
+	--p-image-action-icon-height: 3rem;
+	--p-image-action-color: #f8f9fa;
+	--p-image-action-background: transparent;
+	--p-image-action-border-width: initial;
+	--p-image-action-border-style: initial;
+	--p-image-action-border-color: initial;
+	--p-image-action-border-radius: 50%;
+	--p-image-action-hover-color: #f8f9fa;
+	--p-image-action-hover-background: rgba(255, 255, 255, 0.1);
 }

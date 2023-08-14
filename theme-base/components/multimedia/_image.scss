@@ -4,8 +4,8 @@
 }
 
 .p-image-preview-indicator {
-    color: var(--p-image-preview-indicator-color);
-    background: var(--p-image-preview-indicator-background);
+    color: var(--p-image-button-color);
+    background: var(--p-image-button-background);
     transition-duration: var(--p-transition-duration);
     transition-property: var(--p-transition-property);
 
@@ -18,7 +18,7 @@
 .p-image-preview-container {
     &:hover {
         > .p-image-preview-indicator {
-            background: var(--p-image-preview-indicator-hover-background);
+            background: var(--p-image-button-hover-background);
         }
     }
 }
@@ -31,14 +31,14 @@
 }
 
 .p-image-action.p-link {
-    width: var(--p-image-preview-action-icon-width);
-    height: var(--p-image-preview-action-icon-height);
-    color: var(--p-image-preview-action-icon-color);
-    background: var(--p-image-preview-action-icon-background);
-    border-width: var(--p-image-preview-action-icon-border-width);
-    border-style: var(--p-image-preview-action-icon-border-style);
-    border-color: var(--p-image-preview-action-icon-border-color);
-    border-radius: var(--p-image-preview-action-icon-border-radius);
+    width: var(--p-image-action-width);
+    height: var(--p-image-action-height);
+    color: var(--p-image-action-color);
+    background: var(--p-image-action-background);
+    border-width: var(--p-image-action-border-width);
+    border-style: var(--p-image-action-border-style);
+    border-color: var(--p-image-action-border-color);
+    border-radius: var(--p-image-action-border-radius);
     transition-duration: var(--p-transition-duration);
     transition-property: var(--p-transition-property);
     margin-right: var(--p-inline-spacing);
@@ -48,8 +48,8 @@
     }
 
     &:hover {
-        color: var(--p-image-preview-action-icon-hover-color);
-        background: var(--p-image-preview-action-icon-hover-background);
+        color: var(--p-image-action-hover-color);
+        background: var(--p-image-action-hover-background);
     }
 
     i {

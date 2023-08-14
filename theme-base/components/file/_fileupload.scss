@@ -68,15 +68,6 @@
         height: var(--p-fileupload-progressbar-height);
     }
 
-    .p-fileupload-row {
-        > div {
-            padding-top: var(--p-fileupload-row-padding-top);
-            padding-right: var(--p-fileupload-row-padding-right);
-            padding-bottom: var(--p-fileupload-row-padding-bottom);
-            padding-left: var(--p-fileupload-row-padding-left);
-        }
-    }
-
     &.p-fileupload-advanced {
         .p-message {
             margin-top: 0;
@@ -86,18 +77,18 @@
 
 .p-fileupload-choose {
     &:not(.p-disabled):hover {
-        color: var(--p-fileupload-choose-hover-color);
-        background: var(--p-fileupload-choose-hover-background);
-        border-width: var(--p-fileupload-choose-hover-border-width);
-        border-style: var(--p-fileupload-choose-hover-border-style);
-        border-color: var(--p-fileupload-choose-hover-border-color);
+        color: var(--p-fileupload-choose-button-hover-color);
+        background: var(--p-fileupload-choose-button-hover-background);
+        border-width: var(--p-fileupload-choose-button-hover-border-width);
+        border-style: var(--p-fileupload-choose-button-hover-border-style);
+        border-color: var(--p-fileupload-choose-button-hover-border-color);
     }
 
     &:not(.p-disabled):active {
-        color: var(--p-fileupload-choose-active-color);
-        background: var(--p-fileupload-choose-active-background);
-        border-width: var(--p-fileupload-choose-active-border-width);
-        border-style: var(--p-fileupload-choose-active-border-style);
-        border-color: var(--p-fileupload-choose-active-border-color);
+        color: var(--p-fileupload-choose-button-active-color);
+        background: var(--p-fileupload-choose-button-active-background);
+        border-width: var(--p-fileupload-choose-button-active-border-width);
+        border-style: var(--p-fileupload-choose-button-active-border-style);
+        border-color: var(--p-fileupload-choose-button-active-border-color);
     }
 }

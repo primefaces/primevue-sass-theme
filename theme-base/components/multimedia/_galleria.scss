@@ -1,17 +1,17 @@
 .p-galleria {
     .p-galleria-close {
-        width: var(--p-galleria-close-icon-width);
-        height: var(--p-galleria-close-icon-height);
-        color: var(--p-galleria-close-icon-color);
-        background: var(--p-galleria-close-icon-background);
-        margin-top: var(--p-galleria-close-icon-margin-top);
-        margin-right: var(--p-galleria-close-icon-margin-right);
-        margin-bottom: var(--p-galleria-close-icon-margin-bottom);
-        margin-left: var(--p-galleria-close-icon-margin-left);
-        border-width: var(--p-galleria-close-icon-border-width);
-        border-style: var(--p-galleria-close-icon-border-style);
-        border-color: var(--p-galleria-close-icon-border-color);
-        border-radius: var(--p-galleria-close-icon-border-radius);
+        width: var(--p-galleria-close-button-width);
+        height: var(--p-galleria-close-button-height);
+        color: var(--p-galleria-close-button-color);
+        background: var(--p-galleria-close-button-background);
+        margin-top: var(--p-galleria-close-button-margin-top);
+        margin-right: var(--p-galleria-close-button-margin-right);
+        margin-bottom: var(--p-galleria-close-button-margin-bottom);
+        margin-left: var(--p-galleria-close-button-margin-left);
+        border-width: var(--p-galleria-close-button-border-width);
+        border-style: var(--p-galleria-close-button-border-style);
+        border-color: var(--p-galleria-close-button-border-color);
+        border-radius: var(--p-galleria-close-button-border-radius);
         transition-duration: var(--p-transition-duration);
         transition-property: var(--p-transition-property);
 
@@ -25,8 +25,8 @@
         }
 
         &:hover {
-            color: var(--p-galleria-close-icon-hover-color);
-            background: var(--p-galleria-close-icon-hover-background);
+            color: var(--p-galleria-close-button-hover-color);
+            background: var(--p-galleria-close-button-hover-background);
         }
     }
 
@@ -78,22 +78,22 @@
 
         .p-galleria-indicator {
             button {
-                width: var(--p-galleria-indicator-width);
-                height: var(--p-galleria-indicator-height);
-                background: var(--p-galleria-indicator-background);
+                width: var(--p-galleria-indicator-button-width);
+                height: var(--p-galleria-indicator-button-height);
+                background: var(--p-galleria-indicator-button-background);
                 border-radius: var(--p-border-radius);
                 transition-duration: var(--p-transition-duration);
                 transition-property: var(--p-transition-property);
 
                 &:hover {
-                    background: var(--p-galleria-indicator-hover-background);
+                    background: var(--p-galleria-indicator-button-hover-background);
                 }
             }
 
             &.p-highlight {
                 button {
-                    color: var(--p-galleria-indicator-active-color);
-                    background: var(--p-galleria-indicator-active-background);
+                    color: var(--p-galleria-indicator-button-active-color);
+                    background: var(--p-galleria-indicator-button-active-background);
                 }
             }
         }
@@ -115,21 +115,21 @@
 
     &.p-galleria-indicator-onitem {
         .p-galleria-indicators {
-            background: var(--p-galleria-indicators-on-item-background);
+            background: var(--p-galleria-indicator-on-item-indicators-background);
 
             .p-galleria-indicator {
                 button {
-                    background: var(--p-galleria-indicator-on-item-background);
+                    background: var(--p-galleria-indicator-on-item-indicator-button-background);
 
                     &:hover {
-                        background: var(--p-galleria-indicator-on-item-hover-background);
+                        background: var(--p-galleria-indicator-on-item-indicator-button-hover-background);
                     }
                 }
 
                 &.p-highlight {
                     button {
-                        color: var(--p-galleria-indicator-on-item-active-color);
-                        background: var(--p-galleria-indicator-on-item-active-background);
+                        color: var(--p-galleria-indicator-on-item-indicator-button-active-color);
+                        background: var(--p-galleria-indicator-on-item-indicator-button-active-background);
                     }
                 }
             }
