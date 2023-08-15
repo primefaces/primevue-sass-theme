@@ -78,7 +78,7 @@ export default {
     },
     variants: {
         list: {
-            /* @todo: Check the key in core */
+            /* @todo: Check the key in core. */
             item: {
                 border: {
                     width: '0 0 1px 0',
