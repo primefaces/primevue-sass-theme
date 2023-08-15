@@ -1,0 +1,10 @@
+:root {
+	--p-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--p-font-size: 14px;
+	--p-font-weight: normal;
+	--p-color: #495057;
+	--p-border-radius: 6px;
+	--p-inline-spacing: 0.5rem;
+	--p-transition-duration: 0.2s;
+	--p-transition-property: background-color, color, border-color, box-shadow;
+}

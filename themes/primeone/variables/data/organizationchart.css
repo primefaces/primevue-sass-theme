@@ -1,0 +1,30 @@
+:root {
+	--p-organizationchart-node-color: #495057;
+	--p-organizationchart-node-background: #ffffff;
+	--p-organizationchart-node-border-width: 1px;
+	--p-organizationchart-node-border-style: solid;
+	--p-organizationchart-node-border-color: #dee2e6;
+	--p-organizationchart-node-padding-top: 1.25rem;
+	--p-organizationchart-node-padding-right: 1.25rem;
+	--p-organizationchart-node-padding-bottom: 1.25rem;
+	--p-organizationchart-node-padding-left: 1.25rem;
+	--p-organizationchart-node-toggler-icon-active-color: #1D4ED8;
+	--p-organizationchart-line-down-background: #dee2e6;
+	--p-organizationchart-line-left-border-width: 1px;
+	--p-organizationchart-line-left-border-style: solid;
+	--p-organizationchart-line-left-border-color: #dee2e6;
+	--p-organizationchart-line-top-border-width: 1px;
+	--p-organizationchart-line-top-border-style: solid;
+	--p-organizationchart-line-top-border-color: #dee2e6;
+	--p-organizationchart-node-toggler-color: inherit;
+	--p-organizationchart-node-toggler-background: inherit;
+	--p-organizationchart-node-toggler-border-width: inherit;
+	--p-organizationchart-node-toggler-border-style: inherit;
+	--p-organizationchart-node-toggler-border-color: inherit;
+	--p-organizationchart-node-toggler-border-radius: 50%;
+	--p-organizationchart-node-toggler-focus-outline-color: var(--p-primary-light-color);
+	--p-organizationchart-node-toggler-focus-outline-style: none;
+	--p-organizationchart-node-toggler-focus-outline-width: 0;
+	--p-organizationchart-node-toggler-focus-outline-offset: 0;
+	--p-organizationchart-node-toggler-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+}

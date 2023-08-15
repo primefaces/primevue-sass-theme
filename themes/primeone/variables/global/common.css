@@ -1,0 +1,6 @@
+:root {
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    color: var(--p-color);
+}

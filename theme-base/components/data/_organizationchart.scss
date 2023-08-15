@@ -1,50 +1,64 @@
 .p-organizationchart {
     .p-organizationchart-node-content {
         &.p-organizationchart-selectable-node:not(.p-highlight):hover {
-            background: $inputListItemHoverBg;
-            color: $inputListItemTextHoverColor;
+            color: var(--p-organizationchart-node-hover-color);
+            background: var(--p-organizationchart-node-hover-background);
         }
 
         &.p-highlight {
-            background: $highlightBg;
-            color: $highlightTextColor;
+            color: var(--p-organizationchart-node-active-color);
+            background: var(--p-organizationchart-node-active-background);
 
             .p-node-toggler {
                 i {
-                    color: darken($highlightBg, 25%);
+                    color: var(--p-organizationchart-node-toggler-icon-active-color);
                 }
             }
         }
     }
 
     .p-organizationchart-line-down {
-        background: $organizationChartConnectorColor;
+        background: var(--p-organizationchart-line-down-background);
     }
 
     .p-organizationchart-line-left {
-        border-right: $panelContentBorder;
-        border-color: $organizationChartConnectorColor;
+        border-right-width: var(--p-organizationchart-line-left-border-width);
+        border-right-style: var(--p-organizationchart-line-left-border-style);
+        border-right-color: var(--p-organizationchart-line-left-border-color);
     }
 
     .p-organizationchart-line-top {
-        border-top: $panelContentBorder;
-        border-color: $organizationChartConnectorColor;
+        border-top-width: var(--p-organizationchart-line-top-border-width);
+        border-top-style: var(--p-organizationchart-line-top-border-style);
+        border-top-color: var(--p-organizationchart-line-top-border-color);
     }
 
     .p-organizationchart-node-content {
-        border: $panelContentBorder;
-        background: $panelContentBg;
-        color: $panelContentTextColor;
-        padding: $panelContentPadding;
+        color: var(--p-organizationchart-node-color);
+        background: var(--p-organizationchart-node-background);
+        border-width: var(--p-organizationchart-node-border-width);
+        border-style: var(--p-organizationchart-node-border-style);
+        border-color: var(--p-organizationchart-node-border-color);
+        padding-top: var(--p-organizationchart-node-padding-top);
+        padding-right: var(--p-organizationchart-node-padding-right);
+        padding-bottom: var(--p-organizationchart-node-padding-bottom);
+        padding-left: var(--p-organizationchart-node-padding-left);
     }
 
     .p-organizationchart-node-content .p-node-toggler {
-        background: inherit;
-        color: inherit;
-        border-radius: 50%;
+        color: var(--p-organizationchart-node-toggler-color);
+        background: var(--p-organizationchart-node-toggler-background);
+        border-width: var(--p-organizationchart-node-toggler-border-width);
+        border-style: var(--p-organizationchart-node-toggler-border-style);
+        border-color: var(--p-organizationchart-node-toggler-border-color);
+        border-radius: var(--p-organizationchart-node-toggler-border-radius);
 
         &:focus {
-            @include focused();
+            outline-color: var(--p-organizationchart-node-toggler-focus-outline-color);
+            outline-style: var(--p-organizationchart-node-toggler-focus-outline-style);
+            outline-width: var(--p-organizationchart-node-toggler-focus-outline-width);
+            outline-offset: var(--p-organizationchart-node-toggler-focus-outline-offset);
+            box-shadow: var(--p-organizationchart-node-toggler-focus-box-shadow);
         }
     }
 }

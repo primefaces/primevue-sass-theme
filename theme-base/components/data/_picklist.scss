@@ -1,56 +1,80 @@
 .p-picklist {
     .p-picklist-buttons {
-        padding: $panelContentPadding;
+        padding-top: var(--p-picklist-controls-padding-top);
+        padding-right: var(--p-picklist-controls-padding-right);
+        padding-bottom: var(--p-picklist-controls-padding-bottom);
+        padding-left: var(--p-picklist-controls-padding-left);
 
         .p-button {
-            margin-bottom: $inlineSpacing;
+            margin-bottom: var(--p-inline-spacing);
         }
     }
 
     .p-picklist-header {
-        background: $panelHeaderBg;
-        color: $panelHeaderTextColor;
-        border: $panelHeaderBorder;
-        padding: $panelHeaderPadding;
-        font-weight: $panelHeaderFontWeight;
+        font-size: var(--p-picklist-header-font-size);
+        font-weight: var(--p-picklist-header-font-weight);
+        color: var(--p-picklist-header-color);
+        background: var(--p-picklist-header-background);
+        border-width: var(--p-picklist-header-border-width);
+        border-style: var(--p-picklist-header-border-style);
+        border-color: var(--p-picklist-header-border-color);
+        padding-top: var(--p-picklist-header-padding-top);
+        padding-right: var(--p-picklist-header-padding-right);
+        padding-bottom: var(--p-picklist-header-padding-bottom);
+        padding-left: var(--p-picklist-header-padding-left);
         border-bottom: 0 none;
-        border-top-right-radius: $borderRadius;
-        border-top-left-radius: $borderRadius;
+        border-top-right-radius: var(--p-border-radius);
+        border-top-left-radius: var(--p-border-radius);
     }
 
     .p-picklist-list {
-        border: $panelContentBorder;
-        background: $panelContentBg;
-        color: $panelContentTextColor;
-        padding: $inputListPadding;
+        color: var(--p-picklist-list-color);
+        background: var(--p-picklist-list-background);
+        border-width: var(--p-picklist-list-border-width);
+        border-style: var(--p-picklist-list-border-style);
+        border-color: var(--p-picklist-list-border-color);
+        padding-top: var(--p-picklist-list-padding-top);
+        padding-right: var(--p-picklist-list-padding-right);
+        padding-bottom: var(--p-picklist-list-padding-bottom);
+        padding-left: var(--p-picklist-list-padding-left);
         border-bottom-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
         outline: 0 none;
 
         .p-picklist-item {
-            padding: $inputListItemPadding;
-            margin: $inputListItemMargin;
-            border: $inputListItemBorder;
-            color: $inputListItemTextColor;
-            background: $inputListItemBg;
-            transition: transform $transitionDuration, $listItemTransition;
+            color: var(--p-picklist-item-color);
+            background: var(--p-picklist-item-background);
+            border-width: var(--p-picklist-item-border-width);
+            border-style: var(--p-picklist-item-border-style);
+            border-color: var(--p-picklist-item-border-color);
+            padding-top: var(--p-picklist-item-padding-top);
+            padding-right: var(--p-picklist-item-padding-right);
+            padding-bottom: var(--p-picklist-item-padding-bottom);
+            padding-left: var(--p-picklist-item-padding-left);
+            margin-top: var(--p-picklist-item-margin-top);
+            margin-right: var(--p-picklist-item-margin-right);
+            margin-bottom: var(--p-picklist-item-margin-bottom);
+            margin-left: var(--p-picklist-item-margin-left);
+            transition:
+                transform var(--p-transition-duration),
+                var(--p-transition-property);
 
             &:not(.p-highlight):hover {
-                background: $inputListItemHoverBg;
-                color: $inputListItemTextHoverColor;
+                color: var(--p-picklist-item-hover-color);
+                background: var(--p-picklist-item-hover-background);
             }
 
             &.p-focus {
-                color: $inputListItemTextFocusColor;
-                background: $inputListItemFocusBg;
+                color: var(--p-picklist-item-focus-color);
+                background: var(--p-picklist-item-focus-background);
             }
 
             &.p-highlight {
-                color: $highlightTextColor;
-                background: $highlightBg;
+                color: var(--p-picklist-item-active-color);
+                background: var(--p-picklist-item-active-background);
 
                 &.p-focus {
-                    background: $highlightFocusBg;
+                    background: var(--p-picklist-item-active-focus-background);
                 }
             }
         }
@@ -59,10 +83,10 @@
     &.p-picklist-striped {
         .p-picklist-list {
             .p-picklist-item:nth-child(even) {
-                background: $panelContentEvenRowBg;
+                background: var(--p-picklist-striped-even-item-background);
 
                 &:hover {
-                    background: $inputListItemHoverBg;
+                    background: var(--p-picklist-striped-even-item-hover-background);
                 }
             }
         }

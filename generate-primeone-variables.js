@@ -2,6 +2,8 @@ import chokidar from 'chokidar';
 import fs from 'fs';
 
 const VARIABLE_PREFIX = 'p-';
+const EXCLUDED_KEY_REGEX = /^(variants|states|root|parents)$/gi;
+const EXCLUDED_VARIABLE_NAME_REGEX = /^(global)$/gi;
 
 const ROOT = './themes/primeone';
 const INPUT_DIR = ROOT + '/tokens';
@@ -46,8 +48,6 @@ const PrimeOneUtils = {
         return fKey ? (this.isObject(options) ? this.getOptionValue(this.getItemValue(options[Object.keys(options).find((k) => this.toFlatCase(k) === fKey) || ''], params), fKeys.join('.'), params) : undefined) : this.getItemValue(options, params);
     },
     toCSSVariables(variables = {}, prefix = VARIABLE_PREFIX || 'p-') {
-        const excludedKeyRegex = /^(variants|states|root|parents)$/gi;
-
         const getValue = (value) => {
             // @todo: check from parent variables and create css variable
             const regex = /{([^}]+)}/g;
@@ -65,10 +65,10 @@ const PrimeOneUtils = {
                     } else {
                         acc = {
                             ...acc,
-                            ...getVariables(v, excludedKeyRegex.test(k) ? _p : `${px}-`)
+                            ...getVariables(v, EXCLUDED_KEY_REGEX.test(k) ? _p : `${px}-`)
                         };
 
-                        excludedKeyRegex.lastIndex = 0;
+                        EXCLUDED_KEY_REGEX.lastIndex = 0;
                     }
                 } else {
                     acc[`--${px}`] = getValue(v);
@@ -100,7 +100,10 @@ function generate(filePath) {
                 const outputFileDir = `${OUTPUT_DIR}/${dir}`;
                 const outputFile = `${outputFileDir}/${file.replace('js', 'css')}`;
 
-                const css = PrimeOneUtils.toCSSVariables(module.default, `p-${PrimeOneUtils.toKebabCase(name)}-`).css;
+                const prefix = EXCLUDED_VARIABLE_NAME_REGEX.test(PrimeOneUtils.toKebabCase(name)) ? 'p-' : `p-${PrimeOneUtils.toKebabCase(name)}-`;
+                const css = PrimeOneUtils.toCSSVariables(module.default, prefix).css;
+
+                EXCLUDED_VARIABLE_NAME_REGEX.lastIndex = 0;
 
                 !fs.existsSync(outputFileDir) && fs.mkdirSync(outputFileDir, { recursive: true });
                 !fs.existsSync(outputFile) && console.info('🎉File\x1b[33m', outputFile, '\x1b[0mhas been created');

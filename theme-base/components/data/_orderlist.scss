@@ -1,56 +1,80 @@
 .p-orderlist {
     .p-orderlist-controls {
-        padding: $panelContentPadding;
+        padding-top: var(--p-orderlist-controls-padding-top);
+        padding-right: var(--p-orderlist-controls-padding-right);
+        padding-bottom: var(--p-orderlist-controls-padding-bottom);
+        padding-left: var(--p-orderlist-controls-padding-left);
 
         .p-button {
-            margin-bottom: $inlineSpacing;
+            margin-bottom: var(--p-inline-spacing);
         }
     }
 
     .p-orderlist-header {
-        background: $panelHeaderBg;
-        color: $panelHeaderTextColor;
-        border: $panelHeaderBorder;
-        padding: $panelHeaderPadding;
-        font-weight: $panelHeaderFontWeight;
+        font-size: var(--p-orderlist-header-font-size);
+        font-weight: var(--p-orderlist-header-font-weight);
+        color: var(--p-orderlist-header-color);
+        background: var(--p-orderlist-header-background);
+        border-width: var(--p-orderlist-header-border-width);
+        border-style: var(--p-orderlist-header-border-style);
+        border-color: var(--p-orderlist-header-border-color);
+        padding-top: var(--p-orderlist-header-padding-top);
+        padding-right: var(--p-orderlist-header-padding-right);
+        padding-bottom: var(--p-orderlist-header-padding-bottom);
+        padding-left: var(--p-orderlist-header-padding-left);
         border-bottom: 0 none;
-        border-top-right-radius: $borderRadius;
-        border-top-left-radius: $borderRadius;
+        border-top-right-radius: var(--p-border-radius);
+        border-top-left-radius: var(--p-border-radius);
     }
 
     .p-orderlist-list {
-        border: $panelContentBorder;
-        background: $panelContentBg;
-        color: $panelContentTextColor;
-        padding: $inputListPadding;
-        border-bottom-right-radius: $borderRadius;
-        border-bottom-left-radius: $borderRadius;
+        color: var(--p-orderlist-list-color);
+        background: var(--p-orderlist-list-background);
+        border-width: var(--p-orderlist-list-border-width);
+        border-style: var(--p-orderlist-list-border-style);
+        border-color: var(--p-orderlist-list-border-color);
+        padding-top: var(--p-orderlist-list-padding-top);
+        padding-right: var(--p-orderlist-list-padding-right);
+        padding-bottom: var(--p-orderlist-list-padding-bottom);
+        padding-left: var(--p-orderlist-list-padding-left);
+        border-bottom-right-radius: var(--p-border-radius);
+        border-bottom-left-radius: var(--p-border-radius);
         outline: 0 none;
 
         .p-orderlist-item {
-            padding: $inputListItemPadding;
-            margin: $inputListItemMargin;
-            border: $inputListItemBorder;
-            color: $inputListItemTextColor;
-            background: $inputListItemBg;
-            transition: transform $transitionDuration, $listItemTransition;
+            color: var(--p-orderlist-item-color);
+            background: var(--p-orderlist-item-background);
+            border-width: var(--p-orderlist-item-border-width);
+            border-style: var(--p-orderlist-item-border-style);
+            border-color: var(--p-orderlist-item-border-color);
+            padding-top: var(--p-orderlist-item-padding-top);
+            padding-right: var(--p-orderlist-item-padding-right);
+            padding-bottom: var(--p-orderlist-item-padding-bottom);
+            padding-left: var(--p-orderlist-item-padding-left);
+            margin-top: var(--p-orderlist-item-margin-top);
+            margin-right: var(--p-orderlist-item-margin-right);
+            margin-bottom: var(--p-orderlist-item-margin-bottom);
+            margin-left: var(--p-orderlist-item-margin-left);
+            transition:
+                transform var(--p-transition-duration),
+                var(--p-transition-property);
 
             &:not(.p-highlight):hover {
-                background: $inputListItemHoverBg;
-                color: $inputListItemTextHoverColor;
+                color: var(--p-orderlist-item-hover-color);
+                background: var(--p-orderlist-item-hover-background);
             }
 
             &.p-focus {
-                color: $inputListItemTextFocusColor;
-                background: $inputListItemFocusBg;
+                color: var(--p-orderlist-item-focus-color);
+                background: var(--p-orderlist-item-focus-background);
             }
 
             &.p-highlight {
-                color: $highlightTextColor;
-                background: $highlightBg;
+                color: var(--p-orderlist-item-active-color);
+                background: var(--p-orderlist-item-active-background);
 
                 &.p-focus {
-                    background: $highlightFocusBg;
+                    background: var(--p-orderlist-item-active-focus-background);
                 }
             }
         }
@@ -59,10 +83,10 @@
     &.p-orderlist-striped {
         .p-orderlist-list {
             .p-orderlist-item:nth-child(even) {
-                background: $panelContentEvenRowBg;
+                background: var(--p-orderlist-striped-even-item-background);
 
                 &:hover {
-                    background: $inputListItemHoverBg;
+                    background: var(--p-orderlist-striped-even-item-hover-background);
                 }
             }
         }

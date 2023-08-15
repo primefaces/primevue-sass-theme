@@ -1,47 +1,67 @@
 .p-dataview {
     .p-paginator-top {
-        border-width: $tableTopPaginatorBorderWidth;
-        border-radius: 0;
+        border-width: var(--p-dataview-paginator-top-border-width);
+        border-style: var(--p-dataview-paginator-top-border-style);
+        border-color: var(--p-dataview-paginator-top-border-color);
+        border-radius: var(--p-dataview-paginator-top-border-radius);
     }
 
     .p-paginator-bottom {
-        border-width: $tableBottomPaginatorBorderWidth;
-        border-radius: 0;
+        border-width: var(--p-dataview-paginator-bottom-border-width);
+        border-style: var(--p-dataview-paginator-bottom-border-style);
+        border-color: var(--p-dataview-paginator-bottom-border-color);
+        border-radius: var(--p-dataview-paginator-bottom-border-radius);
     }
 
     .p-dataview-header {
-        background: $tableHeaderBg;
-        color: $tableHeaderTextColor;
-        border: $tableHeaderBorder;
-        border-width: $tableHeaderBorderWidth;
-        padding: $tableHeaderPadding;
-        font-weight: $tableHeaderFontWeight;
+        font-size: var(--p-dataview-header-font-size);
+        font-weight: var(--p-dataview-header-font-weight);
+        color: var(--p-dataview-header-color);
+        background: var(--p-dataview-header-background);
+        border-width: var(--p-dataview-header-border-width);
+        border-style: var(--p-dataview-header-border-style);
+        border-color: var(--p-dataview-header-border-color);
+        padding-top: var(--p-dataview-header-padding-top);
+        padding-right: var(--p-dataview-header-padding-right);
+        padding-bottom: var(--p-dataview-header-padding-bottom);
+        padding-left: var(--p-dataview-header-padding-left);
     }
 
     .p-dataview-content {
-        background: $tableBodyRowBg;
-        color: $tableBodyRowTextColor;
-        border: $dataViewContentBorder;
-        padding: $dataViewContentPadding;
+        color: var(--p-dataview-content-color);
+        background: var(--p-dataview-content-background);
+        border-width: var(--p-dataview-content-border-width);
+        border-style: var(--p-dataview-content-border-style);
+        border-color: var(--p-dataview-content-border-color);
+        padding-top: var(--p-dataview-content-padding-top);
+        padding-right: var(--p-dataview-content-padding-right);
+        padding-bottom: var(--p-dataview-content-padding-bottom);
+        padding-left: var(--p-dataview-content-padding-left);
     }
 
     &.p-dataview-list {
         .p-dataview-content {
             > .p-grid > div {
-                border: $dataViewListItemBorder;
-                border-width: $dataViewListItemBorderWidth;
+                border-width: var(--p-dataview-list-item-border-width);
+                border-style: var(--p-dataview-list-item-border-style);
+                border-color: var(--p-dataview-list-item-border-color);
             }
         }
     }
 
     .p-dataview-footer {
-        background: $tableFooterBg;
-        color: $tableFooterTextColor;
-        border: $tableFooterBorder;
-        border-width: $tableFooterBorderWidth;
-        padding: $tableFooterPadding;
-        font-weight: $tableFooterFontWeight;
-        border-bottom-left-radius: $borderRadius;
-        border-bottom-right-radius: $borderRadius;
+        font-size: var(--p-dataview-footer-font-size);
+        font-weight: var(--p-dataview-footer-font-weight);
+        color: var(--p-dataview-footer-color);
+        background: var(--p-dataview-footer-background);
+        border-width: var(--p-dataview-footer-border-width);
+        border-style: var(--p-dataview-footer-border-style);
+        border-color: var(--p-dataview-footer-border-color);
+        padding-top: var(--p-dataview-footer-padding-top);
+        padding-right: var(--p-dataview-footer-padding-right);
+        padding-bottom: var(--p-dataview-footer-padding-bottom);
+        padding-left: var(--p-dataview-footer-padding-left);
+        border-bottom-left-radius: var(--p-border-radius);
+        border-bottom-right-radius: var(--p-border-radius);
     }
 }
