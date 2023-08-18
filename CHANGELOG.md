@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.32.1](https://github.com/primefaces/primevue-sass-theme/tree/3.32.1) (2023-08-18)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.32.0...3.32.1)
+
+**Fixed bugs:**
+
+- https://github.com/primefaces/primevue-sass-theme/issues/17 [#17](https://github.com/primefaces/primevue-sass-theme/issues/17)
+
 ## [3.32.0](https://github.com/primefaces/primevue-sass-theme/tree/3.32.0) (2023-08-11)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.31.0...3.32.0)

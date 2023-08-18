@@ -1,6 +1,6 @@
 {
   "name": "primevue-sass-theme",
-  "version": "3.32.0",
+  "version": "3.32.1",
   "description": "PrimeVue Sass Theme",
   "homepage": "https://primevue.org/",
   "repository": {
@@ -10,12 +10,17 @@
   "keywords": [
     "primevue",
     "vue",
-    "ui framework",
-    "component framework",
+    "vue.js",
+    "vue2",
+    "vue3",
     "ui library",
     "component library",
     "material",
-    "bootstrap"
+    "bootstrap",
+    "fluent",
+    "tailwind",
+    "unstyled",
+    "passthrough"
   ],
   "license": "MIT",
   "bugs": {
