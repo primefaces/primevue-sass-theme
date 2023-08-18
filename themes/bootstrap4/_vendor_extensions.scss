@@ -6,3 +6,9 @@
         }
     }
 }
+
+.p-fileupload {
+    .p-fileupload-content.p-fileupload-highlight {
+        background-color: $primaryAccentBg;
+    }
+}
