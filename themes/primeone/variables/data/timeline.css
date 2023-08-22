@@ -1,0 +1,20 @@
+:root {
+	--p-timeline-marker-width: 1rem;
+	--p-timeline-marker-height: 1rem;
+	--p-timeline-marker-background: var(--p-primary-text-color);
+	--p-timeline-marker-border-width: 2px;
+	--p-timeline-marker-border-style: solid;
+	--p-timeline-marker-border-color: var(--p-primary-color);
+	--p-timeline-marker-border-radius: 50%;
+	--p-timeline-connector-background: #dee2e6;
+	--p-timeline-vertical-content-padding-top: 0;
+	--p-timeline-vertical-content-padding-right: 1rem;
+	--p-timeline-vertical-content-padding-bottom: 0;
+	--p-timeline-vertical-content-padding-left: 1rem;
+	--p-timeline-vertical-connector-width: 2px;
+	--p-timeline-horizontal-content-padding-top: 1rem;
+	--p-timeline-horizontal-content-padding-right: 0;
+	--p-timeline-horizontal-content-padding-bottom: 1rem;
+	--p-timeline-horizontal-content-padding-left: 0;
+	--p-timeline-horizontal-connector-height: 2px;
+}

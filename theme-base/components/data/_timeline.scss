@@ -1,38 +1,43 @@
 .p-timeline {
     .p-timeline-event-marker {
-        border: $timelineEventMarkerBorder; 
-        border-radius: $timelineEventMarkerBorderRadius;
-        width: $timelineEventMarkerWidth;
-        height: $timelineEventMarkerHeight;
-        background-color: $timelineEventMarkerBackground;
+        width: var(--p-timeline-marker-width);
+        height: var(--p-timeline-marker-height);
+        background: var(--p-timeline-marker-background);
+        border-width: var(--p-timeline-maker-border-width);
+        border-style: var(--p-timeline-maker-border-style);
+        border-color: var(--p-timeline-maker-border-color);
+        border-radius: var(--p-timeline-maker-border-radius);
     }
 
     .p-timeline-event-connector {
-        background-color: $timelineEventColor;
+        background: var(--p-timeline-connector-background);
     }
 
     &.p-timeline-vertical {
         .p-timeline-event-opposite,
-        .p-timeline-event-content  {
-            padding: $timelineVerticalEventContentPadding;
+        .p-timeline-event-content {
+            padding-top: var(--p-timeline-vertical-content-padding-top);
+            padding-right: var(--p-timeline-vertical-content-padding-right);
+            padding-bottom: var(--p-timeline-vertical-content-padding-bottom);
+            padding-left: var(--p-timeline-vertical-content-padding-left);
         }
 
         .p-timeline-event-connector {
-            width: $timelineEventConnectorSize;
+            width: var(--p-timeline-vertical-connector-width);
         }
     }
 
     &.p-timeline-horizontal {
         .p-timeline-event-opposite,
-        .p-timeline-event-content  {
-            padding: $timelineHorizontalEventContentPadding;
+        .p-timeline-event-content {
+            padding-top: var(--p-timeline-horizontal-content-padding-top);
+            padding-right: var(--p-timeline-horizontal-content-padding-right);
+            padding-bottom: var(--p-timeline-horizontal-content-padding-bottom);
+            padding-left: var(--p-timeline-horizontal-content-padding-left);
         }
 
         .p-timeline-event-connector {
-            height: $timelineEventConnectorSize;
+            height: var(--p-timeline-horizontal-connector-height);
         }
     }
 }
-
-
-
