@@ -2,34 +2,69 @@
     .p-carousel-content {
         .p-carousel-prev,
         .p-carousel-next {
-            @include action-icon();
-            margin: $inlineSpacing;
+            width: var(--p-carousel-navigator-width);
+            height: var(--p-carousel-navigator-height);
+            color: var(--p-carousel-navigator-color);
+            background: var(--p-carousel-navigator-background);
+            border-width: var(--p-carousel-navigator-border-width);
+            border-style: var(--p-carousel-navigator-border-style);
+            border-color: var(--p-carousel-navigator-border-color);
+            border-radius: var(--p-carousel-navigator-border-radius);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
+            margin-top: var(--p-inline-spacing);
+            margin-right: var(--p-inline-spacing);
+            margin-bottom: var(--p-inline-spacing);
+            margin-left: var(--p-inline-spacing);
+
+            &:enabled:hover {
+                color: var(--p-carousel-navigator-hover-color);
+                background: var(--p-carousel-navigator-hover-background);
+                border-width: var(--p-carousel-navigator-hover-border-width);
+                border-style: var(--p-carousel-navigator-hover-border-style);
+                border-color: var(--p-carousel-navigator-hover-border-color);
+            }
+
+            &:focus {
+                outline-color: var(--p-carousel-navigator-focus-outline-color);
+                outline-style: var(--p-carousel-navigator-focus-outline-style);
+                outline-width: var(--p-carousel-navigator-focus-outline-width);
+                outline-offset: var(--p-carousel-navigator-focus-outline-offset);
+                box-shadow: var(--p-carousel-navigator-focus-box-shadow);
+            }
         }
     }
 
     .p-carousel-indicators {
-        padding: $carouselIndicatorsPadding;
+        padding-top: var(--p-tree-indicators-padding-top);
+        padding-right: var(--p-tree-indicators-padding-right);
+        padding-bottom: var(--p-tree-indicators-padding-bottom);
+        padding-left: var(--p-tree-indicators-padding-left);
 
         .p-carousel-indicator {
-            margin-right: $inlineSpacing;
-            margin-bottom: $inlineSpacing;
-           
+            margin-right: var(--p-inline-spacing);
+            margin-bottom: var(--p-inline-spacing);
+
             button {
-                background-color: $carouselIndicatorBg;
-                width: $carouselIndicatorWidth;
-                height: $carouselIndicatorHeight;
-                transition: $actionIconTransition;
-                border-radius: $carouselIndicatorBorderRadius;
+                width: var(--p-carousel-indicator-button-width);
+                height: var(--p-carousel-indicator-button-height);
+                background: var(--p-carousel-indicator-button-background);
+                transition-duration: var(--p-transition-duration);
+                transition-property: var(--p-transition-property);
+                border-width: var(--p-carousel-indicator-button-border-width);
+                border-style: var(--p-carousel-indicator-button-border-style);
+                border-color: var(--p-carousel-indicator-button-border-color);
+                border-radius: var(--p-carousel-indicator-button-border-radius);
 
                 &:hover {
-                    background: $carouselIndicatorHoverBg;
+                    background: var(--p-carousel-indicator-button-hover-background);
                 }
             }
 
             &.p-highlight {
                 button {
-                    background: $highlightBg;
-                    color: $highlightTextColor;
+                    color: var(--p-carousel-indicator-active-affects-indicator-button-color);
+                    background: var(--p-carousel-indicator-active-affects-indicator-button-background);
                 }
             }
         }

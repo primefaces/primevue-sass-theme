@@ -1,0 +1,34 @@
+:root {
+	--p-carousel-navigator-width: 2rem;
+	--p-carousel-navigator-height: 2rem;
+	--p-carousel-navigator-color: #6c757d;
+	--p-carousel-navigator-background: transparent;
+	--p-carousel-navigator-border-width: 0;
+	--p-carousel-navigator-border-style: none;
+	--p-carousel-navigator-border-color: initial;
+	--p-carousel-navigator-border-radius: 50%;
+	--p-carousel-navigator-hover-color: #343a40;
+	--p-carousel-navigator-hover-background: #e9ecef;
+	--p-carousel-navigator-hover-border-width: inherit;
+	--p-carousel-navigator-hover-border-style: inherit;
+	--p-carousel-navigator-hover-border-color: transparent;
+	--p-carousel-navigator-focus-outline-color: var(--p-primary-light-color);
+	--p-carousel-navigator-focus-outline-style: none;
+	--p-carousel-navigator-focus-outline-width: 0;
+	--p-carousel-navigator-focus-outline-offset: 0;
+	--p-carousel-navigator-focus-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+	--p-carousel-indicators-padding-top: 1rem;
+	--p-carousel-indicators-padding-right: 1rem;
+	--p-carousel-indicators-padding-bottom: 1rem;
+	--p-carousel-indicators-padding-left: 1rem;
+	--p-carousel-indicator-active-affects-indicator-button-color: var(--p-primary-darker-color);
+	--p-carousel-indicator-active-affects-indicator-button-background: #eff6ff;
+	--p-carousel-indicator-button-width: 2rem;
+	--p-carousel-indicator-button-height: 0.5rem;
+	--p-carousel-indicator-button-background: #ced4da;
+	--p-carousel-indicator-button-border-width: initial;
+	--p-carousel-indicator-button-border-style: initial;
+	--p-carousel-indicator-button-border-color: initial;
+	--p-carousel-indicator-button-border-radius: 0;
+	--p-carousel-indicator-button-hover-background: #adb5bd;
+}
