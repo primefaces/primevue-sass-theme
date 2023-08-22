@@ -52,6 +52,10 @@ export default {
                         }
                     }
                 }
+            },
+            hover: {
+                color: '#495057',
+                background: '#e9ecef'
             }
         }
     },
@@ -95,5 +99,19 @@ export default {
     },
     checkboxIcon: {
         color: '#495057'
+    },
+    filterIcon: {
+        color: '#6c757d'
+    },
+    subgroup: {
+        padding: {
+            top: '0',
+            right: '0',
+            bottom: '0',
+            left: '1rem'
+        }
+    },
+    loadingIcon: {
+        width: '2rem'
     }
 };

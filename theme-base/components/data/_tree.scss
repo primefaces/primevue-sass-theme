@@ -95,37 +95,44 @@
                 }
 
                 &.p-treenode-selectable:not(.p-highlight):hover {
-                    background: $inputListItemHoverBg;
-                    color: $inputListItemTextHoverColor;
+                    color: var(--p-tree-content-hover-color);
+                    background: var(--p-tree-content-hover-background);
                 }
             }
         }
     }
 
     .p-tree-filter-container {
-        margin-bottom: $inlineSpacing;
+        margin-bottom: var(--p-inline-spacing);
 
         .p-tree-filter {
             width: 100%;
-            padding-right: nth($inputPadding, 2) + $primeIconFontSize;
+            // @todo
+            padding-right: calc(
+                var(--p-input-padding-right) + var(--p-primeicon-font-size)
+            ); //nth($inputPadding, 2) + $primeIconFontSize;
         }
 
         .p-tree-filter-icon {
-            right: nth($inputPadding, 2);
-            color: $inputIconColor;
+            /* @todo */
+            right: var(--p-input-padding-right);
+            color: var(--p-tree-filter-icon-color);
         }
     }
 
     .p-treenode-children {
-        padding: $treeNodeChildrenPadding;
+        padding-top: var(--p-tree-subgroup-padding-top);
+        padding-right: var(--p-tree-subgroup-padding-right);
+        padding-bottom: var(--p-tree-subgroup-padding-bottom);
+        padding-left: var(--p-tree-subgroup-padding-left);
     }
 
     .p-tree-loading-icon {
-        font-size: $loadingIconFontSize;
+        font-size: var(--p-tree-loading-icon-width);
 
         &.p-icon {
-            width: $loadingIconFontSize;
-            height: $loadingIconFontSize;
+            width: var(--p-tree-loading-icon-width);
+            height: var(--p-tree-loading-icon-width);
         }
     }
 }

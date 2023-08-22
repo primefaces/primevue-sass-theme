@@ -25,6 +25,8 @@
 	--p-tree-content-active-background: #eff6ff;
 	--p-tree-content-active-affects-toggler-color: var(--p-primary-darker-color);
 	--p-tree-content-active-affects-toggler-hover-color: var(--p-primary-darker-color);
+	--p-tree-content-hover-color: #495057;
+	--p-tree-content-hover-background: #e9ecef;
 	--p-tree-toggler-width: 2rem;
 	--p-tree-toggler-height: 2rem;
 	--p-tree-toggler-color: #6c757d;
@@ -46,4 +48,10 @@
 	--p-tree-toggler-active-color: var(--p-primary-darker-color);
 	--p-tree-node-icon-color: #6c757d;
 	--p-tree-checkbox-icon-color: #495057;
+	--p-tree-filter-icon-color: #6c757d;
+	--p-tree-subgroup-padding-top: 0;
+	--p-tree-subgroup-padding-right: 0;
+	--p-tree-subgroup-padding-bottom: 0;
+	--p-tree-subgroup-padding-left: 1rem;
+	--p-tree-loading-icon-width: 2rem;
 }
