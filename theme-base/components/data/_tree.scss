@@ -1,54 +1,95 @@
 .p-tree {
-    border: $panelContentBorder;
-    background: $panelContentBg;
-    color: $panelContentTextColor;
-    padding: $panelContentPadding;
-    border-radius: $borderRadius;
+    color: var(--p-tree-color);
+    background: var(--p-tree-background);
+    border-width: var(--p-tree-border-width);
+    border-style: var(--p-tree-border-style);
+    border-color: var(--p-tree-border-color);
+    border-radius: var(--p-border-radius);
+    padding-top: var(--p-tree-padding-top);
+    padding-right: var(--p-tree-padding-right);
+    padding-bottom: var(--p-tree-padding-bottom);
+    padding-left: var(--p-tree-padding-left);
 
     .p-tree-container {
         .p-treenode {
-            padding: $treeNodePadding;
+            padding-top: var(--p-tree-node-padding-top);
+            padding-right: var(--p-tree-node-padding-right);
+            padding-bottom: var(--p-tree-node-padding-bottom);
+            padding-left: var(--p-tree-node-padding-left);
             outline: 0 none;
 
             &:focus > .p-treenode-content {
-                @include focused-listitem();
+                outline-color: var(--p-tree-content-focus-outline-color);
+                outline-style: var(--p-tree-content-focus-outline-style);
+                outline-width: var(--p-tree-content-focus-outline-width);
+                outline-offset: var(--p-tree-content-focus-outline-offset);
+                box-shadow: var(--p-tree-content-focus-box-shadow);
             }
 
             .p-treenode-content {
-                border-radius: $borderRadius;
-                transition: $listItemTransition;
-                padding: $treeNodeContentPadding;
+                padding-top: var(--p-tree-content-padding-top);
+                padding-right: var(--p-tree-content-padding-right);
+                padding-bottom: var(--p-tree-content-padding-bottom);
+                padding-left: var(--p-tree-content-padding-left);
+                transition-duration: var(--p-transition-duration);
+                transition-property: var(--p-transition-property);
+                border-radius: var(--p-border-radius);
 
                 .p-tree-toggler {
-                    margin-right: $inlineSpacing;
-                    @include action-icon();
+                    width: var(--p-tree-toggler-icon-width);
+                    height: var(--p-tree-toggler-icon-height);
+                    color: var(--p-tree-toggler-icon-color);
+                    background: var(--p-tree-toggler-icon-background);
+                    border-width: var(--p-tree-toggler-icon-border-width);
+                    border-style: var(--p-tree-toggler-icon-border-style);
+                    border-color: var(--p-tree-toggler-icon-border-color);
+                    border-radius: var(--p-tree-toggler-icon-border-radius);
+                    transition-duration: var(--p-transition-duration);
+                    transition-property: var(--p-transition-property);
+                    margin-right: var(--p-inline-spacing);
+
+                    &:enabled:hover {
+                        color: var(--p-tree-toggler-icon-hover-color);
+                        background: var(--p-tree-toggler-icon-hover-background);
+                        border-width: var(--p-tree-toggler-icon-hover-border-width);
+                        border-style: var(--p-tree-toggler-icon-hover-border-style);
+                        border-color: var(--p-tree-toggler-icon-hover-border-color);
+                    }
+
+                    &:focus {
+                        outline-color: var(--p-tree-toggler-icon-focus-outline-color);
+                        outline-style: var(--p-tree-toggler-icon-focus-outline-style);
+                        outline-width: var(--p-tree-toggler-icon-focus-outline-width);
+                        outline-offset: var(--p-tree-toggler-icon-focus-outline-offset);
+                        box-shadow: var(--p-tree-toggler-icon-focus-box-shadow);
+                    }
                 }
 
                 .p-treenode-icon {
-                    margin-right: $inlineSpacing;
-                    color: $treeNodeIconColor;
+                    margin-right: var(--p-inline-spacing);
+                    color: var(--p-tree-node-icon-color);
                 }
 
                 .p-checkbox {
-                    margin-right: $inlineSpacing;
+                    margin-right: var(--p-inline-spacing);
 
                     .p-indeterminate {
                         .p-checkbox-icon {
-                            color: $textColor;
+                            color: var(--p-tree-checkbox-icon-color);
                         }
                     }
                 }
 
                 &.p-highlight {
-                    background: $highlightBg;
-                    color: $highlightTextColor;
+                    background: var(--p-tree-content-active-background);
+                    color: var(--p-tree-content-active-color);
 
                     .p-tree-toggler,
                     .p-treenode-icon {
-                        color: $highlightTextColor;
+                        color: var(--p-tree-content-active-affects-toggler-color);
 
                         &:hover {
-                            color: $highlightTextColor;
+                            color: var(--p-tree-content-active-affects-toggler-hover-color);
                         }
                     }
                 }
@@ -83,7 +124,7 @@
         font-size: $loadingIconFontSize;
 
         &.p-icon {
-            width:  $loadingIconFontSize;
+            width: $loadingIconFontSize;
             height: $loadingIconFontSize;
         }
     }
