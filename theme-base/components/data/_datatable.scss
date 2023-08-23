@@ -439,3 +439,202 @@
         }
     }
 }
+
+/* @todo: update class names */
+.p-column-filter-row {
+    .p-column-filter-menu-button,
+    .p-column-filter-clear-button {
+        margin-left: var(--p-inline-spacing);
+    }
+}
+
+.p-column-filter-menu-button {
+    width: var(--p-datatable-filter-menu-button-width);
+    height: var(--p-datatable-filter-menu-button-height);
+    color: var(--p-datatable-filter-menu-button-color);
+    background: var(--p-datatable-filter-menu-button-background);
+    border-width: var(--p-datatable-filter-menu-button-border-width);
+    border-style: var(--p-datatable-filter-menu-button-border-style);
+    border-color: var(--p-datatable-filter-menu-button-border-color);
+    border-radius: var(--p-datatable-filter-menu-button-border-radius);
+    transition-duration: var(--p-transition-duration);
+    transition-property: var(--p-transition-property);
+
+    &:hover {
+        color: var(--p-datatable-filter-menu-button-hover-color);
+        background: var(--p-datatable-filter-menu-button-hover-background);
+        border-width: var(--p-datatable-filter-menu-button-border-width);
+        border-style: var(--p-datatable-filter-menu-button-border-style);
+        border-color: var(--p-datatable-filter-menu-button-border-color);
+    }
+
+    &.p-column-filter-menu-button-open,
+    &.p-column-filter-menu-button-open:hover {
+        color: var(--p-datatable-filter-menu-button-open-color);
+        background: var(--p-datatable-filter-menu-button-open-background);
+    }
+
+    &.p-column-filter-menu-button-active,
+    &.p-column-filter-menu-button-active:hover {
+        color: var(--p-datatable-filter-menu-button-active-color);
+        background: var(--p-datatable-filter-menu-button-active-background);
+    }
+
+    &:focus {
+        outline-color: var(--p-datatable-filter-menu-button-focus-outline-color);
+        outline-style: var(--p-datatable-filter-menu-button-focus-outline-style);
+        outline-width: var(--p-datatable-filter-menu-button-focus-outline-width);
+        outline-offset: var(--p-datatable-filter-menu-button-focus-outline-offset);
+        box-shadow: var(--p-datatable-filter-menu-button-focus-box-shadow);
+    }
+}
+
+.p-column-filter-clear-button {
+    width: var(--p-datatable-header-filter-clear-button-width);
+    height: var(--p-datatable-header-filter-clear-button-height);
+    color: var(--p-datatable-header-filter-clear-button-color);
+    background: var(--p-datatable-header-filter-clear-button-background);
+    border-width: var(--p-datatable-header-filter-clear-button-border-width);
+    border-style: var(--p-datatable-header-filter-clear-button-border-style);
+    border-color: var(--p-datatable-header-filter-clear-button-border-color);
+    border-radius: var(--p-datatable-header-filter-clear-button-border-radius);
+    transition-duration: var(--p-transition-duration);
+    transition-property: var(--p-transition-property);
+
+    &:hover {
+        color: var(--p-datatable-header-filter-clear-button-hover-color);
+        background: var(--p-datatable-header-filter-clear-button-hover-background);
+        border-width: var(--p-datatable-header-filter-clear-button-border-width);
+        border-style: var(--p-datatable-header-filter-clear-button-border-style);
+        border-color: var(--p-datatable-header-filter-clear-button-border-color);
+    }
+
+    &:focus {
+        outline-color: var(--p-datatable-header-filter-clear-button-focus-outline-color);
+        outline-style: var(--p-datatable-header-filter-clear-button-focus-outline-style);
+        outline-width: var(--p-datatable-header-filter-clear-button-focus-outline-width);
+        outline-offset: var(--p-datatable-header-filter-clear-button-focus-outline-offset);
+        box-shadow: var(--p-datatable-header-filter-clear-button-focus-box-shadow);
+    }
+}
+
+.p-column-filter-overlay {
+    min-width: var(--p-datatable-filter-overlay-min-width);
+    color: var(--p-datatable-filter-overlay-color);
+    background: var(--p-datatable-filter-overlay-background);
+    border-width: var(--p-datatable-filter-overlay-border-width);
+    border-style: var(--p-datatable-filter-overlay-border-style);
+    border-color: var(--p-datatable-filter-overlay-border-color);
+    border-radius: var(--p-datatable-filter-overlay-border-radius);
+    box-shadow: var(--p-datatable-filter-overlay-box-shadow);
+
+    .p-column-filter-row-items {
+        padding-top: var(--p-datatable-filter-row-items-padding-top);
+        padding-right: var(--p-datatable-filter-row-items-padding-right);
+        padding-bottom: var(--p-datatable-filter-row-items-padding-bottom);
+        padding-left: var(--p-datatable-filter-row-items-padding-left);
+
+        .p-column-filter-row-item {
+            color: var(--p-datatable-filter-row-item-color);
+            background: var(--p-datatable-filter-row-item-background);
+            border-width: var(--p-datatable-filter-row-item-border-width);
+            border-style: var(--p-datatable-filter-row-item-border-style);
+            border-color: var(--p-datatable-filter-row-item-border-color);
+            border-radius: var(--p-datatable-filter-row-item-border-radius);
+            margin-top: var(--p-datatable-filter-row-item-margin-top);
+            margin-right: var(--p-datatable-filter-row-item-margin-right);
+            margin-bottom: var(--p-datatable-filter-row-item-margin-bottom);
+            margin-left: var(--p-datatable-filter-row-item-margin-left);
+            padding-top: var(--p-datatable-filter-row-item-padding-top);
+            padding-right: var(--p-datatable-filter-row-item-padding-right);
+            padding-bottom: var(--p-datatable-filter-row-item-padding-bottom);
+            padding-left: var(--p-datatable-filter-row-item-padding-left);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
+
+            &.p-highlight {
+                color: var(--p-datatable-filter-row-item-active-color);
+                background: var(--p-datatable-filter-row-item-active-background);
+            }
+
+            &:not(.p-highlight):not(.p-disabled):hover {
+                color: var(--p-datatable-filter-row-item-hover-color);
+                background: var(--p-datatable-filter-row-item-hover-background);
+            }
+
+            &:focus {
+                outline-color: var(--p-datatable-filter-row-item-focus-outline-color);
+                outline-style: var(--p-datatable-filter-row-item-focus-outline-style);
+                outline-width: var(--p-datatable-filter-row-item-focus-outline-width);
+                outline-offset: var(--p-datatable-filter-row-item-focus-outline-offset);
+                box-shadow: var(--p-datatable-filter-row-item-focus-box-shadow);
+            }
+        }
+
+        .p-column-filter-separator {
+            border-width: var(--p-datatable-filter-separator-border-width);
+            border-style: var(--p-datatable-filter-separator-border-style);
+            border-color: var(--p-datatable-filter-separator-border-color);
+            margin-top: var(--p-datatable-filter-separator-margin-top);
+            margin-right: var(--p-datatable-filter-separator-margin-right);
+            margin-bottom: var(--p-datatable-filter-separator-margin-bottom);
+            margin-left: var(--p-datatable-filter-separator-margin-left);
+        }
+    }
+}
+
+.p-column-filter-overlay-menu {
+    .p-column-filter-operator {
+        color: var(--p-datatable-filter-overlay-menu-filter-operator-color);
+        background: var(--p-datatable-filter-overlay-menu-filter-operator-background);
+        padding-top: var(--p-datatable-filter-overlay-menu-filter-operator-padding-top);
+        padding-right: var(--p-datatable-filter-overlay-menu-filter-operator-padding-right);
+        padding-bottom: var(--p-datatable-filter-overlay-menu-filter-operator-padding-bottom);
+        padding-left: var(--p-datatable-filter-overlay-menu-filter-operator-padding-left);
+        margin-top: var(--p-datatable-filter-overlay-menu-filter-operator-margin-top);
+        margin-right: var(--p-datatable-filter-overlay-menu-filter-operator-margin-right);
+        margin-bottom: var(--p-datatable-filter-overlay-menu-filter-operator-margin-bottom);
+        margin-left: var(--p-datatable-filter-overlay-menu-filter-operator-margin-left);
+        border-width: var(--p-datatable-filter-overlay-menu-filter-operator-border-width);
+        border-style: var(--p-datatable-filter-overlay-menu-filter-operator-border-style);
+        border-color: var(--p-datatable-filter-overlay-menu-filter-operator-border-color);
+        border-top-right-radius: var(--p-border-radius);
+        border-top-left-radius: var(--p-border-radius);
+    }
+
+    .p-column-filter-constraint {
+        padding-top: var(--p-datatable-filter-overlay-menu-filter-constraint-padding-top);
+        padding-right: var(--p-datatable-filter-overlay-menu-filter-constraint-padding-right);
+        padding-bottom: var(--p-datatable-filter-overlay-menu-filter-constraint-padding-bottom);
+        padding-left: var(--p-datatable-filter-overlay-menu-filter-constraint-padding-left);
+        border-width: var(--p-datatable-filter-overlay-menu-filter-constraint-border-width);
+        border-style: var(--p-datatable-filter-overlay-menu-filter-constraint-border-style);
+        border-color: var(--p-datatable-filter-overlay-menu-filter-constraint-border-color);
+
+        .p-column-filter-matchmode-dropdown {
+            margin-bottom: var(--p-inline-spacing);
+        }
+
+        .p-column-filter-remove-button {
+            margin-top: var(--p-inline-spacing);
+        }
+
+        &:last-child {
+            border-bottom: 0 none;
+        }
+    }
+
+    .p-column-filter-add-rule {
+        padding-top: var(--p-datatable-filter-add-rule-padding-top);
+        padding-right: var(--p-datatable-filter-add-rule-padding-right);
+        padding-bottom: var(--p-datatable-filter-add-rule-padding-bottom);
+        padding-left: var(--p-datatable-filter-add-rule-padding-left);
+    }
+
+    .p-column-filter-buttonbar {
+        padding-top: var(--p-datatable-filter-buttonbar-rule-padding-top);
+        padding-right: var(--p-datatable-filter-buttonbar-rule-padding-right);
+        padding-bottom: var(--p-datatable-filter-buttonbar-rule-padding-bottom);
+        padding-left: var(--p-datatable-filter-buttonbar-rule-padding-left);
+    }
+}
