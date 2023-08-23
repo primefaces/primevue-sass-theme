@@ -1,183 +1,247 @@
 .p-datatable {
     .p-paginator-top {
-        border-width: $tableTopPaginatorBorderWidth;
-        border-radius: 0;
+        border-width: var(--p-datatable-paginator-top-border-width);
+        border-style: var(--p-datatable-paginator-top-border-style);
+        border-color: var(--p-datatable-paginator-top-border-color);
+        border-radius: var(--p-datatable-paginator-top-border-radius);
     }
 
     .p-paginator-bottom {
-        border-width: $tableBottomPaginatorBorderWidth;
-        border-radius: 0;
+        border-width: var(--p-datatable-paginator-bottom-border-width);
+        border-style: var(--p-datatable-paginator-bottom-border-style);
+        border-color: var(--p-datatable-paginator-bottom-border-color);
+        border-radius: var(--p-datatable-paginator-bottom-border-radius);
     }
 
     .p-datatable-header {
-        background: $tableHeaderBg;
-        color: $tableHeaderTextColor;
-        border: $tableHeaderBorder;
-        border-width: $tableHeaderBorderWidth;
-        padding: $tableHeaderPadding;
-        font-weight: $tableHeaderFontWeight;
+        font-size: var(--p-datatable-header-font-size);
+        font-weight: var(--p-datatable-header-font-weight);
+        color: var(--p-datatable-header-color);
+        background: var(--p-datatable-header-background);
+        border-width: var(--p-datatable-header-border-width);
+        border-style: var(--p-datatable-header-border-style);
+        border-color: var(--p-datatable-header-border-color);
+        padding-top: var(--p-datatable-header-padding-top);
+        padding-right: var(--p-datatable-header-padding-right);
+        padding-bottom: var(--p-datatable-header-padding-bottom);
+        padding-left: var(--p-datatable-header-padding-left);
     }
 
     .p-datatable-footer {
-        background: $tableFooterBg;
-        color: $tableFooterTextColor;
-        border: $tableFooterBorder;
-        border-width: $tableFooterBorderWidth;
-        padding: $tableFooterPadding;
-        font-weight: $tableFooterFontWeight;
+        font-size: var(--p-datatable-footer-font-size);
+        font-weight: var(--p-datatable-footer-font-weight);
+        color: var(--p-datatable-footer-color);
+        background: var(--p-datatable-footer-background);
+        border-width: var(--p-datatable-footer-border-width);
+        border-style: var(--p-datatable-footer-border-style);
+        border-color: var(--p-datatable-footer-border-color);
+        padding-top: var(--p-datatable-footer-padding-top);
+        padding-right: var(--p-datatable-footer-padding-right);
+        padding-bottom: var(--p-datatable-footer-padding-bottom);
+        padding-left: var(--p-datatable-footer-padding-left);
     }
 
     .p-datatable-thead > tr > th {
-        text-align: $tableCellContentAlignment;
-        padding: $tableHeaderCellPadding;
-        border: $tableHeaderCellBorder;
-        border-width: $tableHeaderCellBorderWidth;
-        font-weight: $tableHeaderCellFontWeight;
-        color: $tableHeaderCellTextColor;
-        background: $tableHeaderCellBg;
-        transition: $listItemTransition;
+        font-size: var(--p-datatable-header-cell-font-size);
+        font-weight: var(--p-datatable-header-cell-font-weight);
+        text-align: var(--p-datatable-header-cell-text-align);
+        color: var(--p-datatable-header-cell-color);
+        background: var(--p-datatable-header-cell-background);
+        border-width: var(--p-datatable-header-cell-border-width);
+        border-style: var(--p-datatable-header-cell-border-style);
+        border-color: var(--p-datatable-header-cell-border-color);
+        padding-top: var(--p-datatable-header-cell-padding-top);
+        padding-right: var(--p-datatable-header-cell-padding-right);
+        padding-bottom: var(--p-datatable-header-cell-padding-bottom);
+        padding-left: var(--p-datatable-header-cell-padding-left);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
     }
 
     .p-datatable-tfoot > tr > td {
-        text-align: $tableCellContentAlignment;
-        padding: $tableFooterCellPadding;
-        border: $tableFooterCellBorder;
-        border-width: $tableFooterCellBorderWidth;
-        font-weight: $tableFooterCellFontWeight;
-        color: $tableFooterCellTextColor;
-        background: $tableFooterCellBg;
+        font-size: var(--p-datatable-footer-cell-font-size);
+        font-weight: var(--p-datatable-footer-cell-font-weight);
+        text-align: var(--p-datatable-footer-cell-text-align);
+        color: var(--p-datatable-footer-cell-color);
+        background: var(--p-datatable-footer-cell-background);
+        border-width: var(--p-datatable-footer-cell-border-width);
+        border-style: var(--p-datatable-footer-cell-border-style);
+        border-color: var(--p-datatable-footer-cell-border-color);
+        padding-top: var(--p-datatable-footer-cell-padding-top);
+        padding-right: var(--p-datatable-footer-cell-padding-right);
+        padding-bottom: var(--p-datatable-footer-cell-padding-bottom);
+        padding-left: var(--p-datatable-footer-cell-padding-left);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
     }
 
     .p-sortable-column {
         .p-sortable-column-icon {
-            color: $tableHeaderCellIconColor;
-            margin-left: $inlineSpacing;
+            color: var(--p-datatable-sort-icon-color);
+            margin-left: var(--p-inline-spacing);
         }
 
         .p-sortable-column-badge {
-            border-radius: 50%;
-            height: $tableSortableColumnBadgeSize;
-            min-width: $tableSortableColumnBadgeSize;
-            line-height: $tableSortableColumnBadgeSize;
-            color: $highlightTextColor;
-            background: $highlightBg;
-            margin-left: $inlineSpacing;
+            height: var(--p-datatable-sort-badge-height);
+            min-width: var(--p-datatable-sort-badge-min-width);
+            line-height: var(--p-datatable-sort-badge-line-height);
+            color: var(--p-datatable-sort-badge-color);
+            background: var(--p-datatable-sort-badge-background);
+            border-width: var(--p-datatable-sort-badge-border-width);
+            border-style: var(--p-datatable-sort-badge-border-style);
+            border-color: var(--p-datatable-sort-badge-border-color);
+            border-radius: var(--p-datatable-sort-badge-border-radius);
+            margin-left: var(--p-inline-spacing);
         }
 
         &:not(.p-highlight):hover {
-            background: $tableHeaderCellHoverBg;
-            color: $tableHeaderCellTextHoverColor;
+            color: var(--p-datatable-header-cell-hover-color);
+            background: var(--p-datatable-header-cell-hover-background);
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellIconHoverColor;
+                color: var(--p-datatable-header-cell-hover-affects-sort-icon-color);
             }
         }
 
         &.p-highlight {
-            background: $tableHeaderCellHighlightBg;
-            color: $tableHeaderCellHighlightTextColor;
+            color: var(--p-datatable-header-cell-active-color);
+            background: var(--p-datatable-header-cell-active-background);
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellHighlightTextColor;
+                color: var(--p-datatable-header-cell-active-affects-sort-icon-color);
             }
 
             &:hover {
-                background: $tableHeaderCellHighlightHoverBg;
-                color: $tableHeaderCellHighlightTextColor;
-    
+                color: var(--p-datatable-header-cell-active-hover-color);
+                background: var(--p-datatable-header-cell-active-hover-background);
+
                 .p-sortable-column-icon {
-                    color: $tableHeaderCellHighlightTextColor;
+                    color: var(--p-datatable-header-cell-active-hover-affects-sort-icon-color);
                 }
             }
         }
 
         &:focus {
-            box-shadow: $inputListItemFocusShadow;
-            outline: 0 none;
+            box-shadow: var(--p-datatable-header-cell-focus-box-shadow);
+            outline-color: var(--p-datatable-header-cell-focus-outline-color);
+            outline-style: var(--p-datatable-header-cell-focus-outline-style);
+            outline-width: var(--p-datatable-header-cell-focus-outline-width);
+            outline-offset: var(--p-datatable-header-cell-focus-outline-offset);
         }
     }
 
     .p-datatable-tbody {
         > tr {
-            background: $tableBodyRowBg;
-            color: $tableBodyRowTextColor;
-            transition: $listItemTransition;
+            color: var(--p-datatable-body-row-color);
+            background: var(--p-datatable-body-row-background);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             > td {
-                text-align: $tableCellContentAlignment;
-                border: $tableBodyCellBorder;
-                border-width: $tableBodyCellBorderWidth;
-                padding: $tableBodyCellPadding;
+                text-align: var(--p-datatable-body-cell-text-align);
+                border-width: var(--p-datatable-body-cell-border-width);
+                border-style: var(--p-datatable-body-cell-border-style);
+                border-color: var(--p-datatable-body-cell-border-color);
+                padding-top: var(--p-datatable-body-cell-padding-top);
+                padding-right: var(--p-datatable-body-cell-padding-right);
+                padding-bottom: var(--p-datatable-body-cell-padding-bottom);
+                padding-left: var(--p-datatable-body-cell-padding-left);
 
                 .p-row-toggler,
                 .p-row-editor-init,
                 .p-row-editor-save,
                 .p-row-editor-cancel {
-                    @include action-icon();
+                    width: var(--p-datatable-row-action-button-width);
+                    height: var(--p-datatable-row-action-button-height);
+                    color: var(--p-datatable-row-action-button-color);
+                    background: var(--p-datatable-row-action-button-background);
+                    border-width: var(--p-datatable-row-action-button-border-width);
+                    border-style: var(--p-datatable-row-action-button-border-style);
+                    border-color: var(--p-datatable-row-action-button-border-color);
+                    border-radius: var(--p-datatable-row-action-button-border-radius);
+                    transition-duration: var(--p-transition-duration);
+                    transition-property: var(--p-transition-property);
+
+                    &:hover {
+                        color: var(--p-datatable-row-action-button-hover-color);
+                        background: var(--p-datatable-row-action-button-hover-background);
+                        border-width: var(--p-datatable-row-action-button-hover-border-width);
+                        border-style: var(--p-datatable-row-action-button-hover-border-style);
+                        border-color: var(--p-datatable-row-action-button-hover-border-color);
+                    }
+
+                    &:focus {
+                        outline-color: var(--p-datatable-row-action-button-focus-outline-color);
+                        outline-style: var(--p-datatable-row-action-button-focus-outline-style);
+                        outline-width: var(--p-datatable-row-action-button-focus-outline-width);
+                        outline-offset: var(--p-datatable-row-action-button-focus-outline-offset);
+                        box-shadow: var(--p-datatable-row-action-button-focus-box-shadow);
+                    }
                 }
 
                 .p-row-editor-save {
-                    margin-right: $inlineSpacing;
+                    margin-right: var(--p-inline-spacing);
                 }
 
                 > .p-column-title {
-                    font-weight: $tableHeaderCellFontWeight;
+                    font-size: var(--p-datatable-body-title-font-size);
+                    font-weight: var(--p-datatable-body-title-font-weight);
                 }
             }
 
             &:focus {
-                outline: 0.15rem solid $focusOutlineColor;
-                outline-offset: -0.15rem;
+                outline-color: var(--p-datatable-body-row-focus-outline-color);
+                outline-style: var(--p-datatable-body-row-focus-outline-style);
+                outline-width: var(--p-datatable-body-row-focus-outline-width);
+                outline-offset: var(--p-datatable-body-row-focus-outline-offset);
             }
 
             &.p-highlight {
-                background: $highlightBg;
-                color: $highlightTextColor;
+                color: var(--p-datatable-body-row-active-color);
+                background: var(--p-datatable-body-row-active-background);
             }
 
             &.p-datatable-dragpoint-top > td {
-                box-shadow: inset 0 2px 0 0 $highlightBg;
+                box-shadow: var(--p-datatable-body-row-drag-point-top-body-cell-box-shadow);
             }
 
             &.p-datatable-dragpoint-bottom > td {
-                box-shadow: inset 0 -2px 0 0 $highlightBg;
+                box-shadow: var(--p-datatable-body-row-drag-point-bottom-body-cell-box-shadow);
             }
         }
     }
 
     &.p-datatable-hoverable-rows {
         .p-datatable-tbody > tr:not(.p-highlight):hover {
-            background: $tableBodyRowHoverBg;
-            color: $tableBodyRowTextHoverColor;
+            color: var(--p-datatable-hoverable-rows-body-row-hover-color);
+            background: var(--p-datatable-hoverable-rows-body-row-hover-background);
         }
     }
 
     .p-column-resizer-helper {
-        background: $tableResizerHelperBg;
-    }
-
-    .p-datatable-scrollable-header,
-    .p-datatable-scrollable-footer {
-        background: $panelHeaderBg;
+        background: var(--p-datatable-resize-helper-background);
     }
 
     &.p-datatable-scrollable > .p-datatable-wrapper > .p-datatable-table,
     &.p-datatable-scrollable > .p-datatable-wrapper > .p-virtualscroller > .p-datatable-table {
-        > .p-datatable-thead,
+        > .p-datatable-thead {
+            background: var(--p-datatable-scrollable-thead-background);
+        }
+
         > .p-datatable-tfoot {
-            background-color: $tableHeaderCellBg;
+            background: var(--p-datatable-scrollable-tfoot-background);
         }
     }
 
     .p-datatable-loading-icon {
-        font-size: $loadingIconFontSize;
+        font-size: var(--p-datatable-loading-icon-width);
 
         &.p-icon {
-            width:  $loadingIconFontSize;
-            height: $loadingIconFontSize;
+            width: var(--p-datatable-loading-icon-width);
+            height: var(--p-datatable-loading-icon-width);
         }
     }
-
+    /* @todo */
     &.p-datatable-gridlines {
         .p-datatable-header {
             border-width: 1px 1px 0 1px;
@@ -283,17 +347,17 @@
     &.p-datatable-striped {
         .p-datatable-tbody {
             > tr:nth-child(even) {
-                background: $tableBodyRowEvenBg;
-    
+                background: var(--p-datatable-striped-body-row-even-background);
+
                 &.p-highlight {
-                    background: $highlightBg;
-                    color: $highlightTextColor;
-    
+                    color: var(--p-datatable-striped-body-row-even-active-color);
+                    background: var(--p-datatable-striped-body-row-even-active-background);
+
                     .p-row-toggler {
-                        color: $highlightTextColor;
-    
+                        color: var(--p-datatable-striped-body-row-even-active-affects-row-toggler-color);
+
                         &:hover {
-                            color: $highlightTextColor;
+                            color: var(--p-datatable-striped-body-row-even-active-affects-row-toggler-hover-color);
                         }
                     }
                 }
@@ -303,45 +367,75 @@
 
     &.p-datatable-sm {
         .p-datatable-header {
-            @include scaledPadding($tableHeaderPadding, $tableScaleSM);
+            padding-top: var(--p-datatable-small-header-padding-top);
+            padding-right: var(--p-datatable-small-header-padding-right);
+            padding-bottom: var(--p-datatable-small-header-padding-bottom);
+            padding-left: var(--p-datatable-small-header-padding-left);
         }
 
         .p-datatable-thead > tr > th {
-            @include scaledPadding($tableHeaderCellPadding, $tableScaleSM);
+            padding-top: var(--p-datatable-small-header-cell-padding-top);
+            padding-right: var(--p-datatable-small-header-cell-padding-right);
+            padding-bottom: var(--p-datatable-small-header-cell-padding-bottom);
+            padding-left: var(--p-datatable-small-header-cell-padding-left);
         }
 
         .p-datatable-tbody > tr > td {
-            @include scaledPadding($tableBodyCellPadding, $tableScaleSM);
+            padding-top: var(--p-datatable-small-body-cell-padding-top);
+            padding-right: var(--p-datatable-small-body-cell-padding-right);
+            padding-bottom: var(--p-datatable-small-body-cell-padding-bottom);
+            padding-left: var(--p-datatable-small-body-cell-padding-left);
         }
 
         .p-datatable-tfoot > tr > td {
-            @include scaledPadding($tableFooterPadding, $tableScaleSM);
+            padding-top: var(--p-datatable-small-footer-cell-padding-top);
+            padding-right: var(--p-datatable-small-footer-cell-padding-right);
+            padding-bottom: var(--p-datatable-small-footer-cell-padding-bottom);
+            padding-left: var(--p-datatable-small-footer-cell-padding-left);
         }
 
         .p-datatable-footer {
-            @include scaledPadding($tableFooterPadding, $tableScaleSM);
+            padding-top: var(--p-datatable-small-footer-padding-top);
+            padding-right: var(--p-datatable-small-footer-padding-right);
+            padding-bottom: var(--p-datatable-small-footer-padding-bottom);
+            padding-left: var(--p-datatable-small-footer-padding-left);
         }
     }
 
     &.p-datatable-lg {
         .p-datatable-header {
-            @include scaledPadding($tableHeaderPadding, $tableScaleLG);
+            padding-top: var(--p-datatable-large-header-padding-top);
+            padding-right: var(--p-datatable-large-header-padding-right);
+            padding-bottom: var(--p-datatable-large-header-padding-bottom);
+            padding-left: var(--p-datatable-large-header-padding-left);
         }
 
         .p-datatable-thead > tr > th {
-            @include scaledPadding($tableHeaderCellPadding, $tableScaleLG);
+            padding-top: var(--p-datatable-large-header-cell-padding-top);
+            padding-right: var(--p-datatable-large-header-cell-padding-right);
+            padding-bottom: var(--p-datatable-large-header-cell-padding-bottom);
+            padding-left: var(--p-datatable-large-header-cell-padding-left);
         }
 
         .p-datatable-tbody > tr > td {
-            @include scaledPadding($tableBodyCellPadding, $tableScaleLG);
+            padding-top: var(--p-datatable-large-body-cell-padding-top);
+            padding-right: var(--p-datatable-large-body-cell-padding-right);
+            padding-bottom: var(--p-datatable-large-body-cell-padding-bottom);
+            padding-left: var(--p-datatable-large-body-cell-padding-left);
         }
 
         .p-datatable-tfoot > tr > td {
-            @include scaledPadding($tableFooterPadding, $tableScaleLG);
+            padding-top: var(--p-datatable-large-footer-cell-padding-top);
+            padding-right: var(--p-datatable-large-footer-cell-padding-right);
+            padding-bottom: var(--p-datatable-large-footer-cell-padding-bottom);
+            padding-left: var(--p-datatable-large-footer-cell-padding-left);
         }
 
         .p-datatable-footer {
-            @include scaledPadding($tableFooterPadding, $tableScaleLG);
+            padding-top: var(--p-datatable-large-footer-padding-top);
+            padding-right: var(--p-datatable-large-footer-padding-right);
+            padding-bottom: var(--p-datatable-large-footer-padding-bottom);
+            padding-left: var(--p-datatable-large-footer-padding-left);
         }
     }
 }
