@@ -156,11 +156,6 @@
         background: $tableResizerHelperBg;
     }
 
-    .p-datatable-scrollable-header,
-    .p-datatable-scrollable-footer {
-        background: $panelHeaderBg;
-    }
-
     &.p-datatable-scrollable > .p-datatable-wrapper > .p-datatable-table,
     &.p-datatable-scrollable > .p-datatable-wrapper > .p-virtualscroller > .p-datatable-table {
         > .p-datatable-thead,
