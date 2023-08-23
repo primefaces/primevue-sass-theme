@@ -1,112 +1,187 @@
 .p-treetable {
     .p-paginator-top {
-        border-width: $tableTopPaginatorBorderWidth;
-        border-radius: 0;
+        border-width: var(--p-treetable-paginator-top-border-width);
+        border-style: var(--p-treetable-paginator-top-border-style);
+        border-color: var(--p-treetable-paginator-top-border-color);
+        border-radius: var(--p-treetable-paginator-top-border-radius);
     }
 
     .p-paginator-bottom {
-        border-width: $tableBottomPaginatorBorderWidth;
-        border-radius: 0;
+        border-width: var(--p-treetable-paginator-bottom-border-width);
+        border-style: var(--p-treetable-paginator-bottom-border-style);
+        border-color: var(--p-treetable-paginator-bottom-border-color);
+        border-radius: var(--p-treetable-paginator-bottom-border-radius);
     }
 
-   .p-treetable-header {
-        background: $tableHeaderBg;
-        color: $tableHeaderTextColor;
-        border: $tableHeaderBorder;
-        border-width: $tableHeaderBorderWidth;
-        padding: $tableHeaderPadding;
-        font-weight: $tableHeaderFontWeight;
+    .p-treetable-header {
+        font-size: var(--p-treetable-header-font-size);
+        font-weight: var(--p-treetable-header-font-weight);
+        color: var(--p-treetable-header-color);
+        background: var(--p-treetable-header-background);
+        border-width: var(--p-treetable-header-border-width);
+        border-style: var(--p-treetable-header-border-style);
+        border-color: var(--p-treetable-header-border-color);
+        padding-top: var(--p-treetable-header-padding-top);
+        padding-right: var(--p-treetable-header-padding-right);
+        padding-bottom: var(--p-treetable-header-padding-bottom);
+        padding-left: var(--p-treetable-header-padding-left);
     }
 
     .p-treetable-footer {
-        background: $tableFooterBg;
-        color: $tableFooterTextColor;
-        border: $tableFooterBorder;
-        border-width: $tableFooterBorderWidth;
-        padding: $tableFooterPadding;
-        font-weight: $tableFooterFontWeight;
+        font-size: var(--p-treetable-footer-font-size);
+        font-weight: var(--p-treetable-footer-font-weight);
+        color: var(--p-treetable-footer-color);
+        background: var(--p-treetable-footer-background);
+        border-width: var(--p-treetable-footer-border-width);
+        border-style: var(--p-treetable-footer-border-style);
+        border-color: var(--p-treetable-footer-border-color);
+        padding-top: var(--p-treetable-footer-padding-top);
+        padding-right: var(--p-treetable-footer-padding-right);
+        padding-bottom: var(--p-treetable-footer-padding-bottom);
+        padding-left: var(--p-treetable-footer-padding-left);
     }
 
     .p-treetable-thead > tr > th {
-        text-align: $tableCellContentAlignment;
-        padding: $tableHeaderCellPadding;
-        border: $tableHeaderCellBorder;
-        border-width: $tableHeaderCellBorderWidth;
-        font-weight: $tableHeaderCellFontWeight;
-        color: $tableHeaderCellTextColor;
-        background: $tableHeaderCellBg;
-        transition: $listItemTransition;
+        font-size: var(--p-treetable-header-cell-font-size);
+        font-weight: var(--p-treetable-header-cell-font-weight);
+        text-align: var(--p-treetable-header-cell-text-align);
+        color: var(--p-treetable-header-cell-color);
+        background: var(--p-treetable-header-cell-background);
+        border-width: var(--p-treetable-header-cell-border-width);
+        border-style: var(--p-treetable-header-cell-border-style);
+        border-color: var(--p-treetable-header-cell-border-color);
+        padding-top: var(--p-treetable-header-cell-padding-top);
+        padding-right: var(--p-treetable-header-cell-padding-right);
+        padding-bottom: var(--p-treetable-header-cell-padding-bottom);
+        padding-left: var(--p-treetable-header-cell-padding-left);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
     }
 
     .p-treetable-tfoot > tr > td {
-        text-align: $tableCellContentAlignment;
-        padding: $tableFooterCellPadding;
-        border: $tableFooterCellBorder;
-        border-width: $tableFooterCellBorderWidth;
-        font-weight: $tableFooterCellFontWeight;
-        color: $tableFooterCellTextColor;
-        background: $tableFooterCellBg;
+        font-size: var(--p-treetable-footer-cell-font-size);
+        font-weight: var(--p-treetable-footer-cell-font-weight);
+        text-align: var(--p-treetable-footer-cell-text-align);
+        color: var(--p-treetable-footer-cell-color);
+        background: var(--p-treetable-footer-cell-background);
+        border-width: var(--p-treetable-footer-cell-border-width);
+        border-style: var(--p-treetable-footer-cell-border-style);
+        border-color: var(--p-treetable-footer-cell-border-color);
+        padding-top: var(--p-treetable-footer-cell-padding-top);
+        padding-right: var(--p-treetable-footer-cell-padding-right);
+        padding-bottom: var(--p-treetable-footer-cell-padding-bottom);
+        padding-left: var(--p-treetable-footer-cell-padding-left);
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
     }
 
     .p-sortable-column {
-        outline-color: $focusOutlineColor;
-
         .p-sortable-column-icon {
-            color: $tableHeaderCellIconColor;
-            margin-left: $inlineSpacing;
+            color: var(--p-treetable-sort-icon-color);
+            margin-left: var(--p-inline-spacing);
         }
 
         .p-sortable-column-badge {
-            border-radius: 50%;
-            height: $tableSortableColumnBadgeSize;
-            min-width: $tableSortableColumnBadgeSize;
-            line-height: $tableSortableColumnBadgeSize;
-            color: $highlightTextColor;
-            background: $highlightBg;
-            margin-left: $inlineSpacing;
+            height: var(--p-treetable-sort-badge-height);
+            min-width: var(--p-treetable-sort-badge-min-width);
+            line-height: var(--p-treetable-sort-badge-line-height);
+            color: var(--p-treetable-sort-badge-color);
+            background: var(--p-treetable-sort-badge-background);
+            border-width: var(--p-treetable-sort-badge-border-width);
+            border-style: var(--p-treetable-sort-badge-border-style);
+            border-color: var(--p-treetable-sort-badge-border-color);
+            border-radius: var(--p-treetable-sort-badge-border-radius);
+            margin-left: var(--p-inline-spacing);
         }
 
         &:not(.p-highlight):hover {
-            background: $tableHeaderCellHoverBg;
-            color: $tableHeaderCellTextHoverColor;
+            color: var(--p-treetable-header-cell-hover-color);
+            background: var(--p-treetable-header-cell-hover-background);
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellIconHoverColor;
+                color: var(--p-treetable-header-cell-hover-affects-sort-icon-color);
             }
         }
 
         &.p-highlight {
-            background: $tableHeaderCellHighlightBg;
-            color: $tableHeaderCellHighlightTextColor;
+            color: var(--p-treetable-header-cell-active-color);
+            background: var(--p-treetable-header-cell-active-background);
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellHighlightTextColor;
+                color: var(--p-treetable-header-cell-active-affects-sort-icon-color);
             }
+
+            &:hover {
+                color: var(--p-treetable-header-cell-active-hover-color);
+                background: var(--p-treetable-header-cell-active-hover-background);
+
+                .p-sortable-column-icon {
+                    color: var(--p-treetable-header-cell-active-hover-affects-sort-icon-color);
+                }
+            }
+        }
+
+        &:focus {
+            box-shadow: var(--p-treetable-header-cell-focus-box-shadow);
+            outline-color: var(--p-treetable-header-cell-focus-outline-color);
+            outline-style: var(--p-treetable-header-cell-focus-outline-style);
+            outline-width: var(--p-treetable-header-cell-focus-outline-width);
+            outline-offset: var(--p-treetable-header-cell-focus-outline-offset);
         }
     }
 
     .p-treetable-tbody {
         > tr {
-            background: $tableBodyRowBg;
-            color: $tableBodyRowTextColor;
-            transition: $listItemTransition;
+            color: var(--p-treetable-body-row-color);
+            background: var(--p-treetable-body-row-background);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             > td {
-                text-align: $tableCellContentAlignment;
-                border: $tableBodyCellBorder;
-                border-width: $tableBodyCellBorderWidth;
-                padding: $tableBodyCellPadding;
+                text-align: var(--p-treetable-body-cell-text-align);
+                border-width: var(--p-treetable-body-cell-border-width);
+                border-style: var(--p-treetable-body-cell-border-style);
+                border-color: var(--p-treetable-body-cell-border-color);
+                padding-top: var(--p-treetable-body-cell-padding-top);
+                padding-right: var(--p-treetable-body-cell-padding-right);
+                padding-bottom: var(--p-treetable-body-cell-padding-bottom);
+                padding-left: var(--p-treetable-body-cell-padding-left);
 
                 .p-treetable-toggler {
-                    @include action-icon();
-                    margin-right: $inlineSpacing;
-                    
+                    width: var(--p-treetable-row-action-button-width);
+                    height: var(--p-treetable-row-action-button-height);
+                    color: var(--p-treetable-row-action-button-color);
+                    background: var(--p-treetable-row-action-button-background);
+                    border-width: var(--p-treetable-row-action-button-border-width);
+                    border-style: var(--p-treetable-row-action-button-border-style);
+                    border-color: var(--p-treetable-row-action-button-border-color);
+                    border-radius: var(--p-treetable-row-action-button-border-radius);
+                    transition-duration: var(--p-transition-duration);
+                    transition-property: var(--p-transition-property);
+                    margin-right: var(--p-inline-spacing);
+
+                    &:hover {
+                        color: var(--p-treetable-row-action-button-hover-color);
+                        background: var(--p-treetable-row-action-button-hover-background);
+                        border-width: var(--p-treetable-row-action-button-hover-border-width);
+                        border-style: var(--p-treetable-row-action-button-hover-border-style);
+                        border-color: var(--p-treetable-row-action-button-hover-border-color);
+                    }
+
+                    &:focus {
+                        outline-color: var(--p-treetable-row-action-button-focus-outline-color);
+                        outline-style: var(--p-treetable-row-action-button-focus-outline-style);
+                        outline-width: var(--p-treetable-row-action-button-focus-outline-width);
+                        outline-offset: var(--p-treetable-row-action-button-focus-outline-offset);
+                        box-shadow: var(--p-treetable-row-action-button-focus-box-shadow);
+                    }
+
                     & + .p-checkbox {
-                        margin-right: $inlineSpacing;
-                        
+                        margin-right: var(--p-inline-spacing);
+
                         .p-indeterminate {
                             .p-checkbox-icon {
-                                color: $textColor;
+                                color: var(--p-color);
                             }
                         }
                     }
@@ -114,21 +189,22 @@
             }
 
             &:focus {
-                outline: 0.15rem solid $focusOutlineColor;
-                outline-offset: -0.15rem;
+                outline-color: var(--p-treetable-body-row-focus-outline-color);
+                outline-style: var(--p-treetable-body-row-focus-outline-style);
+                outline-width: var(--p-treetable-body-row-focus-outline-width);
+                outline-offset: var(--p-treetable-body-row-focus-outline-offset);
             }
 
             &.p-highlight {
-                background: $highlightBg;
-                color: $highlightTextColor;
+                color: var(--p-treetable-body-row-active-color);
+                background: var(--p-treetable-body-row-active-background);
 
                 .p-treetable-toggler {
-                    color: $highlightTextColor;
+                    color: var(--p-treetable-body-row-active-affects-row-toggler-color);
 
                     &:hover {
-                        color: $highlightTextColor;
+                        color: var(--p-treetable-body-row-active-affects-row-toggler-hover-color);
                     }
-                    
                 }
             }
         }
@@ -136,35 +212,31 @@
 
     &.p-treetable-hoverable-rows {
         .p-treetable-tbody > tr:not(.p-highlight):hover {
-            background: $tableBodyRowHoverBg;
-            color: $tableBodyRowTextHoverColor;
+            color: var(--p-treetable-hoverable-rows-body-row-hover-color);
+            background: var(--p-treetable-hoverable-rows-body-row-hover-background);
 
             .p-treetable-toggler {
-                color: $tableBodyRowTextHoverColor;
+                color: var(--p-treetable-hoverable-rows-body-row-hover-affects-row-toggler-color);
             }
         }
     }
 
     .p-column-resizer-helper {
-        background: $tableResizerHelperBg;
-    }
-
-    .p-treetable-scrollable-header,
-    .p-treetable-scrollable-footer {
-        background: $panelHeaderBg;
+        background: var(--p-treetable-resize-helper-background);
     }
 
     .p-treetable-loading-icon {
-        font-size: $loadingIconFontSize;
+        font-size: var(--p-treetable-loading-icon-width);
 
         &.p-icon {
-            width:  $loadingIconFontSize;
-            height: $loadingIconFontSize;
+            width: var(--p-treetable-loading-icon-width);
+            height: var(--p-treetable-loading-icon-width);
         }
     }
 
+    /* @todo */
     &.p-treetable-gridlines {
-        .p-datatable-header {
+        .p-treetable-header {
             border-width: 1px 1px 0 1px;
         }
 
@@ -207,45 +279,75 @@
 
     &.p-treetable-sm {
         .p-treetable-header {
-            @include scaledPadding($tableHeaderPadding, $scaleSM);
+            padding-top: var(--p-treetable-small-header-padding-top);
+            padding-right: var(--p-treetable-small-header-padding-right);
+            padding-bottom: var(--p-treetable-small-header-padding-bottom);
+            padding-left: var(--p-treetable-small-header-padding-left);
         }
 
         .p-treetable-thead > tr > th {
-            @include scaledPadding($tableHeaderCellPadding, $tableScaleSM);
+            padding-top: var(--p-treetable-small-header-cell-padding-top);
+            padding-right: var(--p-treetable-small-header-cell-padding-right);
+            padding-bottom: var(--p-treetable-small-header-cell-padding-bottom);
+            padding-left: var(--p-treetable-small-header-cell-padding-left);
         }
 
         .p-treetable-tbody > tr > td {
-            @include scaledPadding($tableBodyCellPadding, $tableScaleSM);
+            padding-top: var(--p-treetable-small-body-cell-padding-top);
+            padding-right: var(--p-treetable-small-body-cell-padding-right);
+            padding-bottom: var(--p-treetable-small-body-cell-padding-bottom);
+            padding-left: var(--p-treetable-small-body-cell-padding-left);
         }
 
         .p-treetable-tfoot > tr > td {
-            @include scaledPadding($tableFooterPadding, $tableScaleSM);
+            padding-top: var(--p-treetable-small-footer-cell-padding-top);
+            padding-right: var(--p-treetable-small-footer-cell-padding-right);
+            padding-bottom: var(--p-treetable-small-footer-cell-padding-bottom);
+            padding-left: var(--p-treetable-small-footer-cell-padding-left);
         }
 
         .p-treetable-footer {
-            @include scaledPadding($tableFooterPadding, $tableScaleSM);
+            padding-top: var(--p-treetable-small-footer-padding-top);
+            padding-right: var(--p-treetable-small-footer-padding-right);
+            padding-bottom: var(--p-treetable-small-footer-padding-bottom);
+            padding-left: var(--p-treetable-small-footer-padding-left);
         }
     }
 
     &.p-treetable-lg {
         .p-treetable-header {
-            @include scaledPadding($tableHeaderPadding, $tableScaleLG);
+            padding-top: var(--p-treetable-large-header-padding-top);
+            padding-right: var(--p-treetable-large-header-padding-right);
+            padding-bottom: var(--p-treetable-large-header-padding-bottom);
+            padding-left: var(--p-treetable-large-header-padding-left);
         }
 
         .p-treetable-thead > tr > th {
-            @include scaledPadding($tableHeaderCellPadding, $tableScaleLG);
+            padding-top: var(--p-treetable-large-header-cell-padding-top);
+            padding-right: var(--p-treetable-large-header-cell-padding-right);
+            padding-bottom: var(--p-treetable-large-header-cell-padding-bottom);
+            padding-left: var(--p-treetable-large-header-cell-padding-left);
         }
 
         .p-treetable-tbody > tr > td {
-            @include scaledPadding($tableBodyCellPadding, $tableScaleLG);
+            padding-top: var(--p-treetable-large-body-cell-padding-top);
+            padding-right: var(--p-treetable-large-body-cell-padding-right);
+            padding-bottom: var(--p-treetable-large-body-cell-padding-bottom);
+            padding-left: var(--p-treetable-large-body-cell-padding-left);
         }
 
         .p-treetable-tfoot > tr > td {
-            @include scaledPadding($tableFooterPadding, $tableScaleLG);
+            padding-top: var(--p-treetable-large-footer-cell-padding-top);
+            padding-right: var(--p-treetable-large-footer-cell-padding-right);
+            padding-bottom: var(--p-treetable-large-footer-cell-padding-bottom);
+            padding-left: var(--p-treetable-large-footer-cell-padding-left);
         }
 
         .p-treetable-footer {
-            @include scaledPadding($tableFooterPadding, $tableScaleLG);
+            padding-top: var(--p-treetable-large-footer-padding-top);
+            padding-right: var(--p-treetable-large-footer-padding-right);
+            padding-bottom: var(--p-treetable-large-footer-padding-bottom);
+            padding-left: var(--p-treetable-large-footer-padding-left);
         }
     }
 }
