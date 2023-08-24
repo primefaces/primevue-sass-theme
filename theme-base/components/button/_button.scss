@@ -1,166 +1,217 @@
 .p-button {
-    color: $buttonTextColor;
-    background: $buttonBg;
-    border: $buttonBorder;
-    padding: $buttonPadding;
-    font-size: $fontSize;
-    transition: $formElementTransition;
-    border-radius: $borderRadius;
+    color: var(--p-button-color);
+    background: var(--p-button-background);
+    border-width: var(--p-button-border-width);
+    border-style: var(--p-button-border-style);
+    border-color: var(--p-button-border-color);
+    padding-top: var(--p-button-padding-top);
+    padding-right: var(--p-button-padding-right);
+    padding-bottom: var(--p-button-padding-bottom);
+    padding-left: var(--p-button-padding-left);
+    font-size: var(--p-font-size);
+    border-radius: var(--p-border-radius);
+    transition-duration: var(--p-transition-duration);
+    transition-property: var(--p-transition-property);
 
     &:enabled:hover {
-        background: $buttonHoverBg;
-        color: $buttonTextHoverColor;
-        border-color: $buttonHoverBorderColor;
+        color: var(--p-button-hover-color);
+        background: var(--p-button-hover-background);
+        border-width: var(--p-button-hover-border-width);
+        border-style: var(--p-button-hover-border-style);
+        border-color: var(--p-button-hover-border-color);
     }
 
     &:enabled:active {
-        background: $buttonActiveBg;
-        color: $buttonTextActiveColor;
-        border-color: $buttonActiveBorderColor;
+        color: var(--p-button-hover-color);
+        background: var(--p-button-hover-background);
+        border-width: var(--p-button-hover-border-width);
+        border-style: var(--p-button-hover-border-style);
+        border-color: var(--p-button-hover-border-color);
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $buttonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-outlined-color);
+        background: var(--p-button-outlined-background);
+        border-width: var(--p-button-outlined-border-width);
+        border-style: var(--p-button-outlined-border-style);
+        border-color: var(--p-button-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($buttonBg, $textButtonHoverBgOpacity);
-            color: $buttonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-outlined-hover-color);
+            background: var(--p-button-outlined-hover-background);
+            border-width: var(--p-button-outlined-hover-border-width);
+            border-style: var(--p-button-outlined-hover-border-style);
+            border-color: var(--p-button-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($buttonBg, $textButtonActiveBgOpacity);
-            color: $buttonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-outlined-active-color);
+            background: var(--p-button-outlined-active-background);
+            border-width: var(--p-button-outlined-active-border-width);
+            border-style: var(--p-button-outlined-active-border-style);
+            border-color: var(--p-button-outlined-active-border-color);
         }
 
         &.p-button-plain {
-            color: $plainButtonTextColor;
-            border-color: $plainButtonTextColor;
+            color: var(--p-button-plain-color);
+            border-width: var(--p-button-plain-border-width);
+            border-style: var(--p-button-plain-border-style);
+            border-color: var(--p-button-plain-border-color);
 
             &:enabled:hover {
-                background: $plainButtonHoverBgColor;
-                color: $plainButtonTextColor;
+                color: var(--p-button-plain-hover-color);
+                background: var(--p-button-plain-hover-background);
             }
-    
+
             &:enabled:active {
-                background: $plainButtonActiveBgColor;
-                color: $plainButtonTextColor;
+                color: var(--p-button-plain-active-color);
+                background: var(--p-button-plain-active-background);
             }
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $buttonBg;
-        border-color: transparent;
+        color: var(--p-button-text-color);
+        background: var(--p-button-text-background);
+        border-width: var(--p-button-text-border-width);
+        border-style: var(--p-button-text-border-style);
+        border-color: var(--p-button-text-border-color);
 
         &:enabled:hover {
-            background: rgba($buttonBg, $textButtonHoverBgOpacity);
-            color: $buttonBg;
-            border-color: transparent;
+            color: var(--p-button-text-hover-color);
+            background: var(--p-button-text-hover-background);
+            border-width: var(--p-button-text-hover-border-width);
+            border-style: var(--p-button-text-hover-border-style);
+            border-color: var(--p-button-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($buttonBg, $textButtonActiveBgOpacity);
-            color: $buttonBg;
-            border-color: transparent;
+            color: var(--p-button-text-active-color);
+            background: var(--p-button-text-active-background);
+            border-width: var(--p-button-text-active-border-width);
+            border-style: var(--p-button-text-active-border-style);
+            border-color: var(--p-button-text-active-border-color);
         }
 
         &.p-button-plain {
-            color: $plainButtonTextColor;
+            color: var(--p-button-plain-color);
 
             &:enabled:hover {
-                background: $plainButtonHoverBgColor;
-                color: $plainButtonTextColor;
+                color: var(--p-button-plain-hover-color);
+                background: var(--p-button-plain-hover-background);
             }
-    
+
             &:enabled:active {
-                background: $plainButtonActiveBgColor;
-                color: $plainButtonTextColor;
+                color: var(--p-button-plain-active-color);
+                background: var(--p-button-plain-active-background);
             }
         }
     }
 
     &:focus {
-        @include focused();
+        outline-color: var(--p-button-focus-outline-color);
+        outline-style: var(--p-button-focus-outline-style);
+        outline-width: var(--p-button-focus-outline-width);
+        outline-offset: var(--p-button-focus-outline-offset);
+        box-shadow: var(--p-button-focus-box-shadow);
     }
 
     .p-button-label {
-        transition-duration: $transitionDuration;
+        transition-duration: var(--p-transition-duration);
+        transition-property: var(--p-transition-property);
     }
 
     .p-button-icon-left {
-         margin-right: $inlineSpacing;
+        margin-right: var(--p-inline-spacing);
     }
 
     .p-button-icon-right {
-        margin-left: $inlineSpacing;
+        margin-left: var(--p-inline-spacing);
     }
 
     .p-button-icon-bottom {
-        margin-top: $inlineSpacing;
+        margin-top: var(--p-inline-spacing);
     }
 
     .p-button-icon-top {
-       margin-bottom: $inlineSpacing;
+        margin-bottom: var(--p-inline-spacing);
     }
 
     .p-badge {
-        margin-left: $inlineSpacing;
-        min-width: $fontSize;
-        height: $fontSize;
-        line-height: $fontSize;
-        color: $buttonBg;
-        background-color: $buttonTextColor;
+        min-width: var(--p-button-badge-min-width);
+        height: var(--p-button-badge-height);
+        line-height: var(--p-button-badge-line-height);
+        color: var(--p-button-badge-color);
+        background: var(--p-button-badge-background);
+        margin-left: var(--p-inline-spacing);
     }
 
     &.p-button-raised {
-        box-shadow: $raisedButtonShadow;
+        box-shadow: var(--p-button-raised-box-shadow);
     }
 
     &.p-button-rounded {
-        border-radius: $roundedButtonBorderRadius;
+        border-width: var(--p-button-rounded-border-width);
+        border-style: var(--p-button-rounded-border-style);
+        border-color: var(--p-button-rounded-border-color);
+        border-radius: var(--p-button-rounded-border-radius);
     }
 
     &.p-button-icon-only {
-        width: $buttonIconOnlyWidth;
-        padding: $buttonIconOnlyPadding;
+        width: var(--p-button-icon-only-width);
+        padding-top: var(--p-button-icon-only-padding-top);
+        padding-right: var(--p-button-icon-only-padding-right);
+        padding-bottom: var(--p-button-icon-only-padding-bottom);
+        padding-left: var(--p-button-icon-only-padding-left);
 
         .p-button-icon-left,
         .p-button-icon-right {
-            margin: 0;
+            margin-top: var(--p-button-icon-only-icon-margin-top);
+            margin-right: var(--p-button-icon-only-icon-margin-right);
+            margin-bottom: var(--p-button-icon-only-icon-margin-bottom);
+            margin-left: var(--p-button-icon-only-icon-margin-left);
         }
 
         &.p-button-rounded {
-            border-radius: 50%;
-            height: $buttonIconOnlyWidth;
+            height: var(--p-button-rounded-height);
+            border-width: var(--p-button-rounded-border-width);
+            border-style: var(--p-button-rounded-border-style);
+            border-color: var(--p-button-rounded-border-color);
+            border-color: var(--p-button-rounded-border-color);
         }
     }
 
     &.p-button-sm {
-        @include scaledFontSize($fontSize, $scaleSM);
-        @include scaledPadding($buttonPadding, $scaleSM);
+        font-size: var(--p-button-small-font-size);
+        font-weight: var(--p-button-small-font-weight);
+        padding-top: var(--p-button-small-padding-top);
+        padding-right: var(--p-button-small-padding-right);
+        padding-bottom: var(--p-button-small-padding-bottom);
+        padding-left: var(--p-button-small-padding-left);
 
         .p-button-icon {
-            @include scaledFontSize($primeIconFontSize, $scaleSM);
+            font-size: var(--p-button-small-icon-font-size);
+            font-weight: var(--p-button-small-icon-font-weight);
         }
     }
 
     &.p-button-lg {
-        @include scaledFontSize($fontSize, $scaleLG);
-        @include scaledPadding($buttonPadding, $scaleLG);
+        font-size: var(--p-button-large-font-size);
+        font-weight: var(--p-button-large-font-weight);
+        padding-top: var(--p-button-large-padding-top);
+        padding-right: var(--p-button-large-padding-right);
+        padding-bottom: var(--p-button-large-padding-bottom);
+        padding-left: var(--p-button-large-padding-left);
 
         .p-button-icon {
-            @include scaledFontSize($primeIconFontSize, $scaleLG);
+            font-size: var(--p-button-large-icon-font-size);
+            font-weight: var(--p-button-large-icon-font-weight);
         }
     }
 
     &.p-button-loading-label-only {
         .p-button-label {
-            margin-left: $inlineSpacing;
+            margin-left: var(--p-inline-spacing);
         }
 
         .p-button-loading-icon {
@@ -173,392 +224,520 @@
     .p-button {
         width: 100%;
     }
-    
+
     .p-button-icon-only {
-        width: $buttonIconOnlyWidth;
+        width: var(--p-button-icon-only-width);
     }
 
     .p-buttonset {
         display: flex;
-        
+
         .p-button {
             flex: 1;
         }
     }
 }
 
-.p-button.p-button-secondary, .p-buttonset.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button {
-    color: $secondaryButtonTextColor;
-    background: $secondaryButtonBg;
-    border: $secondaryButtonBorder;
+.p-button.p-button-secondary,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button {
+    color: var(--p-button-secondary-color);
+    background: var(--p-button-secondary-background);
+    border-width: var(--p-button-secondary-border-width);
+    border-style: var(--p-button-secondary-border-style);
+    border-color: var(--p-button-secondary-border-color);
 
     &:enabled:hover {
-        background: $secondaryButtonHoverBg;
-        color: $secondaryButtonTextHoverColor;
-        border-color: $secondaryButtonHoverBorderColor;
+        color: var(--p-button-secondary-hover-color);
+        background: var(--p-button-secondary-hover-background);
+        border-width: var(--p-button-secondary-hover-border-width);
+        border-style: var(--p-button-secondary-hover-border-style);
+        border-color: var(--p-button-secondary-hover-border-color);
     }
 
     &:enabled:focus {
-        box-shadow: $secondaryButtonFocusShadow;
+        box-shadow: var(--p-button-secondary-focus-box-shadow);
     }
 
     &:enabled:active {
-        background: $secondaryButtonActiveBg;
-        color: $secondaryButtonTextActiveColor;
-        border-color: $secondaryButtonActiveBorderColor;
+        color: var(--p-button-secondary-active-color);
+        background: var(--p-button-secondary-active-background);
+        border-width: var(--p-button-secondary-active-border-width);
+        border-style: var(--p-button-secondary-active-border-style);
+        border-color: var(--p-button-secondary-active-border-color);
     }
-    
+
     &.p-button-outlined {
-        background-color: transparent;
-        color: $secondaryButtonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-secondary-outlined-color);
+        background: var(--p-button-secondary-outlined-background);
+        border-width: var(--p-button-secondary-outlined-border-width);
+        border-style: var(--p-button-secondary-outlined-border-style);
+        border-color: var(--p-button-secondary-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($secondaryButtonBg, $textButtonHoverBgOpacity);
-            color: $secondaryButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-secondary-outlined-hover-color);
+            background: var(--p-button-secondary-outlined-hover-background);
+            border-width: var(--p-button-secondary-outlined-hover-border-width);
+            border-style: var(--p-button-secondary-outlined-hover-border-style);
+            border-color: var(--p-button-secondary-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($secondaryButtonBg, $textButtonActiveBgOpacity);
-            color: $secondaryButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-secondary-outlined-active-color);
+            background: var(--p-button-secondary-outlined-active-background);
+            border-width: var(--p-button-secondary-outlined-active-border-width);
+            border-style: var(--p-button-secondary-outlined-active-border-style);
+            border-color: var(--p-button-secondary-outlined-active-border-color);
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $secondaryButtonBg;
-        border-color: transparent;
+        color: var(--p-button-secondary-text-color);
+        background: var(--p-button-secondary-text-background);
+        border-width: var(--p-button-secondary-text-border-width);
+        border-style: var(--p-button-secondary-text-border-style);
+        border-color: var(--p-button-secondary-text-border-color);
 
         &:enabled:hover {
-            background: rgba($secondaryButtonBg, $textButtonHoverBgOpacity);
-            border-color: transparent;
-            color: $secondaryButtonBg;
+            color: var(--p-button-secondary-text-hover-color);
+            background: var(--p-button-secondary-text-hover-background);
+            border-width: var(--p-button-secondary-text-hover-border-width);
+            border-style: var(--p-button-secondary-text-hover-border-style);
+            border-color: var(--p-button-secondary-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($secondaryButtonBg, $textButtonActiveBgOpacity);
-            border-color: transparent;
-            color: $secondaryButtonBg;
+            color: var(--p-button-secondary-text-active-color);
+            background: var(--p-button-secondary-text-active-background);
+            border-width: var(--p-button-secondary-text-active-border-width);
+            border-style: var(--p-button-secondary-text-active-border-style);
+            border-color: var(--p-button-secondary-text-active-border-color);
         }
     }
 }
 
-.p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
-    color: $infoButtonTextColor;
-    background: $infoButtonBg;
-    border: $infoButtonBorder;
+.p-button.p-button-info,
+.p-buttonset.p-button-info > .p-button,
+.p-splitbutton.p-button-info > .p-button {
+    color: var(--p-button-info-color);
+    background: var(--p-button-info-background);
+    border-width: var(--p-button-info-border-width);
+    border-style: var(--p-button-info-border-style);
+    border-color: var(--p-button-info-border-color);
 
     &:enabled:hover {
-        background: $infoButtonHoverBg;
-        color: $infoButtonTextHoverColor;
-        border-color: $infoButtonHoverBorderColor;
+        color: var(--p-button-info-hover-color);
+        background: var(--p-button-info-hover-background);
+        border-width: var(--p-button-info-hover-border-width);
+        border-style: var(--p-button-info-hover-border-style);
+        border-color: var(--p-button-info-hover-border-color);
     }
 
     &:enabled:focus {
-        box-shadow: $infoButtonFocusShadow;
+        box-shadow: var(--p-button-info-focus-box-shadow);
     }
 
     &:enabled:active {
-        background: $infoButtonActiveBg;
-        color: $infoButtonTextActiveColor;
-        border-color: $infoButtonActiveBorderColor;
+        color: var(--p-button-info-active-color);
+        background: var(--p-button-info-active-background);
+        border-width: var(--p-button-info-active-border-width);
+        border-style: var(--p-button-info-active-border-style);
+        border-color: var(--p-button-info-active-border-color);
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $infoButtonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-info-outlined-color);
+        background: var(--p-button-info-outlined-background);
+        border-width: var(--p-button-info-outlined-border-width);
+        border-style: var(--p-button-info-outlined-border-style);
+        border-color: var(--p-button-info-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($infoButtonBg, $textButtonHoverBgOpacity);
-            color: $infoButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-info-outlined-hover-color);
+            background: var(--p-button-info-outlined-hover-background);
+            border-width: var(--p-button-info-outlined-hover-border-width);
+            border-style: var(--p-button-info-outlined-hover-border-style);
+            border-color: var(--p-button-info-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($infoButtonBg, $textButtonActiveBgOpacity);
-            color: $infoButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-info-outlined-active-color);
+            background: var(--p-button-info-outlined-active-background);
+            border-width: var(--p-button-info-outlined-active-border-width);
+            border-style: var(--p-button-info-outlined-active-border-style);
+            border-color: var(--p-button-info-outlined-active-border-color);
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $infoButtonBg;
-        border-color: transparent;
+        color: var(--p-button-info-text-color);
+        background: var(--p-button-info-text-background);
+        border-width: var(--p-button-info-text-border-width);
+        border-style: var(--p-button-info-text-border-style);
+        border-color: var(--p-button-info-text-border-color);
 
         &:enabled:hover {
-            background: rgba($infoButtonBg, $textButtonHoverBgOpacity);
-            border-color: transparent;
-            color: $infoButtonBg;
+            color: var(--p-button-info-text-hover-color);
+            background: var(--p-button-info-text-hover-background);
+            border-width: var(--p-button-info-text-hover-border-width);
+            border-style: var(--p-button-info-text-hover-border-style);
+            border-color: var(--p-button-info-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($infoButtonBg, $textButtonActiveBgOpacity);
-            border-color: transparent;
-            color: $infoButtonBg;
+            color: var(--p-button-info-text-active-color);
+            background: var(--p-button-info-text-active-background);
+            border-width: var(--p-button-info-text-active-border-width);
+            border-style: var(--p-button-info-text-active-border-style);
+            border-color: var(--p-button-info-text-active-border-color);
         }
     }
 }
 
-.p-button.p-button-success, .p-buttonset.p-button-success > .p-button, .p-splitbutton.p-button-success > .p-button {
-    color: $successButtonTextColor;
-    background: $successButtonBg;
-    border: $successButtonBorder;
+.p-button.p-button-success,
+.p-buttonset.p-button-success > .p-button,
+.p-splitbutton.p-button-success > .p-button {
+    color: var(--p-button-success-color);
+    background: var(--p-button-success-background);
+    border-width: var(--p-button-success-border-width);
+    border-style: var(--p-button-success-border-style);
+    border-color: var(--p-button-success-border-color);
 
     &:enabled:hover {
-        background: $successButtonHoverBg;
-        color: $successButtonTextHoverColor;
-        border-color: $successButtonHoverBorderColor;
+        color: var(--p-button-success-hover-color);
+        background: var(--p-button-success-hover-background);
+        border-width: var(--p-button-success-hover-border-width);
+        border-style: var(--p-button-success-hover-border-style);
+        border-color: var(--p-button-success-hover-border-color);
     }
 
     &:enabled:focus {
-        box-shadow: $successButtonFocusShadow;
+        box-shadow: var(--p-button-success-focus-box-shadow);
     }
 
     &:enabled:active {
-        background: $successButtonActiveBg;
-        color: $successButtonTextActiveColor;
-        border-color: $successButtonActiveBorderColor;
+        color: var(--p-button-success-active-color);
+        background: var(--p-button-success-active-background);
+        border-width: var(--p-button-success-active-border-width);
+        border-style: var(--p-button-success-active-border-style);
+        border-color: var(--p-button-success-active-border-color);
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $successButtonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-success-outlined-color);
+        background: var(--p-button-success-outlined-background);
+        border-width: var(--p-button-success-outlined-border-width);
+        border-style: var(--p-button-success-outlined-border-style);
+        border-color: var(--p-button-success-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($successButtonBg, $textButtonHoverBgOpacity);
-            color: $successButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-success-outlined-hover-color);
+            background: var(--p-button-success-outlined-hover-background);
+            border-width: var(--p-button-success-outlined-hover-border-width);
+            border-style: var(--p-button-success-outlined-hover-border-style);
+            border-color: var(--p-button-success-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($successButtonBg, $textButtonActiveBgOpacity);
-            color: $successButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-success-outlined-active-color);
+            background: var(--p-button-success-outlined-active-background);
+            border-width: var(--p-button-success-outlined-active-border-width);
+            border-style: var(--p-button-success-outlined-active-border-style);
+            border-color: var(--p-button-success-outlined-active-border-color);
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $successButtonBg;
-        border-color: transparent;
+        color: var(--p-button-success-text-color);
+        background: var(--p-button-success-text-background);
+        border-width: var(--p-button-success-text-border-width);
+        border-style: var(--p-button-success-text-border-style);
+        border-color: var(--p-button-success-text-border-color);
 
         &:enabled:hover {
-            background: rgba($successButtonBg, $textButtonHoverBgOpacity);
-            border-color: transparent;
-            color: $successButtonBg;
+            color: var(--p-button-success-text-hover-color);
+            background: var(--p-button-success-text-hover-background);
+            border-width: var(--p-button-success-text-hover-border-width);
+            border-style: var(--p-button-success-text-hover-border-style);
+            border-color: var(--p-button-success-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($successButtonBg, $textButtonActiveBgOpacity);
-            border-color: transparent;
-            color: $successButtonBg;
+            color: var(--p-button-success-text-active-color);
+            background: var(--p-button-success-text-active-background);
+            border-width: var(--p-button-success-text-active-border-width);
+            border-style: var(--p-button-success-text-active-border-style);
+            border-color: var(--p-button-success-text-active-border-color);
         }
     }
 }
 
-.p-button.p-button-warning, .p-buttonset.p-button-warning > .p-button, .p-splitbutton.p-button-warning > .p-button {
-    color: $warningButtonTextColor;
-    background: $warningButtonBg;
-    border: $warningButtonBorder;
-    
+.p-button.p-button-warning,
+.p-buttonset.p-button-warning > .p-button,
+.p-splitbutton.p-button-warning > .p-button {
+    color: var(--p-button-warning-color);
+    background: var(--p-button-warning-background);
+    border-width: var(--p-button-warning-border-width);
+    border-style: var(--p-button-warning-border-style);
+    border-color: var(--p-button-warning-border-color);
+
     &:enabled:hover {
-        background: $warningButtonHoverBg;
-        color: $warningButtonTextHoverColor;
-        border-color: $warningButtonHoverBorderColor;
+        color: var(--p-button-warning-hover-color);
+        background: var(--p-button-warning-hover-background);
+        border-width: var(--p-button-warning-hover-border-width);
+        border-style: var(--p-button-warning-hover-border-style);
+        border-color: var(--p-button-warning-hover-border-color);
     }
 
     &:enabled:focus {
-        box-shadow: $warningButtonFocusShadow;
+        box-shadow: var(--p-button-warning-focus-box-shadow);
     }
 
     &:enabled:active {
-        background: $warningButtonActiveBg;
-        color: $warningButtonTextActiveColor;
-        border-color: $warningButtonActiveBorderColor;
+        color: var(--p-button-warning-active-color);
+        background: var(--p-button-warning-active-background);
+        border-width: var(--p-button-warning-active-border-width);
+        border-style: var(--p-button-warning-active-border-style);
+        border-color: var(--p-button-warning-active-border-color);
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $warningButtonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-warning-outlined-color);
+        background: var(--p-button-warning-outlined-background);
+        border-width: var(--p-button-warning-outlined-border-width);
+        border-style: var(--p-button-warning-outlined-border-style);
+        border-color: var(--p-button-warning-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($warningButtonBg, $textButtonHoverBgOpacity);
-            color: $warningButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-warning-outlined-hover-color);
+            background: var(--p-button-warning-outlined-hover-background);
+            border-width: var(--p-button-warning-outlined-hover-border-width);
+            border-style: var(--p-button-warning-outlined-hover-border-style);
+            border-color: var(--p-button-warning-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($warningButtonBg, $textButtonActiveBgOpacity);
-            color: $warningButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-warning-outlined-active-color);
+            background: var(--p-button-warning-outlined-active-background);
+            border-width: var(--p-button-warning-outlined-active-border-width);
+            border-style: var(--p-button-warning-outlined-active-border-style);
+            border-color: var(--p-button-warning-outlined-active-border-color);
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $warningButtonBg;
-        border-color: transparent;
+        color: var(--p-button-warning-text-color);
+        background: var(--p-button-warning-text-background);
+        border-width: var(--p-button-warning-text-border-width);
+        border-style: var(--p-button-warning-text-border-style);
+        border-color: var(--p-button-warning-text-border-color);
 
         &:enabled:hover {
-            background: rgba($warningButtonBg, $textButtonHoverBgOpacity);
-            border-color: transparent;
-            color: $warningButtonBg;
+            color: var(--p-button-warning-text-hover-color);
+            background: var(--p-button-warning-text-hover-background);
+            border-width: var(--p-button-warning-text-hover-border-width);
+            border-style: var(--p-button-warning-text-hover-border-style);
+            border-color: var(--p-button-warning-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($warningButtonBg, $textButtonActiveBgOpacity);
-            border-color: transparent;
-            color: $warningButtonBg;
+            color: var(--p-button-warning-text-active-color);
+            background: var(--p-button-warning-text-active-background);
+            border-width: var(--p-button-warning-text-active-border-width);
+            border-style: var(--p-button-warning-text-active-border-style);
+            border-color: var(--p-button-warning-text-active-border-color);
         }
     }
 }
 
-.p-button.p-button-help, .p-buttonset.p-button-help > .p-button, .p-splitbutton.p-button-help > .p-button {
-    color: $helpButtonTextColor;
-    background: $helpButtonBg;
-    border: $helpButtonBorder;
+.p-button.p-button-help,
+.p-buttonset.p-button-help > .p-button,
+.p-splitbutton.p-button-help > .p-button {
+    color: var(--p-button-help-color);
+    background: var(--p-button-help-background);
+    border-width: var(--p-button-help-border-width);
+    border-style: var(--p-button-help-border-style);
+    border-color: var(--p-button-help-border-color);
 
     &:enabled:hover {
-        background: $helpButtonHoverBg;
-        color: $helpButtonTextHoverColor;
-        border-color: $helpButtonHoverBorderColor;
+        color: var(--p-button-help-hover-color);
+        background: var(--p-button-help-hover-background);
+        border-width: var(--p-button-help-hover-border-width);
+        border-style: var(--p-button-help-hover-border-style);
+        border-color: var(--p-button-help-hover-border-color);
     }
 
     &:enabled:focus {
-        box-shadow: $helpButtonFocusShadow;
+        box-shadow: var(--p-button-help-focus-box-shadow);
     }
 
     &:enabled:active {
-        background: $helpButtonActiveBg;
-        color: $helpButtonTextActiveColor;
-        border-color: $helpButtonActiveBorderColor;
+        color: var(--p-button-help-active-color);
+        background: var(--p-button-help-active-background);
+        border-width: var(--p-button-help-active-border-width);
+        border-style: var(--p-button-help-active-border-style);
+        border-color: var(--p-button-help-active-border-color);
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $helpButtonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-help-outlined-color);
+        background: var(--p-button-help-outlined-background);
+        border-width: var(--p-button-help-outlined-border-width);
+        border-style: var(--p-button-help-outlined-border-style);
+        border-color: var(--p-button-help-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($helpButtonBg, $textButtonHoverBgOpacity);
-            color: $helpButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-help-outlined-hover-color);
+            background: var(--p-button-help-outlined-hover-background);
+            border-width: var(--p-button-help-outlined-hover-border-width);
+            border-style: var(--p-button-help-outlined-hover-border-style);
+            border-color: var(--p-button-help-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($helpButtonBg, $textButtonActiveBgOpacity);
-            color: $helpButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-help-outlined-active-color);
+            background: var(--p-button-help-outlined-active-background);
+            border-width: var(--p-button-help-outlined-active-border-width);
+            border-style: var(--p-button-help-outlined-active-border-style);
+            border-color: var(--p-button-help-outlined-active-border-color);
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $helpButtonBg;
-        border-color: transparent;
+        color: var(--p-button-help-text-color);
+        background: var(--p-button-help-text-background);
+        border-width: var(--p-button-help-text-border-width);
+        border-style: var(--p-button-help-text-border-style);
+        border-color: var(--p-button-help-text-border-color);
 
         &:enabled:hover {
-            background: rgba($helpButtonBg, $textButtonHoverBgOpacity);
-            border-color: transparent;
-            color: $helpButtonBg;
+            color: var(--p-button-help-text-hover-color);
+            background: var(--p-button-help-text-hover-background);
+            border-width: var(--p-button-help-text-hover-border-width);
+            border-style: var(--p-button-help-text-hover-border-style);
+            border-color: var(--p-button-help-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($helpButtonBg, $textButtonActiveBgOpacity);
-            border-color: transparent;
-            color: $helpButtonBg;
+            color: var(--p-button-help-text-active-color);
+            background: var(--p-button-help-text-active-background);
+            border-width: var(--p-button-help-text-active-border-width);
+            border-style: var(--p-button-help-text-active-border-style);
+            border-color: var(--p-button-help-text-active-border-color);
         }
     }
 }
 
-.p-button.p-button-danger, .p-buttonset.p-button-danger > .p-button, .p-splitbutton.p-button-danger > .p-button {
-    color: $dangerButtonTextColor;
-    background: $dangerButtonBg;
-    border: $dangerButtonBorder;
+.p-button.p-button-danger,
+.p-buttonset.p-button-danger > .p-button,
+.p-splitbutton.p-button-danger > .p-button {
+    color: var(--p-button-danger-color);
+    background: var(--p-button-danger-background);
+    border-width: var(--p-button-danger-border-width);
+    border-style: var(--p-button-danger-border-style);
+    border-color: var(--p-button-danger-border-color);
 
     &:enabled:hover {
-        background: $dangerButtonHoverBg;
-        color: $dangerButtonTextHoverColor;
-        border-color: $dangerButtonHoverBorderColor;
+        color: var(--p-button-danger-hover-color);
+        background: var(--p-button-danger-hover-background);
+        border-width: var(--p-button-danger-hover-border-width);
+        border-style: var(--p-button-danger-hover-border-style);
+        border-color: var(--p-button-danger-hover-border-color);
     }
 
     &:enabled:focus {
-        box-shadow: $dangerButtonFocusShadow;
+        box-shadow: var(--p-button-danger-focus-box-shadow);
     }
 
     &:enabled:active {
-        background: $dangerButtonActiveBg;
-        color: $dangerButtonTextActiveColor;
-        border-color: $dangerButtonActiveBorderColor;
+        color: var(--p-button-danger-active-color);
+        background: var(--p-button-danger-active-background);
+        border-width: var(--p-button-danger-active-border-width);
+        border-style: var(--p-button-danger-active-border-style);
+        border-color: var(--p-button-danger-active-border-color);
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $dangerButtonBg;
-        border: $outlinedButtonBorder;
+        color: var(--p-button-danger-outlined-color);
+        background: var(--p-button-danger-outlined-background);
+        border-width: var(--p-button-danger-outlined-border-width);
+        border-style: var(--p-button-danger-outlined-border-style);
+        border-color: var(--p-button-danger-outlined-border-color);
 
         &:enabled:hover {
-            background: rgba($dangerButtonBg, $textButtonHoverBgOpacity);
-            color: $dangerButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-danger-outlined-hover-color);
+            background: var(--p-button-danger-outlined-hover-background);
+            border-width: var(--p-button-danger-outlined-hover-border-width);
+            border-style: var(--p-button-danger-outlined-hover-border-style);
+            border-color: var(--p-button-danger-outlined-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($dangerButtonBg, $textButtonActiveBgOpacity);
-            color: $dangerButtonBg;
-            border: $outlinedButtonBorder;
+            color: var(--p-button-danger-outlined-active-color);
+            background: var(--p-button-danger-outlined-active-background);
+            border-width: var(--p-button-danger-outlined-active-border-width);
+            border-style: var(--p-button-danger-outlined-active-border-style);
+            border-color: var(--p-button-danger-outlined-active-border-color);
         }
     }
 
     &.p-button-text {
-        background-color: transparent;
-        color: $dangerButtonBg;
-        border-color: transparent;
+        color: var(--p-button-danger-text-color);
+        background: var(--p-button-danger-text-background);
+        border-width: var(--p-button-danger-text-border-width);
+        border-style: var(--p-button-danger-text-border-style);
+        border-color: var(--p-button-danger-text-border-color);
 
         &:enabled:hover {
-            background: rgba($dangerButtonBg, $textButtonHoverBgOpacity);
-            border-color: transparent;
-            color: $dangerButtonBg;
+            color: var(--p-button-danger-text-hover-color);
+            background: var(--p-button-danger-text-hover-background);
+            border-width: var(--p-button-danger-text-hover-border-width);
+            border-style: var(--p-button-danger-text-hover-border-style);
+            border-color: var(--p-button-danger-text-hover-border-color);
         }
 
         &:enabled:active {
-            background: rgba($dangerButtonBg, $textButtonActiveBgOpacity);
-            border-color: transparent;
-            color: $dangerButtonBg;
+            color: var(--p-button-danger-text-active-color);
+            background: var(--p-button-danger-text-active-background);
+            border-width: var(--p-button-danger-text-active-border-width);
+            border-style: var(--p-button-danger-text-active-border-style);
+            border-color: var(--p-button-danger-text-active-border-color);
         }
     }
 }
 
 .p-button.p-button-link {
-    color: $linkButtonColor;
-    background: transparent;
-    border: transparent;
+    color: var(--p-button-link-color);
+    background: var(--p-button-link-background);
+    border-width: var(--p-button-link-border-width);
+    border-style: var(--p-button-link-border-style);
+    border-color: var(--p-button-link-border-color);
 
     &:enabled:hover {
-        background:  transparent;
-        color: $linkButtonHoverColor;
-        border-color:  transparent;
+        color: var(--p-button-link-hover-color);
+        background: var(--p-button-link-hover-background);
+        border-width: var(--p-button-link-hover-border-width);
+        border-style: var(--p-button-link-hover-border-style);
+        border-color: var(--p-button-link-hover-border-color);
 
         .p-button-label {
-            text-decoration: $linkButtonTextHoverDecoration;
+            text-decoration: var(--p-button-link-hover-affects-label-text-decoration);
         }
     }
 
     &:enabled:focus {
-        background: transparent;
-        box-shadow: $linkButtonFocusShadow;
-        border-color:  transparent;
+        background: var(--p-button-link-focus-background);
+        border-width: var(--p-button-link-focus-border-width);
+        border-style: var(--p-button-link-focus-border-style);
+        border-color: var(--p-button-link-focus-border-color);
+        box-shadow: var(--p-button-link-focus-box-shadow);
     }
 
     &:enabled:active {
-        background:  transparent;
-        color: $linkButtonColor;
-        border-color:  transparent;
+        color: var(--p-button-link-active-color);
+        background: var(--p-button-link-active-background);
+        border-width: var(--p-button-link-active-border-width);
+        border-style: var(--p-button-link-active-border-style);
+        border-color: var(--p-button-link-active-border-color);
     }
 }
