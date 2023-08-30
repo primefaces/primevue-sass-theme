@@ -1,0 +1,38 @@
+:root {
+	--p-speeddial-button-width: 4rem;
+	--p-speeddial-button-height: 4rem;
+	--p-speeddial-button-icon-font-size: 1.3rem;
+	--p-speeddial-button-icon-font-weight: normal;
+	--p-speeddial-menu-outline-color: initial;
+	--p-speeddial-menu-outline-style: none;
+	--p-speeddial-menu-outline-width: 0;
+	--p-speeddial-menu-outline-offset: initial;
+	--p-speeddial-menuitem-focus-affects-action-outline-color: var(--p-primary-light-color);
+	--p-speeddial-menuitem-focus-affects-action-outline-style: none;
+	--p-speeddial-menuitem-focus-affects-action-outline-width: 0;
+	--p-speeddial-menuitem-focus-affects-action-outline-offset: 0;
+	--p-speeddial-menuitem-focus-affects-action-box-shadow: 0 0 0 0.2rem var(--p-primary-light-color);
+	--p-speeddial-action-width: 3rem;
+	--p-speeddial-action-height: 3rem;
+	--p-speeddial-action-color: #ffffff;
+	--p-speeddial-action-background: #495057;
+	--p-speeddial-action-hover-color: #ffffff;
+	--p-speeddial-action-hover-background: #022354;
+	--p-speeddial-direction-up-menuitem-margin-top: 0.25rem;
+	--p-speeddial-direction-up-menuitem-margin-right: 0;
+	--p-speeddial-direction-up-menuitem-margin-bottom: 0.25rem;
+	--p-speeddial-direction-up-menuitem-margin-left: 0;
+	--p-speeddial-direction-down-menuitem-margin-top: 0.25rem;
+	--p-speeddial-direction-down-menuitem-margin-right: 0;
+	--p-speeddial-direction-down-menuitem-margin-bottom: 0.25rem;
+	--p-speeddial-direction-down-menuitem-margin-left: 0;
+	--p-speeddial-direction-left-menuitem-margin-top: 0;
+	--p-speeddial-direction-left-menuitem-margin-right: 0.25rem;
+	--p-speeddial-direction-left-menuitem-margin-bottom: 0;
+	--p-speeddial-direction-left-menuitem-margin-left: 0.25rem;
+	--p-speeddial-direction-right-menuitem-margin-top: 0;
+	--p-speeddial-direction-right-menuitem-margin-right: 0.25rem;
+	--p-speeddial-direction-right-menuitem-margin-bottom: 0;
+	--p-speeddial-direction-right-menuitem-margin-left: 0.25rem;
+	--p-speeddial-mask-background: rgba(0, 0, 0, 0.4);
+}
