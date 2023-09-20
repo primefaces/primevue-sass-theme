@@ -2,6 +2,10 @@
     &.p-invalid.p-component > .p-inputtext {
         @include invalid-input();
     }
+
+    &:not(.p-calendar-disabled).p-focus > .p-inputtext {
+        @include focused-input();
+    }
 }
 
 .p-datepicker {
