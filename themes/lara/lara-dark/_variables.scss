@@ -842,10 +842,10 @@ $imagePreviewActionIconFontSize:1.5rem !default;
 $imagePreviewActionIconBorderRadius:50% !default;
 
 :root {
-    font-family:#{$fontFamily};
+    font-family:'Inter var', sans-serif;
     font-feature-settings: "cv02","cv03","cv04","cv11";
     font-variation-settings: normal;
-    --font-family:#{$fontFamily};
+    --font-family:'Inter var', sans-serif;
     --surface-a:#{$shade800};
     --surface-b:#{$shade900};
     --surface-c:#{$hoverBg};

@@ -854,8 +854,8 @@ $imagePreviewActionIconFontSize:1.5rem !default;
 $imagePreviewActionIconBorderRadius:50% !default;
 
 :root {
-    font-family:#{$fontFamily};
-    --font-family:#{$fontFamily};
+    font-family:Lato, Helvetica, sans-serif;
+    --font-family:Lato, Helvetica, sans-serif;
     --surface-a:#{$shade000};
     --surface-b:#{$shade100};
     --surface-c:#{$shade200};
