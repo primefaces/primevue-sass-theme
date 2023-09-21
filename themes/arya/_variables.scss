@@ -842,6 +842,8 @@ $imagePreviewActionIconFontSize:1.5rem !default;
 $imagePreviewActionIconBorderRadius:50% !default;
 
 :root {
+    font-family:#{$fontFamily};
+    --font-family:#{$fontFamily};
     --surface-a:#{$shade800};
     --surface-b:#{$shade900};
     --surface-c:#{$hoverBg};
@@ -852,7 +854,6 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --text-color-secondary:#{$shade100};
     --primary-color:#{$primaryColor};
     --primary-color-text:#{$primaryTextColor};
-    --font-family:#{$fontFamily};
     --surface-0: #121212;
     --surface-50: #2a2a2a;
     --surface-100: #414141;

@@ -1,2 +1,4 @@
 theme.css
 .DS_STORE
+node_modules
+.vscode
