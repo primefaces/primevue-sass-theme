@@ -1,14 +1,16 @@
 /* Vendor extensions to the designer enhanced bootstrap compatibility */
-.fc {
-    &.fc-theme-standard {
-        .fc-highlight {
-            background: $primaryAccentBg;
+@layer primevue {
+    .fc {
+        &.fc-theme-standard {
+            .fc-highlight {
+                background: $primaryAccentBg;
+            }
         }
     }
-}
-
-.p-fileupload {
-    .p-fileupload-content.p-fileupload-highlight {
-        background-color: $primaryAccentBg;
+    
+    .p-fileupload {
+        .p-fileupload-content.p-fileupload-highlight {
+            background-color: $primaryAccentBg;
+        }
     }
 }
