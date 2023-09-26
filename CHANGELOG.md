@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.35.0](https://github.com/primefaces/primevue-sass-theme/tree/3.35.0) (2023-09-26)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.34.1...3.35.0)
+
+**Implemented New Features and Enhancements:**
+
+- New `@layer` implementation [\#24](https://github.com/primefaces/primevue-sass-theme/issues/24)
+- focus-visible updates [\#23](https://github.com/primefaces/primevue-sass-theme/issues/23)
+- Use Inter Var instead of System Font for Lara [\#22](https://github.com/primefaces/primevue-sass-theme/issues/22)
+- Calendar: focus state update [\#21](https://github.com/primefaces/primevue-sass-theme/issues/21)
+
 ## [3.34.1](https://github.com/primefaces/primevue-sass-theme/tree/3.34.1) (2023-09-08)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.34.0
