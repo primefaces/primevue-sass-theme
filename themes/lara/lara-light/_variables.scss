@@ -15,13 +15,13 @@ $colors: (
 
 //reused color variables
 $shade000:#ffffff !default;    //surface
-$shade100:#f8fafc !default;    //header background
-$shade200:#f1f5f9 !default;    //hover background
-$shade300:#cbd5e1 !default;    //border, divider
-$shade400:#e2e8f0 !default;    //input border
-$shade500:#cbd5e1 !default;    //input icon
-$shade600:#64748b !default;    //text secondary color
-$shade700:#0f172a !default;    //text color
+$shade100:#f8f9fa !default;    //header background
+$shade200:#e9ecef !default;    //hover background
+$shade300:#dee2e6 !default;    //border, divider
+$shade400:#ced4da !default;    //input border
+$shade500:#adb5bd !default;    //input icon
+$shade600:#6c757d !default;    //text secondary color
+$shade700:#495057 !default;    //text color
 $shade800:#343a40 !default;    //unused
 $shade900:#212529 !default;    //unused
 
@@ -859,35 +859,35 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --primary-color:#{$primaryColor};
     --primary-color-text:#{$primaryTextColor};
     --surface-0: #ffffff;
-    --surface-50: #f8fafc;
-    --surface-100: #f1f5f9;
-    --surface-200: #e2e8f0;
-    --surface-300: #cbd5e1;
-    --surface-400: #94a3b8;
-    --surface-500: #64748b;
-    --surface-600: #475569;
-    --surface-700: #334155;
-    --surface-800: #1e293b;
-    --surface-900: #0f172a;
-    --gray-50: #ffffff;
-    --gray-100: #f8fafc;
-    --gray-200: #f1f5f9;
-    --gray-300: #e2e8f0;
-    --gray-400: #cbd5e1;
-    --gray-500: #94a3b8;
-    --gray-600: #475569;
-    --gray-700: #334155;
-    --gray-800: #1e293b;
-    --gray-900: #0f172a;
+    --surface-50: #FAFAFA;
+    --surface-100: #F5F5F5;
+    --surface-200: #EEEEEE;
+    --surface-300: #E0E0E0;
+    --surface-400: #BDBDBD;
+    --surface-500: #9E9E9E;
+    --surface-600: #757575;
+    --surface-700: #616161;
+    --surface-800: #424242;
+    --surface-900: #212121;
+    --gray-50: #FAFAFA;
+    --gray-100: #F5F5F5;
+    --gray-200: #EEEEEE;
+    --gray-300: #E0E0E0;
+    --gray-400: #BDBDBD;
+    --gray-500: #9E9E9E;
+    --gray-600: #757575;
+    --gray-700: #616161;
+    --gray-800: #424242;
+    --gray-900: #212121;
     --content-padding:#{$panelContentPadding};
     --inline-spacing:#{$inlineSpacing};
     --border-radius:#{$borderRadius};
-    --surface-ground:#f8fafc;
+    --surface-ground:#eff3f8;
     --surface-section:#ffffff;
     --surface-card:#ffffff;
     --surface-overlay:#ffffff;
-    --surface-border:#f1f5f9;
-    --surface-hover:#e2e8f0;
+    --surface-border:#dfe7ef;
+    --surface-hover:#f6f9fc;
     --focus-ring: #{$focusShadow};
     --maskbg: #{$maskBg};
     --highlight-bg: #{$highlightBg};
