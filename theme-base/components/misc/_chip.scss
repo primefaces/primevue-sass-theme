@@ -31,5 +31,9 @@
         &:focus-visible {
             @include focused();
         }
+
+        &:focus {
+            outline: 0 none;
+        }
     }
 }
