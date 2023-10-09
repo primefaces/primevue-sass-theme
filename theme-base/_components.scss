@@ -1,6 +1,8 @@
 @import '_mixins';
 @import '_colors';
 
+@import './components/input/_editor';
+
 @layer primevue {
     @import '_common';
 
@@ -12,7 +14,6 @@
     @import './components/input/_chips';
     @import './components/input/_colorpicker';
     @import './components/input/_dropdown';
-    @import './components/input/_editor';
     @import './components/input/_inputgroup';
     @import './components/input/_inputnumber';
     @import './components/input/_inputswitch';
