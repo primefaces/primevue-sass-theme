@@ -15,15 +15,15 @@ $colors: (
 
 //reused color variables
 $shade000:#ffffff !default;    //surface
-$shade100:#f8f9fa !default;    //header background
-$shade200:#e9ecef !default;    //hover background
-$shade300:#dee2e6 !default;    //border, divider
-$shade400:#ced4da !default;    //input border
-$shade500:#adb5bd !default;    //input icon
-$shade600:#6c757d !default;    //text secondary color
-$shade700:#495057 !default;    //text color
-$shade800:#343a40 !default;    //unused
-$shade900:#212529 !default;    //unused
+$shade100:#f9fafb !default;    //header background
+$shade200:#f3f4f6 !default;    //hover background
+$shade300:#e5e7eb !default;    //border, divider
+$shade400:#d1d5db !default;    //input border
+$shade500:#9ca3af !default;    //input icon
+$shade600:#6b7280 !default;    //text secondary color
+$shade700:#4b5563 !default;    //text color
+$shade800:#374151 !default;    //unused
+$shade900:#1f2937 !default;    //unused
 
 //global
 $fontFamily:'Inter var', sans-serif !default;
@@ -854,30 +854,30 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --primary-color:#{$primaryColor};
     --primary-color-text:#{$primaryTextColor};
     --surface-0: #ffffff;
-    --surface-50: #FAFAFA;
-    --surface-100: #F5F5F5;
-    --surface-200: #EEEEEE;
-    --surface-300: #E0E0E0;
-    --surface-400: #BDBDBD;
-    --surface-500: #9E9E9E;
-    --surface-600: #757575;
-    --surface-700: #616161;
-    --surface-800: #424242;
-    --surface-900: #212121;
-    --gray-50: #FAFAFA;
-    --gray-100: #F5F5F5;
-    --gray-200: #EEEEEE;
-    --gray-300: #E0E0E0;
-    --gray-400: #BDBDBD;
-    --gray-500: #9E9E9E;
-    --gray-600: #757575;
-    --gray-700: #616161;
-    --gray-800: #424242;
-    --gray-900: #212121;
+    --surface-50: #f9fafb;
+    --surface-100: #f3f4f6;
+    --surface-200: #e5e7eb;
+    --surface-300: #d1d5db;
+    --surface-400: #9ca3af;
+    --surface-500: #6b7280;
+    --surface-600: #4b5563;
+    --surface-700: #374151;
+    --surface-800: #1f2937;
+    --surface-900: #111827;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
     --content-padding:#{$panelContentPadding};
     --inline-spacing:#{$inlineSpacing};
     --border-radius:#{$borderRadius};
-    --surface-ground:#eff3f8;
+    --surface-ground:#f9fafb;
     --surface-section:#ffffff;
     --surface-card:#ffffff;
     --surface-overlay:#ffffff;
