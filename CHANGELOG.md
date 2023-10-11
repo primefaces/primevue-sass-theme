@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.36.0](https://github.com/primefaces/primevue-sass-theme/tree/3.36.0) (2023-10-11)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.35.0...3.36.0)
+
+**Fixed bugs:**
+
+- Editor layer defect [#26](https://github.com/primefaces/primevue-sass-theme/issues/26)
+
+**Deprecation**
+
+- Remove FullCalendar theme support [#25](https://github.com/primefaces/primevue-sass-theme/issues/25)
+
 ## [3.35.0](https://github.com/primefaces/primevue-sass-theme/tree/3.35.0) (2023-09-26)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.34.1...3.35.0)
