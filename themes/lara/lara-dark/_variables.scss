@@ -575,22 +575,22 @@ $toastTitleFontWeight:700 !default;
 $toastDetailMargin:$inlineSpacing 0 0 0 !default;
 
 //severities
-$infoMessageBg:#e9e9ff !default;
-$infoMessageBorder:solid #696cff !default;
-$infoMessageTextColor:#696cff !default;
-$infoMessageIconColor:#696cff !default;
-$successMessageBg:#e4f8f0 !default;
-$successMessageBorder:solid #1ea97c !default;
-$successMessageTextColor:#1ea97c !default;
-$successMessageIconColor:#1ea97c !default;
-$warningMessageBg:#fff2e2 !default;
-$warningMessageBorder:solid #cc8925 !default;
-$warningMessageTextColor:#cc8925 !default;
-$warningMessageIconColor:#cc8925 !default;
-$errorMessageBg:#ffe7e6 !default;
-$errorMessageBorder:solid #ff5757 !default;
-$errorMessageTextColor:#ff5757 !default;
-$errorMessageIconColor:#ff5757 !default;
+$infoMessageBg:rgba(59,130,246,.2) !default; //blue-500
+$infoMessageBorder:solid #3b82f6 !default; //blue-500
+$infoMessageTextColor:#93c5fd !default; //blue-300
+$infoMessageIconColor:#93c5fd !default; //blue-300
+$successMessageBg:rgb(16, 185, 129, .2) !default;
+$successMessageBorder:solid #6ee7b7 !default;
+$successMessageTextColor:#6ee7b7 !default;
+$successMessageIconColor:#6ee7b7 !default;
+$warningMessageBg:rgb(234, 179, 8, .2) !default;
+$warningMessageBorder:solid #fde047 !default;
+$warningMessageTextColor:#fde047 !default;
+$warningMessageIconColor:#fde047 !default;
+$errorMessageBg:rgb(239, 68, 68, .2) !default;
+$errorMessageBorder:solid #fca5a5 !default;
+$errorMessageTextColor:#fca5a5 !default;
+$errorMessageIconColor:#fca5a5 !default;
 
 //overlays
 $overlayContentBorder:1px solid $shade600 !default;
