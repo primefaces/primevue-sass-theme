@@ -86,4 +86,9 @@
             @include focused-ring(rgba($buttonBg, .7));
         }
     }
+
+    .p-toast-message {
+     
+        backdrop-filter: blur(10px);
+    }
 }
