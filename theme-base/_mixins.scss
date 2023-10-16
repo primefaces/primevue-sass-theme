@@ -19,6 +19,16 @@
     box-shadow: $focusShadow;
 }
 
+/*
+outline: {
+                    color: 'var(--p-primary-light-color)',
+                    style: 'none',
+                    width: 0,
+                    offset: 0
+                },
+                boxShadow: '0 0 0 0.2rem var(--p-primary-light-color)'
+                */
+
 @mixin focused-inset() {
     outline: $focusOutline;
     outline-offset: $focusOutlineOffset;
@@ -29,6 +39,13 @@
     @include focused();
     border-color: $inputFocusBorderColor;
 }
+
+/*
+border: {
+    width: 'inherit',
+    style: 'inherit',
+    color: 'var(--p-primary-color)'
+}*/
 
 @mixin focused-listitem() {
     outline: $focusOutline;
@@ -236,6 +253,38 @@
     &:focus {
         @include focused();
     }
+
+    /*
+    width: '2rem',
+        height: '2rem',
+        color: '#6c757d',
+        background: 'transparent',
+        border: {
+            width: 0,
+            style: 'none',
+            color: 'initial',
+            radius: '50%'
+        },
+        states: {
+            hover: {
+                color: '#343a40',
+                background: '#e9ecef',
+                border: {
+                    width: 'inherit',
+                    style: 'inherit',
+                    color: 'transparent'
+                }
+            },
+            focus: {
+                outline: {
+                    color: 'var(--p-primary-light-color)',
+                    style: 'none',
+                    width: 0,
+                    offset: 0
+                },
+                boxShadow: '0 0 0 0.2rem var(--p-primary-light-color)'
+            }
+        }*/
 }
 
 @mixin action-icon-hover() {

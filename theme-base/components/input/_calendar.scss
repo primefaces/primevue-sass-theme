@@ -1,23 +1,32 @@
 .p-calendar {
     &.p-invalid.p-component > .p-inputtext {
-        @include invalid-input();
+        border-width: var(--p-calendar-invalid-input-border-width);
+        border-style: var(--p-calendar-invalid-input-border-style);
+        border-color: var(--p-calendar-invalid-input-border-color);
     }
 }
 
 .p-datepicker {
-    padding: $calendarPadding;
-    background: $calendarInlineBg;
-    color: $calendarTextColor;
-    border: $calendarBorder;
-    border-radius: $borderRadius;
+    color: var(--p-calendar-panel-color);
+    background: var(--p-calendar-panel-background);
+    border-width: var(--p-calendar-panel-border-width);
+    border-style: var(--p-calendar-panel-border-style);
+    border-color: var(--p-calendar-panel-border-color);
+    padding-top: var(--p-calendar-panel-padding-top);
+    padding-right: var(--p-calendar-panel-padding-right);
+    padding-bottom: var(--p-calendar-panel-padding-bottom);
+    padding-left: var(--p-calendar-panel-padding-left);
+    border-radius: var(--p-border-radius);
 
     &:not(.p-datepicker-inline) {
-        background: $calendarBg;
-        border: $calendarOverlayBorder;
-        box-shadow: $inputOverlayShadow;
+        background: var(--p-calendar-panel-popup-background);
+        border-width: var(--p-calendar-panel-popup-border-width);
+        border-style: var(--p-calendar-panel-popup-border-style);
+        border-color: var(--p-calendar-panel-popup-border-color);
+        box-shadow: var(--p-calendar-panel-popup-box-shadow);
 
         .p-datepicker-header {
-            background: $calendarHeaderBg;
+            background: var(--p-calendar-panel-popup-header-background);
         }
     }
 
@@ -86,7 +95,9 @@
                 }
 
                 &:focus {
-                    @include focused();
+                    outline: $focusOutline;
+                    outline-offset: $focusOutlineOffset;
+                    box-shadow: $focusShadow;
                 }
             }
 
@@ -122,7 +133,7 @@
             @include action-icon();
 
             &:last-child {
-                margin-top: .2em;
+                margin-top: 0.2em;
             }
         }
 
@@ -233,13 +244,13 @@
             }
         }
     }
-
 }
 
 @media screen and (max-width: $calendarBreakpoint) {
     .p-datepicker {
         table {
-            th, td {
+            th,
+            td {
                 padding: $calendarCellDatePaddingSM;
             }
         }

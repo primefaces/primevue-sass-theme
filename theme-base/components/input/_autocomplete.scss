@@ -1,113 +1,155 @@
-@use 'sass:math';
-
 .p-autocomplete {
     .p-autocomplete-loader {
-        right: nth($inputPadding, 2); 
+        right: var(--p-autocomplete-loading-icon-right);
     }
 
     &.p-autocomplete-dd {
         .p-autocomplete-loader {
-            right: nth($inputPadding, 2) + $buttonIconOnlyWidth;
+            right: var(--p-autocomplete-dropdown-loading-icon-right);
         }
     }
 
     &:not(.p-disabled):hover {
         .p-autocomplete-multiple-container {
-            border-color: $inputHoverBorderColor;
+            border-width: var(--p-autocomplete-hover-affects-container-border-width);
+            border-style: var(--p-autocomplete-hover-affects-container-border-style);
+            border-color: var(--p-autocomplete-hover-affects-container-border-color);
         }
     }
 
     &:not(.p-disabled).p-focus {
         .p-autocomplete-multiple-container {
-            @include focused-input();
+            outline-color: var(--p-autocomplete-focus-affects-container-outline-color);
+            outline-style: var(--p-autocomplete-focus-affects-container-outline-style);
+            outline-width: var(--p-autocomplete-focus-affects-container-outline-width);
+            outline-offset: var(--p-autocomplete-focus-affects-container-outline-offset);
+            box-shadow: var(--p-autocomplete-focus-affects-container-box-shadow);
+            border-width: var(--p-autocomplete-focus-affects-container-border-width);
+            border-style: var(--p-autocomplete-focus-affects-container-border-style);
+            border-color: var(--p-autocomplete-focus-affects-container-border-color);
         }
     }
 
     .p-autocomplete-multiple-container {
-        padding: math.div(nth($inputPadding, 1), 2) nth($inputPadding, 2);
-        gap: $inlineSpacing;
+        padding-top: var(--p-autocomplete-container-padding-top);
+        padding-right: var(--p-autocomplete-container-padding-right);
+        padding-bottom: var(--p-autocomplete-container-padding-bottom);
+        padding-left: var(--p-autocomplete-container-padding-left);
+        gap: var(--p-inline-spacing);
 
         .p-autocomplete-input-token {
-            padding: math.div(nth($inputPadding, 1), 2) 0;
-            
+            padding-top: var(--p-autocomplete-input-token-padding-top);
+            padding-right: var(--p-autocomplete-input-token-padding-right);
+            padding-bottom: var(--p-autocomplete-input-token-padding-bottom);
+            padding-left: var(--p-autocomplete-input-token-padding-left);
+
             input {
-                font-family: $fontFamily;
-                font-size: $fontSize;
-                color: $textColor;
+                font-family: var(--p-font-family);
+                font-size: var(--p-font-size);
+                color: var(--p-color);
                 padding: 0;
                 margin: 0;
             }
         }
 
         .p-autocomplete-token {
-            padding: math.div(nth($inputPadding, 1), 2) nth($inputPadding, 2);
-            background: $chipBg;
-            color: $chipTextColor;
-            border-radius: $chipBorderRadius;
+            color: var(--p-autocomplete-token-color);
+            background: var(--p-autocomplete-token-background);
+            padding-top: var(--p-autocomplete-token-padding-top);
+            padding-right: var(--p-autocomplete-token-padding-right);
+            padding-bottom: var(--p-autocomplete-token-padding-bottom);
+            padding-left: var(--p-autocomplete-token-padding-left);
+            border-width: var(--p-autocomplete-token-border-width);
+            border-style: var(--p-autocomplete-token-border-style);
+            border-color: var(--p-autocomplete-token-border-color);
+            border-radius: var(--p-autocomplete-token-border-radius);
 
             .p-autocomplete-token-icon {
-                margin-left: $inlineSpacing;
+                margin-left: var(--p-inline-spacing);
             }
 
             &.p-focus {
-                background: $chipFocusBg;
-                color: $chipFocusTextColor;
+                color: var(--p-autocomplete-token-focus-color);
+                background: var(--p-autocomplete-token-focus-background);
             }
         }
     }
 
     &.p-invalid.p-component > .p-inputtext {
-        @include invalid-input();
+        border-width: var(--p-autocomplete-invalid-input-border-width);
+        border-style: var(--p-autocomplete-invalid-input-border-style);
+        border-color: var(--p-autocomplete-invalid-input-border-color);
     }
 }
 
 .p-autocomplete-panel {
-    background: $inputOverlayBg;
-    color: $inputListTextColor;
-    border: $inputOverlayBorder;
-    border-radius: $borderRadius;
-    box-shadow: $inputOverlayShadow;
+    color: var(--p-autocomplete-panel-color);
+    background: var(--p-autocomplete-panel-background);
+    border-width: var(--p-autocomplete-panel-border-width);
+    border-style: var(--p-autocomplete-panel-border-style);
+    border-color: var(--p-autocomplete-panel-border-color);
+    border-radius: var(--p-border-radius);
+    box-shadow: var(--p-autocomplete-panel-box-shadow);
 
     .p-autocomplete-items {
-        padding: $inputListPadding;
+        padding-top: var(--p-autocomplete-list-padding-top);
+        padding-right: var(--p-autocomplete-list-padding-right);
+        padding-bottom: var(--p-autocomplete-list-padding-bottom);
+        padding-left: var(--p-autocomplete-list-padding-left);
 
         .p-autocomplete-item {
-            margin: $inputListItemMargin;
-            padding: $inputListItemPadding;
-            border: $inputListItemBorder;
-            color: $inputListItemTextColor;
-            background: $inputListItemBg;
-            transition: $listItemTransition;
-            border-radius: $inputListItemBorderRadius;
+            color: var(--p-autocomplete-item-color);
+            background: var(--p-autocomplete-item-background);
+            border-width: var(--p-autocomplete-item-border-width);
+            border-style: var(--p-autocomplete-item-border-style);
+            border-color: var(--p-autocomplete-item-border-color);
+            border-radius: var(--p-autocomplete-item-border-radius);
+            padding-top: var(--p-autocomplete-item-padding-top);
+            padding-right: var(--p-autocomplete-item-padding-right);
+            padding-bottom: var(--p-autocomplete-item-padding-bottom);
+            padding-left: var(--p-autocomplete-item-padding-left);
+            margin-top: var(--p-autocomplete-item-margin-top);
+            margin-right: var(--p-autocomplete-item-margin-right);
+            margin-bottom: var(--p-autocomplete-item-margin-bottom);
+            margin-left: var(--p-autocomplete-item-margin-left);
+            transition-duration: var(--p-transition-duration);
+            transition-property: var(--p-transition-property);
 
             &.p-highlight {
-                color: $highlightTextColor;
-                background: $highlightBg;
+                color: var(--p-autocomplete-item-active-color);
+                background: var(--p-autocomplete-item-active-background);
 
                 &.p-focus {
-                    background: $highlightFocusBg;
+                    background: var(--p-autocomplete-item-active-affects-focus-background);
                 }
             }
 
             &:not(.p-highlight):not(.p-disabled) {
                 &.p-focus {
-                    color: $inputListItemTextFocusColor;
-                    background: $inputListItemFocusBg;
+                    color: var(--p-autocomplete-item-focus-color);
+                    background: var(--p-autocomplete-item-focus-background);
                 }
 
                 &:hover {
-                    color: $inputListItemTextHoverColor;
-                    background: $inputListItemHoverBg;
+                    color: var(--p-autocomplete-item-hover-color);
+                    background: var(--p-autocomplete-item-hover-background);
                 }
             }
         }
 
         .p-autocomplete-item-group {
-            margin: $submenuHeaderMargin;
-            padding: $submenuHeaderPadding;
-            color: $submenuHeaderTextColor;
-            background: $submenuHeaderBg;
-            font-weight: $submenuHeaderFontWeight;
+            font-size: var(--p-autocomplete-item-group-font-size);
+            font-weight: var(--p-autocomplete-item-group-font-weight);
+            color: var(--p-autocomplete-item-group-color);
+            background: var(--p-autocomplete-item-group-background);
+            padding-top: var(--p-autocomplete-item-group-padding-top);
+            padding-right: var(--p-autocomplete-item-group-padding-right);
+            padding-bottom: var(--p-autocomplete-item-group-padding-bottom);
+            padding-left: var(--p-autocomplete-item-group-padding-left);
+            margin-top: var(--p-autocomplete-item-group-margin-top);
+            margin-right: var(--p-autocomplete-item-group-margin-right);
+            margin-bottom: var(--p-autocomplete-item-group-margin-bottom);
+            margin-left: var(--p-autocomplete-item-group-margin-left);
         }
     }
 }

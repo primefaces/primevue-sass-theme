@@ -10,7 +10,7 @@ $colors: (
     "bluegray": #64748b,
     "purple": #a855f7,
     "red": #ff3d32,
-    "primary": $primaryColor,
+    "primary": $primaryColor
 );
 
 //global
@@ -22,9 +22,15 @@ $textColor: #495057 !default;
 $textSecondaryColor: #6c757d !default;
 $borderRadius: 6px !default;
 $transitionDuration: 0.2s !default;
-$formElementTransition: background-color $transitionDuration, color $transitionDuration,
-    border-color $transitionDuration, box-shadow $transitionDuration !default;
-$actionIconTransition: background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration !default;
+$formElementTransition:
+    background-color $transitionDuration,
+    color $transitionDuration,
+    border-color $transitionDuration,
+    box-shadow $transitionDuration !default;
+$actionIconTransition:
+    background-color $transitionDuration,
+    color $transitionDuration,
+    box-shadow $transitionDuration !default;
 $listItemTransition: box-shadow $transitionDuration !default;
 $primeIconFontSize: 1rem !default;
 $divider: 1px solid #dee2e6 !default;
@@ -114,7 +120,7 @@ $passwordStrongBg: #29c76f !default;
 $buttonPadding: 0.75rem 1.25rem !default;
 $buttonIconOnlyWidth: 3rem !default;
 $buttonIconOnlyPadding: 0.75rem 0 !default;
-$buttonBg: $primaryColor !default;
+$buttonBg: $primaryColor !default; // color-mix(in srgb, var(--p-primary-color), transparent 100%)
 $buttonTextColor: $primaryTextColor !default;
 $buttonBorder: 1px solid $primaryColor !default;
 $buttonHoverBg: $primaryDarkColor !default;
@@ -123,7 +129,10 @@ $buttonHoverBorderColor: $primaryDarkColor !default;
 $buttonActiveBg: $primaryDarkerColor !default;
 $buttonTextActiveColor: $primaryTextColor !default;
 $buttonActiveBorderColor: $primaryDarkerColor !default;
-$raisedButtonShadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
+$raisedButtonShadow:
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
 $roundedButtonBorderRadius: 2rem !default;
 
 $textButtonHoverBgOpacity: 0.04 !default;
@@ -427,7 +436,10 @@ $cardSubTitleFontWeight: 400 !default;
 $cardSubTitleColor: #6c757d !default;
 $cardContentPadding: 1.25rem 0 !default;
 $cardFooterPadding: 1.25rem 0 0 0 !default;
-$cardShadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !default;
+$cardShadow:
+    0 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12) !default;
 
 //editor
 $editorToolbarBg: $panelHeaderBg !default;
