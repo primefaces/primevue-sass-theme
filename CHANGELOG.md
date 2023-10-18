@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.37.0](https://github.com/primefaces/primevue-sass-theme/tree/3.37.0) (2023-10-18)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.36.0...3.37.0)
+
+**Implemented New Features and Enhancements:**
+
+- Lara Theme updates
+
 ## [3.36.0](https://github.com/primefaces/primevue-sass-theme/tree/3.36.0) (2023-10-11)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.35.0...3.36.0)
