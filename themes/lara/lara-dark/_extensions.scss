@@ -7,6 +7,11 @@
         font-weight: 700;
     }
     
+    .p-selectbutton > .p-button,
+    .p-togglebutton.p-button {
+        transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+    }
+    
     .p-accordion {
         .p-accordion-header {
             .p-accordion-header-link {

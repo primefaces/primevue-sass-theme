@@ -1,4 +1,15 @@
 @layer primevue {
+    .p-button {
+        .p-button-label {
+            font-weight: 700;
+        }
+    }
+
+    .p-selectbutton > .p-button,
+    .p-togglebutton.p-button {
+        transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+    }
+
     .p-carousel {
         .p-carousel-indicators .p-carousel-indicator.p-highlight button {
             background-color: $primaryColor;
