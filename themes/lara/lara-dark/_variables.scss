@@ -48,7 +48,7 @@ $scaleSM:0.875 !default;
 $scaleLG:1.25 !default;
 
 //focus
-$focusOutlineColor:$primaryLightColor !default;
+$focusOutlineColor:$primaryLightestColor !default;
 $focusOutline:0 none !default;
 $focusOutlineOffset:0 !default;
 $focusShadow:0 0 0 .2rem $focusOutlineColor !default;
@@ -125,12 +125,12 @@ $buttonIconOnlyPadding:.75rem 0 !default;
 $buttonBg:$primaryColor !default;
 $buttonTextColor:$primaryTextColor !default;
 $buttonBorder:1px solid $primaryColor !default;
-$buttonHoverBg:$primaryDarkColor !default;
+$buttonHoverBg:$primaryLightColor !default;
 $buttonTextHoverColor:$primaryTextColor !default;
-$buttonHoverBorderColor:$primaryDarkColor !default;
-$buttonActiveBg:$primaryDarkerColor !default;
+$buttonHoverBorderColor:$primaryLightColor !default;
+$buttonActiveBg:$primaryLighterColor !default;
 $buttonTextActiveColor:$primaryTextColor !default;
-$buttonActiveBorderColor:$primaryDarkerColor !default;
+$buttonActiveBorderColor:$primaryLighterColor !default;
 $raisedButtonShadow:0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !default;
 $roundedButtonBorderRadius:2rem !default;
 
@@ -220,9 +220,9 @@ $checkboxIconFontSize:14px !default;
 $checkboxActiveBorderColor:$primaryColor !default;
 $checkboxActiveBg:$primaryColor !default;
 $checkboxIconActiveColor:$primaryTextColor !default;
-$checkboxActiveHoverBg:$primaryDarkerColor !default;
+$checkboxActiveHoverBg:$primaryLighterColor !default;
 $checkboxIconActiveHoverColor:$primaryTextColor !default;
-$checkboxActiveHoverBorderColor:$primaryDarkerColor !default;
+$checkboxActiveHoverBorderColor:$primaryLighterColor !default;
 
 //radiobutton
 $radiobuttonWidth:22px !default;
@@ -232,9 +232,9 @@ $radiobuttonIconSize:12px !default;
 $radiobuttonActiveBorderColor:$primaryColor !default;
 $radiobuttonActiveBg:$primaryColor !default;
 $radiobuttonIconActiveColor:$primaryTextColor !default;
-$radiobuttonActiveHoverBg:$primaryDarkerColor !default;
+$radiobuttonActiveHoverBg:$primaryLighterColor !default;
 $radiobuttonIconActiveHoverColor:$primaryTextColor !default;
-$radiobuttonActiveHoverBorderColor:$primaryDarkerColor !default;
+$radiobuttonActiveHoverBorderColor:$primaryLighterColor !default;
 
 //colorpicker
 $colorPickerPreviewWidth:2rem !default;
@@ -256,8 +256,8 @@ $toggleButtonActiveBg:$primaryColor !default;
 $toggleButtonActiveBorderColor:$primaryColor !default;
 $toggleButtonTextActiveColor:$primaryTextColor !default;
 $toggleButtonIconActiveColor:$primaryTextColor !default;
-$toggleButtonActiveHoverBg:$primaryDarkColor !default;
-$toggleButtonActiveHoverBorderColor:$primaryDarkColor !default;
+$toggleButtonActiveHoverBg:$primaryLightColor !default;
+$toggleButtonActiveHoverBorderColor:$primaryLightColor !default;
 $toggleButtonTextActiveHoverColor:$primaryTextColor !default;
 $toggleButtonIconActiveHoverColor:$primaryTextColor !default;
 
@@ -336,7 +336,7 @@ $inputSwitchSliderOffBg:$shade500 !default;
 $inputSwitchHandleOffBg:$shade100 !default;
 $inputSwitchSliderOffHoverBg:$shade600 !default;
 $inputSwitchSliderOnBg:$primaryColor !default;
-$inputSwitchSliderOnHoverBg:$primaryDarkColor !default;
+$inputSwitchSliderOnHoverBg:$primaryLightColor !default;
 $inputSwitchHandleOnBg:$primaryTextColor !default;
 
 //panel
