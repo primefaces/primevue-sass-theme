@@ -99,4 +99,9 @@
     .p-inline-message-text {
         font-weight: 500;
     }
+
+    .p-picklist-buttons .p-button,
+    .p-orderlist-controls .p-button {
+        transition: opacity $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+    }
 }
