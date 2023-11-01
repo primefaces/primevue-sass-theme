@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.39.0](https://github.com/primefaces/primevue-sass-theme/tree/3.39.0) (2023-11-01)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.38.1...3.39.0)
+
+**Fixed bugs:**
+
+- ConfirmPopup: arrow defect  [#29](https://github.com/primefaces/primevue-sass-theme/issues/29)
+
+**Implemented New Features and Enhancements:**
+
+- Improve Striped Row colors in Lara [#30](https://github.com/primefaces/primevue-sass-theme/issues/30)
+
+
 ## [3.38.1](https://github.com/primefaces/primevue-sass-theme/tree/3.38.1) (2023-10-26)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.38.1
