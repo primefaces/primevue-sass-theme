@@ -355,7 +355,7 @@ $panelHeaderTextHoverColor:$shade000 !default;
 $panelContentBorderColor: $shade600 !default;
 $panelContentBorder:1px solid $shade600 !default;
 $panelContentBg:$shade800 !default;
-$panelContentEvenRowBg:rgba(255,255,255,0.01) !default;
+$panelContentEvenRowBg:#1c2532 !default;
 $panelContentTextColor:$shade000 !default;
 $panelContentPadding:1.25rem !default;
 
@@ -492,7 +492,7 @@ $tableSortableColumnBadgeSize:1.143rem !default;
 
 $tableBodyRowBg:$shade800 !default;
 $tableBodyRowTextColor:$shade000 !default;
-$tableBodyRowEvenBg:#1f2937 !default;
+$tableBodyRowEvenBg:#1c2532 !default;
 $tableBodyRowHoverBg:$hoverBg !default;
 $tableBodyRowTextHoverColor:$shade000 !default;
 $tableBodyCellBorder:1px solid $shade600 !default;
