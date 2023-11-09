@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.40.0](https://github.com/primefaces/primevue-sass-theme/tree/3.40.0) (2023-11-09)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.39.0...3.40.0)
+
+**Implemented New Features and Enhancements:**
+
+- Lara Theme updates
+- DataTable and Button component style improvements
+
 ## [3.39.0](https://github.com/primefaces/primevue-sass-theme/tree/3.39.0) (2023-11-01)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.38.1...3.39.0)
