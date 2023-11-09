@@ -114,4 +114,16 @@
     .p-orderlist-controls .p-button {
         transition: opacity $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
     }
+
+    .p-steps {
+        .p-steps-item {
+            &.p-highlight {
+                .p-steps-number {
+                    background: $primaryColor;
+                    color: $primaryTextColor;
+                }
+            }
+        }
+    }
+    
 }
