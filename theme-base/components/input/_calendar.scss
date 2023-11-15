@@ -194,6 +194,14 @@
         }
     }
 
+    &.p-datepicker-mobile {
+        table {
+            th, td {
+                padding: $calendarCellDatePaddingSM;
+            }
+        }
+    }
+
     &:not(.p-disabled) {
         table {
             td {
@@ -238,14 +246,4 @@
         }
     }
 
-}
-
-@media screen and (max-width: $calendarBreakpoint) {
-    .p-datepicker {
-        table {
-            th, td {
-                padding: $calendarCellDatePaddingSM;
-            }
-        }
-    }
 }
