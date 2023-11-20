@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.41.0](https://github.com/primefaces/primevue-sass-theme/tree/3.41.0) (2023-11-20)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.40.1...3.41.0)
+
+**Breaking Changes:**
+
+- Remove primeflex dependency from DataView [#37](https://github.com/primefaces/primevue-sass-theme/issues/37)
+
+**Implemented New Features and Enhancements:**
+
+- Lara: Improved button severity colors [#40](https://github.com/primefaces/primevue-sass-theme/issues/40)
+- MegaMenu responsiveness updates [#38](https://github.com/primefaces/primevue-sass-theme/issues/38)
+- Calendar responsiveness updates  [#36](https://github.com/primefaces/primevue-sass-theme/issues/36)
+- Dock responsiveness updates  [#35](https://github.com/primefaces/primevue-sass-theme/issues/35)
+- Menubar responsiveness updates  [#34](https://github.com/primefaces/primevue-sass-theme/issues/34)
+- Lara: Add new 4 colors  [#33](https://github.com/primefaces/primevue-sass-theme/issues/33)
+-  [#30](https://github.com/primefaces/primevue-sass-theme/issues/30)
+-  [#30](https://github.com/primefaces/primevue-sass-theme/issues/30)
+
 ## [3.40.1](https://github.com/primefaces/primevue-sass-theme/tree/3.40.1) (2023-11-09)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.40.1
