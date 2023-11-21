@@ -1,6 +1,6 @@
 /// Padding of a button, must be defined with a shorthand for vertical and horizontal values e.g. ".5rem .5rem"
 /// @group button
-$buttonPadding: .5rem 1rem;
+$buttonPadding: 11px 16px;
 
 /// Width of a button having an icon with no label
 /// @group button
@@ -20,11 +20,11 @@ $buttonTextColor: $primaryTextColor;
 
 /// Border of a button
 /// @group button
-$buttonBorder: 1px solid $primaryColor;
+$buttonBorder: none;
 
 /// Background of a button in hover state
 /// @group button
-$buttonHoverBg: $primaryDarkColor;
+$buttonHoverBg: rgba($primaryColor, 0.75);
 
 /// Text color of a button in hover state
 /// @group button
@@ -116,7 +116,7 @@ $secondaryButtonActiveBorderColor: #455A64;
 
 /// Box shadow of a secondary button in focused state
 /// @group button
-$secondaryButtonFocusShadow: 0 0 0 0.2rem #B0BEC5;
+$secondaryButtonFocusShadow: 4px solid $primaryLightColor;
 
 /// Background of an info button
 /// @group button
