@@ -32,7 +32,7 @@
 
     .p-submenu-list {
         padding: $verticalMenuPadding;
-        width: $menuWidth;
+        min-width: $menuWidth;
 
         .p-menuitem-separator {
             border-top: $divider;
@@ -41,7 +41,7 @@
     }
 
     &.p-megamenu-vertical {
-        width: $menuWidth;
+        min-width: $menuWidth;
         padding: $verticalMenuPadding;
     }
 

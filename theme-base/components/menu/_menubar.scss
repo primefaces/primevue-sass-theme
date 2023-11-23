@@ -22,7 +22,7 @@
         background: $overlayMenuBg;
         border: $overlayMenuBorder;
         box-shadow: $overlayMenuShadow;
-        width: $menuWidth;
+        min-width: $menuWidth;
 
         .p-menuitem-separator {
             border-top: $divider;
