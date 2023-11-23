@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.41.1](https://github.com/primefaces/primevue-sass-theme/tree/3.41.1) (2023-11-22)
+
+- No changes, provides semantic versioning compatibility for PrimeVue 3.41.1
+
 ## [3.41.0](https://github.com/primefaces/primevue-sass-theme/tree/3.41.0) (2023-11-20)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.40.1...3.41.0)
