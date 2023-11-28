@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.42.0](https://github.com/primefaces/primevue-sass-theme/tree/3.42.0) (2023-11-28)
+
+**Breaking Changes:**
+
+- Menu components: width changed as min-width  [#42](https://github.com/primefaces/primevue-sass-theme/issues/42)
+
 ## [3.41.1](https://github.com/primefaces/primevue-sass-theme/tree/3.41.1) (2023-11-22)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.41.1
