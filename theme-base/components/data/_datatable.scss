@@ -282,7 +282,7 @@
 
     &.p-datatable-striped {
         .p-datatable-tbody {
-            > tr:nth-child(even) {
+            > tr.p-row-odd {
                 background: $tableBodyRowEvenBg;
     
                 &.p-highlight {
