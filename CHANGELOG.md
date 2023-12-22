@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.45.0](https://github.com/primefaces/primevue-sass-theme/tree/3.45.0) (2023-12-22)
+
+**Fixed bugs:**
+
+- Lara Light Teal: $highlightBg implementation defect  [#43](https://github.com/primefaces/primevue-sass-theme/issues/43)
+
+**Implemented New Features and Enhancements:**
+
+- DataTable: striped row updates [#44](https://github.com/primefaces/primevue-sass-theme/issues/44)
+
 ## [3.44.0](https://github.com/primefaces/primevue-sass-theme/tree/3.44.0) (2023-12-13)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.44.0
@@ -12,7 +22,7 @@
 
 **Breaking Changes:**
 
-- Menu components: width changed as min-width  [#42](https://github.com/primefaces/primevue-sass-theme/issues/42)
+- Menu components: width changed as min-width [#42](https://github.com/primefaces/primevue-sass-theme/issues/42)
 
 ## [3.41.1](https://github.com/primefaces/primevue-sass-theme/tree/3.41.1) (2023-11-22)
 
