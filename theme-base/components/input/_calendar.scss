@@ -83,6 +83,7 @@
                 border-radius: $calendarCellDateBorderRadius;
                 transition: $listItemTransition;
                 border: $calendarCellDateBorder;
+                outline-color: transparent;
 
                 &.p-highlight {
                     color: $highlightTextColor;
@@ -206,6 +207,8 @@
         table {
             td {
                 span:not(.p-highlight):not(.p-disabled) {
+                    outline-color: transparent;
+
                     &:hover {
                         background: $calendarCellDateHoverBg;
                     }
@@ -220,6 +223,8 @@
         .p-monthpicker {
             .p-monthpicker-month {
                 &:not(.p-disabled) {
+                    outline-color: transparent;
+                    
                     &:not(.p-highlight):hover {
                         background: $calendarCellDateHoverBg;
                     }
@@ -234,6 +239,8 @@
         .p-yearpicker {
             .p-yearpicker-year {
                 &:not(.p-disabled) {
+                    outline-color: transparent;
+                    
                     &:not(.p-highlight):hover {
                         background: $calendarCellDateHoverBg;
                     }

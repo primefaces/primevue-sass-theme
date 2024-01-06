@@ -13,6 +13,7 @@
     background: $actionIconBg;
     border-radius: $actionIconBorderRadius;
     transition: $actionIconTransition;
+    outline-color: transparent;
 
     &:hover {
         color: $actionIconHoverColor;
@@ -46,6 +47,7 @@
     background: $actionIconBg;
     border-radius: $actionIconBorderRadius;
     transition: $actionIconTransition;
+    outline-color: transparent;
 
     &:hover {
         color: $actionIconHoverColor;

@@ -9,6 +9,7 @@
             .p-menuitem-link {
                 transition: $listItemTransition;
                 border-radius: $borderRadius;
+                outline-color: transparent;
 
                 &:focus-visible {
                     @include focused();

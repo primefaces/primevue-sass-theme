@@ -42,6 +42,7 @@
         background: inherit;
         color: inherit;
         border-radius: 50%;
+        outline-color: transparent;
 
         &:focus-visible {
             @include focused();

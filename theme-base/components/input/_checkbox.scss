@@ -10,6 +10,7 @@
         color: $textColor;
         border-radius: $borderRadius;
         transition: $formElementTransition;
+        outline-color: transparent;
 
         .p-checkbox-icon {
             transition-duration: $transitionDuration;

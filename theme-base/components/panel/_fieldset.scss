@@ -23,6 +23,7 @@
                 color: $panelHeaderTextColor;
                 border-radius: $borderRadius;
                 transition: $listItemTransition;
+                outline-color: transparent;
 
                 .p-fieldset-toggler {
                     margin-right: $inlineSpacing;

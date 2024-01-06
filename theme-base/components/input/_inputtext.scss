@@ -9,6 +9,7 @@
     transition: $formElementTransition;
     appearance: none;
     border-radius: $borderRadius;
+    outline-color: transparent;
 
     &:enabled:hover {
         border-color: $inputHoverBorderColor;

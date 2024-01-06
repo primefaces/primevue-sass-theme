@@ -12,6 +12,7 @@
         border-radius: $actionIconBorderRadius;
         background: transparent;
         transition: $actionIconTransition;
+        outline-color: transparent;
 
         &:hover {
             background: rgba(255,255,255,.5);
@@ -20,7 +21,6 @@
         &:focus-visible {
             @include focused();
         }
-    
     }
 
     &.p-message-info {

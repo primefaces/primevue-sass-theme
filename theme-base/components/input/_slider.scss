@@ -30,6 +30,7 @@
         border: $sliderHandleBorder;
         border-radius: $sliderHandleBorderRadius;
         transition: $formElementTransition;
+        outline-color: transparent;
 
         &:focus {
             @include focused();

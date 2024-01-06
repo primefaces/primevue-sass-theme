@@ -33,11 +33,11 @@ $fontSize:1rem !default;
 $fontWeight:normal !default;
 $textColor:$shade700 !default;
 $textSecondaryColor:$shade500 !default;
-$borderRadius:4px !default;
+$borderRadius:6px !default;
 $transitionDuration:.2s !default;
 $formElementTransition:background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration !default;
-$actionIconTransition:background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration !default;
-$listItemTransition:box-shadow $transitionDuration !default;
+$actionIconTransition:background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration !default;
+$listItemTransition:box-shadow $transitionDuration, outline-color $transitionDuration !default;
 $primeIconFontSize:1rem !default;
 $divider:1px solid $shade200 !default;
 $inlineSpacing:.5rem !default;
@@ -54,6 +54,7 @@ $scaleLG:1.25 !default;
 $focusOutlineColor:$primaryColor !default;
 $focusOutline:2px solid $focusOutlineColor !default;
 $focusOutlineOffset:2px !default;
+$inputFocusOutlineOffset:-2px !default;
 $focusShadow:none !default;
 
 //action icons

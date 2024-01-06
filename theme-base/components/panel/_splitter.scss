@@ -11,6 +11,7 @@
         .p-splitter-gutter-handle {
             background: $splitterGutterHandleBg;
             transition: $formElementTransition;
+            outline-color: transparent;
             
             &:focus-visible {
                 @include focused();

@@ -6,6 +6,7 @@
     font-size: $fontSize;
     transition: $formElementTransition;
     border-radius: $borderRadius;
+    outline-color: transparent;
 
     &:not(:disabled):hover {
         background: $buttonHoverBg;

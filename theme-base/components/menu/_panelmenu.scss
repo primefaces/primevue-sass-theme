@@ -8,6 +8,7 @@
             background: $accordionHeaderBg;
             border-radius: $borderRadius;
             transition: $listItemTransition;
+            outline-color: transparent;
 
             .p-panelmenu-header-action {
                 color: $accordionHeaderTextColor;

@@ -2,33 +2,7 @@
     outline-color: $ring-color;
 }
 
-@mixin focus-ring-inset() {
-    outline-color: transparent;
-
-    &:enabled:focus {
-        outline-offset: -2px;
-    }
-}
-
-@mixin wrapper-focus-ring-inset() {
-    outline-color: transparent;
-
-    &:not(.p-disabled).p-focus {
-        outline-offset: -2px;
-    }
-}
-
-@layer primevue {
-    .p-inputtext {
-        @include focus-ring-inset();
-    }
-
-    .p-dropdown,
-    .p-listbox,
-    .p-multiselect {
-        @include wrapper-focus-ring-inset();
-    }
-
+@layer primevue {    
     .p-dropdown-filter {
         padding: .5rem .5rem;
     }
@@ -39,6 +13,11 @@
 
     .p-colorpicker-preview {
         padding: 0;
+    }
+
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus, 
+    .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+        outline-offset: 2px;
     }
 
     .p-selectbutton > .p-button,

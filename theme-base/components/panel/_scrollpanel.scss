@@ -3,6 +3,7 @@
         background: $scrollPanelTrackBg;
         border: $scrollPanelTrackBorder;
         transition: $formElementTransition;
+        outline-color: transparent;
 
         &:focus-visible {
             @include focused();

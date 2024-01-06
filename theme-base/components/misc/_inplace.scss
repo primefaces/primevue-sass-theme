@@ -3,6 +3,7 @@
         padding: $inplacePadding;
         border-radius: $borderRadius;
         transition: $formElementTransition;
+        outline-color: transparent;
 
         &:not(.p-disabled):hover {
             background: $inplaceHoverBg;

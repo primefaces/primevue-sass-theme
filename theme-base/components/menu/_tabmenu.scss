@@ -19,6 +19,7 @@
                 border-top-left-radius: $borderRadius;
                 transition: $listItemTransition;
                 margin: $tabviewHeaderMargin;
+                outline-color: transparent;
 
                 .p-menuitem-icon {
                     margin-right: $inlineSpacing;

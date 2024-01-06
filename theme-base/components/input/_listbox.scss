@@ -4,6 +4,7 @@
     border: $inputListBorder;
     border-radius: $borderRadius;
     transition: $formElementTransition;
+    outline-color: transparent;
 
     .p-listbox-header {
         padding: $inputListHeaderPadding;

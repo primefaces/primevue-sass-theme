@@ -27,6 +27,7 @@
         margin-left: $inlineSpacing;
         border-radius: $borderRadius;
         transition: $actionIconTransition;
+        outline-color: transparent;
         
         &:focus-visible {
             @include focused();

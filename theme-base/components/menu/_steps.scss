@@ -7,6 +7,7 @@
             transition: $listItemTransition;
             border-radius: $borderRadius;
             background: $stepsItemBg;
+            outline-color: transparent;
 
             .p-steps-number {
                 color: $stepsItemNumberColor;

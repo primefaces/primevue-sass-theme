@@ -12,12 +12,14 @@
 
 @mixin focused-inset() {
 	outline: $focusOutline;
-    outline-offset: $focusOutlineOffset;
+    outline-offset: -1 * $focusOutlineOffset;
     box-shadow: inset $focusShadow;
 }
 
 @mixin focused-input() {
-	@include focused();
+	outline: $focusOutline;
+    outline-offset: $inputFocusOutlineOffset;
+    box-shadow: $focusShadow;
 	border-color: $inputFocusBorderColor;
 }
 
@@ -212,6 +214,7 @@
     background: $actionIconBg;
     border-radius: $actionIconBorderRadius;
     transition: $actionIconTransition;
+    outline-color: transparent;
 
     @if $enabled {
         &:enabled:hover {

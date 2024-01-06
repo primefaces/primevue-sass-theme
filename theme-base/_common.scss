@@ -40,6 +40,7 @@
     font-feature-settings: var(--font-feature-settings, normal);
     font-size: $fontSize;
     border-radius: $borderRadius;
+    outline-color: transparent;
 
     &:focus-visible {
         @include focused();

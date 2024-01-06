@@ -19,6 +19,7 @@
                 border-top-left-radius: $borderRadius;
                 transition: $listItemTransition;
                 margin: $tabviewHeaderMargin;
+                outline-color: transparent;
 
                 &:not(.p-disabled):focus-visible {
                     @include focused-inset();
@@ -49,6 +50,7 @@
         width: $buttonIconOnlyWidth;
         box-shadow: $raisedButtonShadow;
         border-radius: 0;
+        outline-color: transparent;
 
         &:focus-visible {
             @include focused-inset();

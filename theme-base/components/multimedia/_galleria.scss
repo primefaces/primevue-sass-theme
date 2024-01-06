@@ -139,6 +139,8 @@
         }
 
         .p-galleria-thumbnail-item-content {
+            outline-color: transparent;
+            
             &:focus-visible {
                 @include focused();
             }

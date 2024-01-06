@@ -3,6 +3,7 @@
     border: $toggleButtonBorder;
     color: $toggleButtonTextColor;
     transition: $formElementTransition;
+    outline-color: transparent;
 
     .p-button-icon-left,
     .p-button-icon-right {

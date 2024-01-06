@@ -65,6 +65,7 @@
             color: $horizontalMenuRootMenuitemIconColor;
             border-radius: $actionIconBorderRadius;
             transition: $actionIconTransition;
+            outline-color: transparent;
         
             &:hover {
                 color: $horizontalMenuRootMenuitemIconHoverColor;

@@ -8,6 +8,7 @@
             font-weight: $accordionHeaderFontWeight;
             border-radius: $borderRadius;
             transition: $listItemTransition;
+            outline-color: transparent;
 
             .p-accordion-toggle-icon {
                 margin-right: $inlineSpacing;

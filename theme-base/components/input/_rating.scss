@@ -4,6 +4,8 @@
     gap: $inlineSpacing;
 
     .p-rating-item {
+        outline-color: transparent;
+        
         .p-rating-icon {
             color: $ratingStarIconOffColor;
             transition: $formElementTransition;   
