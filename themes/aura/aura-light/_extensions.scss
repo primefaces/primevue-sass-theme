@@ -3,16 +3,26 @@
 }
 
 @layer primevue {    
-    .p-dropdown-filter {
-        padding: .5rem .5rem;
-    }
-
     .p-button-label {
         font-weight: 600;
     }
 
     .p-colorpicker-preview {
         padding: 0;
+
+        &:enabled:focus {
+            outline-offset: $focusOutlineOffset;
+        }
+    }
+
+    .p-knob svg {
+        border-radius: $borderRadius;
+        outline-color: transparent;
+        transition: outline-color $transitionDuration;
+
+        &:focus-visible {
+            @include focused();
+        }
     }
 
     .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus, 
@@ -75,27 +85,27 @@
     }
     
     .p-button {    
-        &.p-button-secondary:enabled:focus {
+        &.p-button-secondary:enabled:focus-visible {
             @include focused-button-ring($secondaryButtonBg);
         }
     
-        &.p-button-success:enabled:focus {
+        &.p-button-success:enabled:focus-visible {
             @include focused-button-ring($successButtonBg);
         }
     
-        &.p-button-info:enabled:focus {
+        &.p-button-info:enabled:focus-visible {
             @include focused-button-ring($infoButtonBg);
         }
     
-        &.p-button-warning:enabled:focus {
+        &.p-button-warning:enabled:focus-visible {
             @include focused-button-ring($warningButtonBg);
         }
     
-        &.p-button-help:enabled:focus {
+        &.p-button-help:enabled:focus-visible {
             @include focused-button-ring($helpButtonBg);
         }
     
-        &.p-button-danger:enabled:focus {
+        &.p-button-danger:enabled:focus-visible {
             @include focused-button-ring($dangerButtonBg);
         }
     }
@@ -137,7 +147,7 @@
         padding: 1.25rem;
 
         &.p-fieldset-toggleable .p-fieldset-legend a {
-            padding: 0 1rem;
+            padding: .5rem 1rem;
 
             .p-fieldset-legend-text {
                 padding: 0;
@@ -149,7 +159,7 @@
             padding: 0;
 
             span {
-                padding: 0 1rem;
+                padding: .5rem 1rem;
             }
         }
 
@@ -176,11 +186,6 @@
         font-weight: 500;
     }
 
-    .p-picklist-buttons .p-button,
-    .p-orderlist-controls .p-button {
-        transition: opacity $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
-    }
-
     .p-steps {
         .p-steps-item {
             &.p-highlight {
@@ -195,6 +200,14 @@
     .p-tree {
         border: 0 none;
         padding: 1rem;
+        
+        .p-tree-container {
+            .p-treenode {    
+                &:focus > .p-treenode-content {
+                    outline-offset: -1 * $focusOutlineOffset;
+                }
+            }
+        }
     }
 
     .p-organizationchart {
@@ -214,5 +227,119 @@
         font-size: .75rem;
         font-weight: 600;
     }
+
+    .p-multiselect-panel {    
+        .p-multiselect-header {
+            padding-left: 1.25rem;   
+        }
+    }
+
+    .p-picklist-buttons .p-button,
+    .p-orderlist-controls .p-button {
+        transition: opacity $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+    }
+
+    .p-orderlist {    
+        .p-orderlist-header {
+            background: $inputListHeaderBg;
+            color: $inputListHeaderTextColor;
+            border: $inputListBorder;
+            border-bottom: 0 none;
+            padding: 1rem 1.25rem;
+            font-weight: 600;
+            border-top-right-radius: $borderRadius;
+            border-top-left-radius: $borderRadius;
+        }
+
+        .p-orderlist-list {
+            border: $inputListBorder;
+            border-top: 0 none;
+            background: $inputListBg;
+            color: $inputListTextColor;
+            padding: $inputListPadding;
+            border-bottom-right-radius: $borderRadius;
+            border-bottom-left-radius: $borderRadius;
+
+            .p-orderlist-item {
+                border-radius: $borderRadius;
+            }
+        } 
+    }
+
+    .p-picklist {    
+        .p-picklist-header {
+            background: $inputListHeaderBg;
+            color: $inputListHeaderTextColor;
+            border: $inputListBorder;
+            border-bottom: 0 none;
+            padding: 1rem 1.25rem;
+            font-weight: 600;
+            border-top-right-radius: $borderRadius;
+            border-top-left-radius: $borderRadius;
+        }
+
+        .p-picklist-list {
+            border: $inputListBorder;
+            border-top: 0 none;
+            background: $inputListBg;
+            color: $inputListTextColor;
+            padding: $inputListPadding;
+            border-bottom-right-radius: $borderRadius;
+            border-bottom-left-radius: $borderRadius;
+
+            .p-picklist-item {
+                border-radius: $borderRadius;
+            }
+        } 
+    }
     
+    .p-message.p-message-info {
+        .p-message-close:focus-visible {
+            outline-color: $infoMessageIconColor;
+        }
+    }
+
+    .p-message.p-message-success {
+        .p-message-close:focus-visible {
+            outline-color: $successMessageIconColor;
+        }
+    }
+
+    .p-message.p-message-warn {
+        .p-message-close:focus-visible {
+            outline-color: $warningMessageIconColor;
+        }
+    }
+
+    .p-message.p-message-error {
+        .p-message-close:focus-visible {
+            outline-color: $errorMessageIconColor;
+        }
+    }
+
+    .p-toast {
+        .p-toast-message.p-toast-message-info {
+            .p-toast-icon-close {
+                outline-color: $infoMessageIconColor;
+            }
+        }
+
+        .p-toast-message.p-toast-message-success {
+            .p-toast-icon-close {
+                outline-color: $successMessageIconColor;
+            }
+        }
+
+        .p-toast-message.p-toast-message-warn {
+            .p-toast-icon-close {
+                outline-color: $warningMessageIconColor;
+            }
+        }
+
+        .p-toast-message.p-toast-message-error {
+            .p-toast-icon-close {
+                outline-color: $errorMessageIconColor;
+            }
+        }
+    }
 }

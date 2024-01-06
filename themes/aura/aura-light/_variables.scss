@@ -103,10 +103,10 @@ $inputListItemFocusBg:$shade200 !default;
 $inputListItemTextFocusColor:$shade900 !default;
 $inputListItemBorder:0 none !default;
 $inputListItemBorderRadius:4px !default;
-$inputListItemMargin:2px !default;
-$inputListItemFocusShadow:inset 0 0 0 0.15rem $focusOutlineColor !default;
+$inputListItemMargin:2px 0 !default;
+$inputListItemFocusShadow:0 none !default;
 $inputListHeaderPadding:.5rem .5rem 0 .5rem !default;
-$inputListHeaderMargin:0 0 -2 0 !default;
+$inputListHeaderMargin:0 0 0 0 !default;
 $inputListHeaderBg:$shade000 !default;
 $inputListHeaderTextColor:$textColor !default;
 $inputListHeaderBorder:0 none !default;
@@ -532,8 +532,8 @@ $dataViewContentBorder:0 none !default;
 
 //tree
 $treeContainerPadding:0 !default;
-$treeNodePadding:0 !default;
-$treeNodeContentPadding:.25rem 0 !default;
+$treeNodePadding:0 0 !default;
+$treeNodeContentPadding:.25rem .5rem !default;
 $treeNodeChildrenPadding:0 0 0 1rem !default;
 $treeNodeIconColor:$shade600 !default;
 
