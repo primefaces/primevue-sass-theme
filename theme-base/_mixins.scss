@@ -32,6 +32,8 @@
 }
 
 @mixin menuitem {
+    margin: $inputListItemMargin;
+    
     > .p-menuitem-content {
         color: $menuitemTextColor;
         transition: $listItemTransition;

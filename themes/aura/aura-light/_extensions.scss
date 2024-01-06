@@ -1,10 +1,44 @@
-@mixin focused-ring($ring-color) {
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px $ring-color, 0 1px 2px 0 rgba(0, 0, 0, 1.0);
+@mixin focused-button-ring($ring-color) {
+    outline-color: $ring-color;
+}
+
+@mixin focus-ring-inset() {
+    outline-color: transparent;
+
+    &:enabled:focus {
+        outline-offset: -2px;
+    }
+}
+
+@mixin wrapper-focus-ring-inset() {
+    outline-color: transparent;
+
+    &:not(.p-disabled).p-focus {
+        outline-offset: -2px;
+    }
 }
 
 @layer primevue {
+    .p-inputtext {
+        @include focus-ring-inset();
+    }
+
+    .p-dropdown,
+    .p-listbox,
+    .p-multiselect {
+        @include wrapper-focus-ring-inset();
+    }
+
+    .p-dropdown-filter {
+        padding: .5rem .5rem;
+    }
+
     .p-button-label {
         font-weight: 600;
+    }
+
+    .p-colorpicker-preview {
+        padding: 0;
     }
 
     .p-selectbutton > .p-button,
@@ -15,7 +49,16 @@
     .p-accordion {
         .p-accordion-header {
             .p-accordion-header-link {
+                border-top: 0 none;
+                border-right: 0 none;
+                border-left: 0 none;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
                 transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+                
+                &:hover {
+                    border-bottom-color: $accordionHeaderHoverBorderColor;
+                }
             }
         }
     }
@@ -52,33 +95,29 @@
         }
     }
     
-    .p-button {
-        &:focus {
-            @include focused-ring(scale-color($buttonBg, $lightness: 50%));
-        }
-    
+    .p-button {    
         &.p-button-secondary:enabled:focus {
-            @include focused-ring(scale-color($secondaryButtonBg, $lightness: 50%));
+            @include focused-button-ring($secondaryButtonBg);
         }
     
         &.p-button-success:enabled:focus {
-            @include focused-ring(scale-color($successButtonBg, $lightness: 50%));
+            @include focused-button-ring($successButtonBg);
         }
     
         &.p-button-info:enabled:focus {
-            @include focused-ring(scale-color($infoButtonBg, $lightness: 50%));
+            @include focused-button-ring($infoButtonBg);
         }
     
         &.p-button-warning:enabled:focus {
-            @include focused-ring(scale-color($warningButtonBg, $lightness: 50%));
+            @include focused-button-ring($warningButtonBg);
         }
     
         &.p-button-help:enabled:focus {
-            @include focused-ring(scale-color($helpButtonBg, $lightness: 50%));
+            @include focused-button-ring($helpButtonBg);
         }
     
         &.p-button-danger:enabled:focus {
-            @include focused-ring(scale-color($dangerButtonBg, $lightness: 50%));
+            @include focused-button-ring($dangerButtonBg);
         }
     }
     
@@ -95,10 +134,58 @@
             }
         }
     }
+
+    .p-panel {
+        border: 1px solid $panelHeaderBorderColor;
+        border-radius: $borderRadius;
+        background-color: $panelContentBg;
+
+        .p-panel-header,
+        .p-panel-content,
+        .p-panel-footer {
+            background: transparent;
+            border: 0 none;
+        }
+    }
+
+    .p-fileupload {
+        .p-fileupload-content {
+            border-top: 0 none;
+        }
+    }
+
+    .p-fieldset {
+        padding: 1.25rem;
+
+        &.p-fieldset-toggleable .p-fieldset-legend a {
+            padding: 0 1rem;
+
+            .p-fieldset-legend-text {
+                padding: 0;
+            }
+        }
+
+        .p-fieldset-legend {
+            border: 0 none;
+            padding: 0;
+
+            span {
+                padding: 0 1rem;
+            }
+        }
+
+        .p-fieldset-content {
+            padding: 0;
+        }
+    }
+
+    .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+        transform: translateX(1.125rem);
+    }
     
     .p-speeddial-item {
         &.p-focus > .p-speeddial-action {
-            @include focused-ring(scale-color($buttonBg, $lightness: 50%));
+            @include focused-button-ring(scale-color($buttonBg, $lightness: 50%));
         }
     }
 
@@ -124,6 +211,29 @@
                 }
             }
         }
+    }
+
+    .p-tree {
+        border: 0 none;
+        padding: 1rem;
+    }
+
+    .p-organizationchart {
+        .p-organizationchart-node-content {
+            padding: .75rem 1rem;
+            border-radius: $borderRadius;
+        }
+    }
+
+    .p-overlaypanel {
+        .p-overlaypanel-content {
+            padding: 1.25rem;
+        }
+    }
+
+    .p-progressbar-label {
+        font-size: .75rem;
+        font-weight: 600;
     }
     
 }

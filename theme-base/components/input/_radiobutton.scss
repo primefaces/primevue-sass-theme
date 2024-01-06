@@ -33,7 +33,10 @@
             &:not(.p-disabled):hover {
                 border-color: $radiobuttonActiveHoverBorderColor;
                 background: $radiobuttonActiveHoverBg;
-                color: $radiobuttonIconActiveHoverColor;
+                
+                .p-radiobutton-icon {
+                    background-color: $radiobuttonIconActiveHoverColor;
+                }
             }
         }
     }
