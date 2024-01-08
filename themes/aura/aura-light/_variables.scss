@@ -51,7 +51,7 @@ $scaleSM:0.875 !default;
 $scaleLG:1.25 !default;
 
 //focus
-$focusOutlineColor:$primaryColor !default;
+$focusOutlineColor:var(--p-focus-ring-color) !default;
 $focusOutline:2px solid $focusOutlineColor !default;
 $focusOutlineOffset:2px !default;
 $inputFocusOutlineOffset:-2px !default;
@@ -886,4 +886,8 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --highlight-bg: #{$highlightBg};
     --highlight-text-color: #{$highlightTextColor};
     color-scheme: light;
+}
+
+:root {
+    --p-focus-ring-color: #{$shade400};
 }
