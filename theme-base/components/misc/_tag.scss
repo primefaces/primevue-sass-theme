@@ -29,8 +29,11 @@
     }
 
     .p-tag-icon {
-        margin-right: math.div($inlineSpacing, 2);
         font-size: $badgeFontSize;
+
+        &:not(:last-child) {
+            margin-right: math.div($inlineSpacing, 2);
+        }
 
         &.p-icon {
             width: $badgeFontSize;
