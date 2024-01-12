@@ -3,7 +3,7 @@
         transition: transform $transitionDuration, box-shadow $transitionDuration;
         transform: scale(.7);
 
-        &:focus {
+        &:focus-visible {
             box-shadow: 0 0 1px 10px rgba($accentColor, .2);
         }
     }

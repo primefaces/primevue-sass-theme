@@ -2,37 +2,33 @@
     border-radius: 50%;
     transition: box-shadow $transitionDuration;
 
-    .p-radiobutton-box {
-        &:not(.p-disabled):not(.p-highlight):hover {
-            border: $radiobuttonBorder;
-        }
+    &:not(.p-disabled) {
+        &:has(.p-radiobutton-input:hover) {
+            box-shadow: 0 0 1px 10px rgba($overlayColor, .04);
 
-        &:not(.p-disabled).p-focus {
-            border: $radiobuttonBorder;
-        }
+            .p-radiobutton-box {
+                border: $radiobuttonBorder;
+            }
 
-        &.p-highlight {
-            &:not(.p-disabled).p-focus {
-                border-color: $radiobuttonActiveBorderColor;
+            &.p-highlight {
+                box-shadow: 0 0 1px 10px rgba($radiobuttonActiveBorderColor, .04);
             }
         }
-    }
 
-    &:not(.p-radiobutton-disabled):hover {
-        box-shadow: 0 0 1px 10px rgba($overlayColor, .04);
-    }
+        &:has(.p-radiobutton-input:focus-visible) {
+            box-shadow: 0 0 1px 10px rgba($overlayColor, .12);
 
-    &:not(.p-radiobutton-disabled).p-radiobutton-focused {
-        box-shadow: 0 0 1px 10px rgba($overlayColor, .12);
-    }
+            .p-radiobutton-box {
+                border: $radiobuttonBorder;
+            }
 
-    &.p-radiobutton-checked {
-        &:not(.p-radiobutton-disabled):hover {
-            box-shadow: 0 0 1px 10px rgba($radiobuttonActiveBorderColor, .04);
-        }
-    
-        &:not(.p-radiobutton-disabled).p-radiobutton-focused {
-            box-shadow: 0 0 1px 10px rgba($radiobuttonActiveBorderColor, .12);
+            &.p-highlight {
+                box-shadow: 0 0 1px 10px rgba($radiobuttonActiveBorderColor, .12);
+
+                .p-radiobutton-box {
+                    border-color: $radiobuttonActiveBorderColor;
+                }
+            }
         }
     }
 }
@@ -41,8 +37,10 @@
     .p-radiobutton {
         .p-radiobutton-box {
             background-color: $inputBg;
+        }
 
-            &:not(.p-disabled):hover {
+        &:not(.p-disabled) {
+            &:has(.p-radiobutton-input:hover) {
                 background-color: $inputBg;
             }
         }

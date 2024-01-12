@@ -32,7 +32,7 @@
         transition: $formElementTransition;
         outline-color: transparent;
 
-        &:focus {
+        &:focus-visible {
             @include focused();
         }
     }
