@@ -1,0 +1,19 @@
+.p-chips {
+    .p-chips-multiple-container {
+        padding: .25rem .25rem;
+
+        .p-chips-token {
+            border-radius: 4px;
+        }
+
+        .p-chips-input-token {
+            margin-left: .5rem;
+        }
+
+        &:has(.p-chips-token) {
+            .p-chips-input-token {
+                margin-left: 0;
+            }
+        }
+    }
+}
