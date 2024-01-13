@@ -29,7 +29,7 @@
             background: $inputSwitchHandleOffBg;
             width: $inputSwitchHandleWidth;
             height: $inputSwitchHandleHeight;
-            transform: translateX($inputSwitchSliderPadding);
+            left: $inputSwitchSliderPadding;
             margin-top: math.div(-1 * $inputSwitchHandleHeight, 2);
             border-radius: $inputSwitchHandleBorderRadius;
             transition-duration: $transitionDuration;

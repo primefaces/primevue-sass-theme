@@ -36,8 +36,8 @@ $textSecondaryColor:$shade500 !default;
 $borderRadius:6px !default;
 $transitionDuration:.2s !default;
 $formElementTransition:background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration !default;
-$actionIconTransition:background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration !default;
-$listItemTransition:box-shadow $transitionDuration, outline-color $transitionDuration !default;
+$actionIconTransition:background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration !default;
+$listItemTransition:background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration !default;
 $primeIconFontSize:1rem !default;
 $divider:1px solid $shade200 !default;
 $inlineSpacing:.5rem !default;
@@ -77,7 +77,7 @@ $inputTextColor:$textColor !default;
 $inputIconColor:$shade400 !default;
 $inputBorder:1px solid $shade300 !default;
 $inputHoverBorderColor:$shade400 !default;
-$inputFocusBorderColor:$focusOutlineColor !default;
+$inputFocusBorderColor:$shade300 !default;
 $inputErrorBorderColor:$errorColor !default;
 $inputPlaceholderTextColor:$textSecondaryColor !default;
 $inputFilledBg:$shade50 !default;
@@ -124,7 +124,7 @@ $passwordMediumBg:#f59e0b !default;
 $passwordStrongBg:#22c55e !default;
 
 //button
-$buttonPadding:.5rem .75rem !default;
+$buttonPadding:.5rem 1rem !default;
 $buttonIconOnlyWidth:2.5rem !default;
 $buttonIconOnlyPadding:.5rem 0 !default;
 $buttonBg:$primaryColor !default;
@@ -225,9 +225,9 @@ $checkboxIconFontSize:.875rem !default;
 $checkboxActiveBorderColor:$primaryColor !default;
 $checkboxActiveBg:$primaryColor !default;
 $checkboxIconActiveColor:$primaryTextColor !default;
-$checkboxActiveHoverBg:$primaryDarkerColor !default;
+$checkboxActiveHoverBg:$primaryDarkColor !default;
 $checkboxIconActiveHoverColor:$primaryTextColor !default;
-$checkboxActiveHoverBorderColor:$primaryDarkerColor !default;
+$checkboxActiveHoverBorderColor:$primaryDarkColor !default;
 
 //radiobutton
 $radiobuttonWidth:1.25rem !default;
@@ -238,8 +238,8 @@ $radiobuttonActiveBorderColor:$primaryColor !default;
 $radiobuttonActiveBg:$primaryTextColor !default;
 $radiobuttonIconActiveColor:$primaryColor !default;
 $radiobuttonActiveHoverBg:$primaryTextColor !default;
-$radiobuttonIconActiveHoverColor:$primaryDarkerColor !default;
-$radiobuttonActiveHoverBorderColor:$primaryDarkerColor !default;
+$radiobuttonIconActiveHoverColor:$primaryDarkColor !default;
+$radiobuttonActiveHoverBorderColor:$primaryDarkColor !default;
 
 //colorpicker
 $colorPickerPreviewWidth:1.5rem !default;
@@ -249,22 +249,22 @@ $colorPickerBorder:1px solid #191919 !default;
 $colorPickerHandleColor:$shade000 !default;
 
 //togglebutton
-$toggleButtonBg:$inputBg !default;
-$toggleButtonBorder:1px solid $shade300 !default;
-$toggleButtonTextColor:$shade700 !default;
+$toggleButtonBg:$shade100 !default;
+$toggleButtonBorder:1px solid $shade100 !default;
+$toggleButtonTextColor:$shade500 !default;
 $toggleButtonIconColor:$shade500 !default;
 $toggleButtonHoverBg:$shade100 !default;
-$toggleButtonHoverBorderColor:$shade400 !default;
-$toggleButtonTextHoverColor:$shade800 !default;
-$toggleButtonIconHoverColor:$shade600 !default;
-$toggleButtonActiveBg:$highlightBg !default;
-$toggleButtonActiveBorderColor:$primaryColor !default;
-$toggleButtonTextActiveColor:$highlightTextColor !default;
-$toggleButtonIconActiveColor:$highlightTextColor !default;
-$toggleButtonActiveHoverBg:$highlightFocusBg !default;
-$toggleButtonActiveHoverBorderColor:$primaryDarkColor !default;
-$toggleButtonTextActiveHoverColor:$highlightTextColor !default;
-$toggleButtonIconActiveHoverColor:$highlightTextColor !default;
+$toggleButtonHoverBorderColor:$shade100 !default;
+$toggleButtonTextHoverColor:$shade700 !default;
+$toggleButtonIconHoverColor:$shade700 !default;
+$toggleButtonActiveBg:$shade100 !default;
+$toggleButtonActiveBorderColor:$shade100 !default;
+$toggleButtonTextActiveColor:$shade900 !default;
+$toggleButtonIconActiveColor:$shade900 !default;
+$toggleButtonActiveHoverBg:$shade100 !default;
+$toggleButtonActiveHoverBorderColor:$shade100 !default;
+$toggleButtonTextActiveHoverColor:$shade900 !default;
+$toggleButtonIconActiveHoverColor:$shade900 !default;
 
 //inplace
 $inplacePadding:$inputPadding !default;
@@ -650,7 +650,7 @@ $menuBg:$shade000 !default;
 $menuBorder:1px solid $shade200 !default;
 $menuTextColor:$shade700 !default;
 $menuitemPadding:.5rem .75rem !default;
-$menuitemBorderRadius:$borderRadius !default;
+$menuitemBorderRadius:4px !default;
 $menuitemTextColor:$shade700 !default;
 $menuitemIconColor:$shade500 !default;
 $menuitemTextHoverColor:$shade800 !default;
@@ -673,7 +673,7 @@ $submenuHeaderFontWeight:600 !default;
 $overlayMenuBg:$menuBg !default;
 $overlayMenuBorder:1px solid $shade200 !default;
 $overlayMenuShadow:0 2px 12px 0 rgba(0,0,0,.1) !default;
-$verticalMenuPadding:.5rem .5rem !default;
+$verticalMenuPadding:.25rem .25rem !default;
 $menuSeparatorMargin:.2px 0 !default;
 
 $breadcrumbPadding:1rem !default;

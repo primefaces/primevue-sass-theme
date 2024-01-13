@@ -1,3 +1,20 @@
-.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
-    outline-offset: 2px;
+.p-checkbox {
+    .p-checkbox-box {
+        border-radius: 4px;
+    }
+
+    &:not(.p-disabled) {
+        &:has(.p-checkbox-input:focus-visible) {
+            .p-checkbox-box {
+                outline-width: 1px;
+                outline-offset: $focusOutlineOffset;
+            }
+
+            &.p-highlight {
+                .p-checkbox-box {
+                    border-color: $checkboxActiveBg;
+                }
+            }
+        }
+    }
 }

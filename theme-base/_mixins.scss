@@ -35,6 +35,14 @@
 
 @mixin menuitem {
     margin: $inputListItemMargin;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
     
     > .p-menuitem-content {
         color: $menuitemTextColor;

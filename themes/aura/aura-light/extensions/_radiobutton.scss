@@ -1,3 +1,16 @@
-.p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
-    outline-offset: 2px;
+.p-radiobutton {
+    &:not(.p-disabled) {
+        &:has(.p-radiobutton-input:focus-visible) {
+            .p-radiobutton-box {
+                outline-width: 1px;
+                outline-offset: $focusOutlineOffset;
+            }
+
+            &.p-highlight {
+                .p-radiobutton-box {
+                    border-color: $checkboxActiveBg;
+                }
+            }
+        }
+    }
 }

@@ -67,7 +67,7 @@
         }
     }
 
-    &.p-invalid > .p-button {
+    &.p-invalid {
         @include invalid-input();
     }
 }
