@@ -1,0 +1,16 @@
+.p-accordion {
+    .p-accordion-header {
+        .p-accordion-header-link {
+            border-top: 0 none;
+            border-right: 0 none;
+            border-left: 0 none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+            
+            &:hover {
+                border-bottom-color: $accordionHeaderHoverBorderColor;
+            }
+        }
+    }
+}

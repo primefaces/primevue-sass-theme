@@ -1,0 +1,12 @@
+.p-panel {
+    border: 1px solid $panelHeaderBorderColor;
+    border-radius: $contentBorderRadius;
+    background-color: $panelContentBg;
+
+    .p-panel-header,
+    .p-panel-content,
+    .p-panel-footer {
+        background: transparent;
+        border: 0 none;
+    }
+}

@@ -1,0 +1,34 @@
+$contentBorderRadius: 12px;
+
+@layer primevue {
+    @import './_accordion';
+    @import './_button';
+    @import './_carousel';
+    @import './_checkbox';
+    @import './_colorpicker';
+    @import './_datatable';
+    @import './_dialog';
+    @import './_fieldset';
+    @import './_fileupload';
+    @import './_galleria';
+    @import './_inputswitch';
+    @import './_inputtext';
+    @import './_knob';
+    @import './_message';
+    @import './_multiselect';
+    @import './_orderlist';
+    @import './_organizationchart';
+    @import './_overlaypanel';
+    @import './_panel';
+    @import './_picklist';
+    @import './_progressbar';
+    @import './_radiobutton';
+    @import './_selectbutton';
+    @import './_speeddial';
+    @import './_steps';
+    @import './_tabmenu';
+    @import './_tabview';
+    @import './_toast';
+    @import './_togglebutton';
+    @import './_tree';
+}

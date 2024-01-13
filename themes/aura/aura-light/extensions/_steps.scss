@@ -1,0 +1,10 @@
+.p-steps {
+    .p-steps-item {
+        &.p-highlight {
+            .p-steps-number {
+                background: $primaryColor;
+                color: $primaryTextColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@mixin focused-button-ring($ring-color) {
+    outline-color: $ring-color;
+}
+
+.p-button-label {
+    font-weight: 600;
+}
+
+.p-button {    
+    &.p-button-secondary:enabled:focus-visible {
+        @include focused-button-ring($secondaryButtonBg);
+    }
+
+    &.p-button-success:enabled:focus-visible {
+        @include focused-button-ring($successButtonBg);
+    }
+
+    &.p-button-info:enabled:focus-visible {
+        @include focused-button-ring($infoButtonBg);
+    }
+
+    &.p-button-warning:enabled:focus-visible {
+        @include focused-button-ring($warningButtonBg);
+    }
+
+    &.p-button-help:enabled:focus-visible {
+        @include focused-button-ring($helpButtonBg);
+    }
+
+    &.p-button-danger:enabled:focus-visible {
+        @include focused-button-ring($dangerButtonBg);
+    }
+}

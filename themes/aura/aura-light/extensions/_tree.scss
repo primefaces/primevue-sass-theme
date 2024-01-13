@@ -1,0 +1,12 @@
+.p-tree {
+    border: 0 none;
+    padding: 1rem;
+    
+    .p-tree-container {
+        .p-treenode {    
+            &:focus > .p-treenode-content {
+                outline-offset: -1 * $focusOutlineOffset;
+            }
+        }
+    }
+}

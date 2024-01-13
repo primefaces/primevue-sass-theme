@@ -1,0 +1,20 @@
+.p-dialog {
+    border-radius: $contentBorderRadius;
+    
+    .p-dialog-header {
+        border-top-right-radius: $contentBorderRadius;
+        border-top-left-radius: $contentBorderRadius;
+    }
+
+    .p-dialog-content {
+        &:last-of-type {
+            border-bottom-right-radius: $contentBorderRadius;
+            border-bottom-left-radius: $contentBorderRadius;
+        }
+    }
+
+    .p-dialog-footer {
+        border-bottom-right-radius: $contentBorderRadius;
+        border-bottom-left-radius: $contentBorderRadius;
+    }
+}

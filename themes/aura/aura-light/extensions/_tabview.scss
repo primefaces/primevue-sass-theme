@@ -1,0 +1,9 @@
+.p-tabview {
+    .p-tabview-nav {
+        li {
+            .p-tabview-nav-link {
+                transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+            }
+        }
+    }
+}

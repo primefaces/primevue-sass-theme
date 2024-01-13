@@ -93,7 +93,7 @@ $inputGroupAddOnMinWidth: 3rem !default;
 $inputListBg:$shade000 !default;
 $inputListTextColor:$textColor !default;
 $inputListBorder:$inputBorder !default;
-$inputListPadding:.5rem .5rem !default;
+$inputListPadding:.25rem .25rem !default;
 $inputListItemPadding:.5rem .75rem !default;
 $inputListItemBg:transparent !default;
 $inputListItemTextColor:$shade700 !default;
@@ -350,8 +350,8 @@ $panelHeaderBorder:1px solid $panelHeaderBorderColor !default;
 $panelHeaderBg:$shade000 !default;
 $panelHeaderTextColor:$shade700 !default;
 $panelHeaderFontWeight:600 !default;
-$panelHeaderPadding:1.25rem !default;
-$panelToggleableHeaderPadding:.875rem 1.25rem !default;
+$panelHeaderPadding:1.125rem 1.125rem .875rem 1.125rem !default;
+$panelToggleableHeaderPadding:.625rem 1.125rem !default;
 
 $panelHeaderHoverBg:$shade000 !default;
 $panelHeaderHoverBorderColor:$shade000 !default;
@@ -362,37 +362,37 @@ $panelContentBorder:1px solid $panelContentBorderColor !default;
 $panelContentBg:$shade000 !default;
 $panelContentEvenRowBg:$shade50 !default;
 $panelContentTextColor:$shade700 !default;
-$panelContentPadding:0 1.25rem 1.25rem 1.25rem!default;
+$panelContentPadding:0 1.125rem 1.125rem 1.125rem!default;
 
 $panelFooterBorder:1px solid $shade200 !default;
 $panelFooterBg:$shade000 !default;
 $panelFooterTextColor:$shade700 !default;
-$panelFooterPadding:0 1.25rem 1.25rem 1.25rem !default;
+$panelFooterPadding:0 1.125rem 1.125rem 1.125rem !default;
 
 //accordion
 $accordionSpacing:4px !default;
 $accordionHeaderBorder:1px solid $shade200 !default;
 $accordionHeaderBg:$shade000 !default;
-$accordionHeaderTextColor:$shade700 !default;
+$accordionHeaderTextColor:$shade500 !default;
 $accordionHeaderFontWeight:600 !default;
 $accordionHeaderPadding:1rem !default;
 
 $accordionHeaderHoverBg:$shade000 !default;
-$accordionHeaderHoverBorderColor:$shade300 !default;
-$accordionHeaderTextHoverColor:$shade900 !default;
+$accordionHeaderHoverBorderColor:$shade200 !default;
+$accordionHeaderTextHoverColor:$shade700 !default;
 
 $accordionHeaderActiveBg:$shade000 !default;
 $accordionHeaderActiveBorderColor:$shade200 !default;
 $accordionHeaderTextActiveColor:$shade700 !default;
 
 $accordionHeaderActiveHoverBg:$shade000 !default;
-$accordionHeaderActiveHoverBorderColor:$shade300 !default;
+$accordionHeaderActiveHoverBorderColor:$shade200 !default;
 $accordionHeaderTextActiveHoverColor:$shade700 !default;
 
 $accordionContentBorder:0 none !default;
 $accordionContentBg:$shade000 !default;
 $accordionContentTextColor:$shade700 !default;
-$accordionContentPadding:1rem 1rem 0 1rem !default;
+$accordionContentPadding:.875rem 1.125rem 0 1.125rem !default;
 
 //tabview
 $tabviewNavBorder:1px solid $shade200 !default;
@@ -406,12 +406,12 @@ $tabviewHeaderBorderColor:transparent transparent $shade200 transparent !default
 $tabviewHeaderBg:$shade000 !default;
 $tabviewHeaderTextColor:$textSecondaryColor !default;
 $tabviewHeaderFontWeight:600 !default;
-$tabviewHeaderPadding:1rem !default;
+$tabviewHeaderPadding:1rem 1.125rem !default;
 $tabviewHeaderMargin:0 0 -2px 0 !default;
 
 $tabviewHeaderHoverBg:$shade000 !default;
-$tabviewHeaderHoverBorderColor:$shade300 !default;
-$tabviewHeaderTextHoverColor:$textSecondaryColor !default;
+$tabviewHeaderHoverBorderColor:$shade400 !default;
+$tabviewHeaderTextHoverColor:$textColor !default;
 
 $tabviewHeaderActiveBg:$shade000 !default;
 $tabviewHeaderActiveBorderColor:$primaryColor !default;
@@ -420,7 +420,7 @@ $tabviewHeaderTextActiveColor:$primaryColor !default;
 $tabviewContentBorder:0 none !default;
 $tabviewContentBg:$shade000 !default;
 $tabviewContentTextColor:$textColor !default;
-$tabviewContentPadding:1rem !default;
+$tabviewContentPadding:.875rem 1.125rem 1.125rem 1.125rem !default;
 
 //upload
 $fileUploadProgressBarHeight:.25rem !default;

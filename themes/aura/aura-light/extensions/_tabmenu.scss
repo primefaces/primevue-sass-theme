@@ -1,0 +1,9 @@
+.p-tabmenu {
+    .p-tabmenu-nav {
+        .p-tabmenuitem {
+            .p-menuitem-link {
+                transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+            }
+        }
+    }
+}

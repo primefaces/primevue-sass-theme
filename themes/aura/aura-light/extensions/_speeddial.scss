@@ -1,0 +1,5 @@
+.p-speeddial-item {
+    &.p-focus > .p-speeddial-action {
+        @include focused-button-ring(scale-color($buttonBg, $lightness: 50%));
+    }
+}

@@ -1,0 +1,24 @@
+.p-fieldset {
+    padding: 1.25rem;
+
+    &.p-fieldset-toggleable .p-fieldset-legend a {
+        padding: .5rem 1rem;
+
+        .p-fieldset-legend-text {
+            padding: 0;
+        }
+    }
+
+    .p-fieldset-legend {
+        border: 0 none;
+        padding: 0;
+
+        span {
+            padding: .5rem 1rem;
+        }
+    }
+
+    .p-fieldset-content {
+        padding: 0;
+    }
+}
