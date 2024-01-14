@@ -6,4 +6,13 @@
 
 .p-treeselect {
     box-shadow: $inputShadow;
+
+    &.p-disabled {
+        opacity: 1;
+        background-color: $disabledInputBg;
+
+        .p-treeselect-label {
+            color: $textSecondaryColor;
+        }
+    }
 }

@@ -18,4 +18,17 @@
             }
         }
     }
+
+    &.p-disabled {
+        opacity: 1;
+
+        .p-checkbox-box {
+            background-color: $disabledInputBg;
+            border: $inputBorder;
+
+            .p-checkbox-icon {
+                color: $textSecondaryColor;
+            }
+        }
+    }
 }

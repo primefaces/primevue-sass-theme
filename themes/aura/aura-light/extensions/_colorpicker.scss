@@ -4,4 +4,8 @@
     &:enabled:focus {
         outline-offset: $focusOutlineOffset;
     }
+
+    &.p-inputtext.p-disabled {
+        opacity: $disabledOpacity;
+    }
 }

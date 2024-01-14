@@ -4,4 +4,13 @@
     .p-cascadeselect-label {
         box-shadow: none;
     }
+
+    &.p-disabled {
+        opacity: 1;
+        background-color: $disabledInputBg;
+
+        .p-cascadeselect-label {
+            color: $textSecondaryColor;
+        }
+    }
 }

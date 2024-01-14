@@ -27,6 +27,8 @@ $shade800:#1e293b !default;
 $shade900:#0f172a !default;
 $shade950:#020617 !default;
 
+$disabledInputBg:$shade200 !default;
+
 //global
 $fontFamily:'Inter var', sans-serif !default;
 $fontSize:1rem !default;
@@ -777,10 +779,10 @@ $avatarBg:$shade200 !default;
 $avatarTextColor:$shade900 !default;
 
 //chip
-$chipBg:$shade200 !default;
-$chipTextColor:$shade900 !default;
+$chipBg:$shade100 !default;
+$chipTextColor:$shade800 !default;
 $chipBorderRadius: 16px !default;
-$chipFocusBg:$shade300 !default;
+$chipFocusBg:$shade200 !default;
 $chipFocusTextColor:$shade900 !default;
 
 //scrollTop

@@ -23,4 +23,11 @@
             }
         }
     }
+
+    &.p-disabled {
+        .p-chips-multiple-container {
+            opacity: 1;
+            background-color: $disabledInputBg;
+        }
+    }
 }

@@ -6,4 +6,13 @@
 
 .p-multiselect {
     box-shadow: $inputShadow;
+
+    &.p-disabled {
+        opacity: 1;
+        background-color: $disabledInputBg;
+
+        .p-multiselect-label {
+            color: $textSecondaryColor;
+        }
+    }
 }
