@@ -1,5 +1,12 @@
 .p-overlaypanel {
     .p-overlaypanel-content {
-        padding: 1.25rem;
+        padding: 1.125rem;
+    }
+
+    .p-overlaypanel-close {
+        @include action-icon();
+        position: absolute;
+        top: .25rem;
+        right: .25rem;
     }
 }
