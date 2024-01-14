@@ -1,14 +1,6 @@
-.p-datatable {
-    .p-datatable-tbody {
+.p-treetable {
+    .p-treetable-tbody {
         > tr {
-            &.p-datatable-dragpoint-top > td {
-                box-shadow: inset 0 2px 0 0 $primaryColor;
-            }
-
-            &.p-datatable-dragpoint-bottom > td {
-                box-shadow: inset 0 -2px 0 0 $primaryColor;
-            }
-
             &:has(+ .p-highlight) {
                 > td {
                     border-bottom-color: scale-color($highlightBg, $lightness: -10%);
@@ -18,6 +10,13 @@
             &.p-highlight {
                 > td {
                     border-bottom-color: scale-color($highlightBg, $lightness: -10%);
+
+                    .p-treetable-toggler {
+                        &:hover {
+                            background-color: $highlightBg;
+                            color: $highlightTextColor;
+                        }
+                    }
                 }
             }
         }

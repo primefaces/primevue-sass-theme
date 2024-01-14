@@ -14,7 +14,7 @@
                 &.p-highlight {
                     .p-tree-toggler {
                         &:hover {
-                            background-color: scale-color($highlightBg, $lightness: -5%);
+                            background-color: $highlightBg;
                         }
                     }
                 }

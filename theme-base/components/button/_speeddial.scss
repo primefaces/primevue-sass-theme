@@ -32,6 +32,7 @@
     background: $speedDialActionBg;
     color: $speedDialActionTextColor;
     outline-color: transparent;
+    transition: $actionIconTransition;
 
     &:hover {
         background: $speedDialActionHoverBg;
