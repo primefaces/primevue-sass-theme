@@ -350,7 +350,7 @@ $panelHeaderBorder:1px solid $panelHeaderBorderColor !default;
 $panelHeaderBg:$shade000 !default;
 $panelHeaderTextColor:$shade700 !default;
 $panelHeaderFontWeight:600 !default;
-$panelHeaderPadding:1.125rem 1.125rem .875rem 1.125rem !default;
+$panelHeaderPadding:1.125rem !default;
 $panelToggleableHeaderPadding:.625rem 1.125rem !default;
 
 $panelHeaderHoverBg:$shade000 !default;
@@ -434,13 +434,13 @@ $scrollPanelTrackBorder:0 none !default;
 $scrollPanelTrackBg:$shade100 !default;
 
 //card
-$cardBodyPadding:1.25rem !default;
-$cardTitleFontSize:1.5rem !default;
+$cardBodyPadding:1.5rem !default;
+$cardTitleFontSize:1.25rem !default;
 $cardTitleFontWeight:600 !default;
 $cardSubTitleFontWeight:400 !default;
 $cardSubTitleColor:$textSecondaryColor !default;
-$cardContentPadding:1.25rem 0 !default;
-$cardFooterPadding:1.25rem 0 0 0 !default;
+$cardContentPadding:0 0 0 0 !default;
+$cardFooterPadding:0 0 0 0 !default;
 $cardShadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12) !default;
 
 //editor
