@@ -623,13 +623,13 @@ $tooltipPadding:$inputPadding !default;
 //steps
 $stepsItemBg:$shade000 !default;
 $stepsItemBorder:1px solid $shade200 !default;
-$stepsItemTextColor:$shade600 !default;
+$stepsItemTextColor:$shade700 !default;
 $stepsItemNumberWidth:2rem !default;
 $stepsItemNumberHeight:2rem !default;
 $stepsItemNumberFontSize:1.143rem !default;
-$stepsItemNumberColor:$shade700 !default;
+$stepsItemNumberColor:$shade500 !default;
 $stepsItemNumberBorderRadius:50% !default;
-$stepsItemActiveFontWeight:600 !default;
+$stepsItemActiveFontWeight:500 !default;
 
 //progressbar, progressspinner
 $progressBarHeight:1.25rem !default;
