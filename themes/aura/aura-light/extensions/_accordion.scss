@@ -1,16 +1,29 @@
 .p-accordion {
     .p-accordion-header {
         .p-accordion-header-link {
-            border-top: 0 none;
-            border-right: 0 none;
-            border-left: 0 none;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
-            
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
             &:hover {
                 border-bottom-color: $accordionHeaderHoverBorderColor;
             }
+
+            .p-accordion-toggle-icon {
+                transform: rotate(90deg);
+            }
         }
+
+        &.p-highlight {
+            .p-accordion-toggle-icon {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    .p-accordion-tab {
+        border-bottom: 1px solid $shade200;
     }
 }

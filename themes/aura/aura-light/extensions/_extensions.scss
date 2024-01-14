@@ -1,5 +1,7 @@
 $contentBorderRadius: 12px;
 
+$inputShadow: 0 0 #0000,0 0 #0000,0 1px 2px 0 rgba(18,18,23,.05);
+
 @layer primevue {
     @import './_accordion';
     @import './_autocomplete';
@@ -15,6 +17,7 @@ $contentBorderRadius: 12px;
     @import './_fieldset';
     @import './_fileupload';
     @import './_galleria';
+    @import './_inputgroup';
     @import './_inputswitch';
     @import './_inputtext';
     @import './_knob';
@@ -37,4 +40,5 @@ $contentBorderRadius: 12px;
     @import './_toast';
     @import './_togglebutton';
     @import './_tree';
+    @import './_treeselect';
 }

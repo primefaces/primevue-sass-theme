@@ -87,7 +87,7 @@ $inputFilledFocusBg:$shade000 !default;
 //input groups
 $inputGroupBg:$shade000 !default;
 $inputGroupTextColor:$textSecondaryColor !default;
-$inputGroupAddOnMinWidth: 3rem !default;
+$inputGroupAddOnMinWidth: 2.5rem !default;
 
 //input lists (e.g. dropdown, autocomplete, multiselect, orderlist)
 $inputListBg:$shade000 !default;
@@ -371,11 +371,11 @@ $panelFooterPadding:0 1.125rem 1.125rem 1.125rem !default;
 
 //accordion
 $accordionSpacing:4px !default;
-$accordionHeaderBorder:1px solid $shade200 !default;
+$accordionHeaderBorder:0 none !default;
 $accordionHeaderBg:$shade000 !default;
 $accordionHeaderTextColor:$shade500 !default;
 $accordionHeaderFontWeight:600 !default;
-$accordionHeaderPadding:1rem !default;
+$accordionHeaderPadding:1.125rem 1.125rem 1.125rem 1.125rem !default;
 
 $accordionHeaderHoverBg:$shade000 !default;
 $accordionHeaderHoverBorderColor:$shade200 !default;
@@ -392,7 +392,7 @@ $accordionHeaderTextActiveHoverColor:$shade700 !default;
 $accordionContentBorder:0 none !default;
 $accordionContentBg:$shade000 !default;
 $accordionContentTextColor:$shade700 !default;
-$accordionContentPadding:.875rem 1.125rem 0 1.125rem !default;
+$accordionContentPadding:0 1.125rem 1.125rem 1.125rem !default;
 
 //tabview
 $tabviewNavBorder:1px solid $shade200 !default;
@@ -683,7 +683,7 @@ $breadcrumbItemTextColor:$menuitemTextColor !default;
 $breadcrumbItemIconColor:$menuitemIconColor !default;
 $breadcrumbLastItemTextColor:$menuitemTextColor !default;
 $breadcrumbLastItemIconColor:$menuitemIconColor !default;
-$breadcrumbSeparatorColor:$menuitemTextColor !default;
+$breadcrumbSeparatorColor:$menuitemIconColor !default;
 
 $horizontalMenuPadding:.5rem .5rem !default;
 $horizontalMenuBg:$shade000 !default;

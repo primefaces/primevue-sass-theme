@@ -3,9 +3,21 @@
     padding: 1rem;
     
     .p-tree-container {
-        .p-treenode {    
+        .p-treenode {   
+            margin: 2px 0;
+
             &:focus > .p-treenode-content {
                 outline-offset: -1 * $focusOutlineOffset;
+            }
+        }
+
+        > .p-treenode {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }

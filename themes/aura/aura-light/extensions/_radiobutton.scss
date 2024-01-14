@@ -1,4 +1,8 @@
 .p-radiobutton {
+    .p-radiobutton-box {
+        box-shadow: $inputShadow;
+    }
+    
     &:not(.p-disabled) {
         &:has(.p-radiobutton-input:focus-visible) {
             .p-radiobutton-box {

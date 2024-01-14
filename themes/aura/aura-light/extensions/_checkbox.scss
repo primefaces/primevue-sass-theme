@@ -1,6 +1,7 @@
 .p-checkbox {
     .p-checkbox-box {
         border-radius: 4px;
+        box-shadow: $inputShadow;
     }
 
     &:not(.p-disabled) {
