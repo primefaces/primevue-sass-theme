@@ -5,5 +5,18 @@
                 transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
             }
         }
+
+        
+    }
+
+    .p-tabview-nav-btn.p-link {
+        color: $actionIconColor;
+        transition: $actionIconTransition;
+        box-shadow: $raisedButtonShadow;
+        box-shadow: 0px 0px 10px 50px rgba(255, 255, 255, 0.6);
+
+        &:hover {
+            color: $actionIconHoverColor;
+        }
     }
 }
