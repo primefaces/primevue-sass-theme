@@ -32,7 +32,7 @@
                 .p-checkbox {
                     margin-right: $inlineSpacing;
 
-                    .p-indeterminate {
+                    &.p-indeterminate {
                         .p-checkbox-icon {
                             color: $textColor;
                         }
