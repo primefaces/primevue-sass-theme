@@ -540,10 +540,10 @@ $treeNodeIconColor:$shade600 !default;
 //timeline
 $timelineVerticalEventContentPadding:0 1rem !default;
 $timelineHorizontalEventContentPadding:1rem 0 !default;
-$timelineEventMarkerWidth:1rem !default;
-$timelineEventMarkerHeight:1rem !default;
+$timelineEventMarkerWidth:1.125rem !default;
+$timelineEventMarkerHeight:1.125rem !default;
 $timelineEventMarkerBorderRadius:50% !default;
-$timelineEventMarkerBorder:2px solid $primaryColor !default;
+$timelineEventMarkerBorder:2px solid $shade200 !default;
 $timelineEventMarkerBackground:$primaryTextColor !default;
 $timelineEventConnectorSize:2px !default;
 $timelineEventColor:$shade200 !default;
