@@ -401,20 +401,20 @@ $tabviewNavBg:$shade000 !default;
 
 $tabviewHeaderSpacing:0 !default;
 $tabviewHeaderBorder:solid $shade200 !default;
-$tabviewHeaderBorderWidth:0 0 2px 0 !default;
+$tabviewHeaderBorderWidth:0 0 1px 0 !default;
 $tabviewHeaderBorderColor:transparent transparent $shade200 transparent !default;
 $tabviewHeaderBg:$shade000 !default;
 $tabviewHeaderTextColor:$textSecondaryColor !default;
 $tabviewHeaderFontWeight:600 !default;
 $tabviewHeaderPadding:1rem 1.125rem !default;
-$tabviewHeaderMargin:0 0 -2px 0 !default;
+$tabviewHeaderMargin:0 0 -1px 0 !default;
 
 $tabviewHeaderHoverBg:$shade000 !default;
-$tabviewHeaderHoverBorderColor:$shade400 !default;
+$tabviewHeaderHoverBorderColor:$shade200 !default;
 $tabviewHeaderTextHoverColor:$textColor !default;
 
 $tabviewHeaderActiveBg:$shade000 !default;
-$tabviewHeaderActiveBorderColor:$primaryColor !default;
+$tabviewHeaderActiveBorderColor:$shade200 !default;
 $tabviewHeaderTextActiveColor:$primaryColor !default;
 
 $tabviewContentBorder:0 none !default;
