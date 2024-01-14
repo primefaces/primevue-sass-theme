@@ -2,6 +2,10 @@
     font-weight: 500;
 }
 
+.p-message {
+    border-radius: 10px;
+}
+
 .p-message.p-message-info {
     .p-message-close:focus-visible {
         outline-color: $infoMessageIconColor;

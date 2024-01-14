@@ -1,5 +1,15 @@
-.p-toast-message {
-    backdrop-filter: blur(10px);
+.p-toast {
+    .p-toast-message {
+        backdrop-filter: blur(1.5px);
+        border-radius: 10px;
+
+        .p-toast-message-content {
+            .p-toast-detail {
+                color: $textColor;
+                font-size: .875rem;
+            }
+        }
+    }
 }
 
 .p-toast {
