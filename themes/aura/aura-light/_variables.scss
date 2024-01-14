@@ -280,7 +280,7 @@ $ratingStarIconOnColor:$primaryColor !default;
 $ratingStarIconHoverColor:$primaryColor !default;
 
 //slider
-$sliderBg:$shade300 !default;
+$sliderBg:$shade200 !default;
 $sliderBorder:0 none !default;
 $sliderHorizontalHeight:.286rem !default;
 $sliderVerticalWidth:0.286rem !default;
@@ -634,7 +634,7 @@ $stepsItemActiveFontWeight:600 !default;
 //progressbar, progressspinner
 $progressBarHeight:1.25rem !default;
 $progressBarBorder:0 none !default;
-$progressBarBg:$shade300 !default;
+$progressBarBg:$shade200 !default;
 $progressBarValueBg:$primaryColor !default;
 $progressBarValueTextColor:$primaryTextColor !default;
 
@@ -674,7 +674,7 @@ $overlayMenuBg:$menuBg !default;
 $overlayMenuBorder:1px solid $shade200 !default;
 $overlayMenuShadow:0 2px 12px 0 rgba(0,0,0,.1) !default;
 $verticalMenuPadding:.25rem .25rem !default;
-$menuSeparatorMargin:.2px 0 !default;
+$menuSeparatorMargin:2px 0 !default;
 
 $breadcrumbPadding:1rem !default;
 $breadcrumbBg:$menuBg !default;
