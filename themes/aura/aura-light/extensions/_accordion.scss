@@ -1,9 +1,7 @@
 .p-accordion {
     .p-accordion-header {
         .p-accordion-header-link {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            transition: background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+            border-radius: $borderRadius !important;
             flex-direction: row-reverse;
             justify-content: space-between;
 
