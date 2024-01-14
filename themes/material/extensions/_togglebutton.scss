@@ -1,12 +1,16 @@
-.p-togglebutton.p-button {
+.p-togglebutton {
     &:not(.p-disabled) {
         &:has(.p-togglebutton-input:focus-visible) {
-            background: $toggleButtonActiveBg;
-            border-color: $toggleButtonActiveBorderColor;
+            .p-button {
+                background: $toggleButtonActiveBg;
+                border-color: $toggleButtonActiveBorderColor;
+            }
 
             &.p-highlight {
-                background: $toggleButtonActiveHoverBg;
-                border-color: $toggleButtonActiveHoverBorderColor;
+                .p-button {
+                    background: $toggleButtonActiveHoverBg;
+                    border-color: $toggleButtonActiveHoverBorderColor;
+                }
             }
         }
     }
