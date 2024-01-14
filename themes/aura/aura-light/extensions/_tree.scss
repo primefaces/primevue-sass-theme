@@ -9,6 +9,16 @@
             &:focus > .p-treenode-content {
                 outline-offset: -1 * $focusOutlineOffset;
             }
+
+            .p-treenode-content {
+                &.p-highlight {
+                    .p-tree-toggler {
+                        &:hover {
+                            background-color: scale-color($highlightBg, $lightness: -5%);
+                        }
+                    }
+                }
+            }
         }
 
         > .p-treenode {
