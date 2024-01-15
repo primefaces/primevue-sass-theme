@@ -296,8 +296,8 @@ $sliderHandleHoverBg:$primaryColor !default;
 $sliderRangeBg:$primaryColor !default;
 
 //calendar
-$calendarTableMargin:.5rem 0 !default;
-$calendarPadding:.5rem !default;
+$calendarTableMargin:.5rem 0 0 0 !default;
+$calendarPadding:.75rem !default;
 $calendarBg:$shade000 !default;
 $calendarInlineBg:$calendarBg !default;
 $calendarTextColor:$shade700 !default;
@@ -324,7 +324,7 @@ $calendarCellDateTodayBorderColor:transparent !default;
 $calendarCellDateTodayTextColor:$shade900 !default;
 
 $calendarButtonBarPadding:.5rem 0 0 0 !default;
-$calendarTimePickerPadding:.5rem !default;
+$calendarTimePickerPadding:0 !default;
 $calendarTimePickerElementPadding:0 .5rem !default;
 $calendarTimePickerTimeFontSize:1rem !default;
 
