@@ -9,4 +9,10 @@
         background: transparent;
         border: 0 none;
     }
+
+    &:has(.p-panel-footer) {
+        .p-panel-content {
+            padding-bottom: .875rem;
+        }
+    }
 }

@@ -352,7 +352,7 @@ $panelHeaderBorder:1px solid $panelHeaderBorderColor !default;
 $panelHeaderBg:$shade000 !default;
 $panelHeaderTextColor:$shade700 !default;
 $panelHeaderFontWeight:600 !default;
-$panelHeaderPadding:1.125rem !default;
+$panelHeaderPadding:1.125rem 1.125rem .875rem 1.125rem !default;
 $panelToggleableHeaderPadding:.625rem 1.125rem !default;
 
 $panelHeaderHoverBg:$shade000 !default;
@@ -426,7 +426,7 @@ $tabviewContentPadding:.875rem 1.125rem 1.125rem 1.125rem !default;
 
 //upload
 $fileUploadProgressBarHeight:.25rem !default;
-$fileUploadContentPadding: 1.25rem !default;
+$fileUploadContentPadding: 0 1.125rem 1.125rem 1.125rem !default;
 $fileUploadContentHoverBorder: 1px dashed $primaryColor !default;
 $fileUploadFileBorder: 1px solid $shade200 !default;
 $fileUploadFilePadding: 1rem !default;
