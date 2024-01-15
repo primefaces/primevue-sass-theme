@@ -13,19 +13,26 @@
         .p-metergroup-label-list-item {
             line-height: $progressBarHeight;
         }
+        
+        .p-metergroup-label-type {
+            background: $progressBarValueBg;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 100%;
+            margin-right: $inlineSpacing;
+        }
+        
+        .p-metergroup-label {
+            margin-right: $inlineSpacing * 2;
+        }
+    
+        .p-metergroup-label-icon {
+            width: 1rem;
+            height: 1rem;
+            margin-right: $inlineSpacing;
+        }
     }
 
-    .p-metergroup-label-type {
-        background: $progressBarValueBg;
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 100%;
-        margin-right: $inlineSpacing;
-    }
-    
-    .p-metergroup-label {
-        margin-right: $inlineSpacing * 2;
-    }
 
     &.p-metergroup-horizontal {
         .p-metergroup-meter-container {
