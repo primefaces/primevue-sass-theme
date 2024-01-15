@@ -45,11 +45,6 @@
         text-align: right;
         border-bottom-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
-
-        button {
-            margin: 0 $inlineSpacing 0 0;
-            width: auto;
-        }
     }
 
     &.p-confirm-dialog {
