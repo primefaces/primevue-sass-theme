@@ -352,8 +352,8 @@ $panelHeaderBorder:1px solid $panelHeaderBorderColor !default;
 $panelHeaderBg:$shade000 !default;
 $panelHeaderTextColor:$shade700 !default;
 $panelHeaderFontWeight:600 !default;
-$panelHeaderPadding:1.125rem 1.125rem .875rem 1.125rem !default;
-$panelToggleableHeaderPadding:.625rem 1.125rem !default;
+$panelHeaderPadding:1.125rem !default;
+$panelToggleableHeaderPadding:.75rem 1.125rem !default;
 
 $panelHeaderHoverBg:$shade000 !default;
 $panelHeaderHoverBorderColor:$shade000 !default;
@@ -800,7 +800,7 @@ $skeletonAnimationBg:rgba(255,255,255,0.4) !default;
 
 //splitter
 $splitterGutterBg:$shade200 !default;
-$splitterGutterHandleBg:$shade400 !default;
+$splitterGutterHandleBg:$shade200 !default;
 
 //speeddial
 $speedDialButtonWidth: 2.5rem !default;
