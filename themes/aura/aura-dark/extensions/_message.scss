@@ -1,0 +1,31 @@
+.p-inline-message-text {
+    font-weight: 500;
+}
+
+.p-message {
+    border-radius: 10px;
+}
+
+.p-message.p-message-info {
+    .p-message-close:focus-visible {
+        outline-color: $infoMessageIconColor;
+    }
+}
+
+.p-message.p-message-success {
+    .p-message-close:focus-visible {
+        outline-color: $successMessageIconColor;
+    }
+}
+
+.p-message.p-message-warn {
+    .p-message-close:focus-visible {
+        outline-color: $warningMessageIconColor;
+    }
+}
+
+.p-message.p-message-error {
+    .p-message-close:focus-visible {
+        outline-color: $errorMessageIconColor;
+    }
+}

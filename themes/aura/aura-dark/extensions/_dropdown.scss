@@ -1,0 +1,16 @@
+.p-dropdown {
+    box-shadow: $inputShadow;
+
+    .p-dropdown-label {
+        box-shadow: none;
+    }
+
+    &.p-disabled {
+        opacity: 1;
+        background-color: $disabledInputBg;
+
+        .p-dropdown-label {
+            color: $textSecondaryColor;
+        }
+    }
+}

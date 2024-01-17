@@ -1,0 +1,30 @@
+.p-orderlist-controls .p-button {
+    transition: opacity $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
+}
+
+.p-orderlist {    
+    .p-orderlist-header {
+        background: $inputListHeaderBg;
+        color: $inputListHeaderTextColor;
+        border: $inputListBorder;
+        border-bottom: 0 none;
+        padding: 1rem 1.25rem;
+        font-weight: 600;
+        border-top-right-radius: $borderRadius;
+        border-top-left-radius: $borderRadius;
+    }
+
+    .p-orderlist-list {
+        border: $inputListBorder;
+        border-top: 0 none;
+        background: $inputListBg;
+        color: $inputListTextColor;
+        padding: $inputListPadding;
+        border-bottom-right-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+
+        .p-orderlist-item {
+            border-radius: $borderRadius;
+        }
+    } 
+}

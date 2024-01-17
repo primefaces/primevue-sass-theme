@@ -1,0 +1,12 @@
+.p-inputswitch {
+    .p-inputswitch-slider {
+        border: 0 none;
+    }
+
+    &.p-highlight {
+        p-inputswitch-slider:before {
+            left: 1.25rem;
+            transform: none;
+        }
+    }
+}
