@@ -116,8 +116,8 @@ $inputListHeaderBorder:0 none !default;
 //inputs with overlays (e.g. autocomplete, dropdown, multiselect)
 $inputOverlayBg:$inputListBg !default;
 $inputOverlayHeaderBg:$inputListHeaderBg !default;
-$inputOverlayBorder:$inputBorder !default;
-$inputOverlayShadow:0 8px 12px -1px rgba(0,0,0,.03),0 0px 40px 0px rgba(0,0,0,.04) !default;
+$inputOverlayBorder:1px solid $shade800 !default;
+$inputOverlayShadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !default;
 
 //password
 $passwordMeterBg:$shade800 !default;
@@ -454,7 +454,7 @@ $cardSubTitleFontWeight:400 !default;
 $cardSubTitleColor:$textSecondaryColor !default;
 $cardContentPadding:0 0 0 0 !default;
 $cardFooterPadding:0 0 0 0 !default;
-$cardShadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12) !default;
+$cardShadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !default;
 
 //editor
 $editorToolbarBg:$panelHeaderBg !default;
@@ -611,7 +611,7 @@ $errorMessageIconColor:#fca5a5 !default;
 //overlays
 $overlayContentBorder:1px solid $shade800 !default;
 $overlayContentBg:$shade900 !default;
-$overlayContainerShadow:0 1px 3px rgba(0,0,0,.3) !default;
+$overlayContainerShadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !default;
 
 //dialog
 $dialogHeaderBg:$shade900 !default;
@@ -685,7 +685,7 @@ $submenuHeaderBorderRadius:0 !default;
 $submenuHeaderFontWeight:600 !default;
 $overlayMenuBg:$menuBg !default;
 $overlayMenuBorder:1px solid $shade800 !default;
-$overlayMenuShadow:0 2px 12px 0 rgba(0,0,0,.1) !default;
+$overlayMenuShadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !default;
 $verticalMenuPadding:.25rem .25rem !default;
 $menuSeparatorMargin:2px 0 !default;
 
