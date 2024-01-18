@@ -6,7 +6,7 @@
     font-weight: 500;
 }
 
-.p-button {    
+.p-button {
     &.p-button-raised {
         box-shadow: $raisedButtonShadow !important;
     }
@@ -31,14 +31,18 @@
         @include focused-button-ring($dangerButtonBg);
     }
 
+    &.p-button-contrast:enabled:focus-visible {
+        @include focused-button-ring($contrastButtonBg);
+    }
+
     &.p-button-outlined {
         border-color: var(--primary-200);
-        
+
         &:not(:disabled):hover,
         &:not(:disabled):active {
             border-color: var(--primary-200);
         }
-    
+
         &.p-button-secondary {
             border-color: var(--surface-200);
             color: $textSecondaryColor;
@@ -55,7 +59,7 @@
                 border-color: var(--surface-200);
             }
         }
-    
+
         &.p-button-success {
             border-color: #bbf7d0;
 
@@ -64,7 +68,7 @@
                 border-color: #bbf7d0;
             }
         }
-    
+
         &.p-button-info {
             border-color: #bae6fd;
 
@@ -73,7 +77,7 @@
                 border-color: #bae6fd;
             }
         }
-    
+
         &.p-button-warning {
             border-color: #fed7aa;
 
@@ -82,7 +86,7 @@
                 border-color: #fed7aa;
             }
         }
-    
+
         &.p-button-help {
             border-color: #e9d5ff;
 
@@ -91,7 +95,7 @@
                 border-color: #e9d5ff;
             }
         }
-    
+
         &.p-button-danger {
             border-color: #fecaca;
 
@@ -100,17 +104,26 @@
                 border-color: #fecaca;
             }
         }
+
+        &.p-button-contrast {
+            border-color: #e4e4e7;
+
+            &:not(:disabled):hover,
+            &:not(:disabled):active {
+                border-color: #e4e4e7;
+            }
+        }
     }
 
     &.p-button-secondary {
         &.p-button-text {
             color: $textSecondaryColor;
-    
+
             &:not(:disabled):hover {
                 background: $shade100;
                 color: $textSecondaryColor;
             }
-    
+
             &:not(:disabled):active {
                 background: $shade200;
                 color: $textSecondaryColor;
@@ -118,5 +131,3 @@
         }
     }
 }
-
-

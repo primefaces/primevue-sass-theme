@@ -7,29 +7,29 @@
     }
 
     &:enabled:focus {
-        background: rgba($buttonBg, .76);
+        background: rgba($buttonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($buttonBg, .68);
+        background: rgba($buttonBg, 0.68);
     }
 
     .p-ink {
-        background-color: rgba(255,255,255, .32);
+        background-color: rgba(255, 255, 255, 0.32);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($buttonBg, .12);
+            background: rgba($buttonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($buttonBg, .16);
+            background: rgba($buttonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($buttonBg, .16);
+            background-color: rgba($buttonBg, 0.16);
         }
     }
 
@@ -67,152 +67,191 @@
     }
 }
 
-.p-button.p-button-secondary, .p-buttonset.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button {
+.p-button.p-button-secondary,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button {
     &:enabled:focus {
-        background: rgba($secondaryButtonBg, .76);
+        background: rgba($secondaryButtonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($secondaryButtonBg, .68);
+        background: rgba($secondaryButtonBg, 0.68);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($secondaryButtonBg, .12);
+            background: rgba($secondaryButtonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($secondaryButtonBg, .16);
+            background: rgba($secondaryButtonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($secondaryButtonBg, .16);
+            background-color: rgba($secondaryButtonBg, 0.16);
         }
     }
 }
 
-.p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
+.p-button.p-button-info,
+.p-buttonset.p-button-info > .p-button,
+.p-splitbutton.p-button-info > .p-button {
     &:enabled:focus {
-        background: rgba($infoButtonBg, .76);
+        background: rgba($infoButtonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($infoButtonBg, .68);
+        background: rgba($infoButtonBg, 0.68);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($infoButtonBg, .12);
+            background: rgba($infoButtonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($infoButtonBg, .16);
+            background: rgba($infoButtonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($infoButtonBg, .16);
+            background-color: rgba($infoButtonBg, 0.16);
         }
     }
 }
 
-.p-button.p-button-success, .p-buttonset.p-button-success > .p-button, .p-splitbutton.p-button-success > .p-button {
+.p-button.p-button-success,
+.p-buttonset.p-button-success > .p-button,
+.p-splitbutton.p-button-success > .p-button {
     &:enabled:focus {
-        background: rgba($successButtonBg, .76);
+        background: rgba($successButtonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($successButtonBg, .68);
+        background: rgba($successButtonBg, 0.68);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($successButtonBg, .12);
+            background: rgba($successButtonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($successButtonBg, .16);
+            background: rgba($successButtonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($successButtonBg, .16);
+            background-color: rgba($successButtonBg, 0.16);
         }
     }
 }
 
-.p-button.p-button-warning, .p-buttonset.p-button-warning > .p-button, .p-splitbutton.p-button-warning > .p-button {
+.p-button.p-button-warning,
+.p-buttonset.p-button-warning > .p-button,
+.p-splitbutton.p-button-warning > .p-button {
     &:enabled:focus {
-        background: rgba($warningButtonBg, .76);
+        background: rgba($warningButtonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($warningButtonBg, .68);
+        background: rgba($warningButtonBg, 0.68);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($warningButtonBg, .12);
+            background: rgba($warningButtonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($warningButtonBg, .16);
+            background: rgba($warningButtonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($warningButtonBg, .16);
+            background-color: rgba($warningButtonBg, 0.16);
         }
     }
 }
 
-.p-button.p-button-help, .p-buttonset.p-button-help > .p-button, .p-splitbutton.p-button-help > .p-button {
+.p-button.p-button-help,
+.p-buttonset.p-button-help > .p-button,
+.p-splitbutton.p-button-help > .p-button {
     &:enabled:focus {
-        background: rgba($helpButtonBg, .76);
+        background: rgba($helpButtonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($helpButtonBg, .68);
+        background: rgba($helpButtonBg, 0.68);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($helpButtonBg, .12);
+            background: rgba($helpButtonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($helpButtonBg, .16);
+            background: rgba($helpButtonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($helpButtonBg, .16);
+            background-color: rgba($helpButtonBg, 0.16);
         }
     }
 }
 
-.p-button.p-button-danger, .p-buttonset.p-button-danger > .p-button, .p-splitbutton.p-button-danger > .p-button {
+.p-button.p-button-danger,
+.p-buttonset.p-button-danger > .p-button,
+.p-splitbutton.p-button-danger > .p-button {
     &:enabled:focus {
-        background: rgba($dangerButtonBg, .76);
+        background: rgba($dangerButtonBg, 0.76);
     }
 
     &:enabled:active {
-        background: rgba($dangerButtonBg, .68);
+        background: rgba($dangerButtonBg, 0.68);
     }
 
     &.p-button-text,
     &.p-button-outlined {
         &:enabled:focus {
-            background: rgba($dangerButtonBg, .12);
+            background: rgba($dangerButtonBg, 0.12);
         }
 
         &:enabled:active {
-            background: rgba($dangerButtonBg, .16);
+            background: rgba($dangerButtonBg, 0.16);
         }
 
         .p-ink {
-            background-color: rgba($dangerButtonBg, .16);
+            background-color: rgba($dangerButtonBg, 0.16);
+        }
+    }
+}
+
+.p-button.p-button-contrast,
+.p-buttonset.p-button-contrast > .p-button,
+.p-splitbutton.p-button-contrast > .p-button {
+    &:enabled:focus {
+        background: rgba($contrastButtonBg, 0.76);
+    }
+
+    &:enabled:active {
+        background: rgba($contrastButtonBg, 0.68);
+    }
+
+    &.p-button-text,
+    &.p-button-outlined {
+        &:enabled:focus {
+            background: rgba($contrastButtonBg, 0.12);
+        }
+
+        &:enabled:active {
+            background: rgba($contrastButtonBg, 0.16);
+        }
+
+        .p-ink {
+            background-color: rgba($contrastButtonBg, 0.16);
         }
     }
 }

@@ -218,6 +218,17 @@ $dangerButtonTextActiveColor:$dangerButtonTextColor !default;
 $dangerButtonActiveBorderColor:scale-color($dangerButtonBg, $lightness: -20%) !default;
 $dangerButtonFocusShadow:0 0 0 1px scale-color($dangerButtonBg, $lightness: 30%) !default;
 
+$contrastButtonBg:#ffffff !default;
+$contrastButtonTextColor:#1d1e27 !default;
+$contrastButtonBorder:1px solid $contrastButtonBg !default;
+$contrastButtonHoverBg:#d2d2d4 !default;
+$contrastButtonTextHoverColor:$contrastButtonTextColor !default;
+$contrastButtonHoverBorderColor:#d2d2d4 !default;
+$contrastButtonActiveBg:#bbbcbe !default;
+$contrastButtonTextActiveColor:$contrastButtonTextColor !default;
+$contrastButtonActiveBorderColor:#bbbcbe !default;
+$contrastButtonFocusShadow:none !default;
+
 $linkButtonColor:$primaryColor !default;
 $linkButtonHoverColor:$primaryColor !default;
 $linkButtonTextHoverDecoration:underline !default;
