@@ -83,6 +83,12 @@
                 &:hover {
                     color: $inputListItemTextHoverColor;
                     background: $inputListItemHoverBg;
+
+
+                    &.p-focus {
+                        color: $inputListItemTextFocusColor;
+                        background: $inputListItemFocusBg;
+                    }
                 }
             }
         }
