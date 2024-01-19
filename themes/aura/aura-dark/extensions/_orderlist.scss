@@ -6,7 +6,7 @@
     .p-orderlist-header {
         background: $inputListHeaderBg;
         color: $inputListHeaderTextColor;
-        border: $inputListBorder;
+        border: 0 none;
         border-bottom: 0 none;
         padding: .75rem 1rem .5rem 1rem;
         font-weight: 600;
@@ -17,7 +17,7 @@
 
     .p-orderlist-list {
         border: $inputListBorder;
-        border-top: 0 none;
+        border: 0 none;
         background: $inputListBg;
         color: $inputListTextColor;
         padding: $inputListPadding;
@@ -29,7 +29,7 @@
         }
 
         &:not(:first-child) {
-            border-top: 0 none;
+            border: 0 none;
         }
     } 
 }
