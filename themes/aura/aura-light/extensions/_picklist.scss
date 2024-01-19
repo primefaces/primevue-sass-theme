@@ -8,8 +8,9 @@
         color: $inputListHeaderTextColor;
         border: $inputListBorder;
         border-bottom: 0 none;
-        padding: 1rem 1.25rem;
+        padding: .75rem 1rem .5rem 1rem;
         font-weight: 600;
+        color: $textSecondaryColor;
         border-top-right-radius: $borderRadius;
         border-top-left-radius: $borderRadius;
     }
@@ -25,6 +26,10 @@
 
         .p-picklist-item {
             border-radius: $borderRadius;
+        }
+
+        &:not(:first-child) {
+            border-top: 0 none;
         }
     } 
 }
