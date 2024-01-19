@@ -1,5 +1,6 @@
 .p-dialog {
     border-radius: $contentBorderRadius;
+    background-color: $dialogHeaderBg;
     
     .p-dialog-header {
         border-top-right-radius: $contentBorderRadius;
