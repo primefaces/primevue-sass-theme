@@ -103,14 +103,14 @@
             }
         }
 
-        /*&.p-button-contrast {
-            border-color: #e4e4e7;
+        &.p-button-contrast {
+            border-color: rgba(255, 255, 28255, 0.44);;
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
-                border-color: #e4e4e7;
+                border-color: rgba(255, 255, 255, 0.44);;
             }
-        }*/
+        }
     }
 
     &.p-button-secondary {
