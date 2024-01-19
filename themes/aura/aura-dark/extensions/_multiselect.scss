@@ -1,8 +1,10 @@
 .p-multiselect-panel {    
     .p-multiselect-header {
-        padding-left: 1.25rem;   
+        padding-left: 1rem;   
+        padding-right: 1rem;
     }
 }
+
 
 .p-multiselect {
     box-shadow: $inputShadow;
