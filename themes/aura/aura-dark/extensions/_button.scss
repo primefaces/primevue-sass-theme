@@ -7,10 +7,6 @@
 }
 
 .p-button {
-    &.p-button-raised {
-        box-shadow: $raisedButtonShadow !important;
-    }
-
     &.p-button-success:enabled:focus-visible {
         @include focused-button-ring($successButtonBg);
     }
@@ -36,83 +32,85 @@
     }
 
     &.p-button-outlined {
-        border-color: var(--primary-200);
+        border-color: rgba($primaryColor, 0.44);
 
         &:not(:disabled):hover,
         &:not(:disabled):active {
-            border-color: var(--primary-200);
+            border-color: rgba($primaryColor, 0.44);
         }
 
         &.p-button-secondary {
-            border-color: var(--surface-200);
+            border-color: rgba(82, 82, 91, 0.48);
             color: $textSecondaryColor;
 
             &:not(:disabled):hover {
                 color: $textSecondaryColor;
-                background-color: $shade100;
-                border-color: var(--surface-200);
+                background-color: rgba(255, 255, 255, $textButtonHoverBgOpacity);
+                border-color: rgba(82, 82, 91, 0.48);
             }
 
             &:not(:disabled):active {
                 color: $textSecondaryColor;
-                background-color: $shade200;
-                border-color: var(--surface-200);
+                background-color: rgba(255, 255, 255, $textButtonActiveBgOpacity);
+                border-color: rgba(82, 82, 91, 0.48);
             }
         }
 
         &.p-button-success {
-            border-color: #bbf7d0;
+            border-color: rgba(21, 128, 61, 0.44);
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
-                border-color: #bbf7d0;
+                border-color: rgba(21, 128, 61, 0.44);
             }
         }
 
         &.p-button-info {
-            border-color: #bae6fd;
+            border-color: rgba(29, 78, 216, 0.44);
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
-                border-color: #bae6fd;
+                border-color: rgba(29, 78, 216, 0.44);
             }
         }
 
         &.p-button-warning {
-            border-color: #fed7aa;
+            border-color: rgba(161, 98, 7, 0.44);
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
-                border-color: #fed7aa;
+                border-color: rgba(161, 98, 7, 0.44);
             }
         }
 
         &.p-button-help {
-            border-color: #e9d5ff;
+            border-color: rgba(109, 40, 217, 0.44);;
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
-                border-color: #e9d5ff;
+                border-color: rgba(109, 40, 217, 0.44);;
             }
         }
 
         &.p-button-danger {
-            border-color: #fecaca;
+            border-color: rgba(185, 28, 28, 0.44);
+
+            ;
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
-                border-color: #fecaca;
+                border-color: rgba(185, 28, 28, 0.44);
             }
         }
 
-        &.p-button-contrast {
+        /*&.p-button-contrast {
             border-color: #e4e4e7;
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
                 border-color: #e4e4e7;
             }
-        }
+        }*/
     }
 
     &.p-button-secondary {
@@ -120,12 +118,12 @@
             color: $textSecondaryColor;
 
             &:not(:disabled):hover {
-                background: $shade100;
+                background-color: rgba(255, 255, 255, $textButtonHoverBgOpacity);
                 color: $textSecondaryColor;
             }
 
             &:not(:disabled):active {
-                background: $shade200;
+                background-color: rgba(255, 255, 255, $textButtonActiveBgOpacity);
                 color: $textSecondaryColor;
             }
         }

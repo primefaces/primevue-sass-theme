@@ -7,10 +7,6 @@
 }
 
 .p-button {
-    &.p-button-raised {
-        box-shadow: $raisedButtonShadow !important;
-    }
-
     &.p-button-success:enabled:focus-visible {
         @include focused-button-ring($successButtonBg);
     }
@@ -105,14 +101,14 @@
             }
         }
 
-        &.p-button-contrast {
+        /*&.p-button-contrast {
             border-color: #e4e4e7;
 
             &:not(:disabled):hover,
             &:not(:disabled):active {
                 border-color: #e4e4e7;
             }
-        }
+        }*/
     }
 
     &.p-button-secondary {
