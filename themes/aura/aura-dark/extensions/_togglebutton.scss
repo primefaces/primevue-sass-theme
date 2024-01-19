@@ -21,8 +21,8 @@
     &.p-highlight {
         .p-button {
             &::before {
-                background: $shade000;
-                border-color: $shade000;
+                background: $shade800;
+                border-color: $shade800;
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
             }
         }

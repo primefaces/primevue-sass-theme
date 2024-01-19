@@ -262,22 +262,22 @@ $colorPickerBorder:1px solid $shade800 !default;
 $colorPickerHandleColor:$shade000 !default;
 
 //togglebutton
-$toggleButtonBg:$shade100 !default;
-$toggleButtonBorder:1px solid $shade100 !default;
-$toggleButtonTextColor:$shade500 !default;
-$toggleButtonIconColor:$shade500 !default;
-$toggleButtonHoverBg:$shade100 !default;
-$toggleButtonHoverBorderColor:$shade100 !default;
-$toggleButtonTextHoverColor:$shade700 !default;
-$toggleButtonIconHoverColor:$shade700 !default;
-$toggleButtonActiveBg:$shade100 !default;
-$toggleButtonActiveBorderColor:$shade100 !default;
-$toggleButtonTextActiveColor:$shade900 !default;
-$toggleButtonIconActiveColor:$shade900 !default;
-$toggleButtonActiveHoverBg:$shade100 !default;
-$toggleButtonActiveHoverBorderColor:$shade100 !default;
-$toggleButtonTextActiveHoverColor:$shade900 !default;
-$toggleButtonIconActiveHoverColor:$shade900 !default;
+$toggleButtonBg:$shade950 !default;
+$toggleButtonBorder:1px solid $shade950 !default;
+$toggleButtonTextColor:$textSecondaryColor !default;
+$toggleButtonIconColor:$textSecondaryColor !default;
+$toggleButtonHoverBg:$shade950 !default;
+$toggleButtonHoverBorderColor:$shade950 !default;
+$toggleButtonTextHoverColor:$textColor !default;
+$toggleButtonIconHoverColor:$textColor !default;
+$toggleButtonActiveBg:$shade950 !default;
+$toggleButtonActiveBorderColor:$shade950 !default;
+$toggleButtonTextActiveColor:$textColor !default;
+$toggleButtonIconActiveColor:$textColor !default;
+$toggleButtonActiveHoverBg:$shade950 !default;
+$toggleButtonActiveHoverBorderColor:$shade950 !default;
+$toggleButtonTextActiveHoverColor:$textColor !default;
+$toggleButtonIconActiveHoverColor:$textColor !default;
 
 //inplace
 $inplacePadding:$inputPadding !default;
