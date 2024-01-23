@@ -2,15 +2,23 @@
     padding: 0 1.125rem 1.125rem 1.125rem;
     margin: 0;
 
-    &.p-fieldset-toggleable .p-fieldset-legend a {
-        padding: .5rem .75rem;
+    &.p-fieldset-toggleable {
+        .p-fieldset-legend {
+            a {
+                padding: .5rem .75rem;
+        
+                .p-fieldset-legend-text {
+                    padding: 0;
+                }
+        
+                .p-fieldset-toggler {
+                    color: $textSecondaryColor;
+                }
+            }
 
-        .p-fieldset-legend-text {
-            padding: 0;
-        }
-
-        .p-fieldset-toggler {
-            color: $textSecondaryColor;
+            &:hover {
+                background-color: $hoverBg;
+            }
         }
     }
 
