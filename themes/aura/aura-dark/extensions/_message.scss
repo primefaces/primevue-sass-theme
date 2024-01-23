@@ -7,25 +7,49 @@
 }
 
 .p-message.p-message-info {
-    .p-message-close:focus-visible {
-        outline-color: $infoMessageIconColor;
+    .p-message-close {
+        &:focus-visible {
+            outline-color: $infoMessageIconColor;
+        }
+    
+        &:hover {
+            background: rgba(255,255,255,.05);
+        }
     }
 }
 
 .p-message.p-message-success {
-    .p-message-close:focus-visible {
-        outline-color: $successMessageIconColor;
+    .p-message-close {
+        &:focus-visible {
+            outline-color: $successMessageIconColor;
+        }
+    
+        &:hover {
+            background: rgba(255,255,255,.05);
+        }
     }
 }
 
 .p-message.p-message-warn {
-    .p-message-close:focus-visible {
-        outline-color: $warningMessageIconColor;
+    .p-message-close {
+        &:focus-visible {
+            outline-color: $warningMessageIconColor;
+        }
+    
+        &:hover {
+            background: rgba(255,255,255,.05);
+        }
     }
 }
 
 .p-message.p-message-error {
-    .p-message-close:focus-visible {
-        outline-color: $errorMessageIconColor;
+    .p-message-close {
+        &:focus-visible {
+            outline-color: $errorMessageIconColor;
+        }
+    
+        &:hover {
+            background: rgba(255,255,255,.05);
+        }
     }
 }

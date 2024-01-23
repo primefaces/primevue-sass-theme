@@ -9,6 +9,14 @@
                 font-size: .875rem;
             }
         }
+
+        .p-toast-icon-close {
+            width: 1.75rem;
+            height: 1.75rem;
+            margin-top: -25%;
+            right: -25%;
+            position: relative;
+        }
     }
 }
 
@@ -16,24 +24,40 @@
     .p-toast-message.p-toast-message-info {
         .p-toast-icon-close {
             outline-color: $infoMessageIconColor;
+
+            &:hover {
+                background: rgba(255,255,255,0.075);
+            }
         }
     }
 
     .p-toast-message.p-toast-message-success {
         .p-toast-icon-close {
             outline-color: $successMessageIconColor;
+
+            &:hover {
+                background: rgba(255,255,255,0.075);
+            }
         }
     }
 
     .p-toast-message.p-toast-message-warn {
         .p-toast-icon-close {
             outline-color: $warningMessageIconColor;
+
+            &:hover {
+                background: rgba(255,255,255,0.075);
+            }
         }
     }
 
     .p-toast-message.p-toast-message-error {
         .p-toast-icon-close {
             outline-color: $errorMessageIconColor;
+
+            &:hover {
+                background: rgba(255,255,255,0.05);
+            }
         }
     }
 }

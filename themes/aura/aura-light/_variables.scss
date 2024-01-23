@@ -903,5 +903,5 @@ $imagePreviewActionIconBorderRadius:50% !default;
 }
 
 :root {
-    --p-focus-ring-color: #{$shade400};
+    --p-focus-ring-color: var(--primary-color);
 }
