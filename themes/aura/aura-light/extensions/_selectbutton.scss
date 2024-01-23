@@ -28,6 +28,11 @@
         &:focus-visible {
             @include focused-input();
         }
+
+        &.p-disabled {
+            opacity: 1;
+            color: $shade400;
+        }
     }
 
     &.p-invalid {
@@ -36,6 +41,14 @@
 
         > .p-button {
             border: $toggleButtonBorder;
+        }
+    }
+
+    &.p-disabled {
+        opacity: 1;
+
+        .p-button {
+            color: $shade400;
         }
     }
 }
