@@ -3,6 +3,7 @@
         .p-button-label,
         .p-button-icon {
             position: relative;
+            transition: none;
         }
 
         &::before {

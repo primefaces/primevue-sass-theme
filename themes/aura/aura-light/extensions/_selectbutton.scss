@@ -3,6 +3,7 @@
         .pi,
         .p-button-label {
             position: relative;
+            transition: none;
         }
     
         &::before {
