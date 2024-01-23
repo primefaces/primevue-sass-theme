@@ -110,19 +110,8 @@
 
             &:not(.p-highlight):not(.p-disabled) {
                 &.p-focus {
-                    color: $inputListItemTextFocusColor;
-                    background: $inputListItemFocusBg;
-                }
-
-                &:hover {
                     color: $inputListItemTextHoverColor;
                     background: $inputListItemHoverBg;
-
-
-                    &.p-focus {
-                        color: $inputListItemTextFocusColor;
-                        background: $inputListItemFocusBg;
-                    }
                 }
             }
         }
