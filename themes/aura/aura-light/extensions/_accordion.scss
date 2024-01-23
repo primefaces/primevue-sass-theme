@@ -23,5 +23,9 @@
 
     .p-accordion-tab {
         border-bottom: 1px solid $shade200;
+
+        &:last-child {
+            border-bottom: 0 none;
+        }
     }
 }
