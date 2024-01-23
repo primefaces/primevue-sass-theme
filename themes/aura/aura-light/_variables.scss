@@ -54,7 +54,7 @@ $scaleLG:1.25 !default;
 
 //focus
 $focusOutlineColor:var(--p-focus-ring-color) !default;
-$focusOutline:2px solid $focusOutlineColor !default;
+$focusOutline:1px solid $focusOutlineColor !default;
 $focusOutlineOffset:2px !default;
 $inputFocusOutlineOffset:-1px !default;
 $focusShadow:none !default;
