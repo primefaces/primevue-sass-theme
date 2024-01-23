@@ -39,6 +39,7 @@
 
     .p-slider-range {
         background: $sliderRangeBg;
+        border-radius: $borderRadius;
     }
 
     &:not(.p-disabled) {
