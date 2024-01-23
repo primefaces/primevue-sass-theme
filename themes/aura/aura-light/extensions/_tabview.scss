@@ -10,6 +10,8 @@
     }
 
     .p-tabview-nav {
+        position: relative;
+        
         li {
             .p-tabview-nav-link {
                 transition: background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration, outline-color $transitionDuration;
