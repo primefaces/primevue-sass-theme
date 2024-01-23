@@ -1,7 +1,8 @@
 .p-orderlist-controls .p-button {
-    transition: opacity $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
-}
+    transition: opacity $transitionDuration, outline-color $transitionDuration, background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
 
+    @include secondary-button();
+}
 .p-orderlist {    
     .p-orderlist-header {
         background: $inputListHeaderBg;

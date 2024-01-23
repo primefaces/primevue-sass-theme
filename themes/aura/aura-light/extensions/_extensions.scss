@@ -2,6 +2,28 @@ $contentBorderRadius: 12px;
 
 $inputShadow: 0 0 #0000,0 0 #0000,0 1px 2px 0 rgba(18,18,23,.05);
 
+@mixin secondary-button {
+    color: $secondaryButtonTextColor;
+    background: $secondaryButtonBg;
+    border: $secondaryButtonBorder;
+
+    &:not(:disabled):hover {
+        background: $secondaryButtonHoverBg;
+        color: $secondaryButtonTextHoverColor;
+        border-color: $secondaryButtonHoverBorderColor;
+    }
+
+    &:not(:disabled):focus {
+        box-shadow: $secondaryButtonFocusShadow;
+    }
+
+    &:not(:disabled):active {
+        background: $secondaryButtonActiveBg;
+        color: $secondaryButtonTextActiveColor;
+        border-color: $secondaryButtonActiveBorderColor;
+    }
+}
+
 @layer primevue {
     @import './_accordion';
     @import './_autocomplete';
