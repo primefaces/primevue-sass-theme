@@ -10,4 +10,12 @@
     .p-chip-remove-icon {
         margin-left: .375rem;
     }
+
+    &:has(.p-chip-remove-icon) {
+        padding-right: .5rem;
+    }
+
+    img {
+        margin-left: -.5rem;
+    }
 }
