@@ -295,15 +295,15 @@ $ratingStarIconHoverColor:$primaryColor !default;
 //slider
 $sliderBg:$shade200 !default;
 $sliderBorder:0 none !default;
-$sliderHorizontalHeight:.286rem !default;
-$sliderVerticalWidth:0.286rem !default;
-$sliderHandleWidth:1.143rem !default;
-$sliderHandleHeight:1.143rem !default;
-$sliderHandleBg:$shade000 !default;
-$sliderHandleBorder:2px solid $primaryColor !default;
+$sliderHorizontalHeight:3px !default;
+$sliderVerticalWidth:3px !default;
+$sliderHandleWidth:20px !default;
+$sliderHandleHeight:20px !default;
+$sliderHandleBg:$shade200 !default;
+$sliderHandleBorder:0 none !default;
 $sliderHandleBorderRadius:50% !default;
-$sliderHandleHoverBorderColor:$primaryColor !default;
-$sliderHandleHoverBg:$primaryColor !default;
+$sliderHandleHoverBorderColor:transparent !default;
+$sliderHandleHoverBg:$shade200 !default;
 $sliderRangeBg:$primaryColor !default;
 
 //calendar
