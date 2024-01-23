@@ -1,6 +1,10 @@
 .p-dialog {
     border-radius: $contentBorderRadius;
     background-color: $dialogHeaderBg;
+
+    &.p-dialog-maximized {
+        border-radius: 0;
+    }
     
     .p-dialog-header {
         border-top-right-radius: $contentBorderRadius;
