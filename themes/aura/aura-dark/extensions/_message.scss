@@ -1,12 +1,10 @@
-.p-inline-message-text {
-    font-weight: 500;
-}
-
 .p-message {
-    border-radius: 10px;
+    backdrop-filter: blur(10px);
 }
 
 .p-message.p-message-info {
+    box-shadow: 0px 4px 8px 0px rgba(59, 130, 246, 0.04);
+
     .p-message-close {
         &:focus-visible {
             outline-color: $infoMessageIconColor;
@@ -19,6 +17,8 @@
 }
 
 .p-message.p-message-success {
+    box-shadow: 0px 4px 8px 0px rgba(34, 197, 94, 0.04);
+    
     .p-message-close {
         &:focus-visible {
             outline-color: $successMessageIconColor;
@@ -31,6 +31,8 @@
 }
 
 .p-message.p-message-warn {
+    box-shadow: 0px 4px 8px 0px rgba(234, 179, 8, 0.04);
+
     .p-message-close {
         &:focus-visible {
             outline-color: $warningMessageIconColor;
@@ -43,6 +45,8 @@
 }
 
 .p-message.p-message-error {
+    box-shadow: 0px 4px 8px 0px rgba(239, 68, 68, 0.04);
+
     .p-message-close {
         &:focus-visible {
             outline-color: $errorMessageIconColor;
