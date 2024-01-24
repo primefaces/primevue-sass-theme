@@ -114,6 +114,12 @@
                     background: $inputListItemHoverBg;
                 }
             }
+
+            .p-dropdown-tick-icon {
+                position: relative;
+                margin-left: -1 * $inlineSpacing;
+                margin-right: $inlineSpacing;
+            }
         }
 
         .p-dropdown-item-group {
@@ -139,7 +145,7 @@
         &:not(.p-disabled):hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:not(.p-disabled).p-focus {
             background-color: $inputFilledFocusBg;
 
