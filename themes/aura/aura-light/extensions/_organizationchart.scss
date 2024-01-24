@@ -1,23 +1,17 @@
 .p-organizationchart {
     .p-organizationchart-node-content {
-        padding: .75rem 1rem;
+        padding: 0.75rem 1rem;
         border-radius: $borderRadius;
 
         .p-node-toggler {
             transition: $actionIconTransition;
             border: 1px solid $organizationChartConnectorColor;
-            color: $actionIconColor;
             display: inline-flex;
             justify-content: center;
             align-items: center;
 
             .p-node-toggler-icon {
                 position: static;
-            }
-
-            &:hover {
-                background-color: $actionIconHoverBg;
-                color: $actionIconHoverColor;
             }
         }
     }

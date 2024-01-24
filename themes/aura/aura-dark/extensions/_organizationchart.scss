@@ -6,18 +6,12 @@
         .p-node-toggler {
             transition: $actionIconTransition;
             border: 1px solid $organizationChartConnectorColor;
-            color: $actionIconColor;
             display: inline-flex;
             justify-content: center;
             align-items: center;
 
             .p-node-toggler-icon {
                 position: static;
-            }
-
-            &:hover {
-                background-color: $shade700;
-                color: $actionIconHoverColor;
             }
         }
     }
