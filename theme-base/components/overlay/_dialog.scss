@@ -38,11 +38,13 @@
     }
 
     .p-dialog-footer {
-        border-top:  $dialogFooterBorder;
+        border-top: $dialogFooterBorder;
         background: $overlayContentBg;
         color: $panelFooterTextColor;
         padding: $dialogFooterPadding;
-        text-align: right;
+        display: flex;
+        justify-content: end;
+        gap: $inlineSpacing;
         border-bottom-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
     }
