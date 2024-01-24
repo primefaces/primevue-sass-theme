@@ -55,14 +55,14 @@
                 color: $inputListItemTextHoverColor;
 
                 &.p-focus {
-                    color: $inputListItemTextFocusColor;
-                    background: $inputListItemFocusBg;
+                    color: $inputListItemTextHoverColor;
+                    background: $inputListItemHoverBg;
                 }
             }
 
             &.p-focus {
-                color: $inputListItemTextFocusColor;
-                background: $inputListItemFocusBg;
+                color: $inputListItemTextHoverColor;
+                background: $inputListItemHoverBg;
             }
 
             &.p-highlight {
