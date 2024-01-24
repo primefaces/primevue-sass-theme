@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.47.1](https://github.com/primefaces/primevue-sass-theme/tree/3.47.1) (2024-01-24)
+
+- No changes, provides semantic versioning compatibility for PrimeVue 3.46.0
+
 ## [3.47.0](https://github.com/primefaces/primevue-sass-theme/tree/3.47.0) (2024-01-24)
 
 [Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.46.0...3.47.0)
@@ -8,7 +12,6 @@
 
 - Remove margin style from buttons in the footer of Dialog [#51](https://github.com/primefaces/primevue-sass-theme/issues/51)
 - Tag: center icon when no label is present (icon-only mode) [#48](https://github.com/primefaces/primevue-sass-theme/issues/48)
-
 
 **Implemented New Features and Enhancements:**
 
