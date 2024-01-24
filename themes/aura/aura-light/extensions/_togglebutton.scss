@@ -28,4 +28,14 @@
             }
         }
     }
+
+    &.p-disabled {
+        opacity: 1;
+        .p-button {
+            color: $shade400;
+            .p-button-icon {
+                color: $shade400;
+            }
+        }
+    }
 }
