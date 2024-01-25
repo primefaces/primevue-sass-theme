@@ -1,5 +1,25 @@
 # Changelog
 
+## [3.47.1](https://github.com/primefaces/primevue-sass-theme/tree/3.47.1) (2024-01-24)
+
+- No changes, provides semantic versioning compatibility for PrimeVue 3.46.0
+
+## [3.47.0](https://github.com/primefaces/primevue-sass-theme/tree/3.47.0) (2024-01-24)
+
+[Full Changelog](https://github.com/primefaces/primevue-sass-theme/compare/3.46.0...3.47.0)
+
+**Fixed bugs:**
+
+- Remove margin style from buttons in the footer of Dialog [#51](https://github.com/primefaces/primevue-sass-theme/issues/51)
+- Tag: center icon when no label is present (icon-only mode) [#48](https://github.com/primefaces/primevue-sass-theme/issues/48)
+
+**Implemented New Features and Enhancements:**
+
+- New Aura Theme [#53](https://github.com/primefaces/primevue-sass-theme/issues/53)
+- OrderList / PickList design updates [#52](https://github.com/primefaces/primevue-sass-theme/issues/52)
+- New MeterGroup component [#46](https://github.com/primefaces/primevue-sass-theme/issues/46)
+- Improve the structure of some components to comply with standards [#49](https://github.com/primefaces/primevue-sass-theme/issues/40)
+
 ## [3.46.0](https://github.com/primefaces/primevue-sass-theme/tree/3.46.0) (2024-01-08)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.46.0
