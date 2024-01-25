@@ -78,22 +78,10 @@
 
             &:not(.p-highlight):not(.p-disabled) {
                 &.p-focus {
-                    color: $inputListItemTextFocusColor;
-                    background: $inputListItemFocusBg;
-                }
-
-                &:hover {
                     color: $inputListItemTextHoverColor;
                     background: $inputListItemHoverBg;
-
-
-                    &.p-focus {
-                        color: $inputListItemTextFocusColor;
-                        background: $inputListItemFocusBg;
-                    }
                 }
             }
-
 
             .p-cascadeselect-item-content {
                 padding: $inputListItemPadding;
@@ -113,7 +101,7 @@
         &:not(.p-disabled):hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:not(.p-disabled).p-focus {
             background-color: $inputFilledFocusBg;
         }
