@@ -43,7 +43,7 @@
         color: $panelFooterTextColor;
         padding: $dialogFooterPadding;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         gap: $inlineSpacing;
         border-bottom-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
