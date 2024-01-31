@@ -13,6 +13,18 @@
         @include focused-input();
     }
 
+    &.p-variant {
+        background-color: $inputFilledBg;
+        
+        &:enabled:hover {
+            background-color: $inputFilledHoverBg;
+        }
+    
+        &:enabled:focus {
+            background-color: $inputFilledFocusBg;
+        }
+    }
+
     .p-cascadeselect-label {
         background: transparent;
         border: 0 none;

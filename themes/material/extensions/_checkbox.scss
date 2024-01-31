@@ -57,6 +57,18 @@
             }
         }
     }
+
+    &.p-variant {
+        .p-checkbox-box {
+            background-color: $inputBg;
+        }
+
+        &:not(.p-disabled) {
+            &:has(.p-checkbox-input:hover) {
+                background-color: $inputBg;
+            }
+        }
+    }
 }
 
 .p-input-filled {

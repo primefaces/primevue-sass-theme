@@ -11,6 +11,21 @@
     &:not(.p-disabled).p-focus {
         box-shadow: inset 0 0 0 1px $inputFocusBorderColor,inset 0 0 0 1px $inputFocusBorderColor,inset 0 0 0 1px $inputFocusBorderColor,inset 0 0 0 1px $inputFocusBorderColor;
     }
+
+    &.p-variant {
+        @include filled-input-wrapper();
+
+        .p-multiselect-label {
+            &:hover {
+                background-image: none;
+                background: transparent;
+            }
+        }
+
+        &.p-invalid {
+            @include invalid-filled-input-wrapper();
+        }
+    }
 }
 
 .p-multiselect-panel { 

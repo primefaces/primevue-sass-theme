@@ -1,0 +1,5 @@
+.p-inputmask {
+    &.p-variant {
+        @include filled-input();
+    }
+}

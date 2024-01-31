@@ -13,6 +13,22 @@
         @include focused-input();
     }
 
+    &.p-variant {
+        background: $inputFilledBg;
+
+        &:not(.p-disabled):hover {
+            background-color: $inputFilledHoverBg;
+        }
+
+        &:not(.p-disabled).p-focus {
+            background-color: $inputFilledFocusBg;
+
+            .p-inputtext {
+                background-color: transparent;
+            }
+        }
+    }
+
     &.p-dropdown-clearable {
         .p-dropdown-label {
             padding-right: nth($inputPadding, 2) + $primeIconFontSize;

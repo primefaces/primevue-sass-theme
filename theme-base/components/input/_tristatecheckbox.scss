@@ -1,0 +1,27 @@
+.p-tristatecheckbox {
+    &.p-variant {
+        .p-checkbox-box {
+            background-color: $inputFilledBg;
+        }
+
+        &.p-highlight {
+            .p-checkbox-box {
+                background: $checkboxActiveBg;
+            }
+        }
+
+        &:not(.p-disabled) {
+            &:has(.p-checkbox-input:hover) {
+                .p-checkbox-box {
+                    background-color: $inputFilledHoverBg;
+                }
+    
+                &.p-highlight {
+                    .p-checkbox-box {
+                        background: $checkboxActiveHoverBg;
+                    }
+                }
+            }
+        }
+    }
+}

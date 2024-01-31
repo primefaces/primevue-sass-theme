@@ -1,9 +1,5 @@
-.p-inputnumber {
-    &.p-invalid.p-component > .p-inputtext {
-        @include invalid-input();
-    }
-
-    &.p-variant > .p-inputnumber-input {
+.p-inputtextarea {
+    &.p-variant {
         background-color: $inputFilledBg;
         
         &:enabled:hover {

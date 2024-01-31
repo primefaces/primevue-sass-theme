@@ -15,6 +15,18 @@
         @include focused-input();
     }
 
+    &.p-variant {
+        background: $inputFilledBg;
+
+        &:not(.p-disabled):hover {
+            background-color: $inputFilledHoverBg;
+        }
+
+        &:not(.p-disabled).p-focus {
+            background-color: $inputFilledFocusBg;
+        }
+    }
+
     .p-multiselect-label {
         padding: $inputPadding;
         transition: $formElementTransition;

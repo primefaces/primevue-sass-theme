@@ -19,6 +19,21 @@
     }
 }
 
+.p-cascadeselect.p-variant {
+    @include filled-input-wrapper();
+
+    .p-cascadeselect-label {
+        &:hover {
+            background-image: none;
+            background: transparent;
+        }
+    }
+
+    &.p-invalid {
+        @include invalid-filled-input-wrapper();
+    }
+}
+
 .p-input-filled {
     .p-cascadeselect {
         @include filled-input-wrapper();

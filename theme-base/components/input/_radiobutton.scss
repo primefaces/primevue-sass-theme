@@ -71,6 +71,32 @@
     &.p-invalid > .p-radiobutton-box {
         @include invalid-input();
     }
+
+    &.p-variant {
+        .p-radiobutton-box {
+            background-color: $inputFilledBg;
+        }
+
+        &.p-highlight {
+            .p-radiobutton-box {
+                background: $radiobuttonActiveBg;
+            }
+        }
+
+        &:not(.p-disabled) {
+            &:has(.p-radiobutton-input:hover) {
+                .p-radiobutton-box {
+                    background-color: $inputFilledHoverBg;
+                }
+    
+                &.p-highlight {
+                    .p-radiobutton-box {
+                        background: $radiobuttonActiveHoverBg;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .p-input-filled {

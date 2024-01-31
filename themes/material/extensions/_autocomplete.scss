@@ -6,6 +6,18 @@
             }
         }
     }
+
+    &.p-variant {
+        .p-autocomplete-input {
+            @include filled-input();
+        }
+
+        &.p-autocomplete-multiple {
+            .p-autocomplete-multiple-container {
+                @include filled-input-wrapper();
+            }
+        }
+    }
 }
 
 .p-input-filled {
@@ -19,6 +31,23 @@
 }
 
 .p-float-label {
+    .p-autocomplete.p-variant {
+        .p-autocomplete-multiple-container {
+            .p-autocomplete-token {
+                padding-top: 0;
+                padding-bottom: 0;
+
+                .p-autocomplete-token-icon {
+                    font-size: 75%;
+                }
+            }
+
+            .p-autocomplete-input-token {
+                padding: 0;
+            }
+        }
+    }
+
     .p-autocomplete-multiple-container {
         .p-autocomplete-token {
             padding: .25rem 1rem;
