@@ -13,7 +13,7 @@
         @include focused-input();
     }
 
-    &.p-variant {
+    &.p-variant-filled {
         background: $inputFilledBg;
 
         &:not(.p-disabled):hover {

@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 .p-chips {
     &:not(.p-disabled):hover {
@@ -13,13 +13,13 @@
         }
     }
 
-    &.p-variant > .p-chips-multiple-container {
+    &.p-variant-filled > .p-chips-multiple-container {
         background-color: $inputFilledBg;
-        
+
         &:enabled:hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:enabled:focus {
             background-color: $inputFilledFocusBg;
         }
@@ -48,7 +48,7 @@
 
         .p-chips-input-token {
             padding: math.div(nth($inputPadding, 1), 2) 0;
-                
+
             input {
                 font-family: var(--font-family);
                 font-feature-settings: var(--font-feature-settings, normal);

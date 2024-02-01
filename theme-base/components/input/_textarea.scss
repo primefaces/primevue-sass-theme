@@ -1,11 +1,11 @@
 .p-inputtextarea {
-    &.p-variant {
+    &.p-variant-filled {
         background-color: $inputFilledBg;
-        
+
         &:enabled:hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:enabled:focus {
             background-color: $inputFilledFocusBg;
         }

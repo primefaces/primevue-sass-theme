@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 .p-treeselect {
     background: $inputBg;
@@ -15,13 +15,13 @@
         @include focused-input();
     }
 
-    &.p-variant {
+    &.p-variant-filled {
         background: $inputFilledBg;
 
         &:not(.p-disabled):hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:not(.p-disabled).p-focus {
             background-color: $inputFilledFocusBg;
         }
@@ -53,7 +53,7 @@
         border-top-right-radius: $borderRadius;
         border-bottom-right-radius: $borderRadius;
     }
-    
+
     &.p-invalid.p-component {
         @include invalid-input();
     }
@@ -63,7 +63,8 @@
     &.p-treeselect {
         &.p-treeselect-chip {
             .p-treeselect-label {
-                padding: math.div(nth($inputPadding, 1), 2) nth($inputPadding, 2);
+                padding: math.div(nth($inputPadding, 1), 2)
+                    nth($inputPadding, 2);
             }
         }
     }
@@ -96,7 +97,7 @@
         &:not(.p-disabled):hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:not(.p-disabled).p-focus {
             background-color: $inputFilledFocusBg;
         }

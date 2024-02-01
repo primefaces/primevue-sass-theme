@@ -23,13 +23,13 @@
         @include invalid-input();
     }
 
-    &.p-variant.p-component {
+    &.p-variant-filled.p-component {
         background-color: $inputFilledBg;
 
         &:enabled:hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:enabled:focus {
             background-color: $inputFilledFocusBg;
         }
@@ -71,7 +71,7 @@
 }
 
 .p-input-icon-right > svg:last-of-type,
-.p-input-icon-right > i:last-of-type  {
+.p-input-icon-right > i:last-of-type {
     right: nth($inputPadding, 2);
     color: $inputIconColor;
 }
@@ -81,8 +81,8 @@
 }
 
 @include placeholder {
-    color: $inputPlaceholderTextColor
-};
+    color: $inputPlaceholderTextColor;
+}
 
 .p-input-filled {
     .p-inputtext {
@@ -91,7 +91,7 @@
         &:enabled:hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:enabled:focus {
             background-color: $inputFilledFocusBg;
         }

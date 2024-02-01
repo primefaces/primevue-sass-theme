@@ -30,26 +30,26 @@
 
     &:not(.p-disabled) {
         &:has(.p-checkbox-input:hover) {
-            box-shadow: 0 0 1px 10px rgba($overlayColor, .04);
+            box-shadow: 0 0 1px 10px rgba($overlayColor, 0.04);
 
             .p-checkbox-box {
                 border-color: nth($checkboxBorder, 3);
             }
 
             &.p-highlight {
-                box-shadow: 0 0 1px 10px rgba($checkboxActiveBg, .04);
+                box-shadow: 0 0 1px 10px rgba($checkboxActiveBg, 0.04);
             }
         }
 
         &:has(.p-checkbox-input:focus-visible) {
-            box-shadow: 0 0 1px 10px rgba($overlayColor, .12);
+            box-shadow: 0 0 1px 10px rgba($overlayColor, 0.12);
 
             .p-checkbox-box {
                 border-color: nth($checkboxBorder, 3);
             }
 
             &.p-highlight {
-                box-shadow: 0 0 1px 10px rgba($checkboxActiveBg, .12);
+                box-shadow: 0 0 1px 10px rgba($checkboxActiveBg, 0.12);
 
                 .p-checkbox-box {
                     border-color: $checkboxActiveBorderColor;
@@ -58,7 +58,7 @@
         }
     }
 
-    &.p-variant {
+    &.p-variant-filled {
         .p-checkbox-box {
             background-color: $inputBg;
         }
@@ -85,22 +85,22 @@
     }
 }
 
-@keyframes checkbox-check{
-    0%{
-      width: 0;
-      height: 0;
-      border-color: $checkboxIconActiveColor;
-      transform: translate3d(0,0,0) rotate(45deg);
+@keyframes checkbox-check {
+    0% {
+        width: 0;
+        height: 0;
+        border-color: $checkboxIconActiveColor;
+        transform: translate3d(0, 0, 0) rotate(45deg);
     }
-    33%{
-      width: 4px;
-      height: 0;
-      transform: translate3d(0,0,0) rotate(45deg);
+    33% {
+        width: 4px;
+        height: 0;
+        transform: translate3d(0, 0, 0) rotate(45deg);
     }
-    100%{    
-      width: 4px;
-      height: 10px;    
-      border-color: $checkboxIconActiveColor;
-      transform: translate3d(0,-10px,0) rotate(45deg);
+    100% {
+        width: 4px;
+        height: 10px;
+        border-color: $checkboxIconActiveColor;
+        transform: translate3d(0, -10px, 0) rotate(45deg);
     }
-  }
+}

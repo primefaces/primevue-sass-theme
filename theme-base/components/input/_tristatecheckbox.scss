@@ -1,5 +1,5 @@
 .p-tristatecheckbox {
-    &.p-variant {
+    &.p-variant-filled {
         .p-checkbox-box {
             background-color: $inputFilledBg;
         }
@@ -15,7 +15,7 @@
                 .p-checkbox-box {
                     background-color: $inputFilledHoverBg;
                 }
-    
+
                 &.p-highlight {
                     .p-checkbox-box {
                         background: $checkboxActiveHoverBg;

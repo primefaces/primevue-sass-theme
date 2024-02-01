@@ -1,11 +1,14 @@
 .p-chips {
     .p-chips-multiple-container {
         &:not(.p-disabled).p-focus {
-            box-shadow: inset 0 0 0 1px $inputFocusBorderColor,inset 0 0 0 1px $inputFocusBorderColor,inset 0 0 0 1px $inputFocusBorderColor,inset 0 0 0 1px $inputFocusBorderColor;
+            box-shadow: inset 0 0 0 1px $inputFocusBorderColor,
+                inset 0 0 0 1px $inputFocusBorderColor,
+                inset 0 0 0 1px $inputFocusBorderColor,
+                inset 0 0 0 1px $inputFocusBorderColor;
         }
     }
 
-    &.p-variant {
+    &.p-variant-filled {
         .p-chips-multiple-container {
             @include filled-input-wrapper();
         }
@@ -27,7 +30,7 @@
 .p-float-label {
     .p-chips-multiple-container {
         .p-chips-token {
-            padding: .25rem 1rem;
+            padding: 0.25rem 1rem;
         }
     }
 }
@@ -61,6 +64,9 @@
 
 .p-chips.p-invalid .p-chips-multiple-container {
     &:not(.p-disabled).p-focus {
-        box-shadow: inset 0 0 0 1px $inputErrorBorderColor,inset 0 0 0 1px $inputErrorBorderColor,inset 0 0 0 1px $inputErrorBorderColor,inset 0 0 0 1px $inputErrorBorderColor;
+        box-shadow: inset 0 0 0 1px $inputErrorBorderColor,
+            inset 0 0 0 1px $inputErrorBorderColor,
+            inset 0 0 0 1px $inputErrorBorderColor,
+            inset 0 0 0 1px $inputErrorBorderColor;
     }
 }

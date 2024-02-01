@@ -5,15 +5,15 @@
 
     &:not(.p-calendar-disabled).p-focus > .p-inputtext {
         @include focused-input();
-    }    
+    }
 
-    &.p-variant > .p-inputtext {
+    &.p-variant-filled > .p-inputtext {
         background-color: $inputFilledBg;
-        
+
         &:enabled:hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:enabled:focus {
             background-color: $inputFilledFocusBg;
         }
@@ -139,7 +139,7 @@
             @include action-icon();
 
             &:last-child {
-                margin-top: .2em;
+                margin-top: 0.2em;
             }
         }
 
@@ -209,7 +209,8 @@
 
     &.p-datepicker-mobile {
         table {
-            th, td {
+            th,
+            td {
                 padding: $calendarCellDatePaddingSM;
             }
         }
@@ -236,7 +237,7 @@
             .p-monthpicker-month {
                 &:not(.p-disabled) {
                     outline-color: transparent;
-                    
+
                     &:not(.p-highlight):hover {
                         background: $calendarCellDateHoverBg;
                     }
@@ -252,7 +253,7 @@
             .p-yearpicker-year {
                 &:not(.p-disabled) {
                     outline-color: transparent;
-                    
+
                     &:not(.p-highlight):hover {
                         background: $calendarCellDateHoverBg;
                     }
@@ -264,5 +265,4 @@
             }
         }
     }
-
 }
