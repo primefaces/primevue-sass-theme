@@ -6,24 +6,17 @@
                 inset 0 0 0 1px $inputFocusBorderColor,
                 inset 0 0 0 1px $inputFocusBorderColor;
         }
-    }
 
-    &.p-variant-filled {
-        .p-chips-multiple-container {
+        &.p-variant-filled {
             @include filled-input-wrapper();
         }
-
-        &.p-invalid {
-            .p-chips-multiple-container {
-                @include invalid-filled-input-wrapper();
-            }
-        }
     }
-}
 
-.p-input-filled {
-    .p-chips-multiple-container {
-        @include filled-input-wrapper();
+
+    &.p-invalid {
+        .p-chips-multiple-container.p-variant-filled  {
+            @include invalid-filled-input-wrapper();
+        }
     }
 }
 
@@ -32,34 +25,23 @@
         .p-chips-token {
             padding: 0.25rem 1rem;
         }
-    }
-}
-
-.p-input-filled {
-    .p-float-label {
-        .p-chips {
-            .p-chips-multiple-container {
-                .p-chips-token {
-                    padding-top: 0;
-                    padding-bottom: 0;
-
-                    .p-chips-token-icon {
-                        font-size: 75%;
-                    }
+        
+        &.p-variant-filled {
+            .p-chips-token {
+                padding-top: 0;
+                padding-bottom: 0;
+    
+                .p-chips-token-icon {
+                    font-size: 75%;
                 }
-
-                .p-chips-input-token {
-                    padding: 0;
-                }
+            }
+    
+            .p-chips-input-token {
+                padding: 0;
             }
         }
     }
 
-    .p-chips.p-invalid {
-        .p-chips-multiple-container {
-            @include invalid-filled-input-wrapper();
-        }
-    }
 }
 
 .p-chips.p-invalid .p-chips-multiple-container {

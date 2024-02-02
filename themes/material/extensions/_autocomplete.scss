@@ -23,16 +23,6 @@
     }
 }
 
-.p-input-filled {
-    .p-autocomplete {
-        &.p-autocomplete-multiple {
-            .p-autocomplete-multiple-container {
-                @include filled-input-wrapper();
-            }
-        }
-    }
-}
-
 .p-float-label {
     .p-autocomplete.p-variant-filled {
         .p-autocomplete-multiple-container {
@@ -58,37 +48,6 @@
     }
 }
 
-.p-input-filled {
-    .p-float-label {
-        .p-autocomplete {
-            .p-autocomplete-multiple-container {
-                .p-autocomplete-token {
-                    padding-top: 0;
-                    padding-bottom: 0;
-
-                    .p-autocomplete-token-icon {
-                        font-size: 75%;
-                    }
-                }
-
-                .p-autocomplete-input-token {
-                    padding: 0;
-                }
-            }
-        }
-    }
-
-    .p-autocomplete.p-invalid {
-        > .p-inputtext {
-            @include invalid-filled-input();
-        }
-
-        > .p-autocomplete-multiple-container {
-            @include invalid-filled-input-wrapper();
-        }
-    }
-}
-
 .p-autocomplete.p-invalid {
     > .p-inputtext {
         &:enabled:focus {
@@ -96,6 +55,10 @@
                 inset 0 0 0 1px $inputErrorBorderColor,
                 inset 0 0 0 1px $inputErrorBorderColor,
                 inset 0 0 0 1px $inputErrorBorderColor;
+        }
+
+        &.p-variant-filled {
+            @include invalid-filled-input();
         }
     }
 

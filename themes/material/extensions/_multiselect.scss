@@ -56,19 +56,6 @@
     }
 }
 
-.p-input-filled {
-    .p-multiselect {
-        @include filled-input-wrapper();
-
-        .p-multiselect-label {
-            &:hover {
-                background-image: none;
-                background: transparent;
-            }
-        }
-    }
-}
-
 .p-float-label {
     .p-multiselect-label {
         .p-multiselect-token {
@@ -76,41 +63,6 @@
             margin-top: 0.25rem;
             margin-bottom: 0.25rem;
         }
-    }
-}
-
-.p-input-filled {
-    .p-float-label {
-        .p-multiselect {
-            .p-multiselect-label {
-                @include filled-input-float-label();
-            }
-        }
-
-        .p-inputwrapper-filled {
-            &.p-multiselect {
-                .p-multiselect-label {
-                    @include filled-input-float-label();
-                }
-
-                &.p-multiselect-chip {
-                    .p-multiselect-token {
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        margin-top: 0;
-                        margin-bottom: 0;
-
-                        .p-multiselect-token-icon {
-                            font-size: 75%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .p-multiselect.p-invalid {
-        @include invalid-filled-input-wrapper();
     }
 }
 

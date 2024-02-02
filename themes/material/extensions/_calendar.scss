@@ -128,6 +128,10 @@
                     inset 0 0 0 1px $inputErrorBorderColor,
                     inset 0 0 0 1px $inputErrorBorderColor;
             }
+
+            &.p-variant-filled {
+                @include invalid-filled-input();
+            }
         }
 
         &.p-calendar-w-btn {
@@ -144,68 +148,6 @@
                     inset 0 0 0 1px $inputErrorBorderColor,
                     inset 0 0 0 1px $inputErrorBorderColor,
                     inset 0 0 0 1px $inputErrorBorderColor;
-            }
-        }
-    }
-
-    &.p-variant-filled {
-        > .p-inputtext {
-            @include filled-input-wrapper();
-        }
-
-        &.p-calendar-w-btn {
-            @include filled-input-wrapper-default();
-
-            &:not(.p-calendar-disabled) {
-                @include filled-input-wrapper-interaction();
-            }
-
-            .p-inputtext {
-                border: 0 none;
-            }
-        }
-
-        &.p-invalid {
-            .p-inputtext {
-                @include invalid-filled-input();
-            }
-
-            &.p-calendar-w-btn {
-                @include invalid-filled-input-wrapper();
-
-                .p-inputtext {
-                    border: 0 none;
-                    background-image: none;
-                }
-            }
-        }
-    }
-}
-
-.p-input-filled {
-    .p-calendar-w-btn {
-        @include filled-input-wrapper-default();
-
-        &:not(.p-calendar-disabled) {
-            @include filled-input-wrapper-interaction();
-        }
-
-        .p-inputtext {
-            border: 0 none;
-        }
-    }
-
-    .p-calendar.p-invalid {
-        .p-inputtext {
-            @include invalid-filled-input();
-        }
-
-        &.p-calendar-w-btn {
-            @include invalid-filled-input-wrapper();
-
-            .p-inputtext {
-                border: 0 none;
-                background-image: none;
             }
         }
     }

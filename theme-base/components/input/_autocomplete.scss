@@ -61,18 +61,6 @@
     &.p-invalid.p-component > .p-inputtext {
         @include invalid-input();
     }
-
-    &.p-variant-filled.p-component > .p-autocomplete-input {
-        background-color: $inputFilledBg;
-
-        &:enabled:hover {
-            background-color: $inputFilledHoverBg;
-        }
-
-        &:enabled:focus {
-            background-color: $inputFilledFocusBg;
-        }
-    }
 }
 
 .p-autocomplete-panel {

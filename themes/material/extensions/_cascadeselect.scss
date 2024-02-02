@@ -15,61 +15,30 @@
             inset 0 0 0 1px $inputFocusBorderColor,
             inset 0 0 0 1px $inputFocusBorderColor;
     }
-}
 
-.p-cascadeselect-item-content {
-    .p-ink {
-        background-color: rgba($primaryColor, 0.16);
-    }
-}
-
-.p-cascadeselect.p-variant-filled {
-    @include filled-input-wrapper();
-
-    .p-cascadeselect-label {
-        &:hover {
-            background-image: none;
-            background: transparent;
-        }
-    }
-
-    &.p-invalid {
-        @include invalid-filled-input-wrapper();
-    }
-}
-
-.p-input-filled {
-    .p-cascadeselect {
+    &.p-variant-filled {
         @include filled-input-wrapper();
-
+        
+        .p-inputtext {
+            border: 0 none;
+        }
+    
         .p-cascadeselect-label {
             &:hover {
                 background-image: none;
                 background: transparent;
             }
         }
+    
+        &.p-invalid {
+            @include invalid-filled-input-wrapper();
+        }
     }
 }
 
-.p-input-filled {
-    .p-float-label {
-        .p-cascadeselect {
-            .p-cascadeselect-label {
-                @include filled-input-float-label();
-            }
-        }
-
-        .p-inputwrapper-filled {
-            &.p-cascadeselect {
-                .p-cascadeselect-label {
-                    @include filled-input-float-label();
-                }
-            }
-        }
-    }
-
-    .p-cascadeselect.p-invalid {
-        @include invalid-filled-input-wrapper();
+.p-cascadeselect-item-content {
+    .p-ink {
+        background-color: rgba($primaryColor, 0.16);
     }
 }
 

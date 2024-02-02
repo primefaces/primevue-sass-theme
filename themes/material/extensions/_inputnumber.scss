@@ -7,17 +7,12 @@
                     inset 0 0 0 1px $inputErrorBorderColor,
                     inset 0 0 0 1px $inputErrorBorderColor;
             }
-        }
 
-        &.p-variant-filled {
-            .p-inputnumber-input {
+            &.p-variant-filled {
                 @include invalid-filled-input();
             }
         }
-    }
 
-    &.p-variant-filled > .p-inputnumber-input {
-        @include filled-input();
     }
 }
 

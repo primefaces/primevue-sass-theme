@@ -30,6 +30,18 @@
                 }
             }
         }
+
+        &.p-variant-filled {
+            .p-radiobutton-box {
+                background-color: $inputBg;
+            }
+    
+            &:not(.p-disabled) {
+                &:has(.p-radiobutton-input:hover) {
+                    background-color: $inputBg;
+                }
+            }
+        }
     }
 }
 

@@ -6,18 +6,6 @@
     &:not(.p-calendar-disabled).p-focus > .p-inputtext {
         @include focused-input();
     }
-
-    &.p-variant-filled > .p-inputtext {
-        background-color: $inputFilledBg;
-
-        &:enabled:hover {
-            background-color: $inputFilledHoverBg;
-        }
-
-        &:enabled:focus {
-            background-color: $inputFilledFocusBg;
-        }
-    }
 }
 
 .p-datepicker {

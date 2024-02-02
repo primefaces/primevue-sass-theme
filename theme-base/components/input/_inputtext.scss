@@ -23,7 +23,7 @@
         @include invalid-input();
     }
 
-    &.p-variant-filled.p-component {
+    &.p-variant-filled {
         background-color: $inputFilledBg;
 
         &:enabled:hover {
