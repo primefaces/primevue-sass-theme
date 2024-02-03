@@ -600,6 +600,14 @@ $errorMessageBg:#FFCDD2 !default;
 $errorMessageBorder:solid transparent !default;
 $errorMessageTextColor:#B71C1C !default;
 $errorMessageIconColor:#B71C1C !default;
+$secondaryMessageBg: $secondaryButtonBg !default;
+$secondaryMessageBorder: solid transparent !default;
+$secondaryMessageTextColor: $secondaryButtonTextColor !default;
+$secondaryMessageIconColor: $secondaryButtonTextColor !default;
+$contrastMessageBg: $contrastButtonBg !default;
+$contrastMessageBorder: solid transparent !default;
+$contrastMessageTextColor: $contrastButtonTextColor !default;
+$contrastMessageIconColor: $contrastButtonTextColor !default;
 
 //overlays
 $overlayContentBorder:0 none !default;

@@ -16,7 +16,7 @@
 
             .p-toast-message-icon {
                 font-size: $toastIconFontSize;
-                
+
                 &.p-icon {
                     width: $toastIconFontSize;
                     height: $toastIconFontSize;
@@ -41,7 +41,7 @@
             outline-color: transparent;
 
             &:hover {
-                background: rgba(255,255,255,.5);
+                background: rgba(255, 255, 255, 0.5);
             }
 
             &:focus-visible {
@@ -97,5 +97,32 @@
             }
         }
 
+        @if variable-exists(secondaryMessageBg) {
+            &.p-toast-message-secondary {
+                background: $secondaryMessageBg;
+                border: $secondaryMessageBorder;
+                border-width: $messageBorderWidth;
+                color: $secondaryMessageTextColor;
+
+                .p-toast-message-icon,
+                .p-toast-icon-close {
+                    color: $secondaryMessageIconColor;
+                }
+            }
+        }
+
+        @if variable-exists(contrastMessageBg) {
+            &.p-toast-message-contrast {
+                background: $contrastMessageBg;
+                border: $contrastMessageBorder;
+                border-width: $messageBorderWidth;
+                color: $contrastMessageTextColor;
+
+                .p-toast-message-icon,
+                .p-toast-icon-close {
+                    color: $contrastMessageIconColor;
+                }
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@
         &:focus-visible {
             outline-color: $infoMessageIconColor;
         }
-    
+
         &:hover {
             background: #dbeafe;
         }
@@ -23,7 +23,7 @@
         &:focus-visible {
             outline-color: $successMessageIconColor;
         }
-    
+
         &:hover {
             background: #dcfce7;
         }
@@ -37,7 +37,7 @@
         &:focus-visible {
             outline-color: $warningMessageIconColor;
         }
-    
+
         &:hover {
             background: #fef9c3;
         }
@@ -51,9 +51,37 @@
         &:focus-visible {
             outline-color: $errorMessageIconColor;
         }
-    
+
         &:hover {
             background: #fee2e2;
+        }
+    }
+}
+
+.p-message.p-message-secondary {
+    box-shadow: 0px 4px 8px 0px rgba(74, 85, 103, 0.04);
+
+    .p-message-close {
+        &:focus-visible {
+            outline-color: $secondaryMessageIconColor;
+        }
+
+        &:hover {
+            background: $secondaryButtonHoverBg;
+        }
+    }
+}
+
+.p-message.p-message-contrast {
+    box-shadow: 0px 4px 8px 0px rgba(2, 6, 23, 0.04);
+
+    .p-message-close {
+        &:focus-visible {
+            outline-color: $contrastMessageIconColor;
+        }
+
+        &:hover {
+            background: $contrastButtonHoverBg;
         }
     }
 }

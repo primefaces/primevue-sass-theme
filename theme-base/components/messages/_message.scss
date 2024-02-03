@@ -15,7 +15,7 @@
         outline-color: transparent;
 
         &:hover {
-            background: rgba(255,255,255,.5);
+            background: rgba(255, 255, 255, 0.5);
         }
 
         &:focus-visible {
@@ -80,6 +80,40 @@
 
         .p-message-close {
             color: $errorMessageIconColor;
+        }
+    }
+
+    @if variable-exists(secondaryMessageBg) {
+        &.p-message-secondary {
+            background: $secondaryMessageBg;
+            border: $secondaryMessageBorder;
+            border-width: $messageBorderWidth;
+            color: $secondaryMessageTextColor;
+
+            .p-message-icon {
+                color: $secondaryMessageIconColor;
+            }
+
+            .p-message-close {
+                color: $secondaryMessageIconColor;
+            }
+        }
+    }
+
+    @if variable-exists(contrastMessageBg) {
+        &.p-message-contrast {
+            background: $contrastMessageBg;
+            border: $contrastMessageBorder;
+            border-width: $messageBorderWidth;
+            color: $contrastMessageTextColor;
+
+            .p-message-icon {
+                color: $contrastMessageIconColor;
+            }
+
+            .p-message-close {
+                color: $contrastMessageIconColor;
+            }
         }
     }
 

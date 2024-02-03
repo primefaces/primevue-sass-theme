@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 .p-tag {
     background: $badgeBg;
@@ -26,6 +26,18 @@
     &.p-tag-danger {
         background-color: $dangerButtonBg;
         color: $dangerButtonTextColor;
+    }
+
+    @if variable-exists(secondaryMessageBg) {
+        &.p-tag-secondary {
+            background-color: $secondaryButtonBg;
+            color: $secondaryButtonTextColor;
+        }
+    
+        &.p-tag-contrast {
+            background-color: $contrastButtonBg;
+            color: $contrastButtonTextColor;
+        }
     }
 
     .p-tag-icon {
