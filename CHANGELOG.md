@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.48.0](https://github.com/primefaces/primevue-sass-theme/tree/3.48.00) (2024-02-05)
+
+**Fixed bugs:**
+
+- Divider: Divider line doesn't show [#59](https://github.com/primefaces/primevue-sass-theme/issues/59)
+
+**Implemented New Features and Enhancements:**
+
+- Move core alignment styles to theme files [#61](https://github.com/primefaces/primevue-sass-theme/issues/61)
+- Themes: end value has mixed support, consider using flex-end instead warning [#58](https://github.com/primefaces/primevue-sass-theme/issues/58)
+- Variant updates [#57](https://github.com/primefaces/primevue-sass-theme/issues/57)
+
 ## [3.47.2](https://github.com/primefaces/primevue-sass-theme/tree/3.47.2) (2024-01-25)
 
 - No changes, provides semantic versioning compatibility for PrimeVue 3.47.2
