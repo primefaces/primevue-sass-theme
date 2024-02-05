@@ -1,3 +1,14 @@
+// core
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    width: 100%;
+}
+
+// theme
 .p-inputtext {
     font-family: var(--font-family);
     font-feature-settings: var(--font-feature-settings, normal);

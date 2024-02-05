@@ -1,3 +1,20 @@
+// core
+.p-togglebutton {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    vertical-align: bottom;
+}
+
+.p-togglebutton-input {
+    cursor: pointer;
+}
+
+.p-togglebutton .p-button {
+    flex: 1 1 auto;
+}
+
+// theme
 .p-togglebutton {
     .p-togglebutton-input {
         appearance: none;

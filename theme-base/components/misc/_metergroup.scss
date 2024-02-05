@@ -1,5 +1,44 @@
 @use "sass:math";
 
+// core
+.p-metergroup {
+    display: flex;
+}
+
+.p-metergroup-meters {
+    display: flex;
+}
+
+.p-metergroup-vertical .p-metergroup-meters {
+    flex-direction: column;
+}
+
+.p-metergroup-labels {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.p-metergroup-vertical .p-metergroup-labels {
+    align-items: start;
+}
+
+.p-metergroup-labels-vertical {
+    flex-direction: column;
+}
+
+.p-metergroup-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.p-metergroup-label-marker {
+    display: inline-flex;
+}
+
+// theme
 .p-metergroup {
     gap: $inlineSpacing * 2;
 

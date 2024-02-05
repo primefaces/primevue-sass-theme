@@ -1,3 +1,22 @@
+// core
+.p-checkbox {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    vertical-align: bottom;
+}
+
+.p-checkbox-input {
+    cursor: pointer;
+}
+
+.p-checkbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// theme
 .p-tristatecheckbox {
     &.p-variant-filled {
         .p-checkbox-box {

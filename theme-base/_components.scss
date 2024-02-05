@@ -14,10 +14,13 @@
     @import './components/input/_chips';
     @import './components/input/_colorpicker';
     @import './components/input/_dropdown';
+    @import './components/input/_floatlabel';
+    @import './components/input/_iconfield';
     @import './components/input/_inputgroup';
     @import './components/input/_inputnumber';
     @import './components/input/_inputswitch';
     @import './components/input/_inputtext';
+    @import './components/input/_knob';
     @import './components/input/_listbox';
     @import './components/input/_multiselect';
     @import './components/input/_password';
@@ -25,6 +28,7 @@
     @import './components/input/_rating';
     @import './components/input/_selectbutton';
     @import './components/input/_slider';
+    @import './components/input/_textarea';
     @import './components/input/_treeselect';
     @import './components/input/_togglebutton';
 
@@ -97,6 +101,7 @@
     @import './components/misc/_metergroup';
     @import './components/misc/_progressbar';
     @import './components/misc/_progressspinner';
+    @import './components/misc/_ripple';
     @import './components/misc/_scrolltop';
     @import './components/misc/_skeleton';
     @import './components/misc/_tag';
