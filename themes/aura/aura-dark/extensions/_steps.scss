@@ -50,7 +50,7 @@
 
         &:first-child {
             &::before {
-                width: calc(50% + math.div($stepsItemNumberWidth,2));
+                width: calc(50% + #{math.div($stepsItemNumberWidth, 2)});
                 transform: translateX(100%);
             }
         }
