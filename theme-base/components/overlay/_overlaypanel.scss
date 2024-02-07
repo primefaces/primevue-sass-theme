@@ -101,13 +101,13 @@
     }
 
     &:after {
-        border: solid transparent;
+        border-style: solid;
         border-color: rgba($overlayContentBg, 0);
         border-bottom-color: $overlayContentBg;
     }
 
     &:before {
-        border: solid transparent;
+        border-style: solid;
 
         @if (nth($overlayContentBorder, 2) == 'none') {
             border-color: rgba($overlayContentBg, 0);
