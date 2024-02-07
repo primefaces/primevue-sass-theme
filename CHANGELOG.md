@@ -1,6 +1,12 @@
 # Changelog
 
-## [3.48.0](https://github.com/primefaces/primevue-sass-theme/tree/3.48.00) (2024-02-05)
+## [3.48.1](https://github.com/primefaces/primevue-sass-theme/tree/3.48.1) (2024-02-07)
+
+**Fixed bugs:**
+
+- Overwritten styles defect [#62](https://github.com/primefaces/primevue-sass-theme/issues/62)
+
+## [3.48.0](https://github.com/primefaces/primevue-sass-theme/tree/3.48.0) (2024-02-05)
 
 **Fixed bugs:**
 
