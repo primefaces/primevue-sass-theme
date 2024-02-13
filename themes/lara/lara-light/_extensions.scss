@@ -126,4 +126,14 @@
         }
     }
     
+    .p-stepper {
+        .p-stepper-header {
+            &.p-highlight {
+                .p-stepper-number {
+                    background: $primaryColor;
+                    color: $primaryTextColor;
+                }
+            }
+        }
+    }
 }

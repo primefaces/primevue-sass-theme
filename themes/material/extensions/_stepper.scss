@@ -1,0 +1,35 @@
+.p-stepper {
+    .p-stepper-header {
+        .p-stepper-action {
+            .p-stepper-number {
+                background-color: #9e9d9e;
+                color: #ffffff;
+                font-size: 0.857rem;
+                min-width: 1.714rem;
+                height: 1.714rem;
+            }
+        }
+        
+        &.p-highlight {
+            .p-stepper-action {
+                .p-stepper-number {
+                    background-color: $primaryColor;
+                    color: $primaryTextColor;
+                }
+                
+                .p-stepper-title {
+                    font-weight: 600;
+                    color: $textColor;
+                }
+            }
+        }
+    }
+    
+    &.p-stepper-vertical {
+        .p-stepper-panel {
+            .p-stepper-separator {
+                margin-inline-start: calc($inlineSpacing * 7 / 2);
+            }
+        }
+    }
+}

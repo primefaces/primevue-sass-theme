@@ -143,4 +143,24 @@
             }
         }
     }
+
+    .p-stepper {
+        .p-stepper-header {
+            .p-stepper-action {
+                .p-stepper-number {
+                    border-style: solid;
+                    border-color: $shade600;
+                }
+            }
+
+            &.p-highlight {
+                .p-stepper-action {
+                    .p-stepper-number {
+                        background: $primaryColor;
+                        color: $primaryTextColor;
+                    }
+                }
+            }
+        }
+    }
 }
