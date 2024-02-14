@@ -1,13 +1,9 @@
 // core
-.p-input-icon-left,
-.p-input-icon-right {
+.p-icon-field {
     position: relative;
 }
 
-.p-input-icon-left > i,
-.p-input-icon-left > svg,
-.p-input-icon-right > i,
-.p-input-icon-right > svg {
+.p-icon-field > .p-input-icon {
     position: absolute;
     top: 50%;
     margin-top: -.5rem;
