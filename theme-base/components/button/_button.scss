@@ -40,29 +40,29 @@
     order: 2;
 }
 
-.p-buttonset .p-button {
+.p-button-group .p-button {
     margin: 0;
 }
 
-.p-buttonset .p-button:not(:last-child), .p-buttonset .p-button:not(:last-child):hover {
+.p-button-group .p-button:not(:last-child), .p-button-group .p-button:not(:last-child):hover {
     border-right: 0 none;
 }
 
-.p-buttonset .p-button:not(:first-of-type):not(:last-of-type) {
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
     border-radius: 0;
 }
 
-.p-buttonset .p-button:first-of-type:not(:only-of-type) {
+.p-button-group .p-button:first-of-type:not(:only-of-type) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.p-buttonset .p-button:last-of-type:not(:only-of-type) {
+.p-button-group .p-button:last-of-type:not(:only-of-type) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.p-buttonset .p-button:focus {
+.p-button-group .p-button:focus {
     position: relative;
     z-index: 1;
 }
@@ -249,7 +249,7 @@
         width: $buttonIconOnlyWidth;
     }
 
-    .p-buttonset {
+    .p-button-group {
         display: flex;
         
         .p-button {
@@ -258,7 +258,7 @@
     }
 }
 
-.p-button.p-button-secondary, .p-buttonset.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button {
+.p-button.p-button-secondary, .p-button-group.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button {
     color: $secondaryButtonTextColor;
     background: $secondaryButtonBg;
     border: $secondaryButtonBorder;
@@ -316,7 +316,7 @@
     }
 }
 
-.p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
+.p-button.p-button-info, .p-button-group.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
     color: $infoButtonTextColor;
     background: $infoButtonBg;
     border: $infoButtonBorder;
@@ -374,7 +374,7 @@
     }
 }
 
-.p-button.p-button-success, .p-buttonset.p-button-success > .p-button, .p-splitbutton.p-button-success > .p-button {
+.p-button.p-button-success, .p-button-group.p-button-success > .p-button, .p-splitbutton.p-button-success > .p-button {
     color: $successButtonTextColor;
     background: $successButtonBg;
     border: $successButtonBorder;
@@ -432,7 +432,7 @@
     }
 }
 
-.p-button.p-button-warning, .p-buttonset.p-button-warning > .p-button, .p-splitbutton.p-button-warning > .p-button {
+.p-button.p-button-warning, .p-button-group.p-button-warning > .p-button, .p-splitbutton.p-button-warning > .p-button {
     color: $warningButtonTextColor;
     background: $warningButtonBg;
     border: $warningButtonBorder;
@@ -490,7 +490,7 @@
     }
 }
 
-.p-button.p-button-help, .p-buttonset.p-button-help > .p-button, .p-splitbutton.p-button-help > .p-button {
+.p-button.p-button-help, .p-button-group.p-button-help > .p-button, .p-splitbutton.p-button-help > .p-button {
     color: $helpButtonTextColor;
     background: $helpButtonBg;
     border: $helpButtonBorder;
@@ -548,7 +548,7 @@
     }
 }
 
-.p-button.p-button-danger, .p-buttonset.p-button-danger > .p-button, .p-splitbutton.p-button-danger > .p-button {
+.p-button.p-button-danger, .p-button-group.p-button-danger > .p-button, .p-splitbutton.p-button-danger > .p-button {
     color: $dangerButtonTextColor;
     background: $dangerButtonBg;
     border: $dangerButtonBorder;
@@ -607,7 +607,7 @@
 }
 
 @if variable-exists(contrastButtonTextColor) {
-    .p-button.p-button-contrast, .p-buttonset.p-button-contrast > .p-button, .p-splitbutton.p-button-contrast > .p-button {
+    .p-button.p-button-contrast, .p-button-group.p-button-contrast > .p-button, .p-splitbutton.p-button-contrast > .p-button {
         color: $contrastButtonTextColor;
         background: $contrastButtonBg;
         border: $contrastButtonBorder;
