@@ -172,13 +172,13 @@
             }
 
             .p-stepper-content {
+                width: 100%;
                 padding-left: calc($inlineSpacing * 2);
             }
 
             .p-stepper-separator {
                 flex: 0 0 auto;
                 width: 2px;
-                min-height: 28px;
                 height: auto;
                 margin-inline-start: calc($inlineSpacing * 7 / 2 + 2px);
             }
