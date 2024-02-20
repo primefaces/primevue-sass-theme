@@ -9,4 +9,13 @@
             transform: none;
         }
     }
+
+    &.p-invalid > .p-inputswitch-slider {
+        background: $errorColor;
+
+
+        &:before {
+            background: $shade000;
+        }
+    }
 }
