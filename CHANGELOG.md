@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.49.0](https://github.com/primefaces/primevue-sass-theme/tree/3.49.0) (2024-02-23)
+
+**Fixed bugs:**
+
+- The arrow position is wrong after overlayPanel/confirmPopup is flipped [#74](https://github.com/primefaces/primevue-sass-theme/issues/74)
+
+**Implemented New Features and Enhancements:**
+
+- New InputOtp component [#75](https://github.com/primefaces/primevue-sass-theme/issues/75)
+- New ButtonGroup component [#72](https://github.com/primefaces/primevue-sass-theme/issues/72)
+- Menu components hover and visual focus updates [#71](https://github.com/primefaces/primevue-sass-theme/issues/71)
+- New Stepper component [#66](https://github.com/primefaces/primevue-sass-theme/issues/66)
+- InputIcon class support & InputField style updates  [#69](https://github.com/primefaces/primevue-sass-theme/issues/69)
+
 ## [3.48.1](https://github.com/primefaces/primevue-sass-theme/tree/3.48.1) (2024-02-07)
 
 **Fixed bugs:**
